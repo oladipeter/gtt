@@ -1,5 +1,6 @@
-<p>Welcome <%= @resource.email %>!</p>
+<p>Tisztelt Ügyfelünk!</p>
+<p>Ön sikeresen regisztrált a Globomax Kft. weboldalára!</p>
 
-<p>You can confirm your account through the link below:</p>
+<p>Regisztrációját az alábbi linken tudja megerősíteni!</p>
 
-<p><%= link_to 'Confirm my account', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %></p>
+<p><%= link_to 'Regisztrációm megerősítése', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %></p>

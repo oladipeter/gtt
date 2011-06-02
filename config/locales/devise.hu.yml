@@ -9,25 +9,30 @@ hu:
   resend_confirmation: "Megerősitő e-mail újraküldése"
   send: "Küldés"
 
-  #Sign up
-  full_name:             "Teljes név"
-  nick_name:             "Becenév"
-  local_government:      "Helyi Önkormányzat"
-  phone_number:          "Telefonszám"
-  product:               "Milyen termékkel rendelkezik?"
+  # Sign up
+  full_name: "Teljes név"
+  nick_name: "Becenév"
+  local_government: "Önkormányzat neve"
+  phone_number: "Telefonszám"
+  # Checkbox
+  mikrovoks: "MikroVoks"
+  mikrokam: "MikroKam"
+  sequence: "seQUEnce"
+  edtr: "EDtR"
+  mvmonitor: "MvMonitor"
+  digirat: "Digirat"
+  # Checkbox vege
   flat_rate:             "Átalánydíjas ügyfél?"
   email:                 "E-mail cím"
   password:              "Jelszó"
   password_confirmation: "Jelszó megerősítése"
-
-
 
   errors:
     messages:
       not_found: "nem található"
       already_confirmed: "már meg van erősítve"
       not_locked: "nincs zárolva"
-      not_saved: "Sikertelen mentés"
+      not_saved: "A művelet sikertelen!"
 
   devise:
     failure:

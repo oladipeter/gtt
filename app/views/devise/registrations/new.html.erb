@@ -15,11 +15,26 @@
   <p><%= f.label :phone_number, (t :phone_number) %><br />
   <%= f.text_field :phone_number %></p>
 
-  <p><%= f.label :product, (t :product) %><br />
-  <%= f.text_field :product %></p>
+  <p><%= f.label :mikrovoks, (t :mikrovoks) %><br />
+  <%= f.check_box :mikrovoks, :unchecked => true, :value => false %></p>
+
+  <p><%= f.label :mikrokam, (t :mikrokam) %><br />
+  <%= f.check_box :mikrokam, :unchecked => true, :value => false %></p>
+
+  <p><%= f.label :sequence, (t :sequence) %><br />
+  <%= f.check_box :sequence, :unchecked => true, :value => false %></p>
+
+  <p><%= f.label :edtr, (t :edtr) %><br />
+  <%= f.check_box :edtr, :unchecked => true, :value => false %></p>
+    
+  <p><%= f.label :mvmonitor, (t :mvmonitor) %><br />
+  <%= f.check_box :mvmonitor, :unchecked => true, :value => false %></p>
+
+  <p><%= f.label :digirat, (t :digirat) %><br />
+  <%= f.check_box :digirat, :unchecked => true, :value => false %></p>
 
   <p><%= f.label :flat_rate, (t :flat_rate) %><br />
-  <%= f.check_box :flat_rate %></p>
+  <%= f.select(:flat_rate, options_for_select([['Igen', 1], ['Nem', 0]])) %>
 
   <p><%= f.label :email, (t :email) %><br />
   <%= f.email_field :email %></p>

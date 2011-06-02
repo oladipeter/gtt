@@ -32,7 +32,12 @@ ActiveRecord::Schema.define(:version => 20110601120146) do
     t.string   "nick_name"
     t.string   "local_government"
     t.integer  "phone_number"
-    t.string   "product"
+    t.boolean  "mikrovoks"
+    t.boolean  "mikrokam"
+    t.boolean  "sequence"
+    t.boolean  "edtr"
+    t.boolean  "mvmonitor"
+    t.boolean  "digirat"
     t.boolean  "flat_rate"
   end
 
