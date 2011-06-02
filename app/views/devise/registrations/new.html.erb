@@ -1,36 +1,36 @@
-<h2>Sign up</h2>
+<h2><%=t :sign_up%></h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <p><%= f.label :full_name %><br />
+  <p><%= f.label :full_name, (t :full_name) %><br />
   <%= f.text_field :full_name %></p>
 
-  <p><%= f.label :nick_name %><br />
+  <p><%= f.label :nick_name, (t :nick_name) %><br />
   <%= f.text_field :nick_name %></p>
 
-  <p><%= f.label :local_government %><br />
+  <p><%= f.label :local_government, (t :local_government) %><br />
   <%= f.text_field :local_government %></p>
 
-  <p><%= f.label :phone_number %><br />
+  <p><%= f.label :phone_number, (t :phone_number) %><br />
   <%= f.text_field :phone_number %></p>
 
-  <p><%= f.label :product %><br />
+  <p><%= f.label :product, (t :product) %><br />
   <%= f.text_field :product %></p>
 
-  <p><%= f.label :flat_rate %><br />
+  <p><%= f.label :flat_rate, (t :flat_rate) %><br />
   <%= f.check_box :flat_rate %></p>
 
-  <p><%= f.label :email %><br />
+  <p><%= f.label :email, (t :email) %><br />
   <%= f.email_field :email %></p>
 
-  <p><%= f.label :password %><br />
+  <p><%= f.label :password, (t :password) %><br />
   <%= f.password_field :password %></p>
 
-  <p><%= f.label :password_confirmation %><br />
+  <p><%= f.label :password_confirmation, (t :password_confirmation) %><br />
   <%= f.password_field :password_confirmation %></p>
 
-  <p><%= f.submit "Sign up" %></p>
+  <p><%= f.submit (t :sign_up)  %></p>
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>
