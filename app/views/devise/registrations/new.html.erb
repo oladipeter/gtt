@@ -4,7 +4,7 @@
 
     <%= f.input :full_name, :label => "#{ t :full_name}"  %>
     <%= f.input :nick_name, :label => "Felhasználói név :" %>
-    <%= f.input :local_government, :label => "Önkormányzat neve :" %>
+    <%= f.input :local_government, :label => "Önkormányzat neve :", :hint => "pl.: Budaörs Város Önkormányzata" %>
     <%= f.input :phone_number, :label => "Telefonszám :", :hint => "pl.: 06301234567" %>
     <%= f.input :mikrovoks, :as => :boolean %>
     <%= f.input :mikrokam, :as => :boolean %>
