@@ -5,13 +5,13 @@ hu:
   remember_me: "Emlékezzen rám!"
   forgot_your_password: "Elfelejtette a jelszavát?"
   dont_receive_confirmation: "Nem kapta meg a megerősítő email-t?"
-  reset_password_instruction: "Küldje el a jelszó vissza állításához szükséges információkat!"
+  reset_password_instruction: "Jelszó visszaállítása"
   resend_confirmation: "Megerősitő e-mail újraküldése"
   send: "Küldés"
 
   # Sign up
   full_name: "Teljes név"
-  nick_name: "Becenév"
+  nick_name: "Felhasználónév"
   local_government: "Önkormányzat neve"
   phone_number: "Telefonszám"
   # Checkbox
@@ -22,7 +22,7 @@ hu:
   mvmonitor: "MvMonitor"
   digirat: "Digirat"
   # Checkbox vege
-  flat_rate:             "Átalánydíjas ügyfél?"
+  flat_rate:             "Átalánydíjas ügyfél vagyok!"
   email:                 "E-mail cím"
   password:              "Jelszó"
   password_confirmation: "Jelszó megerősítése"

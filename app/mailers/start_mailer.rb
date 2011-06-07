@@ -4,6 +4,6 @@ class StartMailer < ActionMailer::Base
   def welcome_email(admin_mail)
     #@url  = "http://example.com/login"
     mail(:to => admin_mail,
-         :subject => "Globomax Kft. | Felhasznalo regisztracio tortent!")
+         :subject => "Globomax Kft. | Support")
   end
 end

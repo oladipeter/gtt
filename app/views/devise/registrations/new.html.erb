@@ -1,22 +1,82 @@
-<h2><%=t :sign_up%></h2>
+<h2>Regisztráció</h2>
 
-<%= semantic_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
 
-    <%= f.input :full_name, :label => "#{ t :full_name}"  %>
-    <%= f.input :nick_name, :label => "Felhasználói név :" %>
-    <%= f.input :local_government, :label => "Önkormányzat neve :", :hint => "pl.: Budaörs Város Önkormányzata" %>
-    <%= f.input :phone_number, :label => "Telefonszám :", :hint => "pl.: 06301234567" %>
-    <%= f.input :mikrovoks, :as => :boolean %>
-    <%= f.input :mikrokam, :as => :boolean %>
-    <%= f.input :sequence, :as => :boolean %>
-    <%= f.input :edtr, :as => :boolean %>
-    <%= f.input :mvmonitor, :as => :boolean %>
-    <%= f.input :digirat, :as => :boolean %>
-    <%= f.input :flat_rate, :label => "Átalánydíj?", :as => :select, :collection => ["Igen", "Nem"] %>
-    <%= f.input :email, :label => "E-mail cím :" %>
-    <%= f.input :password, :label => "Jelszó :" %>
-    <%= f.input :password_confirmation, :label => "Jelszó megerősítése :" %>
-    <%= f.buttons %>
+      <p>
+      <%= f.label :full_name, (t :full_name) %><br/>
+      <%= f.text_field :full_name, :class => "title" %>
+      </p>
+
+      <p>
+      <%= f.label :nick_name, (t :nick_name) %><br/>
+      <%= f.text_field :nick_name, :class => "title" %>
+      </p>
+
+      <p>
+      <%= f.label :local_government, (t :local_government) %><br/>
+      <%= f.text_field :local_government, :class => "title" %>
+      </p>
+
+      <p>
+      <%= f.label :phone_number, (t :phone_number) %><br/>
+      <%= f.text_field :phone_number, :class => "title" %>
+      </p>
+
+  <p class="form_info">Kérem adja meg milyen rendszer(ekkel) rendelkezik :</p>
+
+  <!-- Rendszerek -->
+
+  <p>
+  <%= f.check_box :mikrovoks %>MikroVoks
+  </p>
+
+  <p>
+  <%= f.check_box :mikrokam %>MikroKam
+  </p>
+
+  <p>
+  <%= f.check_box :sequence %>seQUEnce
+  </p>
+
+  <p>
+  <%= f.check_box :edtr %>EDtR
+  </p>
+
+  <p>
+  <%= f.check_box :mvmonitor %>MvMonitor
+  </p>
+
+  <p>
+  <%= f.check_box :digirat %>Digirat
+  </p>
+
+  <!-- Atalanydijas ugyfel -->
+
+  <p class="form_info">Amennyiben átalánydíjas ügyfél kérem jelölje be az alábbi pipát!</p>
+
+  <p>
+  <%= f.check_box :flat_rate %>Átlánydíjas ügyfél vagyok!
+  </p>
+
+  <p>
+  <%= f.label :email, (t :email) %><br/>
+  <%= f.email_field :email, :class => "title" %>
+  </p>
+
+  <p>
+  <%= f.label :password, (t :password) %><br/>
+  <%= f.password_field :password, :class => "title" %>
+  </p>
+
+  <p>
+  <%= f.label :password_confirmation, (t :password_confirmation) %><br/>
+  <%= f.password_field :password_confirmation, :class => "title" %>
+  </p>
+
+  <p>
+  <%= f.submit (t :sign_up) %>
+  </p>
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>

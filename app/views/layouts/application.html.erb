@@ -2,16 +2,88 @@
 <html>
 <head>
   <title>Gtt</title>
-  <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
+  <%= stylesheet_link_tag 'blueprint/src/reset', 'blueprint/src/forms', 'blueprint/screen', 'blueprint/src/ie', 'blueprint/src/typography', 'main' %>
   <%= csrf_meta_tag %>
-  <%= stylesheet_link_tag 'blueprint/src/reset', 'blueprint/src/forms', 'blueprint/screen', 'blueprint/src/ie', 'blueprint/src/typography' %>
 </head>
 <body>
 
-<p class="notice"><%= notice %></p>
+<div id="message">
+   <% flash.each do |name, msg| %>
+       <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    <% end %>
+</div>
 
-<%= yield %>
+<div id="main">
+
+  <div id="block_1">
+    <div class="container">
+      <div class="span-9" id="fejlec_hatter">
+        &nbsp;
+      </div>
+      <div class="span-2 prepend-13 last">
+        <div id="admin_login">
+          <%= image_tag("lock.png") %><%= link_to "Admin", "#" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="block_2">
+    <div class="container">
+
+      <div class="span-10" id="left">
+        <div class="text">
+          <%= yield %>
+        </div>
+      </div>
+
+      <div class="span-14 last" id="right">
+
+          <div class="span-13 prepend-1 last ">
+            <div class="text">
+            <h2>Fontos tudnivaló a használattal kapcsolatban!</h2>
+            <p>A regisztrációt követően emailben értesítést fog kapni, melyben egy linket talál. A linkre kattintva tudja megerősíteni regisztrációját. Ezt követően már be tud jelentkezni a fiókjába.
+               A <%= link_to "regisztrációt", "#"  %> követően <b>kollégáink ellenőrzik a megadott adatokat</b>, és csak
+              ezt követően fog tudni hozzáférni az adott termékkel kapcsolatos információkhoz.
+            </p>
+            </div>
+          </div>
+
+          <br/><br/>
+
+          <div class="span-13 prepend-1 last">
+            <div class="text">
+            <h2>Elérhetőségek</h2>
+            <p><b>Amennyiben kérdése lenne, keresse kollégáinkat elérhetőségeink egyikén!</b> </p>
+            Cím: 1155 Budapest, Dembinszky utca 1.<br/>
+            GPS koordináták: 47o32'51,09" LAT (N) | 19o06'29,04" LON (E)<br/>
+            Telefon: 06-1-306-5371<br/>
+            Ügyfélszolgálat: 06-1-271-0451<br/>
+            Fax: 06-1-306-53-64
+            </div>
+          </div>
+
+       </div>
+
+    </div>
+  </div>
+
+  <div id="footer">
+     <div class="container">
+       <div class="span-24">
+         <div class="footer_text">
+           Globomax Kft. | Minden jog fenntartva 2011
+         </div>
+       </div>
+     </div>
+  </div>
+
+</div>
+
+
+
+
 
 </body>
 </html>

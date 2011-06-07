@@ -4,7 +4,7 @@
   <%= devise_error_messages! %>
 
   <p><%= f.label :email, (t :email) %><br />
-  <%= f.email_field :email %></p>
+  <%= f.email_field :email, :class => "title" %></p>
 
   <p><%= f.submit "#{ t :send }" %></p>
 <% end %>

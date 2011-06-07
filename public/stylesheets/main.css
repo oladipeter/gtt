@@ -1,0 +1,127 @@
+/* MAIN CSS */
+/* RESET WITH BLUEPRINT */
+
+/* FO BEALLITASOK */
+
+body {
+    text-align: center;
+}
+
+#main {
+    margin: 0px auto 0px auto;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+}
+
+a, a:hover, a:link, a:visited {
+    text-decoration: none;
+    color: #5082D7;
+}
+
+form {
+    font-size: 11px;
+}
+
+h2 {
+    font-family: Georgia;
+    background-color: #fff;
+    color: #444;
+    font-size: 2em;
+    background-color: transparent;
+}
+
+.form_info {
+    font-weight: bold;
+}
+
+.text {
+  text-align: justify;
+  font-size: 11px;
+}
+
+label {
+    font-weight: normal;
+}
+
+input {
+    margin-right: 13px;
+}
+
+select {
+    width: 330px;
+    padding: 5px;
+    border: 1px solid #bbb;
+}
+
+.title {
+  width: 320px!important;
+}
+
+#left .text {
+    border-right: 1px solid #ccc;
+}
+
+
+/* FEJLEC */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+#block_1 {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    height: 60px;
+}
+
+#fejlec_hatter {
+    background-image: url('../images/fejlec_logo.jpg');
+    height: 60px;
+}
+
+#admin_login {
+    font-size: 12px;
+    text-align: right;
+    position: relative;
+    top: 20px;
+}
+
+#admin_login a {
+    color: #fff;
+}
+
+#admin_login img {
+    position: relative;
+    top: 3px;
+    left: -5px;
+}
+
+/* LOGIN LEFT */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+#block_2 {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 20px 0px 20px 0px;
+}
+
+/* FOOTER */
+
+#footer {
+    width: 100%;
+    height: 30px;
+    background-color: #333;
+}
+
+.footer_text {
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+    padding-top: 8px;;
+}
+
+#block_2 #right {
+    background-image: url('../images/big_support.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+

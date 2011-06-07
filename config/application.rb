@@ -38,5 +38,8 @@ module Gtt
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    # UJS
+    config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
   end
 end
