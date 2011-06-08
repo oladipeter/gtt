@@ -13,7 +13,12 @@ class AddExtraColumnsToDeviseSignUp < ActiveRecord::Migration
     add_column :users, :mvmonitor, :boolean
     add_column :users, :digirat, :boolean
     # Atalanydij
-    add_column :users, :flat_rate, :boolean
+    add_column :users, :mikrovoks_flat_rate, :boolean, :default => false
+    add_column :users, :mikrokam_flat_rate, :boolean, :default => false
+    add_column :users, :sequence_flat_rate, :boolean, :default => false
+    add_column :users, :edtr_flat_rate, :boolean, :default => false
+    add_column :users, :digirat_flat_rate, :boolean, :default => false
+
   end
 
   def self.down
@@ -21,12 +26,19 @@ class AddExtraColumnsToDeviseSignUp < ActiveRecord::Migration
     remove_column :users, :nick_name
     remove_column :users, :local_government
     remove_column :users, :phone_number
+    # Megvasarolt rendszerek
     remove_column :users, :mikrovoks
     remove_column :users, :mikrokam
     remove_column :users, :sequence
     remove_column :users, :edtr
     remove_column :users, :mvmonitor
     remove_column :users, :digirat
-    remove_column :users, :flat_rate
+    # Atalanydij
+    remove_column :users, :mikrovoks_flat_rate
+    remove_column :users, :mikrokam_flat_rate
+    remove_column :users, :sequence_flat_rate
+    remove_column :users, :edtr_flat_rate
+    remove_column :users, :digirat_flat_rate
+    
   end
 end

@@ -1,7 +1,9 @@
 hu:
   # Main translate
+  # --------------------------------------------------------------------------------------------------------------------
+
   sign_in: "Bejelentkezés"
-  sign_up: "Regisztáció"
+  sign_up: "Regisztráció"
   remember_me: "Emlékezzen rám!"
   forgot_your_password: "Elfelejtette a jelszavát?"
   dont_receive_confirmation: "Nem kapta meg a megerősítő email-t?"
@@ -10,25 +12,37 @@ hu:
   send: "Küldés"
 
   # Sign up
-  full_name: "Teljes név"
-  nick_name: "Felhasználónév"
-  local_government: "Önkormányzat neve"
-  phone_number: "Telefonszám"
+  # --------------------------------------------------------------------------------------------------------------------
+
+  full_name: "* Teljes név (minimum 5 karakter)"
+  nick_name: "* Felhasználónév (minimum 5 karakter)"
+  local_government: "* Önkormányzat neve, pl.: Budaörs Város Önkormányzata"
+  phone_number: "* Telefonszám, pl.: 06301234567, speciális karakterek nélkül!"
+
   # Checkbox
+  # --------------------------------------------------------------------------------------------------------------------
+
   mikrovoks: "MikroVoks"
   mikrokam: "MikroKam"
   sequence: "seQUEnce"
   edtr: "EDtR"
   mvmonitor: "MvMonitor"
   digirat: "Digirat"
-  # Checkbox vege
-  flat_rate:             "Átalánydíjas ügyfél vagyok!"
-  email:                 "E-mail cím"
-  password:              "Jelszó"
-  password_confirmation: "Jelszó megerősítése"
+
+  # More
+  # --------------------------------------------------------------------------------------------------------------------
+
+  flat_rate: "átalányom van"
+  email: "* E-mail cím"
+  password: "* Jelszó (minimum 6 karakter)"
+  password_confirmation: "* Jelszó megerősítése"
+
+  # Devise default translate
+  # --------------------------------------------------------------------------------------------------------------------
 
   errors:
     messages:
+      full_name: "A teljes név nem megfelelő"
       not_found: "nem található"
       already_confirmed: "már meg van erősítve"
       not_locked: "nincs zárolva"

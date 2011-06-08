@@ -8,11 +8,13 @@
 </head>
 <body>
 
+
 <div id="message">
-   <% flash.each do |name, msg| %>
-       <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, :id => "notice_#{name}" %>
     <% end %>
 </div>
+
 
 <div id="main">
 
@@ -42,7 +44,7 @@
 
           <div class="span-13 prepend-1 last ">
             <div class="text">
-            <h2>Fontos tudnivaló a használattal kapcsolatban!</h2>
+            <h2>Fontos tudnivaló a regisztrációval kapcsolatban!</h2>
             <p>A regisztrációt követően emailben értesítést fog kapni, melyben egy linket talál. A linkre kattintva tudja megerősíteni regisztrációját. Ezt követően már be tud jelentkezni a fiókjába.
                A <%= link_to "regisztrációt", "#"  %> követően <b>kollégáink ellenőrzik a megadott adatokat</b>, és csak
               ezt követően fog tudni hozzáférni az adott termékkel kapcsolatos információkhoz.
@@ -81,8 +83,10 @@
 
 </div>
 
-
-
+<script>
+  $('#notice_notice').delay(1900).slideUp(900);
+  $('#notice_alert').delay(1900).slideUp(900);
+</script>
 
 
 </body>

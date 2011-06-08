@@ -124,4 +124,22 @@ select {
     background-position: bottom center;
 }
 
+/* REGISTRATION */
 
+.flat_rates {
+    display: none;
+}
+
+.field_with_errors input {
+    border: 3px solid red;
+}
+
+#message {
+    background-color: #A40120;
+    font-weight: bold;
+    color: #fff;
+}
+
+#notice_notice, #notice_alert {
+    padding: 5px;
+}

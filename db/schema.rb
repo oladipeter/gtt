@@ -13,8 +13,8 @@
 ActiveRecord::Schema.define(:version => 20110601120146) do
 
   create_table "users", :force => true do |t|
-    t.string   "email",                                 :default => "", :null => false
-    t.string   "encrypted_password",     :limit => 128, :default => "", :null => false
+    t.string   "email",                                 :default => "",    :null => false
+    t.string   "encrypted_password",     :limit => 128, :default => "",    :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -38,7 +38,11 @@ ActiveRecord::Schema.define(:version => 20110601120146) do
     t.boolean  "edtr"
     t.boolean  "mvmonitor"
     t.boolean  "digirat"
-    t.boolean  "flat_rate"
+    t.boolean  "mikrovoks_flat_rate",                   :default => false
+    t.boolean  "mikrokam_flat_rate",                    :default => false
+    t.boolean  "sequence_flat_rate",                    :default => false
+    t.boolean  "edtr_flat_rate",                        :default => false
+    t.boolean  "digirat_flat_rate",                     :default => false
   end
 
   add_index "users", ["confirmation_token"], :name => "index_users_on_confirmation_token", :unique => true
