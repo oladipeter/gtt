@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
   validates_presence_of :nick_name, :local_government
   validates_length_of :full_name, :nick_name, :minimum => 5
 
-  # Phone number must be a number
+  # Phone number must be a number..
   validates_numericality_of :phone_number
 
 end
