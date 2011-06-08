@@ -1,6 +1,4 @@
-<h1>Start#index</h1>
-<p>Find me in app/views/start/index.html.erb</p>
+<h2>Üdvözöljük : <%= current_user.full_name %></h2>
+<p><%= current_user.email + " - " + current_user.phone_number.to_s %></p>
 
-<%= @sign_in %>
-
-<%= link_to"logout", destroy_user_session_path  %>
+<%= link_to"Logout", destroy_user_session_path  %>
