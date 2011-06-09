@@ -1,4 +1,6 @@
 Gtt::Application.routes.draw do
+  devise_for :admins
+
   get "start/index"
 
   devise_for :users
