@@ -13,13 +13,12 @@ class StartController < ApplicationController
     if current_user.sign_in_count == 1
       # Ha ez az elso bejelentkezese akkor => Mail to Admin
       admin_mail = "oladipeter@gmail.com"
-      @sign_in = "Admin Mail was sent!"
       StartMailer.welcome_email(admin_mail).deliver
     else
-      @sign_in = "NOOO! Mail to Admin"
+      # No mail to admin
     end
 
-    # redirect_to frontend oldal
+    redirect_to frontend_index_path
 
   end
 

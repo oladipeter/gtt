@@ -1,1 +1,8 @@
 <h2>FRONTEND</h2>
+
+<h2>Üdvözöljük : <%= current_user.full_name %></h2>
+<p><%= current_user.email + " - " + current_user.phone_number.to_s %></p>
+
+<%= link_to"Logout", destroy_user_session_path  %>
+
+<%= link_to "Logout USER", destroy_user_session_path %>
