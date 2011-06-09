@@ -1,9 +1,14 @@
 Gtt::Application.routes.draw do
   devise_for :admins
-
   get "start/index"
-
+  get "backend/index"
   devise_for :users
+
+  match "/admin" => redirect("/admins/sign_in")
+
+  # namespace :admin do
+  #   root :to => "backend#index"
+  # end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -54,7 +59,7 @@ Gtt::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "start#index"
+  root :to => "frontend#index"
 
   # See how all your routes lay out with "rake routes"
 

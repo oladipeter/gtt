@@ -19,7 +19,7 @@ class StartController < ApplicationController
       @sign_in = "NOOO! Mail to Admin"
     end
 
-
+    # redirect_to frontend oldal
 
   end
 
