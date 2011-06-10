@@ -28,7 +28,6 @@
         <div class="text">
           <b>Adminisztrátor adatai :</b> <%= current_admin.email %><br/>
           <b>Utolsó bejelentkezés : </b> <%= current_admin.last_sign_in_at %><br/>
-          <b>IP-cím : </b> <%= current_admin.current_sign_in_ip %>
         </div>
       </div>
 
@@ -45,33 +44,85 @@
 
     <div class="container">
 
-       <div class="span-24">
-          <h2>Üdv, az admin felületen!</h2>
-       </div>
-
-      <div class="span-8" id="backend_left">
+      <div class="span-5" id="backend_left">
         <div class="text">
            <h2>Főmenü</h2>
           <ul>
-            <li>Mail support</li>
-            <li>Hibabejelentés</li>
-            <li>Nyomtatott anyagok</li>
-            <li>Kapcsolattartók</li>
-            <li>Szoftverek</li>
+            <li><%= link_to "Adminisztrátorok", "#"  %></li>
+            <li><%= link_to "Ügyfelek", "#"  %></li>
+            <li><%= link_to "Mail support", "#"  %></li>
+            <li><%= link_to "Hibabejelentés", "#"  %></li>
+            <li><%= link_to "Kapcsolattartók", "#"  %></li>
+            <li><%= link_to "Szoftverek", "#"  %></li>
           </ul>
+
+          <div id="email_message">
+          <h2>Levelek</h2>
+          Jelenleg nincs levél!
+          </div>
+
+          <div id="error_message">
+          <h2>Hibabejelentés</h2>
+          Jelenleg nincs hibabejelentés!
+          </div>
+
         </div>
       </div>
 
-      <div class="span-4" id="backend_middle">
-        <div class="text">
-           <h2>Rendszerek</h2>
-        </div>
-      </div>
+      <div class="span-19 last" id="backend_right">
 
-      <div class="span-12 last" id="backend_right">
         <div class="text">
-           <h2>Listák</h2>
+
+           <div class="admin">
+             <h2>Adminisztrátorok</h2>
+           </div>
+
+           <div class="text_content">
+             A rendszer karbantartásáért felelős személyek felvitele, módosítása, törlése és jogosultságaik beállítása.
+           </div>
+
+           <div class="client">
+           <h2>Ügyfelek</h2>
+           </div>
+
+           <div class="text_content">
+             Rendszerbe regisztrált felhasználók jogosultságainak módosítása.
+           </div>
+
+
+           <div class="contact">
+           <h2>Kapcsolattartók</h2>
+           </div>
+
+           <div class="text_content">
+             A kapcsolattartók menüpont alatt, a Globomax Kft. Marketinges kollégáit tudjuk felvenni a rendszerbe, majd az ügyfelek fülön hozzárendelhetők az adott felhasználóhoz.
+           </div>
+
+           <div class="email">
+           <h2>Mail Support</h2>
+           </div>
+           <div class="text_content">
+             A regisztrált felhasználóknak lehetőségük van email-ben értesítést küldeni a kiválasztott adminisztrátornak, erről az email-ről az adminisztrátor a "mail suppor" menüpont alatt tud tájékozódni!
+           </div>
+
+           <div class="error_support">
+           <h2>Hibabejelentések</h2>
+           </div>
+           <div class="text_content">
+             A hibabejelentések segítéségével a hiba, kérés, probléma, javaslat egyszerűen bejelenthető, nyomon követhető és visszakereshető mindkét fél számára.
+           </div>
+
+
+           <div class="software">
+           <h2>Szoftverek</h2>
+           </div>
+           <div class="text_content">
+             Szoftverkövetés, frissítések, letöltések, promóciós anyagok, dokumentumok, kezelői leírások
+           </div>
+
+
         </div>
+
       </div>
 
     </div>

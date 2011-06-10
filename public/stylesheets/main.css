@@ -149,13 +149,112 @@ select {
 /* LEFT */
 /*--------------------------------------------------------------------------------------------------------------------*/
 
-#backend_left .text, #backend_middle .text, #backend_right .text {
+#backend_left .text {
   border: 1px solid #ddd;
   padding: 10px;
+}
+
+#backend_left .text {
+    padding: 0px;
+    border: none;
+}
+
+#backend_left ul {
+    font-family: helvetica,sans-serif;
+    color: #3B61A2;
+    font-size: 18px;
+    letter-spacing: -0.4pt;
+    word-spacing: -0.2pt;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+#backend_left li {
+    background-image: url('../images/li_bullet.png');
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+#backend_left li a {
+   color : #333;
+}
+
+ul li {
+   list-style-type: none;
 }
 
 #admin_data .text {
   color: #fff;
   text-align: right;
-  padding-top: 5px;
+  padding-top: 15px;
+}
+
+#backend_left h2 {
+    font-family: georgia,serif;
+    color: #444743;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: -0.4pt;
+}
+
+#backend_right h2 {
+   padding-left: 40px;
+}
+
+#backend_right .text {
+  background-color: #fff;
+  padding: 30px;
+  border: 1px solid #ddd;
+  background-image: url('../images/big_help.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+#backend_right .text .text_content {
+  font-family: georgia,serif;
+  color: #8C8C8C;
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 0pt;
+  word-spacing: 4.4pt;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.admin {
+   background-image: url('../images/admin.png');
+   background-repeat: no-repeat;
+}
+
+.client {
+   background-image: url('../images/client.png');
+   background-repeat: no-repeat;
+}
+
+.contact {
+   background-image: url('../images/contact.png');
+   background-repeat: no-repeat;
+}
+
+.email {
+   background-image: url('../images/email.png');
+   background-repeat: no-repeat;
+}
+
+#email_message h2, #error_message h2 {
+    font-size: 20px;
+}
+
+#email_message, #error_message {
+    margin-bottom: 25px;
+}
+
+.error_support {
+   background-image: url('../images/error.png');
+   background-repeat: no-repeat;
+}
+
+.software {
+   background-image: url('../images/software.png');
+   background-repeat: no-repeat;
 }
