@@ -1,4 +1,6 @@
 Gtt::Application.routes.draw do
+  get "administrator/index"
+
   devise_for :admins
   get "start/index"
   get "backend/index"
@@ -6,6 +8,9 @@ Gtt::Application.routes.draw do
   devise_for :users
 
   match "/admin" => redirect("/admins/sign_in")
+  match 'administrator/index' => 'administrator#index', :as => "administrator"
+  match 'administrator/create' => 'administrator#create', :as => "administrator_create"
+  match 'administrator/new' => 'administrator#new', :as => "administrator_new"
 
   # namespace :admin do
   #   root :to => "backend#index"

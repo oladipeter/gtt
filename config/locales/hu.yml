@@ -151,4 +151,6 @@ hu:
         password: "Jelszó"
         local_government: "Önkormányzat neve"
 
+  create: "Létrehoz"
+
 

@@ -73,6 +73,7 @@ hu:
   devise:
     failure:
       unauthenticated: 'A folytatáshoz bejelentkezés szükséges.'
+      already_authenticated: 'Már be van jelentkezve!'
       unconfirmed: 'A folytatáshoz az email cím megerősítése szükséges.'
       locked: 'A fiók zárolva lett.'
       invalid: 'Hibás email cím vagy jelszó.'

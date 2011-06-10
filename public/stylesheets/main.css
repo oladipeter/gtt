@@ -197,6 +197,9 @@ ul li {
     letter-spacing: -0.4pt;
 }
 
+/* RIGHT */
+/*--------------------------------------------------------------------------------------------------------------------*/
+
 #backend_right h2 {
    padding-left: 40px;
 }
@@ -257,4 +260,22 @@ ul li {
 .software {
    background-image: url('../images/software.png');
    background-repeat: no-repeat;
+}
+
+/* ADMINISTRATOR */
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+#administrator h2 {
+    padding: 0px;
+}
+
+#administrator legend {
+  display: block;
+  color: #333;
+  margin-left: 10px;
+  padding: 10px 5px 0px 5px;
+}
+
+#administrator fieldset {
+  padding: 20px;
 }

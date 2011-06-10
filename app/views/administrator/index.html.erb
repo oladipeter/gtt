@@ -1,0 +1,37 @@
+<div id="administrator">
+  <h2>Adminisztrátorok listája</h2>
+
+  <table id="gradient-style" summary="Adminisztrátorok">
+    <thead>
+    <tr>
+      <th scope="col">Email cím</th>
+      <th scope="col">Utolsó bejelentkezés időpontja</th>
+      <th scope="col">Módosít</th>
+      <th scope="col">Töröl</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+      <td colspan="4"><%= link_to "Új adminisztrátor felvitele", administrator_new_path %> | A rendszerben összesen <%= @number_of_administrators %> adminisztrátor szerepel</td>
+    </tr>
+    </tfoot>
+
+    <tbody>
+    <% @administrators.each do |administrator| %>
+        <tr>
+          <td><%= administrator.email %></td>
+          <td>
+            <% if administrator.last_sign_in_at.blank? %>
+              Még egyszer sem jelentkezett be!
+            <% else %>
+              <%= administrator.last_sign_in_at%>
+            <% end %>
+          </td>
+          <td><%= link_to "Módosít", "#" %></td>
+          <td><%= link_to "Töröl", "#" %></td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+
+</div>
