@@ -102,7 +102,6 @@ hu:
           gb: "GB"
           tb: "TB"
 
-  activerecord:
     errors:
       template:
         body: "Problémás mezők:"
@@ -142,3 +141,14 @@ hu:
     select:
       # default value for :prompt => true in FormOptionsHelper
       prompt: "Válasszon"
+
+  activerecord:
+    attributes:
+      user:
+        full_name: "Teljes név"
+        nick_name: "Felhasználónév"
+        phone_number: "Telefonszám"
+        password: "Jelszó"
+        local_government: "Önkormányzat neve"
+
+

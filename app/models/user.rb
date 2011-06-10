@@ -10,9 +10,9 @@ class User < ActiveRecord::Base
   :mikrovoks_flat_rate, :mikrokam_flat_rate, :sequence_flat_rate, :edtr_flat_rate, :mvmonitor_flat_rate, :digirat_flat_rate
 
   # All of fields cant be blank!
-  validates_presence_of :full_name, :message => :full_name
-  validates_presence_of :nick_name, :local_government
+  validates_presence_of :full_name
   validates_length_of :full_name, :nick_name, :minimum => 5
+  validates_presence_of :nick_name, :local_government
 
   # Phone number must be a number..
   validates_numericality_of :phone_number

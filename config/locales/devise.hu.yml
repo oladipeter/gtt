@@ -14,8 +14,8 @@ hu:
   # Sign up
   # --------------------------------------------------------------------------------------------------------------------
 
-  full_name: "* Teljes név (minimum 5 karakter)"
-  nick_name: "* Felhasználónév (minimum 5 karakter)"
+  full_name: "* Teljes név"
+  nick_name: "* Felhasználónév"
   local_government: "* Önkormányzat neve, pl.: Budaörs Város Önkormányzata"
   phone_number: "* Telefonszám, pl.: 06301234567, speciális karakterek nélkül!"
 
@@ -34,19 +34,41 @@ hu:
 
   flat_rate: "átalányom van"
   email: "* E-mail cím"
-  password: "* Jelszó (minimum 6 karakter)"
+  password: "* Jelszó"
   password_confirmation: "* Jelszó megerősítése"
 
   # Devise default translate
   # --------------------------------------------------------------------------------------------------------------------
 
+
+
   errors:
     messages:
-      full_name: "A teljes név nem megfelelő"
       not_found: "nem található"
       already_confirmed: "már meg van erősítve"
       not_locked: "nincs zárolva"
       not_saved: "A művelet sikertelen!"
+      inclusion: "nincs a listában"
+      exclusion: "nem elérhető"
+      invalid: "nem megfelelő"
+      confirmation: "nem egyezik"
+      accepted: "nincs elfogadva"
+      empty: "nincs megadva"
+      blank: "nincs megadva"
+      too_long: "túl hosszú (nem lehet több %{count} karakternél)"
+      too_short: "túl rövid (legalább %{count} karakter kell legyen)"
+      wrong_length: "nem megfelelő hosszúságú (%{count} karakter szükséges)"
+      taken: "már foglalt"
+      not_a_number: "nem szám"
+      greater_than: "nagyobb kell legyen, mint %{count}"
+      greater_than_or_equal_to: "legalább %{count} kell legyen"
+      equal_to: "pontosan %{count} kell legyen"
+      less_than: "kevesebb, mint %{count} kell legyen"
+      less_than_or_equal_to: "legfeljebb %{count} lehet"
+      odd: "páratlan kell legyen"
+      even: "páros kell legyen"
+      record_invalid: "sikertelen validálás %{errors}"
+      not_saved: "sikertelen mentés"
 
   devise:
     failure:

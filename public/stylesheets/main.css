@@ -143,3 +143,19 @@ select {
 #notice_notice, #notice_alert {
     padding: 5px;
 }
+
+/* BACKEND FORMAT */
+
+/* LEFT */
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+#backend_left .text, #backend_middle .text, #backend_right .text {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#admin_data .text {
+  color: #fff;
+  text-align: right;
+  padding-top: 5px;
+}
