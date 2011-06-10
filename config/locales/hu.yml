@@ -101,7 +101,7 @@ hu:
           mb: "MB"
           gb: "GB"
           tb: "TB"
-
+  activerecord:
     errors:
       template:
         body: "Problémás mezők:"
