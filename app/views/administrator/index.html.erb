@@ -27,8 +27,8 @@
               <%= administrator.last_sign_in_at%>
             <% end %>
           </td>
-          <td><%= link_to "Módosít", "#" %></td>
-          <td><%= link_to "Töröl", "#" %></td>
+          <td><%= link_to "Módosít", administrator_edit_path(administrator) %></td>
+          <td><%= link_to "Töröl", administrator_delete_path(administrator), :confirm => "Biztosan törlöd az adminisztrátort?" %></td>
         </tr>
     <% end %>
     </tbody>

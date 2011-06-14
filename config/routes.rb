@@ -11,6 +11,9 @@ Gtt::Application.routes.draw do
   match 'administrator/index' => 'administrator#index', :as => "administrator"
   match 'administrator/create' => 'administrator#create', :as => "administrator_create"
   match 'administrator/new' => 'administrator#new', :as => "administrator_new"
+  match 'administrator/destroy/:id' => 'administrator#destroy', :as => "administrator_delete"
+  match 'administrator/edit/:id' => 'administrator#edit', :as => "administrator_edit"
+  match 'administrator/update/:id' => 'administrator#update', :as => "administrator_update"
 
   # namespace :admin do
   #   root :to => "backend#index"

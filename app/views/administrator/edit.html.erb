@@ -1,11 +1,11 @@
 <div id="administrator">
-<h2>Új adminisztrátor felvitele</h2>
+<h2>Adminisztrátor módosítása</h2>
 
 <fieldset>
 
   <!-- FORM START -->
 
-  <%= form_for @admin, :url => {:action => "create"} do |f| %>
+  <%= form_for @admin, :url => {:action => "update"} do |f| %>
 
       <% if @admin.errors.any? %>
           <div id="error_explanation">
@@ -31,7 +31,7 @@
       </div>
       <br/>
       <div class="actions">
-        <%= f.submit t(:create) %>
+        <%= f.submit t(:modify) %>
       </div>
 
   <% end %>

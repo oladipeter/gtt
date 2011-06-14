@@ -39,12 +39,19 @@ h2 {
   font-size: 11px;
 }
 
+/* FORM */
+
+fieldset {
+  background-color: #f1f1f1;
+}
+
 label {
     font-weight: normal;
 }
 
 input {
     margin-right: 13px;
+    padding: 5px;
 }
 
 select {

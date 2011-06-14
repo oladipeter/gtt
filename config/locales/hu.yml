@@ -152,5 +152,6 @@ hu:
         local_government: "Önkormányzat neve"
 
   create: "Létrehoz"
+  modify: "Módosít"
 
 
