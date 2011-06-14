@@ -1,4 +1,6 @@
 Gtt::Application.routes.draw do
+  resources :contacts
+
   get "administrator/index"
 
   devise_for :admins

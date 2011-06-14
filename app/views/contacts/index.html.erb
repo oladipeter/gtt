@@ -1,0 +1,37 @@
+<div id="contact">
+  <h2>Kapcsolattartók listája</h2>
+
+  <table id="gradient-style" summary="Kapcsolattartók">
+    <thead>
+    <tr>
+      <th scope="col">Kép</th>
+      <th scope="col">Név</th>
+      <th scope="col">E-mail cím</th>
+      <th scope="col">Módosít</th>
+      <th scope="col">Töröl</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+      <td colspan="4"><%= link_to "Új kapcsolattartó felvitele", new_contact_path %></td>
+    </tr>
+    </tfoot>
+
+    <tbody>
+    <% @contacts.each do |contact| %>
+        <tr>
+          <% if contact.image_file_name.blank? %>
+            <td><%= image_tag("default_profile_thumb.png") %></td>
+          <% else %>
+            <td><%= image_tag contact.image.url(:thumb) %></td>
+          <% end %>
+          <td><%= contact.name %></td>
+          <td><%= contact.email %></td>
+          <td><%= link_to "Módosít", edit_contact_path(contact) %></td>
+          <td><%= link_to "Töröl", contact, :confirm => 'Biztosan törlöd a kapcsolattartót?', :method => :delete %></td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+
+</div>

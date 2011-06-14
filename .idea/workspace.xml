@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc3cdf55-bf61-4c34-9e03-3e251288b6ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/administrator/edit.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/contact.html.erb" />
+      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\stylesheets\formtastic.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\stylesheets\formtastic_changes.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gtt.iml" afterPath="$PROJECT_DIR$/.idea/gtt.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/administrator_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/administrator_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/administrator/index.html.erb" afterPath="$PROJECT_DIR$/app/views/administrator/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/administrator/new.html.erb" afterPath="$PROJECT_DIR$/app/views/administrator/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/administrator.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/administrator.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/backend.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/backend.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/hu.yml" afterPath="$PROJECT_DIR$/config/locales/hu.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/blueprint/screen.css" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/screen.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/blueprint/src/typography.css" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/src/typography.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/main.css" afterPath="$PROJECT_DIR$/public/stylesheets/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/tablestyle.css" afterPath="$PROJECT_DIR$/public/stylesheets/tablestyle.css" />
     </list>
     <ignored path="gtt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,55 +41,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="administrator_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/administrator_controller.rb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/contacts/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="34" selection-start="761" selection-end="761" vertical-scroll-proportion="0.56666666">
+            <state line="23" column="43" selection-start="614" selection-end="614" vertical-scroll-proportion="-15.038462">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/administrator/edit.html.erb">
+      <file leaf-file-name="administrator.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/administrator.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="26" selection-start="830" selection-end="830" vertical-scroll-proportion="-20.923077">
+            <state line="57" column="37" selection-start="1604" selection-end="1604" vertical-scroll-proportion="-14.384615">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hu.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/locales/hu.yml">
+      <file leaf-file-name="backend.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/backend.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="6" selection-start="4257" selection-end="4257" vertical-scroll-proportion="0.0">
+            <state line="100" column="25" selection-start="2772" selection-end="2772" vertical-scroll-proportion="0.49466193">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/contact.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="32" selection-start="1250" selection-end="1250" vertical-scroll-proportion="-19.23077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/administrator/new.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/contacts/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="14" selection-start="500" selection-end="500" vertical-scroll-proportion="-11.115385">
+            <state line="3" column="17" selection-start="74" selection-end="74" vertical-scroll-proportion="-1.9615384">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/administrator/index.html.erb">
+      <file leaf-file-name="contact.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/contact.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="52" selection-start="1037" selection-end="1037" vertical-scroll-proportion="-19.615385">
+            <state line="0" column="79" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <file leaf-file-name="tablestyle.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/tablestyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="88" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0">
+            <state line="37" column="18" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="print.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/blueprint/print.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="4" selection-start="81" selection-end="82" vertical-scroll-proportion="-2.04">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="typography.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/blueprint/src/typography.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="100" column="23" selection-start="2928" selection-end="2928" vertical-scroll-proportion="-15.28">
               <folding />
             </state>
           </provider>
@@ -101,22 +145,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/backend_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/config/locales/devise.hu.yml" />
+        <option value="$PROJECT_DIR$/app/views/administrator/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/contacts_controller.rb" />
         <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
-        <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/app/views/contacts/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/contacts/new.html.erb" />
+        <option value="$PROJECT_DIR$/config/locales/hu.yml" />
+        <option value="$PROJECT_DIR$/db/migrate/20110614102148_add_image_to_contacts.rb" />
+        <option value="$PROJECT_DIR$/app/views/contacts/_form.html.erb" />
+        <option value="$PROJECT_DIR$/public/stylesheets/blueprint/screen.css" />
+        <option value="$PROJECT_DIR$/public/stylesheets/blueprint/src/typography.css" />
+        <option value="$PROJECT_DIR$/app/models/contact.rb" />
+        <option value="$PROJECT_DIR$/app/views/contacts/index.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/tablestyle.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/administrator.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/contact.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/backend.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/admin.rb" />
-        <option value="$PROJECT_DIR$/app/views/administrator/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/administrator/index.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/administrator/edit.html.erb" />
-        <option value="$PROJECT_DIR$/config/locales/hu.yml" />
-        <option value="$PROJECT_DIR$/app/controllers/administrator_controller.rb" />
       </list>
     </option>
   </component>
@@ -177,7 +221,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -191,11 +235,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="locales" />
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gtt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gtt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blueprint" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gtt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gtt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blueprint" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -231,11 +323,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="administrator" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -263,8 +351,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\rails_projects\gtt\app\views\administrator" />
       <recent name="C:\rails_projects\gtt\app\views\layouts" />
+      <recent name="C:\rails_projects\gtt\app\views\administrator" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: gtt">
@@ -442,15 +530,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28937533" sideWeight="0.67098165" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28937533" sideWeight="0.67098165" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -498,98 +586,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/locales/hu.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="32" selection-start="109" selection-end="109" vertical-scroll-proportion="0.05666667" />
+        <state line="160" column="13" selection-start="4402" selection-end="4402" vertical-scroll-proportion="0.86777776">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/backend_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/contacts/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="31" selection-start="123" selection-end="123" vertical-scroll-proportion="0.11333334" />
+        <state line="6" column="3" selection-start="88" selection-end="88" vertical-scroll-proportion="0.11670481">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20110614102148_add_image_to_contacts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/contacts/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="8" selection-start="964" selection-end="964" vertical-scroll-proportion="0.680778">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/blueprint/screen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="23" selection-start="275" selection-end="275" vertical-scroll-proportion="135.52">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/blueprint/ie.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="4" selection-start="81" selection-end="82" vertical-scroll-proportion="-2.04">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/blueprint/print.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="4" selection-start="81" selection-end="82" vertical-scroll-proportion="-2.04">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/blueprint/src/typography.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="23" selection-start="2928" selection-end="2928" vertical-scroll-proportion="-15.28">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/contact.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="79" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/contacts/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="17" selection-start="74" selection-end="74" vertical-scroll-proportion="-1.9615384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/contacts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="43" selection-start="614" selection-end="614" vertical-scroll-proportion="-15.038462">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/tablestyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="25" selection-start="94" selection-end="94" vertical-scroll-proportion="0.094444446" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/backend.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="0" selection-start="3904" selection-end="3904" vertical-scroll-proportion="0.9512195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="61" selection-start="546" selection-end="546" vertical-scroll-proportion="-10.461538" />
+        <state line="37" column="18" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/administrator.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="4" selection-start="2236" selection-end="2236" vertical-scroll-proportion="1.4473684" />
+        <state line="57" column="37" selection-start="1604" selection-end="1604" vertical-scroll-proportion="-14.384615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/contact.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="32" selection-start="1250" selection-end="1250" vertical-scroll-proportion="-19.23077">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="15" selection-start="576" selection-end="576" vertical-scroll-proportion="0.13124274" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="284" column="10" selection-start="4754" selection-end="4754" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/backend.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="21" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="41" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0194508">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/administrator/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="500" selection-end="500" vertical-scroll-proportion="-11.115385">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/administrator/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="52" selection-start="1037" selection-end="1037" vertical-scroll-proportion="-19.615385">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="88" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/administrator/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="26" selection-start="830" selection-end="830" vertical-scroll-proportion="-20.923077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/hu.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="6" selection-start="4257" selection-end="4257" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/administrator_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="34" selection-start="761" selection-end="761" vertical-scroll-proportion="0.56666666">
+        <state line="100" column="25" selection-start="2772" selection-end="2772" vertical-scroll-proportion="0.49466193">
           <folding />
         </state>
       </provider>

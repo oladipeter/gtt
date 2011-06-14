@@ -151,7 +151,14 @@ hu:
         password: "Jelszó"
         local_government: "Önkormányzat neve"
 
+  name: "Név"
+  email: "Email cím"
+  mobil: "Mobil telefon"
+  phone: "Vezetékes telefon"
+
   create: "Létrehoz"
   modify: "Módosít"
+  back: "Vissza az előző oldalra!"
+  ok: "Rendben!"
 
 
