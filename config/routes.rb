@@ -1,13 +1,18 @@
 Gtt::Application.routes.draw do
+
+  # BASIC ROUTING
+
+  get "client/index"
   resources :contacts
-
   get "administrator/index"
-
   devise_for :admins
   get "start/index"
   get "backend/index"
   get "frontend/index"
   devise_for :users
+
+
+  # ADMINISTRATOR
 
   match "/admin" => redirect("/admins/sign_in")
   match 'administrator/index' => 'administrator#index', :as => "administrator"
@@ -16,6 +21,12 @@ Gtt::Application.routes.draw do
   match 'administrator/destroy/:id' => 'administrator#destroy', :as => "administrator_delete"
   match 'administrator/edit/:id' => 'administrator#edit', :as => "administrator_edit"
   match 'administrator/update/:id' => 'administrator#update', :as => "administrator_update"
+
+  # CLIENT
+
+  match 'client/index' => 'client#index', :as => "client"
+  match 'client/edit/:id' => 'client#edit', :as => "client_edit"
+  match 'client/update/:id' => 'client#update', :as => "client_update"
 
   # namespace :admin do
   #   root :to => "backend#index"

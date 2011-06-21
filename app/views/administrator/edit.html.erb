@@ -1,11 +1,9 @@
 <div id="administrator">
 <h2>Adminisztrátor módosítása</h2>
 
-<fieldset>
-
   <!-- FORM START -->
 
-  <%= form_for @admin, :url => {:action => "update"} do |f| %>
+  <%= semantic_form_for @admin, :url => {:action => "update"} do |f| %>
 
       <% if @admin.errors.any? %>
           <div id="error_explanation">
@@ -19,23 +17,13 @@
           </div>
       <% end %>
 
-      <div class="field">
-        <%= f.label :email %>
-        <br/>
-        <%= f.text_field :email %>
-      </div>
-      <div class="field">
-        <%= f.label :password, "Jelszó" %>
-        <br/>
-        <%= f.password_field :password %>
-      </div>
-      <br/>
-      <div class="actions">
-        <%= f.submit t(:modify) %>
-      </div>
+      <%= f.inputs :name => "Adminisztrátor :" do %>
+          <%= f.input :email %>
+          <%= f.input :password %>
+      <% end %>
+
+      <%= f.commit_button t(:modify) %>
 
   <% end %>
-
-</fieldset>
 
 </div>

@@ -112,6 +112,9 @@ select {
     width: 100%;
     background-color: #f1f1f1;
     padding: 20px 0px 20px 0px;
+    background-image: url('../images/support.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 
 /* FOOTER */
@@ -171,7 +174,7 @@ select {
 }
 
 #backend_left ul {
-    font-family: helvetica,sans-serif;
+    font-family: Georgia;
     color: #3B61A2;
     font-size: 18px;
     letter-spacing: -0.4pt;
@@ -208,7 +211,7 @@ ul li {
     letter-spacing: -0.4pt;
 }
 
-/* RIGHT */
+/* BACKEND RIGHT */
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 #backend_right h2 {
@@ -235,23 +238,33 @@ ul li {
   margin-bottom: 20px;
 }
 
-.admin {
+.admin_img {
    background-image: url('../images/admin.png');
    background-repeat: no-repeat;
 }
 
-.client {
+.client_img {
    background-image: url('../images/client.png');
    background-repeat: no-repeat;
 }
 
-.contact {
+.contact_img {
    background-image: url('../images/contact.png');
    background-repeat: no-repeat;
 }
 
-.email {
+.email_img {
    background-image: url('../images/email.png');
+   background-repeat: no-repeat;
+}
+
+.error_support_img {
+   background-image: url('../images/error.png');
+   background-repeat: no-repeat;
+}
+
+.software_img {
+   background-image: url('../images/software.png');
    background-repeat: no-repeat;
 }
 
@@ -263,39 +276,8 @@ ul li {
     margin-bottom: 25px;
 }
 
-.error_support {
-   background-image: url('../images/error.png');
-   background-repeat: no-repeat;
-}
-
-.software {
-   background-image: url('../images/software.png');
-   background-repeat: no-repeat;
-}
-
-/* ADMINISTRATOR */
-/*--------------------------------------------------------------------------------------------------------------------*/
-
-#administrator h2 {
+#administrator h2, #contact h2, #client h2  {
     padding: 0px;
-}
-
-#administrator legend {
-  display: block;
-  color: #333;
-  margin-left: 10px;
-  padding: 10px 5px 0px 5px;
-}
-
-#administrator fieldset {
-  padding: 20px;
-}
-
-/* CONTACTS */
-/*--------------------------------------------------------------------------------------------------------------------*/
-
-#contact h2 {
-  padding: 0px;
 }
 
 #contact legend {
@@ -308,3 +290,74 @@ ul li {
 #contact fieldset {
   padding: 20px;
 }
+
+/* FRONTEND */
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+#frontend .text {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+#frontend img {
+  margin-right: 20px;
+  float: left;
+}
+
+#frontend #teruleti_kepviselo {
+  background-image: url("../images/contact_phone.png")
+}
+
+#frontend .kapcs_nev, .telephely_nev {
+  font-size: 18px;
+}
+
+#frontend .kapcs_vezetekes, #frontend .kapcs_mobil, #frontend .kapcs_email, .telephely_usz, .telephely_cim, .telephely_fax  {
+  font-size: 12px;
+}
+
+#frontend #mikrovoks .text {
+  padding: 0px;
+}
+
+#frontend #mikrovoks_fejlec {
+   height: 41px;
+   background-image: url('../images/termek_fejlec.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #mikrovoks_fejlec .text {
+  font-family: Georgia;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  padding: 8px 0px 0px 10px;
+  font-size: 18px;
+}
+
+#frontend #mikrovoks_image {
+   height: 140px;
+   background-image: url('../images/termek_mikrovoks.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #mikrovoks_info {
+   height: 59px;
+   background-image: url('../images/termek_info.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #mikrovoks_termektamogatas {
+   height: 59px;
+   background-image: url('../images/termek_tamogatas.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #mikrovoks_footer {
+   height: 59px;
+   background-image: url('../images/footer_hatter.jpg');
+   background-repeat: repeat-x;
+}
+

@@ -4,7 +4,7 @@ class AddExtraColumnsToDeviseSignUp < ActiveRecord::Migration
     add_column :users, :full_name, :string
     add_column :users, :nick_name, :string
     add_column :users, :local_government, :string
-    add_column :users, :phone_number, :integer
+    add_column :users, :phone_number, :string
     # Megvasarolt rendszerek
     add_column :users, :mikrovoks, :boolean
     add_column :users, :mikrokam, :boolean
@@ -18,6 +18,9 @@ class AddExtraColumnsToDeviseSignUp < ActiveRecord::Migration
     add_column :users, :sequence_flat_rate, :boolean, :default => false
     add_column :users, :edtr_flat_rate, :boolean, :default => false
     add_column :users, :digirat_flat_rate, :boolean, :default => false
+
+    # Contact kapcsolat
+    add_column :users, :contact_id, :integer
 
   end
 
@@ -39,6 +42,8 @@ class AddExtraColumnsToDeviseSignUp < ActiveRecord::Migration
     remove_column :users, :sequence_flat_rate
     remove_column :users, :edtr_flat_rate
     remove_column :users, :digirat_flat_rate
+    # Contact kapcsolat
+    remove_column :users, :contact_id
     
   end
 end

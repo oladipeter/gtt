@@ -30,8 +30,8 @@ ActiveRecord::Schema.define(:version => 20110614102148) do
   create_table "contacts", :force => true do |t|
     t.string   "name"
     t.string   "email"
-    t.integer  "mobil"
-    t.integer  "phone"
+    t.string   "mobil"
+    t.string   "phone"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(:version => 20110614102148) do
     t.string   "full_name"
     t.string   "nick_name"
     t.string   "local_government"
-    t.integer  "phone_number"
+    t.string   "phone_number"
     t.boolean  "mikrovoks"
     t.boolean  "mikrokam"
     t.boolean  "sequence"
@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(:version => 20110614102148) do
     t.boolean  "sequence_flat_rate",                    :default => false
     t.boolean  "edtr_flat_rate",                        :default => false
     t.boolean  "digirat_flat_rate",                     :default => false
+    t.integer  "contact_id"
   end
 
   add_index "users", ["confirmation_token"], :name => "index_users_on_confirmation_token", :unique => true

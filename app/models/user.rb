@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   attr_accessible  :email, :password, :password_confirmation, :remember_me,
   :full_name, :nick_name, :local_government, :phone_number,
   :mikrovoks, :mikrokam, :sequence, :edtr, :mvmonitor, :digirat, :flat_rate,
-  :mikrovoks_flat_rate, :mikrokam_flat_rate, :sequence_flat_rate, :edtr_flat_rate, :mvmonitor_flat_rate, :digirat_flat_rate
+  :mikrovoks_flat_rate, :mikrokam_flat_rate, :sequence_flat_rate, :edtr_flat_rate, :mvmonitor_flat_rate, :digirat_flat_rate, :contact_id
 
   # All of fields cant be blank!
   validates_presence_of :full_name
@@ -16,5 +16,7 @@ class User < ActiveRecord::Base
 
   # Phone number must be a number..
   validates_numericality_of :phone_number
+
+  belongs_to :contact
 
 end

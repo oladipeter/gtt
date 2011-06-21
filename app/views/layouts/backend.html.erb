@@ -3,7 +3,7 @@
 <head>
   <title>Gtt</title>
   <%= javascript_include_tag :defaults %>
-  <%= stylesheet_link_tag 'blueprint/src/reset', 'blueprint/src/forms', 'blueprint/screen', 'blueprint/src/ie', 'blueprint/src/typography', 'main' %>
+  <%= stylesheet_link_tag 'blueprint/src/reset', 'blueprint/src/forms', 'blueprint/screen', 'blueprint/src/ie', 'blueprint/src/typography', 'main', 'formtastic', 'formtastic_changes' %>
   <%= csrf_meta_tag %>
 </head>
 <body>
@@ -46,16 +46,7 @@
 
       <div class="span-5" id="backend_left">
         <div class="text">
-           <h2>Főmenü</h2>
-          <ul>
-            <li><%= link_to "Adminisztrátorok", administrator_path  %></li>
-            <li><%= link_to "Ügyfelek", "#"  %></li>
-            <li><%= link_to "Üzenetküldés", "#"  %></li>
-            <li><%= link_to "Hibabejelentés", "#"  %></li>
-            <li><%= link_to "Kapcsolattartók", contacts_path %></li>
-            <li><%= link_to "Szoftverek", "#"  %></li>
-          </ul>
-
+          <%= render 'shared/menu' %>
           <div id="email_message">
           <h2>Levelek</h2>
           Jelenleg nincs levél!
@@ -73,7 +64,7 @@
 
         <div class="text">
 
-           <div class="admin">
+           <div class="admin_img">
              <h2>Adminisztrátorok</h2>
            </div>
 
@@ -81,7 +72,7 @@
              A rendszer karbantartásáért felelős személyek felvitele, módosítása, törlése és jogosultságaik beállítása.
            </div>
 
-           <div class="client">
+           <div class="client_img">
            <h2>Ügyfelek</h2>
            </div>
 
@@ -90,7 +81,7 @@
            </div>
 
 
-           <div class="contact">
+           <div class="contact_img">
            <h2>Kapcsolattartók</h2>
            </div>
 
@@ -98,14 +89,14 @@
              A kapcsolattartók menüpont alatt, a Globomax Kft. Marketinges kollégáit tudjuk felvenni a rendszerbe, majd az ügyfelek fülön hozzárendelhetők az adott felhasználóhoz.
            </div>
 
-           <div class="email">
+           <div class="email_img">
            <h2>Üzenetküldés</h2>
            </div>
            <div class="text_content">
              A regisztrált felhasználóknak lehetőségük van email-ben értesítést küldeni a kiválasztott adminisztrátornak, erről az email-ről az adminisztrátor a "mail suppor" menüpont alatt tud tájékozódni!
            </div>
 
-           <div class="error_support">
+           <div class="error_support_img">
            <h2>Hibabejelentések</h2>
            </div>
            <div class="text_content">
@@ -113,7 +104,7 @@
            </div>
 
 
-           <div class="software">
+           <div class="software_img">
            <h2>Szoftverek</h2>
            </div>
            <div class="text_content">

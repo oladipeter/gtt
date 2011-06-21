@@ -2,6 +2,7 @@ class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.xml
 
+  before_filter :authenticate_admin!
   layout "contact"
 
   def index

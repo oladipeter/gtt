@@ -1,0 +1,51 @@
+<div id="client">
+<h2><%= @user.full_name %> karbantartása</h2>
+
+<%= semantic_form_for @user, :url => { :action => "update" } do |f| %>
+
+    <% if @user.errors.any? %>
+        <div id="error_explanation">
+          <h3>Összesen <%= @user.errors.count %> hiba :</h3>
+
+          <ul>
+            <% @user.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+      <%= f.inputs :name => "Ügyfél alapadatai :" do %>
+          <%= f.input :full_name %>
+          <%= f.input :nick_name %>
+          <%= f.input :local_government %>
+          <%= f.input :phone_number %>
+      <% end %>
+
+      <%= f.inputs :name => "A felhasználó rendszerei :" do %>
+          <%= f.check_box :mikrovoks%>&nbsp;MikroVoks<br/>
+          <%= f.check_box :mikrokam %>&nbsp;MikroKam<br/>
+          <%= f.check_box :sequence %>&nbsp;seQUEnce<br/>
+          <%= f.check_box :edtr %>&nbsp;EDtR<br/>
+          <%= f.check_box :mvmonitor %>&nbsp;MvMonitor<br/>
+          <%= f.check_box :digirat %>&nbsp;Digirat
+      <% end %>
+
+      <%= f.inputs :name => "A felhasználó átalánydíjai :" do %>
+          <%= f.check_box :mikrovoks_flat_rate%>&nbsp;MikroVoks<br/>
+          <%= f.check_box :mikrokam_flat_rate %>&nbsp;MikroKam<br/>
+          <%= f.check_box :sequence_flat_rate %>&nbsp;seQUEnce<br/>
+          <%= f.check_box :edtr_flat_rate %>&nbsp;EDtR<br/>
+          <%= f.check_box :digirat_flat_rate %>&nbsp;Digirat
+      <% end %>
+
+      <%= f.inputs :name => "A felhasználóhoz területi képviselője :" do %>
+          <%= f.input :contact_id, :as => :radio, :collection => Contact.find(:all), :label => "Kapcsolattartó :" %>
+      <% end %>
+
+      <%= f.commit_button t(:modify) %>
+
+
+<% end %>
+
+</div>

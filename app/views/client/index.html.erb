@@ -1,0 +1,36 @@
+<div id="client">
+
+<!-- Client search -->
+
+<h2>Regisztrált ügyfelek</h2>
+
+  <table id="gradient-style" summary="Ügyfelek">
+    <thead>
+    <tr>
+      <th scope="col">Név</th>
+      <th scope="col">Email cím</th>
+      <th scope="col">Önkormányzat</th>
+      <th scope="col">Adatok</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+      <td colspan="4"><%= link_to "Új ügyfél kézi felvitele", "#" %></td>
+    </tr>
+    </tfoot>
+
+    <tbody>
+    <% @clients.each do |client| %>
+        <tr>
+          <td><%= client.full_name %></td>
+          <td><%= client.email %></td>
+          <td><%= client.local_government %></td>
+          <td><%= link_to "Adatok", client_edit_path(client)  %></td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+
+</div>
+
+
