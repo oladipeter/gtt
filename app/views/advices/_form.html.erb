@@ -1,0 +1,22 @@
+<%= semantic_form_for(@advice) do |f| %>
+  
+  <% if @advice.errors.any? %>
+        <div id="error_explanation">
+          <h3>Összesen <%= @advice.errors.count %> hiba :</h3>
+
+          <ul>
+            <% @advice.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <%= f.inputs :name => "Hír adatai :" do %>
+          <%= f.input :title %>
+          <%= f.input :short_description %>
+          <%= f.input :content %>
+    <% end %>
+
+    <%= f.commit_button t(:create) %>
+<% end %>

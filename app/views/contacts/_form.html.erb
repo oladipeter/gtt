@@ -1,37 +1,29 @@
-<%= form_for(@contact, :html => { :multipart => true }) do |f| %>
-  <% if @contact.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+<div id="contact">
 
-      <ul>
-      <% @contact.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= semantic_form_for @contact, :html => { :multipart => true } do |f| %>
 
-  <div class="field">
-    <%= f.label :name, t(:name) %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email, t(:email) %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :mobil, t(:mobil) %><br />
-    <%= f.text_field :mobil %>
-  </div>
-  <div class="field">
-    <%= f.label :phone, t(:phone)%><br />
-    <%= f.text_field :phone %>
-  </div>
-  <div class="field">
-    <%= f.label :image, t(:photo)%><br />
-    <%= f.file_field :image %>
-  </div>
-  <div class="actions">
-    <%= f.submit t(:ok) %>
-  </div>
+    <% if @contact.errors.any? %>
+        <div id="error_explanation">
+          <h3>Összesen <%= @contact.errors.count %> hiba :</h3>
+
+          <ul>
+            <% @contact.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <%= f.inputs :name => "Kapcsolattartó adatai :" do %>
+          <%= f.input :name, :label => t(:name) %>
+          <%= f.input :email %>
+          <%= f.input :mobil, :label => t(:mobil)  %>
+          <%= f.input :phone, :label => t(:phone) %>
+          <%= f.input :image, :as => :file, :label => t(:photo) %>
+    <% end %>
+
+    <%= f.commit_button t(:create) %>
+
 <% end %>
+
+</div>

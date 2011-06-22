@@ -276,19 +276,8 @@ ul li {
     margin-bottom: 25px;
 }
 
-#administrator h2, #contact h2, #client h2  {
+#administrator h2, #contact h2, #client h2, #advice h2  {
     padding: 0px;
-}
-
-#contact legend {
-  display: block;
-  color: #333;
-  margin-left: 10px;
-  padding: 10px 5px 0px 5px;
-}
-
-#contact fieldset {
-  padding: 20px;
 }
 
 /* FRONTEND */
@@ -306,6 +295,13 @@ ul li {
   float: left;
 }
 
+#frontend .no_contact {
+  text-align: center;
+  font-size: 12px;
+  padding: 28px;
+  border: 3px dotted red;
+}
+
 #frontend #teruleti_kepviselo {
   background-image: url("../images/contact_phone.png")
 }
@@ -318,6 +314,12 @@ ul li {
   font-size: 12px;
 }
 
+/* MIKROVOKS */
+
+#frontend .termek, #frontend #mikrokam, #frontend #sequence, #frontend #edtr, #frontend #mvmonitor, #frontend #digirat  {
+  margin-bottom: 15px;
+
+}
 #frontend #mikrovoks .text {
   padding: 0px;
 }
@@ -333,19 +335,13 @@ ul li {
   text-align: center;
   background-color: transparent;
   border: none;
-  padding: 8px 0px 0px 10px;
-  font-size: 18px;
+  padding: 8px 0px 0px 0px;
+  font-size: 16px;
 }
 
 #frontend #mikrovoks_image {
    height: 140px;
    background-image: url('../images/termek_mikrovoks.jpg');
-   background-repeat: no-repeat;
-}
-
-#frontend #mikrovoks_info {
-   height: 59px;
-   background-image: url('../images/termek_info.jpg');
    background-repeat: no-repeat;
 }
 
@@ -356,6 +352,201 @@ ul li {
 }
 
 #frontend #mikrovoks_footer {
+   height: 59px;
+   background-image: url('../images/footer_hatter.jpg');
+   background-repeat: repeat-x;
+}
+
+/* MIKROKAM */
+
+#frontend #mikrokam .text {
+  padding: 0px;
+}
+
+#frontend #mikrokam_fejlec {
+   height: 41px;
+   background-image: url('../images/termek_fejlec.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #mikrokam_fejlec .text {
+  font-family: Georgia;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  padding: 8px 0px 0px 0px;
+  font-size: 16px;
+}
+
+#frontend #mikrokam_image {
+   height: 140px;
+   background-image: url('../images/termek_mikrokam.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #mikrokam_termektamogatas {
+   height: 59px;
+   background-image: url('../images/termek_tamogatas.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #mikrokam_footer {
+   height: 59px;
+   background-image: url('../images/footer_hatter.jpg');
+   background-repeat: repeat-x;
+}
+
+/* Sequence */
+
+#frontend #sequence .text {
+  padding: 0px;
+}
+
+#frontend #sequence_fejlec {
+   height: 41px;
+   background-image: url('../images/termek_fejlec.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #sequence_fejlec .text {
+  font-family: Georgia;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  padding: 8px 0px 0px 0px;
+  font-size: 16px;
+}
+
+#frontend #sequence_image {
+   height: 140px;
+   background-image: url('../images/termek_sequence.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #sequence_termektamogatas {
+   height: 59px;
+   background-image: url('../images/termek_tamogatas.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #sequence_footer {
+   height: 59px;
+   background-image: url('../images/footer_hatter.jpg');
+   background-repeat: repeat-x;
+}
+
+/* edtr */
+
+#frontend #edtr .text {
+  padding: 0px;
+}
+
+#frontend #edtr_fejlec {
+   height: 41px;
+   background-image: url('../images/termek_fejlec.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #edtr_fejlec .text {
+  font-family: Georgia;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  padding: 8px 0px 0px 0px;
+  font-size: 16px;
+}
+
+#frontend #edtr_image {
+   height: 140px;
+   background-image: url('../images/termek_edtr.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #edtr_termektamogatas {
+   height: 59px;
+   background-image: url('../images/termek_tamogatas.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #edtr_footer {
+   height: 59px;
+   background-image: url('../images/footer_hatter.jpg');
+   background-repeat: repeat-x;
+}
+
+/* mvmonitor */
+
+#frontend #mvmonitor .text {
+  padding: 0px;
+}
+
+#frontend #mvmonitor_fejlec {
+   height: 41px;
+   background-image: url('../images/termek_fejlec.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #mvmonitor_fejlec .text {
+  font-family: Georgia;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  padding: 8px 0px 0px 0px;
+  font-size: 16px;
+}
+
+#frontend #mvmonitor_image {
+   height: 140px;
+   background-image: url('../images/termek_mvmonitor.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #mvmonitor_termektamogatas {
+   height: 59px;
+   background-image: url('../images/termek_tamogatas.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #mvmonitor_footer {
+   height: 59px;
+   background-image: url('../images/footer_hatter.jpg');
+   background-repeat: repeat-x;
+}
+
+/* digirat */
+
+#frontend #digirat .text {
+  padding: 0px;
+}
+
+#frontend #digirat_fejlec {
+   height: 41px;
+   background-image: url('../images/termek_fejlec.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #digirat_fejlec .text {
+  font-family: Georgia;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  padding: 8px 0px 0px 0px;
+  font-size: 16px;
+}
+
+#frontend #digirat_image {
+   height: 140px;
+   background-image: url('../images/termek_digirat.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #digirat_termektamogatas {
+   height: 59px;
+   background-image: url('../images/termek_tamogatas.jpg');
+   background-repeat: no-repeat;
+}
+
+#frontend #digirat_footer {
    height: 59px;
    background-image: url('../images/footer_hatter.jpg');
    background-repeat: repeat-x;

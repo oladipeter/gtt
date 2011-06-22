@@ -59,9 +59,11 @@ dl {margin:0 0 1.5em 0;}
 dl dt {font-weight:bold;}
 dd {margin-left:1.5em;}
 table {margin-bottom:1.4em;width:100%;}
-th {font-weight:bold;}
+th {font-weight:bold; background-color: #ccc!important; padding: 10px!important;}
 thead th {background:#fff;}
 th, td, caption {padding:4px 10px 4px 5px;}
+td { padding: 10px!important;}
+td a { color: #333!important; font-weight: bold!important;}
 tbody tr:nth-child(even) td, tbody tr.even td {background:#f1f1f1;}
 tfoot {font-style:italic;}
 caption {background:#eee;}

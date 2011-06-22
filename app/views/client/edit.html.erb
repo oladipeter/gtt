@@ -39,9 +39,7 @@
           <%= f.check_box :digirat_flat_rate %>&nbsp;Digirat
       <% end %>
 
-      <%= f.inputs :name => "A felhasználóhoz területi képviselője :" do %>
-          <%= f.input :contact_id, :as => :radio, :collection => Contact.find(:all), :label => "Kapcsolattartó :" %>
-      <% end %>
+      <%= f.input :contact_id, :as => :radio, :collection => Contact.find(:all), :label => "Kapcsolattartó" %>
 
       <%= f.commit_button t(:modify) %>
 

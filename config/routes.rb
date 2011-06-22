@@ -1,5 +1,11 @@
 Gtt::Application.routes.draw do
 
+  resources :advices
+
+  resources :systems
+
+  resources :articles
+
   # BASIC ROUTING
 
   get "client/index"
@@ -27,6 +33,8 @@ Gtt::Application.routes.draw do
   match 'client/index' => 'client#index', :as => "client"
   match 'client/edit/:id' => 'client#edit', :as => "client_edit"
   match 'client/update/:id' => 'client#update', :as => "client_update"
+
+
 
   # namespace :admin do
   #   root :to => "backend#index"

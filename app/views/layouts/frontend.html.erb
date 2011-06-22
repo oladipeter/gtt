@@ -26,7 +26,7 @@
 
       <div class="span-7 prepend-5" id="admin_data">
         <div class="text">
-          <b>Ügyfél adatai :</b> <%= current_user.email %><br/>
+          Ügyfél neve : <b><%= current_user.full_name %></b><br/>
           <b>Utolsó bejelentkezés : </b> <%= current_user.last_sign_in_at %><br/>
         </div>
       </div>
@@ -49,30 +49,45 @@
 
             <!-- LINE 1 -->
 
-            <div class="span-12">
-              <div class="text" id="teruleti_kepviselo">
-                <h2>Az Ön területi lépviselője:</h2>
+            <% unless @user_contact %>
 
-                  <% if @user_contact.image_file_name.blank? %>
-                     <td><%= image_tag("default_profile_thumb.png") %></td>
-                  <% else %>
-                     <td><%= image_tag @user_contact.image.url(:medium) %></td>
-                  <% end %>
-
-                <div class="kapcs_nev">
-                  <%= @user_contact.name %>
-                </div>
-                <div class="kapcs_vezetekes">
-                  Vezetékes telefon : <%= @user_contact.phone %>
-                </div>
-                <div class="kapcs_mobil">
-                  Mobil telefon : <%= @user_contact.mobil %>
-                </div>
-                <div class="kapcs_email">
-                  E-mail cím : <%= @user_contact.email %>
+              <div class="span-12">
+                <div class="text" id="teruleti_kepviselo">
+                  <h2>Az Ön területi lépviselője:</h2>
+                  <div class="no_contact">
+                    <b>Az adminisztrátor még nem rendelt Önhöz kapcsolattartót!</b>
+                  </div>
                 </div>
               </div>
-            </div>
+
+            <% else %>
+
+              <div class="span-12">
+                <div class="text" id="teruleti_kepviselo">
+                  <h2>Az Ön területi lépviselője:</h2>
+
+                    <% if @user_contact.image_file_name.blank? %>
+                       <td><%= image_tag("default_profile_thumb.png") %></td>
+                    <% else %>
+                       <td><%= image_tag @user_contact.image.url(:medium) %></td>
+                    <% end %>
+
+                  <div class="kapcs_nev">
+                    <%= @user_contact.name %>
+                  </div>
+                  <div class="kapcs_vezetekes">
+                    Vezetékes telefon : <%= @user_contact.phone %>
+                  </div>
+                  <div class="kapcs_mobil">
+                    Mobil telefon : <%= @user_contact.mobil %>
+                  </div>
+                  <div class="kapcs_email">
+                    E-mail cím : <%= @user_contact.email %>
+                  </div>
+                </div>
+              </div>
+
+            <% end %>
 
             <div class="span-12 last">
               <div class="text">
@@ -93,7 +108,7 @@
               </div>
             </div>
 
-            <!-- LINE 2 -->
+            <!-- Mikrovoks -->
 
             <div class="span-8" id="mikrovoks">
 
@@ -104,31 +119,85 @@
                 </div>
 
                 <div class="span-8">
-                  <%= image_tag("termek_tamogatas.jpg") %>
+                  <%= link_to image_tag("termek_tamogatas.jpg"), administrator_edit_path(current_user.id, :system => "mikrovoks") %>
                 </div>
 
             </div>
 
-            <div class="span-8">
-              <div class="text">KapcsolattartóA Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem Ipsum az 1500-as évek óta standard szövegrészletként szolgált az iparban; mikor egy ismeretlen nyomdász összeállította a betûkészletét és egy példa-könyvet vagy szöveget nyomott papírra, ezt használta. Nem csak 5 évszázadot élt túl, de az elektronikus betûkészleteknél is változatlanul megmaradt. Az 1960-as években népszerûsítették a Lorem Ipsum részleteket magukbafoglaló Letraset lapokkal, és legutóbb softwarekkel mint például az Aldus Pagemaker.</div>
-            </div>
+            <!-- Mikrokam -->
 
-            <div class="span-8 last">
-              <div class="text">KapcsolattartóA Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem Ipsum az 1500-as évek óta standard szövegrészletként szolgált az iparban; mikor egy ismeretlen nyomdász összeállította a betûkészletét és egy példa-könyvet vagy szöveget nyomott papírra, ezt használta. Nem csak 5 évszázadot élt túl, de az elektronikus betûkészleteknél is változatlanul megmaradt. Az 1960-as években népszerûsítették a Lorem Ipsum részleteket magukbafoglaló Letraset lapokkal, és legutóbb softwarekkel mint például az Aldus Pagemaker.</div>
+            <div class="span-8" id="mikrokam">
+
+                <div class="span-8" id="mikrokam_fejlec">
+                  <div class="text"> MikroKam Robotkamerás Rendszer</div>
+                </div>
+                <div class="span-8" id="mikrokam_image">
+                </div>
+
+                <div class="span-8">
+                  <%= image_tag("termek_tamogatas.jpg") %>
+                </div>
+
+            </div>
+            
+            <!-- seQUEnce -->
+
+            <div class="span-8 last" id="sequence">
+
+                <div class="span-8" id="sequence_fejlec">
+                  <div class="text">seQUEnce Ügyfélhívó Rendszer</div>
+                </div>
+                <div class="span-8" id="sequence_image">
+                </div>
+
+                <div class="span-8">
+                  <%= image_tag("termek_informacio.jpg") %>
+                </div>
+
             </div>
 
             <!-- LINE 3 -->
 
-            <div class="span-8">
-              <div class="text">KapcsolattartóA Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem Ipsum az 1500-as évek óta standard szövegrészletként szolgált az iparban; mikor egy ismeretlen nyomdász összeállította a betûkészletét és egy példa-könyvet vagy szöveget nyomott papírra, ezt használta. Nem csak 5 évszázadot élt túl, de az elektronikus betûkészleteknél is változatlanul megmaradt. Az 1960-as években népszerûsítették a Lorem Ipsum részleteket magukbafoglaló Letraset lapokkal, és legutóbb softwarekkel mint például az Aldus Pagemaker.</div>
-            </div>
+            <div class="span-8" id="edtr">
 
-            <div class="span-8">
-              <div class="text">KapcsolattartóA Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem Ipsum az 1500-as évek óta standard szövegrészletként szolgált az iparban; mikor egy ismeretlen nyomdász összeállította a betûkészletét és egy példa-könyvet vagy szöveget nyomott papírra, ezt használta. Nem csak 5 évszázadot élt túl, de az elektronikus betûkészleteknél is változatlanul megmaradt. Az 1960-as években népszerûsítették a Lorem Ipsum részleteket magukbafoglaló Letraset lapokkal, és legutóbb softwarekkel mint például az Aldus Pagemaker.</div>
-            </div>
+                <div class="span-8" id="edtr_fejlec">
+                  <div class="text">EDtR Döntéstámogató Rendszer</div>
+                </div>
+                <div class="span-8" id="edtr_image">
+                </div>
 
-            <div class="span-8 last">
-              <div class="text">KapcsolattartóA Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem Ipsum az 1500-as évek óta standard szövegrészletként szolgált az iparban; mikor egy ismeretlen nyomdász összeállította a betûkészletét és egy példa-könyvet vagy szöveget nyomott papírra, ezt használta. Nem csak 5 évszázadot élt túl, de az elektronikus betûkészleteknél is változatlanul megmaradt. Az 1960-as években népszerûsítették a Lorem Ipsum részleteket magukbafoglaló Letraset lapokkal, és legutóbb softwarekkel mint például az Aldus Pagemaker.</div>
+                <div class="span-8">
+                  <%= image_tag("termek_tamogatas.jpg") %>
+                </div>
+
+            </div>
+            
+            <div class="span-8" id="mvmonitor">
+
+                <div class="span-8" id="mvmonitor_fejlec">
+                  <div class="text">MvMonitor Jegyzőkönyv visszahallgatás</div>
+                </div>
+                <div class="span-8" id="mvmonitor_image">
+                </div>
+
+                <div class="span-8">
+                  <%= image_tag("termek_informacio.jpg") %>
+                </div>
+
+            </div>
+            
+            <div class="span-8 last" id="digirat">
+
+                <div class="span-8" id="digirat_fejlec">
+                  <div class="text">Digirat Jegyzőkönyvező Rendszer</div>
+                </div>
+                <div class="span-8" id="digirat_image">
+                </div>
+
+                <div class="span-8">
+                  <%= image_tag("termek_tamogatas.jpg") %>
+                </div>
+
             </div>
 
             <!-- LINE 4 -->

@@ -14,7 +14,7 @@ form.formtastic fieldset ol li fieldset legend { margin-left: -6px;}
 --------------------------------------------------------------------------------------------------*/
 
 form.formtastic fieldset { margin-bottom: 20px; padding: 20px; }
-form.formtastic legend { font-size: 14px; font-family: Georgia; background-color: #f1f1f1; padding: 8px 15px 0px 15px;  }
+form.formtastic legend { font-size: 14px; font-family: Georgia; background-color: #c1c1c1; padding: 8px 15px 8px 15px; color: #fff; font-weight: normal;  }
 form.formtastic input, form.formtastic textarea, form.formtastic select { padding: 8px; font-size: 11px; }
 form.formtastic li { list-style-type: none; }
 form.formtastic label {  }
