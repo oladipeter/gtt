@@ -156,9 +156,15 @@ hu:
   mobil: "Mobil telefon"
   phone: "Vezetékes telefon"
   photo: "Fénykép feltöltése"
+  title: "Cím"
+  short_description: "Rövid leírás"
+  content: "Tartalom"
+  system: "Rendszer"
 
   create: "Létrehoz"
   modify: "Módosít"
+  delete: "Töröl"
+  edit:   "Szerkeszt"
   back: "Vissza az előző oldalra!"
   ok: "Rendben!"
 

@@ -13,10 +13,12 @@
     <% end %>
 
     <%= f.inputs :name => "Hír adatai :" do %>
-          <%= f.input :title %>
-          <%= f.input :short_description %>
-          <%= f.input :content %>
+          <%= f.input :title, :label => t(:title) %>
+          <%= f.input :short_description, :label => t(:short_description) %>
+          <%= f.input :content, :label => t(:content) %>
+          <%= f.input :system_id, :as => :select, :collection => System.find(:all), :label => t(:system), :hint => "Ha üresen hagyod nem lesz hozzárendelve egyetlen rendszerhez sem." %>
     <% end %>
 
-    <%= f.commit_button t(:create) %>
+    <%= f.commit_button t(:ok) %>
+    <br/>
 <% end %>

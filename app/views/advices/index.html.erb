@@ -4,21 +4,22 @@
 <table>
   <tr>
     <th>Cím</th>
-    <th>Rövid leírás</th>
-    <th>Tartalom</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Hozzárendelve</th>
+    <th>Módosít</th>
+    <th><div class="align_right">Töröl</div></th>
   </tr>
 
 <% @advices.each do |advice| %>
   <tr>
     <td><%= advice.title %></td>
-    <td><%= advice.short_description %></td>
-    <td><%= advice.content %></td>
-    <td><%= link_to 'Show', advice %></td>
-    <td><%= link_to 'Edit', edit_advice_path(advice) %></td>
-    <td><%= link_to 'Destroy', advice, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% if advice.system_id.blank? %>
+    <td><%= "Nincs hozzárendelve rendszerhez!" %></td>
+    <% else %>
+    <td><%= advice.system.name %></td>
+    <% end %>
+
+    <td><%= link_to t(:modify), edit_advice_path(advice) %></td>
+    <td><div class="align_right"><%= link_to t(:delete), advice, :confirm => 'Biztosan törlöd?', :method => :delete %></div></td>
   </tr>
 <% end %>
 </table>

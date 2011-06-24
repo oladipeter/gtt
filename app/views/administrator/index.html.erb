@@ -4,6 +4,7 @@
   <table id="gradient-style" summary="Adminisztrátorok">
     <thead>
     <tr>
+      <th scope="col">Kép</th>
       <th scope="col">Email cím</th>
       <th scope="col">Utolsó bejelentkezés időpontja</th>
       <th scope="col">Módosít</th>
@@ -19,6 +20,11 @@
     <tbody>
     <% @administrators.each do |administrator| %>
         <tr>
+          <% if administrator.image_file_name.blank? %>
+            <td><%= image_tag("default_profile_thumb.png") %></td>
+          <% else %>
+            <td><%= image_tag administrator.image.url(:thumb) %></td>
+          <% end %>
           <td><%= administrator.email %></td>
           <td>
             <% if administrator.last_sign_in_at.blank? %>

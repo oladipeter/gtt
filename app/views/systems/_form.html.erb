@@ -1,21 +1,26 @@
-<%= form_for(@system) do |f| %>
-  <% if @system.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@system.errors.count, "error") %> prohibited this system from being saved:</h2>
+<div id="system">
 
-      <ul>
-      <% @system.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= semantic_form_for @system, :html => { :multipart => true } do |f| %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <% if @system.errors.any? %>
+        <div id="error_explanation">
+          <h3>Összesen <%= @system.errors.count %> hiba :</h3>
+
+          <ul>
+            <% @system.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <%= f.inputs :name => "Rendszer adatai :" do %>
+          <%= f.input :name, :label => t(:name), :hint => "Nem szerkeszthető, törzsadat!", :input_html => { :disabled => true } %>
+          <%= f.input :description, :label => t(:short_description) %>
+    <% end %>
+
+    <%= f.commit_button t(:ok) %>
+
 <% end %>
+
+</div>

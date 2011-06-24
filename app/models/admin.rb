@@ -1,12 +1,14 @@
 class Admin < ActiveRecord::Base
-  # Include default devise modules. Others available are:
-  # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
+
+  belongs_to :system
+  has_attached_file :image, :styles => { :medium => "120x80>", :thumb => "80x60>" }
+
   devise :database_authenticatable, :trackable, :timeoutable, :lockable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :image, :system_id
 
   validates_uniqueness_of :email
-  validates_presence_of :email, :password
+  validates_presence_of :email
 
 end

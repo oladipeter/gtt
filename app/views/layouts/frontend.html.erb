@@ -25,7 +25,7 @@
       </div>
 
       <div class="span-7 prepend-5" id="admin_data">
-        <div class="text">
+        <div class="main_text">
           Ügyfél neve : <b><%= current_user.full_name %></b><br/>
           <b>Utolsó bejelentkezés : </b> <%= current_user.last_sign_in_at %><br/>
         </div>
@@ -52,7 +52,7 @@
             <% unless @user_contact %>
 
               <div class="span-12">
-                <div class="text" id="teruleti_kepviselo">
+                <div class="main_text" id="teruleti_kepviselo">
                   <h2>Az Ön területi lépviselője:</h2>
                   <div class="no_contact">
                     <b>Az adminisztrátor még nem rendelt Önhöz kapcsolattartót!</b>
@@ -63,7 +63,7 @@
             <% else %>
 
               <div class="span-12">
-                <div class="text" id="teruleti_kepviselo">
+                <div class="main_text" id="teruleti_kepviselo">
                   <h2>Az Ön területi lépviselője:</h2>
 
                     <% if @user_contact.image_file_name.blank? %>
@@ -90,7 +90,7 @@
             <% end %>
 
             <div class="span-12 last">
-              <div class="text">
+              <div class="main_text">
                 <h2>Globomax központ :</h2>
                 <%= image_tag("telephely.png") %>
                 <div class="telephely_nev">
@@ -113,13 +113,18 @@
             <div class="span-8" id="mikrovoks">
 
                 <div class="span-8" id="mikrovoks_fejlec">
-                  <div class="text"> MikroVoks Szavazó Rendszer</div>
+                  <div class="main_text">MikroVoks Jegyzőkönyvező Rendszer</div>
                 </div>
-                <div class="span-8" id="mikrovoks_image">
+                <div class="demo">
+                  <div class="span-8" id="mikrovoks_image">
+                  </div>
+                  <div class="tooltip">
+                     <%= @mikrovoks_system.description %>
+                  </div>
                 </div>
 
                 <div class="span-8">
-                  <%= link_to image_tag("termek_tamogatas.jpg"), administrator_edit_path(current_user.id, :system => "mikrovoks") %>
+                    <%= image_tag "termek_tamogatas.jpg" %>
                 </div>
 
             </div>
@@ -129,13 +134,18 @@
             <div class="span-8" id="mikrokam">
 
                 <div class="span-8" id="mikrokam_fejlec">
-                  <div class="text"> MikroKam Robotkamerás Rendszer</div>
+                  <div class="main_text">MikroKam Jegyzőkönyvező Rendszer</div>
                 </div>
-                <div class="span-8" id="mikrokam_image">
+                <div class="demo">
+                  <div class="span-8" id="mikrokam_image">
+                  </div>
+                  <div class="tooltip">
+                     <%= @mikrokam_system.description %>
+                  </div>
                 </div>
 
                 <div class="span-8">
-                  <%= image_tag("termek_tamogatas.jpg") %>
+                    <%= image_tag "termek_tamogatas.jpg" %>
                 </div>
 
             </div>
@@ -145,13 +155,18 @@
             <div class="span-8 last" id="sequence">
 
                 <div class="span-8" id="sequence_fejlec">
-                  <div class="text">seQUEnce Ügyfélhívó Rendszer</div>
+                  <div class="main_text">seQUEnce Jegyzőkönyvező Rendszer</div>
                 </div>
-                <div class="span-8" id="sequence_image">
+                <div class="demo">
+                  <div class="span-8" id="sequence_image">
+                  </div>
+                  <div class="tooltip">
+                     <%= @sequence_system.description %>
+                  </div>
                 </div>
 
                 <div class="span-8">
-                  <%= image_tag("termek_informacio.jpg") %>
+                    <%= image_tag "termek_tamogatas.jpg" %>
                 </div>
 
             </div>
@@ -161,13 +176,18 @@
             <div class="span-8" id="edtr">
 
                 <div class="span-8" id="edtr_fejlec">
-                  <div class="text">EDtR Döntéstámogató Rendszer</div>
+                  <div class="main_text">EDtR Jegyzőkönyvező Rendszer</div>
                 </div>
-                <div class="span-8" id="edtr_image">
+                <div class="demo">
+                  <div class="span-8" id="edtr_image">
+                  </div>
+                  <div class="tooltip">
+                     <%= @edtr_system.description %>
+                  </div>
                 </div>
 
                 <div class="span-8">
-                  <%= image_tag("termek_tamogatas.jpg") %>
+                    <%= image_tag "termek_tamogatas.jpg" %>
                 </div>
 
             </div>
@@ -175,13 +195,18 @@
             <div class="span-8" id="mvmonitor">
 
                 <div class="span-8" id="mvmonitor_fejlec">
-                  <div class="text">MvMonitor Jegyzőkönyv visszahallgatás</div>
+                  <div class="main_text">MvMonitor Jegyzőkönyvező Rendszer</div>
                 </div>
-                <div class="span-8" id="mvmonitor_image">
+                <div class="demo">
+                  <div class="span-8" id="mvmonitor_image">
+                  </div>
+                  <div class="tooltip">
+                     <%= @mvmonitor_system.description %>
+                  </div>
                 </div>
 
                 <div class="span-8">
-                  <%= image_tag("termek_informacio.jpg") %>
+                    <%= image_tag "termek_tamogatas.jpg" %>
                 </div>
 
             </div>
@@ -189,25 +214,41 @@
             <div class="span-8 last" id="digirat">
 
                 <div class="span-8" id="digirat_fejlec">
-                  <div class="text">Digirat Jegyzőkönyvező Rendszer</div>
+                  <div class="main_text">Digirat Jegyzőkönyvező Rendszer</div>
                 </div>
-                <div class="span-8" id="digirat_image">
+
+                <div class="demo">
+                  <div class="span-8" id="digirat_image">
+                  </div>
+                  <div class="tooltip">
+                     <%= @digirat_system.description %>
+                  </div>
                 </div>
 
                 <div class="span-8">
-                  <%= image_tag("termek_tamogatas.jpg") %>
+                    <%= image_tag "termek_tamogatas.jpg" %>
                 </div>
 
             </div>
 
             <!-- LINE 4 -->
 
-            <div class="span-12">
-              <div class="text">KapcsolattartóA Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem Ipsum az 1500-as évek óta standard szövegrészletként szolgált az iparban; mikor egy ismeretlen nyomdász összeállította a betûkészletét és egy példa-könyvet vagy szöveget nyomott papírra, ezt használta. Nem csak 5 évszázadot élt túl, de az elektronikus betûkészleteknél is változatlanul megmaradt. Az 1960-as években népszerûsítették a Lorem Ipsum részleteket magukbafoglaló Letraset lapokkal, és legutóbb softwarekkel mint például az Aldus Pagemaker.</div>
+            <div class="span-24">
+              <div id="advices">
+                <div class="main_text">
+                     <% @advices.each do |advice| %>
+                        <h2><%= advice.title %></h2>
+                        <%= advice.content %>
+                        <div class="advice_information">
+                        Létrehozva : <%= advice.created_at %>
+                        </div>
+                     <% end %>
+                </div>
+              </div>
             </div>
 
-            <div class="span-12 last">
-              <div class="text">KapcsolattartóA Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem Ipsum az 1500-as évek óta standard szövegrészletként szolgált az iparban; mikor egy ismeretlen nyomdász összeállította a betûkészletét és egy példa-könyvet vagy szöveget nyomott papírra, ezt használta. Nem csak 5 évszázadot élt túl, de az elektronikus betûkészleteknél is változatlanul megmaradt. Az 1960-as években népszerûsítették a Lorem Ipsum részleteket magukbafoglaló Letraset lapokkal, és legutóbb softwarekkel mint például az Aldus Pagemaker.</div>
+            <div class="span-24">
+              <div class="main_text">KapcsolattartóA Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem Ipsum az 1500-as évek óta standard szövegrészletként szolgált az iparban; mikor egy ismeretlen nyomdász összeállította a betûkészletét és egy példa-könyvet vagy szöveget nyomott papírra, ezt használta. Nem csak 5 évszázadot élt túl, de az elektronikus betûkészleteknél is változatlanul megmaradt. Az 1960-as években népszerûsítették a Lorem Ipsum részleteket magukbafoglaló Letraset lapokkal, és legutóbb softwarekkel mint például az Aldus Pagemaker.</div>
             </div>
 
           </div>
@@ -221,7 +262,7 @@
   <div id="footer">
      <div class="container">
        <div class="span-24">
-         <div class="footer_text">
+         <div class="footer_main_text">
            Globomax Kft. | Minden jog fenntartva 2011
          </div>
        </div>
@@ -233,6 +274,38 @@
 <script>
   $('#notice_notice').delay(1900).slideUp(900);
   $('#notice_alert').delay(1900).slideUp(900);
+
+  /* TOOLTIP */
+
+  // create custom animation algorithm for jQuery called "bouncy"
+  $.easing.bouncy = function (x, t, b, c, d) {
+    var s = 1.70158;
+    if ((t /= d / 2) < 1) return c / 2 * (t * t * (((s *= (1.525)) + 1) * t - s)) + b;
+    return c / 2 * ((t -= 2) * t * (((s *= (1.525)) + 1) * t + s) + 2) + b;
+  }
+
+  // create custom tooltip effect for jQuery Tooltip
+  $.tools.tooltip.addEffect("bouncy",
+
+    // opening animation
+    function(done) {
+      this.getTip().animate({top: '+=45'}, 500, 'bouncy', done).show();
+    },
+
+    // closing animation
+    function(done) {
+      this.getTip().animate({top: '-=15'}, 500, 'bouncy', function() {
+        $(this).hide();
+        done.call();
+      });
+    }
+    );
+  $('#mikrovoks_image, #mikrokam_image, #sequence_image, #edtr_image, #mvmonitor_image, #digirat_image ').tooltip({ effect: 'bouncy', opacity: 0.5, delay: 500 });
+
+
+
+
+
 </script>
 
 

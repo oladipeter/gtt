@@ -1,6 +1,8 @@
 class SystemsController < ApplicationController
-  # GET /systems
-  # GET /systems.xml
+
+  before_filter :authenticate_admin!
+  layout "contact"
+
   def index
     @systems = System.all
 
@@ -58,15 +60,12 @@ class SystemsController < ApplicationController
   def update
     @system = System.find(params[:id])
 
-    respond_to do |format|
       if @system.update_attributes(params[:system])
-        format.html { redirect_to(@system, :notice => 'System was successfully updated.') }
-        format.xml  { head :ok }
+        redirect_to systems_path, :notice => 'System was successfully updated.'
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @system.errors, :status => :unprocessable_entity }
+        render :action => "edit"
       end
-    end
+
   end
 
   # DELETE /systems/1

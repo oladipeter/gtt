@@ -1,6 +1,7 @@
 class AdvicesController < ApplicationController
 
-  layout "contact"
+  before_filter :authenticate_admin!
+  layout "contact" # Nem csinaltam uj layoutot, baki
 
   def index
     @advices = Advice.all
@@ -42,16 +43,11 @@ class AdvicesController < ApplicationController
   # POST /advices.xml
   def create
     @advice = Advice.new(params[:advice])
-
-    respond_to do |format|
       if @advice.save
-        format.html { redirect_to(@advice, :notice => 'Advice was successfully created.') }
-        format.xml  { render :xml => @advice, :status => :created, :location => @advice }
+         redirect_to advices_path, :notice => 'Advice was successfully created.'
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @advice.errors, :status => :unprocessable_entity }
+        render :action => "new"
       end
-    end
   end
 
   # PUT /advices/1
@@ -59,15 +55,12 @@ class AdvicesController < ApplicationController
   def update
     @advice = Advice.find(params[:id])
 
-    respond_to do |format|
       if @advice.update_attributes(params[:advice])
-        format.html { redirect_to(@advice, :notice => 'Advice was successfully updated.') }
-        format.xml  { head :ok }
+        redirect_to advices_path, :notice => 'Advice was successfully updated.'
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @advice.errors, :status => :unprocessable_entity }
+        render :action => "edit"
       end
-    end
+
   end
 
   # DELETE /advices/1

@@ -3,7 +3,7 @@
 
   <!-- FORM START -->
 
-  <%= semantic_form_for @admin, :url => {:action => "update"} do |f| %>
+  <%= semantic_form_for @admin, :url => {:action => "update"}, :html => { :multipart => true } do |f| %>
 
       <% if @admin.errors.any? %>
           <div id="error_explanation">
@@ -19,7 +19,9 @@
 
       <%= f.inputs :name => "Adminisztrátor :" do %>
           <%= f.input :email %>
-          <%= f.input :password %>
+          <%= f.input :password, :default => "#{@admin.encrypted_password}" %>
+          <%= f.input :system_id, :as => :select, :collection => System.find(:all), :label => "Rendszerek" %>
+          <%= f.input :image, :as => :file, :label => t(:photo) %>
       <% end %>
 
       <%= f.commit_button t(:modify) %>

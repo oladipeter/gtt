@@ -25,7 +25,7 @@
       </div>
 
       <div class="span-7 prepend-5" id="admin_data">
-        <div class="text">
+        <div class="main_text">
           <b>Adminisztrátor adatai :</b> <%= current_admin.email %><br/>
           <b>Utolsó bejelentkezés : </b> <%= current_admin.last_sign_in_at %><br/>
         </div>
@@ -45,7 +45,7 @@
     <div class="container">
 
       <div class="span-5" id="backend_left">
-        <div class="text">
+        <div class="main_text">
            <%= render 'shared/menu' %>
           <div id="email_message">
           <h2>Levelek</h2>
@@ -62,7 +62,7 @@
 
       <div class="span-19 last" id="backend_right">
 
-        <div class="text">
+        <div class="main_text">
           <%= yield %>
         </div>
 
@@ -74,7 +74,7 @@
   <div id="footer">
      <div class="container">
        <div class="span-24">
-         <div class="footer_text">
+         <div class="footer_main_text">
            Globomax Kft. | Minden jog fenntartva 2011
          </div>
        </div>

@@ -34,9 +34,81 @@ h2 {
     font-weight: bold;
 }
 
-.text {
+.user_confirmation {
+  background-color: #cc0033;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.user_confirmation .text {
+  padding: 10px;
+}
+
+.user_confirmation a {
+  font-size: 12px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+div #error_explanation {
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  border: 2px dotted red;
+  padding: 10px;
+}
+
+.main_text {
   text-align: justify;
   font-size: 11px;
+}
+
+.align_right {
+  text-align: right;
+}
+
+.align_left {
+  text-align: left;
+}
+
+.align_center {
+  text-align: center;
+}
+
+.align_justify {
+  text-align: justify;
+}
+
+/* TOOLTIP */
+
+/* BIG BLACK */
+
+/*.tooltip {
+	display: none;
+	background: transparent url("../images/black_arrow_big.png");
+	font-size: 12px;
+	height: 166px;
+	width: 320px;
+	padding: 25px;
+	color: #fff;
+}*/
+
+/* MIDDLE WHITE */
+
+.tooltip {
+	display: none;
+	background: transparent url("../images/white_globo_arrow.png");
+	font-size: 11px;
+	height: 116px;
+	width: 283px;
+	padding: 20px;
+	color: #333;
+  font-weight: bold;
+}
+
+.demo img {
+	border:0;
+	cursor:pointer;
+	margin:0 0px;
 }
 
 /* FORM */
@@ -68,7 +140,7 @@ select {
   width: 320px!important;
 }
 
-#left .text {
+#left .main_text {
     border-right: 1px solid #ccc;
 }
 
@@ -125,7 +197,7 @@ select {
     background-color: #333;
 }
 
-.footer_text {
+.footer_main_text {
     font-size: 11px;
     text-align: center;
     color: #fff;
@@ -163,17 +235,17 @@ select {
 /* LEFT */
 /*--------------------------------------------------------------------------------------------------------------------*/
 
-#backend_left .text {
+#backend_left .main_text, #support_left .main_text {
   border: 1px solid #ddd;
   padding: 10px;
 }
 
-#backend_left .text {
+#backend_left .main_text, #support_left .main_text {
     padding: 0px;
     border: none;
 }
 
-#backend_left ul {
+#backend_left ul, #support_left ul {
     font-family: Georgia;
     color: #3B61A2;
     font-size: 18px;
@@ -183,13 +255,13 @@ select {
     padding: 0px;
 }
 
-#backend_left li {
+#backend_left li, #support_left li {
     background-image: url('../images/li_bullet.png');
     background-repeat: no-repeat;
     padding-left: 30px;
 }
 
-#backend_left li a {
+#backend_left li a, #support_left li a {
    color : #333;
 }
 
@@ -197,7 +269,7 @@ ul li {
    list-style-type: none;
 }
 
-#admin_data .text {
+#admin_data .main_text {
   color: #fff;
   text-align: right;
   padding-top: 15px;
@@ -218,7 +290,7 @@ ul li {
    padding-left: 40px;
 }
 
-#backend_right .text {
+#backend_right .main_text {
   background-color: #fff;
   padding: 30px;
   border: 1px solid #ddd;
@@ -227,7 +299,7 @@ ul li {
   background-position: top right;
 }
 
-#backend_right .text .text_content {
+#backend_right .main_text .main_text_content {
   font-family: georgia,serif;
   color: #8C8C8C;
   font-size: 12px;
@@ -276,14 +348,14 @@ ul li {
     margin-bottom: 25px;
 }
 
-#administrator h2, #contact h2, #client h2, #advice h2  {
+#administrator h2, #contact h2, #client h2, #advice h2, #article h2, #system h2    {
     padding: 0px;
 }
 
 /* FRONTEND */
 /*--------------------------------------------------------------------------------------------------------------------*/
 
-#frontend .text {
+#frontend .main_text {
     padding: 20px;
     background-color: #fff;
     margin-bottom: 15px;
@@ -320,7 +392,7 @@ ul li {
   margin-bottom: 15px;
 
 }
-#frontend #mikrovoks .text {
+#frontend #mikrovoks .main_text {
   padding: 0px;
 }
 
@@ -330,7 +402,7 @@ ul li {
    background-repeat: no-repeat;
 }
 
-#frontend #mikrovoks_fejlec .text {
+#frontend #mikrovoks_fejlec .main_text {
   font-family: Georgia;
   text-align: center;
   background-color: transparent;
@@ -359,7 +431,7 @@ ul li {
 
 /* MIKROKAM */
 
-#frontend #mikrokam .text {
+#frontend #mikrokam .main_text {
   padding: 0px;
 }
 
@@ -369,7 +441,7 @@ ul li {
    background-repeat: no-repeat;
 }
 
-#frontend #mikrokam_fejlec .text {
+#frontend #mikrokam_fejlec .main_text {
   font-family: Georgia;
   text-align: center;
   background-color: transparent;
@@ -398,7 +470,7 @@ ul li {
 
 /* Sequence */
 
-#frontend #sequence .text {
+#frontend #sequence .main_text {
   padding: 0px;
 }
 
@@ -408,7 +480,7 @@ ul li {
    background-repeat: no-repeat;
 }
 
-#frontend #sequence_fejlec .text {
+#frontend #sequence_fejlec .main_text {
   font-family: Georgia;
   text-align: center;
   background-color: transparent;
@@ -437,7 +509,7 @@ ul li {
 
 /* edtr */
 
-#frontend #edtr .text {
+#frontend #edtr .main_text {
   padding: 0px;
 }
 
@@ -447,7 +519,7 @@ ul li {
    background-repeat: no-repeat;
 }
 
-#frontend #edtr_fejlec .text {
+#frontend #edtr_fejlec .main_text {
   font-family: Georgia;
   text-align: center;
   background-color: transparent;
@@ -476,7 +548,7 @@ ul li {
 
 /* mvmonitor */
 
-#frontend #mvmonitor .text {
+#frontend #mvmonitor .main_text {
   padding: 0px;
 }
 
@@ -486,7 +558,7 @@ ul li {
    background-repeat: no-repeat;
 }
 
-#frontend #mvmonitor_fejlec .text {
+#frontend #mvmonitor_fejlec .main_text {
   font-family: Georgia;
   text-align: center;
   background-color: transparent;
@@ -515,7 +587,7 @@ ul li {
 
 /* digirat */
 
-#frontend #digirat .text {
+#frontend #digirat .main_text {
   padding: 0px;
 }
 
@@ -525,7 +597,7 @@ ul li {
    background-repeat: no-repeat;
 }
 
-#frontend #digirat_fejlec .text {
+#frontend #digirat_fejlec .main_text {
   font-family: Georgia;
   text-align: center;
   background-color: transparent;
@@ -551,4 +623,28 @@ ul li {
    background-image: url('../images/footer_hatter.jpg');
    background-repeat: repeat-x;
 }
+
+/* ADVICES */
+
+#advices .main_text {
+  background-color: #fff;
+  color: #999;
+  text-align: left;
+}
+
+#advices h2 {
+  color: #333;
+}
+
+#advices .advice_information {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #333;
+  text-align: left;
+}
+
+/* SUPPORT */
+
+
 

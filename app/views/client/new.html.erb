@@ -1,16 +1,7 @@
 <div id="client">
-<h2><%= @user.full_name %> karbantartása</h2>
+<h2>Új ügyfél felvitele</h2>
 
-<% unless @user.confirmation_token.blank? %>
-<div class="user_confirmation">
-  <div class="text">
-    A felhasználó jelenleg még inaktív ( Nem tud bejelentkezni! ) : <%= link_to "A felhasználó megerősítése", "http://localhost:3000/users/confirmation?confirmation_token=#{@user.confirmation_token}"  %>
-  </div>
-</div>
-
-<% end %>
-
-<%= semantic_form_for @user, :url => { :action => "update" } do |f| %>
+<%= semantic_form_for @user, :url => { :action => "create" } do |f| %>
 
     <% if @user.errors.any? %>
         <div id="error_explanation">
@@ -27,6 +18,8 @@
       <%= f.inputs :name => "Ügyfél alapadatai :" do %>
           <%= f.input :full_name %>
           <%= f.input :nick_name %>
+          <%= f.input :email %>
+          <%= f.input :password %>
           <%= f.input :local_government %>
           <%= f.input :phone_number %>
       <% end %>

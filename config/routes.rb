@@ -1,5 +1,7 @@
 Gtt::Application.routes.draw do
 
+  get "support/index"
+
   resources :advices
 
   resources :systems
@@ -30,9 +32,15 @@ Gtt::Application.routes.draw do
 
   # CLIENT
 
+  match 'client/new' => 'client#new', :as => "client_new"
+  match 'client/create' => 'client#create', :as => "client_create"
   match 'client/index' => 'client#index', :as => "client"
   match 'client/edit/:id' => 'client#edit', :as => "client_edit"
   match 'client/update/:id' => 'client#update', :as => "client_update"
+
+  # SUPPORT
+
+  match 'frontend/support', :to => 'support#index'
 
 
 

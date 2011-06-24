@@ -1,27 +1,30 @@
-<h1>Listing articles</h1>
+<div id="article">
+<h2>Cikkek listája</h2>
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>Short description</th>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Cím</th>
+    <th>Hozzárendelve</th>
+    <th>Módosít</th>
+    <th><div class="align_right">Töröl</div></th>
   </tr>
 
 <% @articles.each do |article| %>
   <tr>
     <td><%= article.title %></td>
-    <td><%= article.short_description %></td>
-    <td><%= article.content %></td>
-    <td><%= link_to 'Show', article %></td>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-    <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% if article.system_id.blank? %>
+    <td><%= "Nincs hozzárendelve rendszerhez!" %></td>
+    <% else %>
+    <td><%= article.system.name %></td>
+    <% end %>
+
+    <td><%= link_to t(:modify), edit_article_path(article) %></td>
+    <td><div class="align_right"><%= link_to t(:delete), article, :confirm => 'Biztosan törlöd?', :method => :delete %></div></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Article', new_article_path %>
+<%= link_to "Új cikk felvitele", new_article_path %>
+</div>

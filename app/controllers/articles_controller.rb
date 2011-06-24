@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
-  # GET /articles
-  # GET /articles.xml
+
+  before_filter :authenticate_admin!
+  layout "contact"
+
   def index
     @articles = Article.all
 
@@ -41,16 +43,11 @@ class ArticlesController < ApplicationController
   # POST /articles.xml
   def create
     @article = Article.new(params[:article])
-
-    respond_to do |format|
       if @article.save
-        format.html { redirect_to(@article, :notice => 'Article was successfully created.') }
-        format.xml  { render :xml => @article, :status => :created, :location => @article }
+         redirect_to articles_path, :notice => 'Article was successfully created.'
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
+        render :action => "new"
       end
-    end
   end
 
   # PUT /articles/1
@@ -58,15 +55,12 @@ class ArticlesController < ApplicationController
   def update
     @article = Article.find(params[:id])
 
-    respond_to do |format|
-      if @article.update_attributes(params[:article])
-        format.html { redirect_to(@article, :notice => 'Article was successfully updated.') }
-        format.xml  { head :ok }
+    if @article.update_attributes(params[:article])
+        redirect_to articles_path, :notice => 'article was successfully updated.'
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
+        render :action => "edit"
       end
-    end
+
   end
 
   # DELETE /articles/1
