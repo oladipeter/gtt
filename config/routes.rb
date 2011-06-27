@@ -1,5 +1,7 @@
 Gtt::Application.routes.draw do
 
+  resources :supmessages
+
   get "support/index"
 
   resources :advices
@@ -41,8 +43,7 @@ Gtt::Application.routes.draw do
   # SUPPORT
 
   match 'frontend/support', :to => 'support#index'
-
-
+  match '/support', :to => 'support#index'
 
   # namespace :admin do
   #   root :to => "backend#index"

@@ -27,9 +27,10 @@ class ClientController < ApplicationController
 
   def update
     @user = User.find(params[:id])
+    # render :text => "#{(params[:user])}"
 
       if @user.update_attributes(params[:user])
-       redirect_to client_path, :notice => 'Advice was successfully updated.'
+        redirect_to client_path, :notice => 'Advice was successfully updated.'
       else
        render :action => "edit"
       end

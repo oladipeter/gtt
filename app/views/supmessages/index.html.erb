@@ -1,0 +1,29 @@
+<div id="supmessage">
+  <h2>Hibabejelentések</h2>
+
+  <table id="gradient-style" summary="Hibabejelentések">
+    <thead>
+    <tr>
+      <th scope="col">Cím</th>
+      <th scope="col">Módosít</th>
+      <th scope="col">Töröl</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+      <td colspan="4"><%= link_to "Új hibabejelentés felvitele", new_supmessage_path %></td>
+    </tr>
+    </tfoot>
+
+    <tbody>
+    <% @supmessages.each do |message| %>
+        <tr>
+          <td><%= message.title %></td>
+          <td><%= link_to "Módosít", edit_supmessage_path(message) %></td>
+          <td><%= link_to "Töröl", message, :confirm => 'Biztosan törlöd a hibabejelentést?', :method => :delete %></td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+
+</div>

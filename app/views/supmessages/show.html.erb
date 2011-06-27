@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @supmessage.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @supmessage.description %>
+</p>
+
+<p>
+  <b>System:</b>
+  <%= @supmessage.system %>
+</p>
+
+<p>
+  <b>Responsible:</b>
+  <%= @supmessage.responsible %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @supmessage.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_supmessage_path(@supmessage) %> |
+<%= link_to 'Back', supmessages_path %>

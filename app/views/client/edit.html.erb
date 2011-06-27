@@ -48,6 +48,10 @@
           <%= f.check_box :digirat_flat_rate %>&nbsp;Digirat
       <% end %>
 
+      <%= f.inputs :name => "A felhasználó RENDSZEREI :" do %>
+        <%= f.input :systems, :as => :select, :collection => System.find(:all)%>
+      <% end %>
+
       <%= f.input :contact_id, :as => :radio, :collection => Contact.find(:all), :label => "Kapcsolattartó" %>
 
       <%= f.commit_button t(:modify) %>

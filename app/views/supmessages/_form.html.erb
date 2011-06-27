@@ -1,0 +1,29 @@
+<div id="supmessage">
+
+<%= semantic_form_for @supmessage, :html => { :multipart => true } do |f| %>
+
+    <% if @supmessage.errors.any? %>
+        <div id="error_explanation">
+          <h3>Összesen <%= @supmessage.errors.count %> hiba :</h3>
+
+          <ul>
+            <% @supmessage.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <%= f.inputs :name => "Hibabejelentés adatai :" do %>
+          <%= f.input :title %>
+          <%= f.input :description %>
+          <%= f.input :system  %>
+          <%= f.input :responsible %>
+          <%= f.input :user_id, :as => :hidden, :value => current_user.id %>
+    <% end %>
+
+    <%= f.commit_button t(:create) %>
+
+<% end %>
+
+</div>

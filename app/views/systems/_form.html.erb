@@ -17,6 +17,9 @@
     <%= f.inputs :name => "Rendszer adatai :" do %>
           <%= f.input :name, :label => t(:name), :hint => "Nem szerkeszthető, törzsadat!", :input_html => { :disabled => true } %>
           <%= f.input :description, :label => t(:short_description) %>
+    <%= f.inputs :name => "A rendszer felhasználói :" do %>
+        <%= f.input :users, :as => :select, :collection => User.find(:all)%>
+    <% end %>
     <% end %>
 
     <%= f.commit_button t(:ok) %>
