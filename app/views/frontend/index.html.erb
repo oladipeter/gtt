@@ -1,6 +1,4 @@
-<h2>FRONTEND</h2>
-
-<h2>Üdvözöljük : <%= current_user.full_name %></h2>
-<p><%= current_user.email %></p>
-
-<%= link_to "Kijelentkezés", destroy_user_session_path  %>
+<% @systems.each do |system| %>
+  <tr>
+    <td><%= system.name %></td>
+<% end %>

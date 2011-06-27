@@ -21,6 +21,10 @@ class FrontendController < ApplicationController
 
     @advices = Advice.find(:all, :limit => 3)
 
+    # System lists
+
+    @systems = System.find(:all, :include => :users, :conditions => { "systems_users.user_id" => current_user.id})
+
   end
 
 end
