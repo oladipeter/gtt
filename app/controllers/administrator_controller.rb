@@ -4,7 +4,8 @@ class AdministratorController < ApplicationController
   layout "administrator"
 
   def index
-    @administrators = Admin.where('admins.id != 1') # Minden admin kiveve a super
+    @administrators = Admin.find(:all)
+    # @administrators = Admin.where('admins.id != 1') # Minden admin kiveve a super
     @number_of_administrators = @administrators.size
   end
 
@@ -36,8 +37,12 @@ class AdministratorController < ApplicationController
 
   def destroy
     @admin = Admin.find(params[:id])
-    @admin.destroy
-    redirect_to administrator_path, :notice => 'Admin was successfully deleted.'
+    if @admin.id == 1
+      redirect_to administrator_path, :notice => 'Cannot delete the main admin.'
+    else
+      @admin.destroy
+      redirect_to administrator_path, :notice => 'Admin was successfully deleted.'
+    end
   end
 
 end

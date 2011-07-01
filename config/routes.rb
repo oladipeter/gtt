@@ -17,6 +17,7 @@ Gtt::Application.routes.draw do
   # BASIC ROUTING
 
   get "client/index"
+  get "contacts/index"
   resources :contacts
   get "administrator/index"
   devise_for :admins
@@ -35,6 +36,7 @@ Gtt::Application.routes.draw do
   match 'administrator/destroy/:id' => 'administrator#destroy', :as => "administrator_delete"
   match 'administrator/edit/:id' => 'administrator#edit', :as => "administrator_edit"
   match 'administrator/update/:id' => 'administrator#update', :as => "administrator_update"
+
 
   # CLIENT
 

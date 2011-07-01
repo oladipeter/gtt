@@ -34,7 +34,11 @@
             <% end %>
           </td>
           <td><%= link_to "Módosít", administrator_edit_path(administrator) %></td>
+          <% if administrator.id == 1 %>
+            <td>"Nem törölhető"</td>
+          <% else %>
           <td><%= link_to "Töröl", administrator_delete_path(administrator), :confirm => "Biztosan törlöd az adminisztrátort?" %></td>
+          <% end %>
         </tr>
     <% end %>
     </tbody>

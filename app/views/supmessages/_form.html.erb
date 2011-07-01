@@ -17,7 +17,7 @@
     <%= f.inputs :name => "Hibabejelentés adatai :" do %>
           <%= f.input :title, :label => "Cím" %>
           <%= f.input :description, :label => "Leírás" %>
-          <%= f.input :admins, :as => :select, :collection => @admins  %> <!-- Az admin tombot rakom be es kilistaztatom a formon, igy megvan hogy melyik rendszerhez melyik adminisztratorok tartoznak!!  -->
+          <%= f.input :admins, :as => :select, :collection => @admins, :hint => "Kérem jelölje meg azt az adminisztrátort akivel kapcsolatban áll. Többet is megjelölhet!"  %> <!-- Az admin tombot rakom be es kilistaztatom a formon, igy megvan hogy melyik rendszerhez melyik adminisztratorok tartoznak!!  -->
           <%= f.input :system_title, :as => :hidden, :value => session[:current_system].title %>
           <%= f.input :user_id, :as => :hidden, :value => current_user.id %>
     <% end %>

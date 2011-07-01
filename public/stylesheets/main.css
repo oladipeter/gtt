@@ -758,3 +758,62 @@ ul li {
 .message_description h3 {
   font-weight: bold;
 }
+
+.hibabejelentes_fejlec {
+  height: 126px;
+  background-image: url('../images/hibabejelentes_fejlec.jpg');
+  background-repeat: no-repeat;
+}
+
+.felhasznalo_info {
+  padding: 20px 0px 0px 0px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.felhasznalo_info .nev, .felhasznalo_info .onkormanyzat  {
+  font-family: georgia;
+  font-size: 14px;
+}
+
+.felhasznalo_info .mail {
+  color: orange;
+  font-family: georgia;
+  font-size: 11px;
+}
+
+.bejelentes_datuma {
+  font-size: 14px;
+  padding: 37px 0px 0px 30px;
+  color: orange;
+}
+
+.hibabejelentes_cim {
+  font-family: georgia;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 20px 0px 0px 25px;
+}
+
+.hibabejelentes_telefon {
+  font-size: 11px;
+  padding: 20px 0px 0px 30px;
+}
+
+.hibabejelentes_tartalom {
+  background-image: url('../images/hibabejelentes_tartalom_hatter.jpg');
+  background-repeat: repeat-y;
+}
+
+.bejelentes_szovege {
+  font-size: 14px;
+  padding: 30px;
+  padding-top: 20px;
+}
+
+.hibabejelentes_lablec {
+  height: 26px;
+  background-image: url('../images/hibabejelentes_lablec.jpg');
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+}

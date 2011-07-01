@@ -34,7 +34,7 @@ class SupmessagesController < ApplicationController
 
     # Megnezem hogy eppen melyik rendszerrol van szo.. egy adott rendszert kell elkapni CSAK egyet, majd az ehhez tartozo adminokat nezzuk meg,
     # melyeket mar tombben fogunk megkapni
-    @system = System.find(:first, :conditions => ["id = ?", session[:current_system].id ])
+    @system = System.find(:first, :conditions => ["id = ?",session[:current_system].id])
     # Majd megnezem hogy melyik adminisztratorok tartoznak hozza a viewban..
     # itt csak osszekotom a tablakat, az adott rendszerhez mely adminok tartoznak (tomb)
     @admins = @system.admins

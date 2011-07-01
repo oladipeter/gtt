@@ -1,63 +1,64 @@
 <h2>Hibabejelentés adatlapja</h2>
 
-  <div class="span-3">
-    <div class="message_user_icon">
-    </div>
-  </div>
-  <div class="span-7">
-    <div class="message_user_data">
-      <div class="text">
-        <b>Név :</b> <%= @message.user.full_name %><br/>
-        <b>Email :</b> <%= @message.user.email %><br/>
-        <u><%= @message.user.local_government %></u><br/>
-      </div>
-    </div>
-  </div>
-  <div class="span-9 last">
-    <div class="message_system_info">
-      <div class="text">
-      <%= @message.system_title %> hibabejelentés
-      </div>
-    </div>
-    <div class="message_date">
-      <div class="text">
-      <%= @message.created_at %>
-      </div>
-    </div>
-  </div>
-  <div class="span-19">
-    <div class="message_description">
-      <h3><%= @message.title %></h3>
-      <%= @message.description %><br/><br/>
+<div class="span-19">
 
-      <%= semantic_form_for @contact do |f| %>
+          <div class="hibabejelentes_fejlec">
+             <div class="span-8 prepend-2 append-3">
+               <div class="felhasznalo_info">
+                 <div class="nev"> <%= @message.user.full_name %></div>
+                 <div class="onkormanyzat"> <%= @message.user.local_government %></div>
+                 <div class="mail"> <%= @message.user.email %></div>
+               </div>
+             </div>
+             <div class="span-6 last">
+               <div class="bejelentes_datuma">
+                 <%= @message.created_at %>
+               </div>
+             </div>
+             <div class="span-12">
+               <div class="hibabejelentes_cim">
+                 <%= @message.title %>
+               </div>
+             </div>
+             <div class="span-7 last">
+               <div class="hibabejelentes_telefon">
+                 <b>Bejelentő telefonszáma : </b><%= @message.user.phone_number %>
+               </div>
+             </div>
+          </div>
 
-    <% if @contact.errors.any? %>
-        <div id="error_explanation">
-          <h3>Összesen <%= @contact.errors.count %> hiba :</h3>
+          <div class="hibabejelentes_tartalom">
+               <div class="bejelentes_szovege">
+                 <%= @message.description %><br/><br/>
 
-          <ul>
-            <% @contact.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
+                 <%= semantic_form_for @contact do |f| %>
+
+              <% if @contact.errors.any? %>
+                <div id="error_explanation">
+                  <h3>Összesen <%= @contact.errors.count %> hiba :</h3>
+
+                  <ul>
+                    <% @contact.errors.full_messages.each do |msg| %>
+                      <li><%= msg %></li>
+                    <% end %>
+                  </ul>
+                </div>
+              <% end %>
+
+              <%= f.inputs :name => "Rendszer adatai :" do %>
+                <%= f.input :name, :label => t(:name), :hint => "Nem szerkeszthető mező!", :input_html => {:disabled => true} %>
+                <%= f.input :email, :label => "A rendszer felhasználói :", :as => :select, :collection => Contact.find(:all), :hint => "Nem szerkeszthető mező!", :input_html => {:disabled => true} %>
+              <% end %>
+
             <% end %>
-          </ul>
-        </div>
-    <% end %>
-
-    <%= f.inputs :name => "Rendszer adatai :" do %>
-          <%= f.input :name, :label => t(:name), :hint => "Nem szerkeszthető mező!", :input_html => { :disabled => true } %>
-          <%= f.input :email, :label => "A rendszer felhasználói :", :as => :select, :collection => Contact.find(:all), :hint => "Nem szerkeszthető mező!", :input_html => { :disabled => true }%>
-    <% end %>
-
-    <%= f.commit_button t(:ok) %>
-
-<% end %>
 
 
-      <b>Felelős(ök) :</b><br/>  <br/>
-      <h3>Hibabejelentés státusza</h3>
-      Admin oldalon megváltoztatható!
-    </div>
-  </div>
+               </div>
+          </div>
 
+          <div class="hibabejelentes_lablec">
+             <div class="bejelentes_lablec">
+             </div>
+          </div>
 
+</div>
