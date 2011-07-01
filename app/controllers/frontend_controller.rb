@@ -23,7 +23,43 @@ class FrontendController < ApplicationController
 
     # System lists
 
-    @systems = System.find(:all, :include => :users, :conditions => { "systems_users.user_id" => current_user.id})
+    @support_systems = System.find(:all, :include => :users, :conditions => { "systems_users.user_id" => current_user.id})
+
+    @mikrovoks_support = "0"
+    @mikrokam_support = "0"
+    @sequence_support = "0"
+    @edtr_support = "0"
+    @mvmonitor_support = "0"
+    @digirat_support = "0"
+
+    for system in @support_systems do
+
+      case system.title
+        when "mikrovoks"
+          @mikrovoks_support = "1"
+
+        when "mikrokam"
+          @mikrokam_support = "1"
+
+        when "sequence"
+          @sequence_support = "1"
+
+        when "edtr"
+          @edtr_support = "1"
+
+        when "mvmonitor"
+          @mvmonitor_support = "1"
+
+        when "digirat"
+          @digirat_support = "1"
+      end
+    end
+
+
+    # @not_support_systems = System.find(:all, :group => "system_id", :include => :users, :conditions => ( "systems_users.user_id != #{current_user.id} "))
+    # @support_systems = System.find(:all, :include => :users)
+    # @users = @support_systems.users
+    # @systems = System.find( :all, :include => :users )
 
   end
 

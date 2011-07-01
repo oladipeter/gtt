@@ -4,7 +4,7 @@ class SupmessagesController < ApplicationController
   layout "support"
 
   def index
-    @supmessages = Supmessage.where( :user_id => current_user.id )
+    @supmessages = Supmessage.all( :conditions => ["user_id = ? AND system_title = ?", current_user.id, session[:current_system].title])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -31,6 +31,15 @@ class SupmessagesController < ApplicationController
   # GET /supmessages/new
   # GET /supmessages/new.xml
   def new
+
+    # Megnezem hogy eppen melyik rendszerrol van szo.. egy adott rendszert kell elkapni CSAK egyet, majd az ehhez tartozo adminokat nezzuk meg,
+    # melyeket mar tombben fogunk megkapni
+    @system = System.find(:first, :conditions => ["id = ?", session[:current_system].id ])
+    # Majd megnezem hogy melyik adminisztratorok tartoznak hozza a viewban..
+    # itt csak osszekotom a tablakat, az adott rendszerhez mely adminok tartoznak (tomb)
+    @admins = @system.admins
+
+
     @supmessage = Supmessage.new
 
     respond_to do |format|
@@ -41,7 +50,6 @@ class SupmessagesController < ApplicationController
 
   # GET /supmessages/1/edit
   def edit
-
     @supmessage = Supmessage.find(params[:id])
 
     if @supmessage.user_id != current_user.id

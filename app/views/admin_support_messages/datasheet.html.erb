@@ -1,0 +1,63 @@
+<h2>Hibabejelentés adatlapja</h2>
+
+  <div class="span-3">
+    <div class="message_user_icon">
+    </div>
+  </div>
+  <div class="span-7">
+    <div class="message_user_data">
+      <div class="text">
+        <b>Név :</b> <%= @message.user.full_name %><br/>
+        <b>Email :</b> <%= @message.user.email %><br/>
+        <u><%= @message.user.local_government %></u><br/>
+      </div>
+    </div>
+  </div>
+  <div class="span-9 last">
+    <div class="message_system_info">
+      <div class="text">
+      <%= @message.system_title %> hibabejelentés
+      </div>
+    </div>
+    <div class="message_date">
+      <div class="text">
+      <%= @message.created_at %>
+      </div>
+    </div>
+  </div>
+  <div class="span-19">
+    <div class="message_description">
+      <h3><%= @message.title %></h3>
+      <%= @message.description %><br/><br/>
+
+      <%= semantic_form_for @contact do |f| %>
+
+    <% if @contact.errors.any? %>
+        <div id="error_explanation">
+          <h3>Összesen <%= @contact.errors.count %> hiba :</h3>
+
+          <ul>
+            <% @contact.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <%= f.inputs :name => "Rendszer adatai :" do %>
+          <%= f.input :name, :label => t(:name), :hint => "Nem szerkeszthető mező!", :input_html => { :disabled => true } %>
+          <%= f.input :email, :label => "A rendszer felhasználói :", :as => :select, :collection => Contact.find(:all), :hint => "Nem szerkeszthető mező!", :input_html => { :disabled => true }%>
+    <% end %>
+
+    <%= f.commit_button t(:ok) %>
+
+<% end %>
+
+
+      <b>Felelős(ök) :</b><br/>  <br/>
+      <h3>Hibabejelentés státusza</h3>
+      Admin oldalon megváltoztatható!
+    </div>
+  </div>
+
+

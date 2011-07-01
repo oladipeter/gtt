@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110627115318) do
+ActiveRecord::Schema.define(:version => 20110630134139) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                             :default => "", :null => false
@@ -25,11 +25,21 @@ ActiveRecord::Schema.define(:version => 20110627115318) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.integer  "system_id"
+  end
+
+  create_table "admins_supmessages", :id => false, :force => true do |t|
+    t.integer "supmessage_id"
+    t.integer "admin_id"
+  end
+
+  create_table "admins_systems", :id => false, :force => true do |t|
+    t.integer "admin_id"
+    t.integer "system_id"
   end
 
   create_table "advices", :force => true do |t|
@@ -66,8 +76,7 @@ ActiveRecord::Schema.define(:version => 20110627115318) do
   create_table "supmessages", :force => true do |t|
     t.string   "title"
     t.text     "description"
-    t.string   "system"
-    t.string   "responsible"
+    t.string   "system_title"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -76,6 +85,7 @@ ActiveRecord::Schema.define(:version => 20110627115318) do
   create_table "systems", :force => true do |t|
     t.string   "name"
     t.text     "description"
+    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

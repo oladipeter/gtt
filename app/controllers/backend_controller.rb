@@ -7,7 +7,7 @@ class BackendController < ApplicationController
     # Hibabejelentesek
 
     @support_messages = Supmessage.find(:all)
-    @support_messages_number = Supmessage.find(:all).size
+    session[:support_messages_number] = Supmessage.find(:all).size
 
   end
 

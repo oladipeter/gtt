@@ -3,15 +3,16 @@ class CreateSystems < ActiveRecord::Migration
     create_table :systems do |t|
       t.string :name
       t.text :description
+      t.string :title
       t.timestamps
     end
 
-    System.create :name => "MikroVoks"
-    System.create :name => "MikroKam"
-    System.create :name => "seQUEnce"
-    System.create :name => "EDtR"
-    System.create :name => "MvMonitor"
-    System.create :name => "Digirat"
+    System.create :name => "MikroVoks", :title => "mikrovoks"
+    System.create :name => "MikroKam", :title => "mikrokam"
+    System.create :name => "seQUEnce", :title => "sequence"
+    System.create :name => "EDtR", :title => "edtr"
+    System.create :name => "MvMonitor", :title => "mvmonitor"
+    System.create :name => "Digirat", :title => "digirat"
 
   end
 

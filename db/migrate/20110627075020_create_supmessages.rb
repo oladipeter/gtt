@@ -3,10 +3,8 @@ class CreateSupmessages < ActiveRecord::Migration
     create_table :supmessages do |t|
       t.string :title
       t.text :description
-      t.string :system
-      t.string :responsible
+      t.string :system_title
       t.integer :user_id
-
       t.timestamps
     end
   end

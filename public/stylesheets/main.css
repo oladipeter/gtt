@@ -31,6 +31,10 @@ h2 {
     font-weight: bold;
 }
 
+.main_text h2 {
+  text-align: left;
+}
+
 .form_info {
     font-weight: bold;
 }
@@ -284,6 +288,10 @@ ul li {
     letter-spacing: -0.4pt;
 }
 
+#backend_left .main_text {
+  padding-top: 20px;
+}
+
 /* BACKEND RIGHT */
 /*--------------------------------------------------------------------------------------------------------------------*/
 
@@ -351,6 +359,14 @@ ul li {
 
 #administrator h2, #contact h2, #client h2, #advice h2, #article h2, #system h2    {
     padding: 0px;
+}
+
+#administrator fieldset {
+  padding: 20px;
+}
+
+#administrator #admin_submit {
+  margin-top: 20px;
 }
 
 /* FRONTEND */
@@ -645,7 +661,100 @@ ul li {
   text-align: left;
 }
 
-/* SUPPORT */
+/* ERROR MESSAGES */
 
+#error_messages {
+  background-color: #fff;
+}
 
+#error_messages h2 {
+  padding: 20px 0px 0px 20px;
+}
 
+.message_background {
+  height: 120px;
+  background-image: url('../images/support_message_background.jpg');
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.message_title {
+  font-family: Georgia;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px 0px 0px 35px;
+  margin-bottom: 10px;
+}
+
+.message_uploader, .message_status {
+  font-family: Verdana;
+  font-size: 10px;
+  color: #fff;
+  padding: 5px 0px 0px 25px;
+}
+
+.message_status {
+  padding-top: 12px;
+  font-size: 12px;
+  color: #333;
+}
+
+.message_statusbar {
+  padding: 10px 0px 0px 20px;
+}
+
+.message_short_description {
+  font-family: Arial;
+  font-size: 11px;
+  color: #333;
+  padding: 12px 0px 0px 35px;
+}
+
+.message_user_icon {
+  height: 115px;
+  background-image: url('../images/message_user_icon.jpg');
+  background-repeat: no-repeat;
+}
+
+.message_user_data {
+  height: 115px;
+  background-image: url('../images/message_user_data.jpg');
+  background-repeat: no-repeat;
+}
+
+.message_user_data .text {
+  font-size: 11px;
+  padding: 43px 0px 0px 20px;
+}
+
+.message_system_info {
+  height: 59px;
+  background-image: url('../images/message_system_info.jpg');
+  background-repeat: no-repeat;
+}
+
+.message_system_info .text {
+  font-size: 14px;
+  padding: 24px 0px 0px 70px;
+  font-weight: bold;
+}
+
+.message_date {
+  height: 56px;
+  background-image: url('../images/message_date.jpg');
+  background-repeat: no-repeat;
+}
+
+.message_date .text {
+  font-size: 14px;
+  padding: 11px 0px 0px 70px;
+  font-weight: bold;
+}
+
+.message_description {
+  padding: 20px;
+}
+
+.message_description h3 {
+  font-weight: bold;
+}

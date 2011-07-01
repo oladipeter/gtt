@@ -7,8 +7,6 @@ class DeviseCreateAdmins < ActiveRecord::Migration
       t.timestamps
     end
 
-    Admin.create :email => "oladi.peter@globomax.hu", :password => "va1Rooke"
-
   end
 
   def self.down

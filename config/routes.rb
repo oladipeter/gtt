@@ -1,5 +1,9 @@
 Gtt::Application.routes.draw do
 
+  get "admin_support_messages/index"
+
+  get "support_messages/Index"
+
   resources :supmessages
 
   get "support/index"
@@ -44,6 +48,16 @@ Gtt::Application.routes.draw do
 
   match 'frontend/support', :to => 'support#index'
   match '/support', :to => 'support#index'
+
+  # ERROR MESSAGE
+
+  match '/support', :to => 'support#index'
+  match '/support', :to => 'support#index'
+
+  # SUPPORT MESSAGES ON ADMIN SITE
+
+  match 'support_messages/list' => 'admin_support_messages#index', :as => "support_messages_list"
+  match 'support_messages/datasheet/:id' => 'admin_support_messages#datasheet', :as => "support_messages_datasheet"
 
   # namespace :admin do
   #   root :to => "backend#index"

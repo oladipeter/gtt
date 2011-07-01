@@ -88,22 +88,18 @@
 
     // opening animation
     function(done) {
-      this.getTip().animate({top: '+=45'}, 500, 'bouncy', done).show();
+      this.getTip().animate({top: '+=45'}, 10, 'bouncy', done).show();
     },
 
     // closing animation
     function(done) {
-      this.getTip().animate({top: '-=15'}, 500, 'bouncy', function() {
+      this.getTip().animate({top: '-=15'}, 10, 'bouncy', function() {
         $(this).hide();
         done.call();
       });
     }
     );
-  $('#mikrovoks_image, #mikrokam_image, #sequence_image, #edtr_image, #mvmonitor_image, #digirat_image ').tooltip({ effect: 'bouncy', opacity: 0.5, delay: 500 });
-
-
-
-
+  $('#mikrovoks_image, #mikrokam_image, #sequence_image, #edtr_image, #mvmonitor_image, #digirat_image ').tooltip({ effect: 'bouncy', position: "bottom left"});
 
 </script>
 

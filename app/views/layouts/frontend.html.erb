@@ -113,7 +113,7 @@
             <div class="span-8" id="mikrovoks">
 
                 <div class="span-8" id="mikrovoks_fejlec">
-                  <div class="main_text">MikroVoks Jegyzőkönyvező Rendszer</div>
+                  <div class="main_text">MikroVoks Szavazó Rendszer</div>
                 </div>
                 <div class="demo">
                   <div class="span-8" id="mikrovoks_image">
@@ -124,7 +124,11 @@
                 </div>
 
                 <div class="span-8">
-                    <%= image_tag "termek_tamogatas.jpg" %>
+                  <% if @mikrovoks_support == "1" %>
+                    <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "mikrovoks") %>
+                  <% else %>
+                    <%= image_tag "termek_informacio.jpg" %>
+                  <% end %>
                 </div>
 
             </div>
@@ -134,7 +138,7 @@
             <div class="span-8" id="mikrokam">
 
                 <div class="span-8" id="mikrokam_fejlec">
-                  <div class="main_text">MikroKam Jegyzőkönyvező Rendszer</div>
+                  <div class="main_text">MikroKam Robotkamerás Rendszer</div>
                 </div>
                 <div class="demo">
                   <div class="span-8" id="mikrokam_image">
@@ -145,7 +149,11 @@
                 </div>
 
                 <div class="span-8">
-                    <%= image_tag "termek_tamogatas.jpg" %>
+                   <% if @mikrokam_support == "1" %>
+                    <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "mikrokam") %>
+                  <% else %>
+                    <%= image_tag "termek_informacio.jpg" %>
+                  <% end %>
                 </div>
 
             </div>
@@ -155,7 +163,7 @@
             <div class="span-8 last" id="sequence">
 
                 <div class="span-8" id="sequence_fejlec">
-                  <div class="main_text">seQUEnce Jegyzőkönyvező Rendszer</div>
+                  <div class="main_text">seQUEnce Ügyfélhívó Rendszer</div>
                 </div>
                 <div class="demo">
                   <div class="span-8" id="sequence_image">
@@ -166,7 +174,11 @@
                 </div>
 
                 <div class="span-8">
-                    <%= image_tag "termek_tamogatas.jpg" %>
+                    <% if @sequence_support == "1" %>
+                    <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "sequence") %>
+                  <% else %>
+                    <%= image_tag "termek_informacio.jpg" %>
+                  <% end %>
                 </div>
 
             </div>
@@ -176,7 +188,7 @@
             <div class="span-8" id="edtr">
 
                 <div class="span-8" id="edtr_fejlec">
-                  <div class="main_text">EDtR Jegyzőkönyvező Rendszer</div>
+                  <div class="main_text">EDtR Döntéstámogató Rendszer</div>
                 </div>
                 <div class="demo">
                   <div class="span-8" id="edtr_image">
@@ -187,7 +199,11 @@
                 </div>
 
                 <div class="span-8">
-                    <%= image_tag "termek_tamogatas.jpg" %>
+                    <% if @edtr_support == "1" %>
+                    <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "edtr") %>
+                  <% else %>
+                    <%= image_tag "termek_informacio.jpg" %>
+                  <% end %>
                 </div>
 
             </div>
@@ -206,7 +222,11 @@
                 </div>
 
                 <div class="span-8">
-                    <%= image_tag "termek_tamogatas.jpg" %>
+                    <% if @mvmonitor_support == "1" %>
+                    <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "mvmonitor") %>
+                  <% else %>
+                    <%= image_tag "termek_informacio.jpg" %>
+                  <% end %>
                 </div>
 
             </div>
@@ -226,7 +246,11 @@
                 </div>
 
                 <div class="span-8">
-                    <%= image_tag "termek_tamogatas.jpg" %>
+                    <% if @digirat_support == "1" %>
+                    <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "digirat") %>
+                  <% else %>
+                    <%= image_tag "termek_informacio.jpg" %>
+                  <% end %>
                 </div>
 
             </div>
@@ -274,38 +298,6 @@
 <script>
   $('#notice_notice').delay(1900).slideUp(900);
   $('#notice_alert').delay(1900).slideUp(900);
-
-  /* TOOLTIP */
-
-  // create custom animation algorithm for jQuery called "bouncy"
-  $.easing.bouncy = function (x, t, b, c, d) {
-    var s = 1.70158;
-    if ((t /= d / 2) < 1) return c / 2 * (t * t * (((s *= (1.525)) + 1) * t - s)) + b;
-    return c / 2 * ((t -= 2) * t * (((s *= (1.525)) + 1) * t + s) + 2) + b;
-  }
-
-  // create custom tooltip effect for jQuery Tooltip
-  $.tools.tooltip.addEffect("bouncy",
-
-    // opening animation
-    function(done) {
-      this.getTip().animate({top: '+=45'}, 500, 'bouncy', done).show();
-    },
-
-    // closing animation
-    function(done) {
-      this.getTip().animate({top: '-=15'}, 500, 'bouncy', function() {
-        $(this).hide();
-        done.call();
-      });
-    }
-    );
-  $('#mikrovoks_image, #mikrokam_image, #sequence_image, #edtr_image, #mvmonitor_image, #digirat_image ').tooltip({ effect: 'bouncy', opacity: 0.5, delay: 500 });
-
-
-
-
-
 </script>
 
 

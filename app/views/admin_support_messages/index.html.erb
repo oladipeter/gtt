@@ -1,0 +1,27 @@
+<h2>Hibabejelentések listája</h2>
+
+<% @all_user_messages.each do |message| %>
+  <div class="message_background">
+    <div class="span-13">
+      <div class="message_title"><%= link_to "#{message.title}", support_messages_datasheet_path(message.id) %></div>
+    </div>
+    <div class="span-6 last">
+      <div class="message_uploader">
+        <%= message.user.full_name %><br/><%= message.created_at %>
+      </div>
+    </div>
+    <div class="span-13">
+      <div class="message_short_description"><%= truncate("#{message.description}", :length => 240, :omission => "..." )  %></div>
+    </div>
+    <div class="span-6 last">
+      <div class="span-6">
+        <div class="message_status">Hiba státusza</div>
+      </div>
+      <div class="span-6">
+        <div class="message_statusbar">
+          <%= image_tag("status_2.jpg") %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
