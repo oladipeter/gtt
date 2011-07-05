@@ -40,6 +40,6 @@ module Gtt
     config.filter_parameters += [:password]
 
     # UJS
-    config.action_view.javascript_expansions[:defaults] = %w(jquery rails jquery.tools.min)
+    config.action_view.javascript_expansions[:defaults] = %w(jquery rails jquery.tools.min jquery.lite-content-slider.min)
   end
 end

@@ -8,15 +8,19 @@ class AdminSupportMessagesController < ApplicationController
   end
 
   def datasheet
+    @supmessage = Supmessage.new
     @contact = Contact.new
+    @comment = Comment.new
     @message = Supmessage.find(params[:id])
     @supmessage = Supmessage.find(params[:id])
+    @comments = @supmessage.comments
+    @all_comments = @comments.size
   end
 
   def datasheet_update
     @supmessage = Supmessage.find(params[:id])
       if @supmessage.update_attributes(params[:supmessage])
-        redirect_to support_messages_datasheet_path(@supmessage), :notice => 'A hibabejelentés adatlapját sikeresen módosítottad!'
+        redirect_to support_messages_datasheet_path(@supmessage), :notice => 'A hibabejelentés státuszát sikeresen módosítottad!'
       end
 
   end

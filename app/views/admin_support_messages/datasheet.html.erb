@@ -29,40 +29,65 @@
           </div>
 
           <div class="hibabejelentes_tartalom">
+
                <div class="bejelentes_szovege">
-                 <%= @message.description %><br/><br/>
 
-                 <% if @message.status == "0" %>
-                  <div class="message_statusbar">
-                    <%= image_tag("status_1.jpg") %>
-                    <strong><%= "A hibát bejelentette a felhasználó, de még nem vette át az illetékes" %></strong>
-                  </div>
+                 <%= @message.description %><br/>
 
+                 <div class="all_comments">
+                   <%= link_to"Összesen #{@all_comments} komment van a hibabejelentéshez!", "#" %>
+                 </div>
 
-                 <% elsif @message.status == "1" %>
-                   <div class="message_statusbar">
-                    <%= image_tag("status_2.jpg") %>
-                    <strong><%= "A hibát átvette az illetékes" %></strong>
-                  </div>
+                 <div class="comments">
+                   <% @comments.each do |comment| %>
+                     <div class="comment">
+                       <div class="comment_header">
+                         <div class="span-9 prepend-1">
+                           <div class="comment_user"><%= comment.user %> |<span class="email"> <%= comment.email %></span></div>
+                         </div>
+                         <div class="span-7 last">
+                           <div class="comment_date"><%= comment.created_at %></div>
+                         </div>
+                       </div>
+                       <div class="comment_content">
+                         <div class="text">
+                           <div class="the_content"><%= comment.content %></div>
+                         </div>
+                       </div>
+                       <div class="comment_footer">
+                       </div>
+                       <br/>
+                     </div>
+                   <% end %>
+                 </div>
 
+                 <!-- Comment form -->
 
-                 <% elsif @message.status == "2" %>
-                   <div class="message_statusbar">
-                    <%= image_tag("status_2.jpg") %>
-                    <strong><%= "A hibát javítása megkezdődött." %></strong>
-                   </div>
+                 <%= semantic_form_for @comment, :url => comment_create_path do |f| %>
 
+                   <% if @comment.errors.any? %>
+                     <div id="error_explanation">
+                       <h3>Összesen <%= @comment.errors.count %> hiba :</h3>
 
+                       <ul>
+                         <% @comment.errors.full_messages.each do |msg| %>
+                           <li><%= msg %></li>
+                         <% end %>
+                       </ul>
+                     </div>
+                   <% end %>
 
-                 <% else @message.status == "3" %>
-                   <div class="message_statusbar">
-                    <%= image_tag("status_3.jpg") %>
-                    <strong><%= "A hiba javítva!" %></strong>
-                  </div>
-
+                   <%= f.inputs :name => "Új komment hozzáadása :" do %>
+                     <%= f.input :user, :as => :hidden, :value => current_admin.name %>
+                     <%= f.input :email, :as => :hidden, :value => current_admin.email %>
+                     <%= f.input :content, :label => "Komment" %>
+                     <%= f.input :supmessage_id, :as => :hidden, :value => @message.id %>
+                     <%= f.commit_button t(:create) %>
+                   <% end %>
 
                  <% end %>
-                 <br/>
+
+                 <!-- Statusz form -->
 
           <%= semantic_form_for @supmessage, :url => update_datasheet_path(@supmessage) do |f| %>
 
@@ -80,11 +105,36 @@
 
               <%= f.inputs :name => "Hibabejelentés státusza :" do %>
                 <%= f.input :status, :as => :select, :collection => [["A hibát bejelentette a felhasználó, de még nem vette át az illetékes", "0"], ["A hibát átvette az illetékes", "1"], ["A hiba javítása megkezdődött", "2"], ["A hiba javítva!", "3"]], :label => "Státusz", :hint => "Hibabejelentés státuszának megváltoztatása" %>
+                <%= f.commit_button t(:ok) %>
               <% end %>
-              <%= f.commit_button t(:ok) %>
 
           <% end %>
 
+                 <% if @message.status == "0" %>
+                  <div class="message_statusbar">
+                    <%= image_tag("status_1.jpg") %>
+                    <strong><%= "A hibát bejelentette a felhasználó, de még nem vette át az illetékes" %></strong>
+                  </div>
+
+                 <% elsif @message.status == "1" %>
+                   <div class="message_statusbar">
+                    <%= image_tag("status_2.jpg") %>
+                    <strong><%= "A hibát átvette az illetékes" %></strong>
+                  </div>
+
+                 <% elsif @message.status == "2" %>
+                   <div class="message_statusbar">
+                    <%= image_tag("status_2.jpg") %>
+                    <strong><%= "A hibát javítása megkezdődött." %></strong>
+                   </div>
+
+                 <% else @message.status == "3" %>
+                   <div class="message_statusbar">
+                    <%= image_tag("status_3.jpg") %>
+                    <strong><%= "A hiba javítva!" %></strong>
+                  </div>
+
+                 <% end %>
 
                </div>
           </div>

@@ -15,7 +15,6 @@
     <% end %>
 </div>
 
-
 <div id="main">
 
   <div id="block_1">
@@ -106,6 +105,26 @@
                 <b>Fax : </b>06-1-306-53-64
                 </div>
               </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <!-- CONTENT SLIDER -->
+
+            <div class="span-24" id="content_slider">
+               <div class="sliderWrap">
+                  <% @advices.each do |advice| %>
+                    <div class="sliderContent">
+                      <div class="slider_content_text">
+                        <h2><%= advice.title %></h2>
+                        <%= advice.content %>
+                        <div class="advice_information">
+                          Létrehozva : <%= advice.created_at %>
+                        </div>
+                      </div>
+                    </div>
+                  <% end %>
+               </div>
             </div>
 
             <!-- Mikrovoks -->
@@ -253,22 +272,6 @@
                   <% end %>
                 </div>
 
-            </div>
-
-            <!-- LINE 4 -->
-
-            <div class="span-24">
-              <div id="advices">
-                <div class="main_text">
-                     <% @advices.each do |advice| %>
-                        <h2><%= advice.title %></h2>
-                        <%= advice.content %>
-                        <div class="advice_information">
-                        Létrehozva : <%= advice.created_at %>
-                        </div>
-                     <% end %>
-                </div>
-              </div>
             </div>
 
             <div class="span-24">

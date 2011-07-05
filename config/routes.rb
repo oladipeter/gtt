@@ -1,5 +1,15 @@
 Gtt::Application.routes.draw do
 
+  get "comments/index"
+
+  get "comments/list"
+
+  get "comments/create"
+
+  get "comments/modify"
+
+  get "comments/delete"
+
   get "admin_support_messages/index"
 
   get "support_messages/Index"
@@ -61,6 +71,17 @@ Gtt::Application.routes.draw do
   match 'support_messages/list' => 'admin_support_messages#index', :as => "support_messages_list"
   match 'support_messages/datasheet/:id' => 'admin_support_messages#datasheet', :as => "support_messages_datasheet"
   match 'admin_support_messages/datasheet_update/:id' => 'admin_support_messages#datasheet_update', :as => "update_datasheet"
+
+  # SUPMESSAGE COMMENTS
+
+  match 'comments/index' => 'comments#index', :as => "comments_index"
+  match 'comments/list' => 'comments#list', :as => "comments_list"
+  match 'comment/new' => 'comments#new', :as => "comment_new"
+  match 'comment/create' => 'comments#create', :as => "comment_create"
+  match 'comment/modify/:id' => 'comments#modify', :as => "comment_modify"
+  match 'comment/delete/:id' => 'comments#delete', :as => "comment_delete"
+
+
 
 
 

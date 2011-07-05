@@ -5,24 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc3cdf55-bf61-4c34-9e03-3e251288b6ec" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/hibabejelentes_fejlec.jpg" afterPath="$PROJECT_DIR$/public/images/hibabejelentes_fejlec.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/hibabejelentes_lablec.jpg" afterPath="$PROJECT_DIR$/public/images/hibabejelentes_lablec.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/hibabejelentes_tartalom_hatter.jpg" afterPath="$PROJECT_DIR$/public/images/hibabejelentes_tartalom_hatter.jpg" />
+      <change type="DELETED" beforePath="C:\rails_projects\gtt\db\migrate\20110704140002_add_comments_to_supmessages.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin_support_messages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin_support_messages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/administrator_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/administrator_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/advices_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/advices_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/articles_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/client_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/client_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/frontend_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/frontend_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/supmessages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/supmessages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/systems_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/systems_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/supmessage.rb" afterPath="$PROJECT_DIR$/app/models/supmessage.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin_support_messages/datasheet.html.erb" afterPath="$PROJECT_DIR$/app/views/admin_support_messages/datasheet.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin_support_messages/index.html.erb" afterPath="$PROJECT_DIR$/app/views/admin_support_messages/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/supmessages/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/supmessages/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/error_messages.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/error_messages.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/frontend.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/frontend.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/application.js" afterPath="$PROJECT_DIR$/public/javascripts/application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/main.css" afterPath="$PROJECT_DIR$/public/stylesheets/main.css" />
     </list>
     <ignored path="gtt.iws" />
@@ -47,10 +40,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="systems_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/systems_controller.rb">
+      <file leaf-file-name="frontend.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/frontend.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="80" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.5088889">
+            <state line="115" column="89" selection-start="3573" selection-end="3573" vertical-scroll-proportion="-13.384615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/application.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="119" selection-start="2039" selection-end="2039" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="11" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="901" column="6" selection-start="16163" selection-end="16163" vertical-scroll-proportion="0.32">
               <folding />
             </state>
           </provider>
@@ -70,22 +90,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/error_messages.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20110704072200_add_status_field_to_supmessage.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/admin_support_messages/datasheet.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/admin_support_messages/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/supmessages/_form.html.erb" />
-        <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
-        <option value="$PROJECT_DIR$/app/controllers/admin_support_messages_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/administrator_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/advices_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/client_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/contacts_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/frontend_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/supmessages_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/systems_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20110705062333_create_comments.rb" />
+        <option value="$PROJECT_DIR$/app/models/supmessage.rb" />
+        <option value="$PROJECT_DIR$/app/models/comment.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20110705091955_add_email_field_to_comments.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/error_messages.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/admin_support_messages_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/admin_support_messages/datasheet.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/admin_support_messages/index.html.erb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/frontend.html.erb" />
+        <option value="$PROJECT_DIR$/public/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
       </list>
     </option>
   </component>
@@ -144,7 +164,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -158,7 +178,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -172,11 +196,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -378,7 +402,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -434,112 +458,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/admin_support_messages/datasheet.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="34" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.019744484">
+        <state line="46" column="8" selection-start="904" selection-end="904" vertical-scroll-proportion="0.5288889">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/supmessages/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/administrator/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="11" selection-start="426" selection-end="426" vertical-scroll-proportion="0.29616725">
+        <state line="26" column="98" selection-start="888" selection-end="888" vertical-scroll-proportion="-17.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/supmessages/edit.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/contacts/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="25" column="63" selection-start="798" selection-end="798" vertical-scroll-proportion="0.48627">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/backend.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="63" selection-start="746" selection-end="746" vertical-scroll-proportion="-18.307692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20110705091955_add_email_field_to_comments.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="9" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="105" selection-start="497" selection-end="497" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/error_messages.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="31" selection-start="1842" selection-end="1842" vertical-scroll-proportion="-25.923077">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin_support_messages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="69" selection-start="165" selection-end="165" vertical-scroll-proportion="0.11333334">
+        <state line="4" column="9" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/administrator_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/admin_support_messages/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="103" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.81222224">
+        <state line="8" column="107" selection-start="334" selection-end="334" vertical-scroll-proportion="0.1556064">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/advices_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/admin_support_messages/datasheet.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="76" selection-start="1338" selection-end="1338" vertical-scroll-proportion="1.1522223">
+        <state line="36" column="96" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.3554007">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="77" selection-start="1594" selection-end="1594" vertical-scroll-proportion="0.90555555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/backend_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/frontend/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/client_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
+        <state line="42" column="119" selection-start="2039" selection-end="2039" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/frontend.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="102" selection-start="2097" selection-end="2097" vertical-scroll-proportion="1.5866667">
+        <state line="115" column="89" selection-start="3573" selection-end="3573" vertical-scroll-proportion="-13.384615">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/frontend_controller.rb">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.lite-content-slider.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="7" selection-start="1218" selection-end="1218" vertical-scroll-proportion="0.0">
+        <state line="7" column="1713" selection-start="1872" selection-end="1872" vertical-scroll-proportion="0.13416009">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/start_controller.rb">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="12" column="11" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/supmessages_controller.rb">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="106" selection-start="3708" selection-end="3708" vertical-scroll-proportion="0.77444446">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/support_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/systems_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="80" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.5088889">
+        <state line="901" column="6" selection-start="16163" selection-end="16163" vertical-scroll-proportion="0.32">
           <folding />
         </state>
       </provider>

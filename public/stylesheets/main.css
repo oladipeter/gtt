@@ -690,6 +690,10 @@ ul li {
   margin-bottom: 10px;
 }
 
+.message_title a {
+  color: #fff;
+}
+
 .message_uploader, .message_status {
   font-family: Verdana;
   font-size: 10px;
@@ -836,4 +840,97 @@ ul li {
   background-image: url('../images/hibabejelentes_lablec.jpg');
   background-repeat: no-repeat;
   margin-bottom: 15px;
+}
+
+/* COMMENTS */
+
+.all_comments {
+  background-image: url('../images/comment_icon.png');
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.comments {
+  display: none;
+}
+
+.comment_header {
+  height: 44px;
+  background-image: url('../images/comment_header.jpg');
+  background-repeat: no-repeat;
+}
+
+.comment_content {
+  background-image: url('../images/comment_content.jpg');
+  background-repeat: repeat-y;
+}
+
+.comment_content .text {
+  padding: 10px;
+}
+
+.comment_footer {
+  height: 11px;
+  background-image: url('../images/comment_footer.jpg');
+  background-repeat: no-repeat;
+}
+
+.comment_user {
+  color: #fff;
+  font-size: 13px;
+  padding-top: 12px;
+  padding-left: 10px;
+}
+
+.comment_user .email {
+  color: #add8e6;
+  font-size: 11px;
+  padding-left: 5px;
+}
+
+.comment_date {
+  text-align: right;
+  padding-top: 15px;
+  font-size: 10px;
+  color: #add8e6;
+}
+
+/* MYSLIDE */
+
+/** CSS is optional, but can be used for button styling. The above preview uses this CSS **/
+
+#content_slider {
+  margin-bottom: 20px;
+}
+
+.slider_content_text {
+  padding: 20px;
+  border: 2px dotted #fff;
+}
+
+.sliderContent {
+  background-color: #00688F;
+  font-size: 11px;
+}
+
+.sliderContent h2{
+  color: #fff;
+}
+
+.buttons, .control{
+	background: #000000;
+	padding: 3px 10px;
+	margin: 5px;
+	line-height: 0px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.active{
+	background: #00CC66;
+	color: #00FF00;
+}
+.buttons:hover, .control:hover{
+	background: #0099FF;
 }
