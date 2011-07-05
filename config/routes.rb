@@ -60,6 +60,11 @@ Gtt::Application.routes.draw do
 
   match 'support_messages/list' => 'admin_support_messages#index', :as => "support_messages_list"
   match 'support_messages/datasheet/:id' => 'admin_support_messages#datasheet', :as => "support_messages_datasheet"
+  match 'admin_support_messages/datasheet_update/:id' => 'admin_support_messages#datasheet_update', :as => "update_datasheet"
+
+
+
+
 
   # namespace :admin do
   #   root :to => "backend#index"

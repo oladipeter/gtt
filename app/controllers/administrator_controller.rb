@@ -1,3 +1,4 @@
+# encoding: utf-8
 class AdministratorController < ApplicationController
 
   before_filter :authenticate_admin!
@@ -20,16 +21,16 @@ class AdministratorController < ApplicationController
   def create
     @admin = Admin.new(params[:admin])
       if @admin.save
-        redirect_to administrator_path, :notice => 'Admin was successfully created.'
+        redirect_to administrator_path, :notice => 'Az adminisztrátor sikeresen létrejött!'
       else
-        redirect_to administrator_path, :notice => 'Check it the fields!'
+        redirect_to administrator_path, :notice => 'Ellenőrizd a mezőket!'
       end
   end
 
   def update
     @admin = Admin.find(params[:id])
       if @admin.update_attributes(params[:admin])
-        redirect_to administrator_path, :notice => 'Advice was successfully updated.'
+        redirect_to administrator_path, :notice => 'Az adminisztrátor adatlapját sikeresen módosítottad!'
       else
         render :action => "edit"
       end
@@ -38,10 +39,10 @@ class AdministratorController < ApplicationController
   def destroy
     @admin = Admin.find(params[:id])
     if @admin.id == 1
-      redirect_to administrator_path, :notice => 'Cannot delete the main admin.'
+      redirect_to administrator_path, :notice => 'A fő adminisztrátort nem tudod törölni!'
     else
       @admin.destroy
-      redirect_to administrator_path, :notice => 'Admin was successfully deleted.'
+      redirect_to administrator_path, :notice => 'Az adminisztrátor sikeresen törölve lett a rendszerből!'
     end
   end
 

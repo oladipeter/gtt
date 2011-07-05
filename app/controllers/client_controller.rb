@@ -1,3 +1,4 @@
+# encoding: utf-8
 class ClientController < ApplicationController
 
   before_filter :authenticate_admin!
@@ -19,7 +20,7 @@ class ClientController < ApplicationController
   def create
     @user = User.new(params[:user])
       if @user.save
-         redirect_to client_edit_path(@user), :notice => 'User was successfully created.'
+         redirect_to client_edit_path(@user), :notice => 'Új felhasználó sikeresen létre lett hozva!'
       else
         render :action => "new"
       end
@@ -30,7 +31,7 @@ class ClientController < ApplicationController
     # render :text => "#{(params[:user])}"
 
       if @user.update_attributes(params[:user])
-        redirect_to client_path, :notice => 'Advice was successfully updated.'
+        redirect_to client_path, :notice => 'A felhasználó adatai sikeresen módosítva lettek!'
       else
        render :action => "edit"
       end

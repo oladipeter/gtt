@@ -1,3 +1,4 @@
+# encoding: utf-8
 class SystemsController < ApplicationController
 
   before_filter :authenticate_admin!
@@ -46,7 +47,7 @@ class SystemsController < ApplicationController
 
     respond_to do |format|
       if @system.save
-        format.html { redirect_to(@system, :notice => 'System was successfully created.') }
+        format.html { redirect_to(@system, :notice => 'A rendszer sikeresen létrejött!') }
         format.xml  { render :xml => @system, :status => :created, :location => @system }
       else
         format.html { render :action => "new" }
@@ -61,7 +62,7 @@ class SystemsController < ApplicationController
     @system = System.find(params[:id])
 
       if @system.update_attributes(params[:system])
-        redirect_to systems_path, :notice => 'System was successfully updated.'
+        redirect_to systems_path, :notice => 'A rendszer sikeresen módosítva lett!'
       else
         render :action => "edit"
       end

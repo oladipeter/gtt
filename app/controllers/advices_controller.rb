@@ -1,3 +1,4 @@
+# encoding: utf-8
 class AdvicesController < ApplicationController
 
   before_filter :authenticate_admin!
@@ -44,7 +45,7 @@ class AdvicesController < ApplicationController
   def create
     @advice = Advice.new(params[:advice])
       if @advice.save
-         redirect_to advices_path, :notice => 'Advice was successfully created.'
+         redirect_to advices_path, :notice => 'A hír sikeresen létrejött!'
       else
         render :action => "new"
       end
@@ -56,7 +57,7 @@ class AdvicesController < ApplicationController
     @advice = Advice.find(params[:id])
 
       if @advice.update_attributes(params[:advice])
-        redirect_to advices_path, :notice => 'Advice was successfully updated.'
+        redirect_to advices_path, :notice => 'A hír sikeresen módosítva lett!'
       else
         render :action => "edit"
       end

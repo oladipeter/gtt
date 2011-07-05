@@ -19,7 +19,15 @@
       </div>
       <div class="span-6">
         <div class="message_statusbar">
-          <%= image_tag("status_2.jpg") %>
+          <% if message.status == "0" %>
+            <%= image_tag("status_1.jpg") %>
+          <% elsif message.status == "1" %>
+            <%= image_tag("status_2.jpg") %>
+          <% elsif message.status == "2" %>
+            <%= image_tag("status_2.jpg") %>
+          <% elsif message.status == "3" %>
+            <%= image_tag("status_3.jpg") %>
+          <% end %>
         </div>
       </div>
     </div>

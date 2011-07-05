@@ -55,12 +55,6 @@ class FrontendController < ApplicationController
       end
     end
 
-
-    # @not_support_systems = System.find(:all, :group => "system_id", :include => :users, :conditions => ( "systems_users.user_id != #{current_user.id} "))
-    # @support_systems = System.find(:all, :include => :users)
-    # @users = @support_systems.users
-    # @systems = System.find( :all, :include => :users )
-
   end
 
 end

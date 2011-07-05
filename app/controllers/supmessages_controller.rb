@@ -1,3 +1,4 @@
+# encoding: utf-8
 class SupmessagesController < ApplicationController
 
   before_filter :authenticate_user!
@@ -51,9 +52,16 @@ class SupmessagesController < ApplicationController
   # GET /supmessages/1/edit
   def edit
     @supmessage = Supmessage.find(params[:id])
+    @edit = true
+    # Megnezem hogy eppen melyik rendszerrol van szo.. egy adott rendszert kell elkapni CSAK egyet, majd az ehhez tartozo adminokat nezzuk meg,
+    # melyeket mar tombben fogunk megkapni
+    @system = System.find(:first, :conditions => ["id = ?",session[:current_system].id])
+    # Majd megnezem hogy melyik adminisztratorok tartoznak hozza a viewban..
+    # itt csak osszekotom a tablakat, az adott rendszerhez mely adminok tartoznak (tomb)
+    @admins = @system.admins
 
     if @supmessage.user_id != current_user.id
-      redirect_to supmessages_path, :notice => "Don't try to edit another users messages!!!"
+      redirect_to supmessages_path, :notice => "Ne próbálkoz más felhasználó adatainak szerkesztésével!!!"
     else
       @supmessage = Supmessage.find(params[:id])
     end
@@ -67,7 +75,7 @@ class SupmessagesController < ApplicationController
 
     respond_to do |format|
       if @supmessage.save
-        format.html { redirect_to(@supmessage, :notice => 'Supmessage was successfully created.') }
+        format.html { redirect_to(@supmessage, :notice => 'A hibabejelentés sikeresen létrejött!') }
         format.xml  { render :xml => @supmessage, :status => :created, :location => @supmessage }
       else
         format.html { render :action => "new" }
@@ -83,7 +91,7 @@ class SupmessagesController < ApplicationController
 
     respond_to do |format|
       if @supmessage.update_attributes(params[:supmessage])
-        format.html { redirect_to(@supmessage, :notice => 'Supmessage was successfully updated.') }
+        format.html { redirect_to(@supmessage, :notice => 'A hibabejelentés sikeresen módosítva lett!') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -98,7 +106,7 @@ class SupmessagesController < ApplicationController
     @supmessage = Supmessage.find(params[:id])
 
     if @supmessage.user_id != current_user.id
-      redirect_to supmessages_path, :notice => "Don't try to delete another users messages!!!"
+      redirect_to supmessages_path, :notice => "Ne próbálkozz más felhasználók törlésével, mert csúnya dolog!"
     else
       @supmessage.destroy
     end

@@ -12,7 +12,8 @@
              </div>
              <div class="span-6 last">
                <div class="bejelentes_datuma">
-                 <%= @message.created_at %>
+                 <%= @message.created_at %><br/>
+                 <div class="system_title"><%= @message.system_title %> hibabejelentés</div>
                </div>
              </div>
              <div class="span-12">
@@ -31,26 +32,58 @@
                <div class="bejelentes_szovege">
                  <%= @message.description %><br/><br/>
 
-                 <%= semantic_form_for @contact do |f| %>
+                 <% if @message.status == "0" %>
+                  <div class="message_statusbar">
+                    <%= image_tag("status_1.jpg") %>
+                    <strong><%= "A hibát bejelentette a felhasználó, de még nem vette át az illetékes" %></strong>
+                  </div>
 
-              <% if @contact.errors.any? %>
+
+                 <% elsif @message.status == "1" %>
+                   <div class="message_statusbar">
+                    <%= image_tag("status_2.jpg") %>
+                    <strong><%= "A hibát átvette az illetékes" %></strong>
+                  </div>
+
+
+                 <% elsif @message.status == "2" %>
+                   <div class="message_statusbar">
+                    <%= image_tag("status_2.jpg") %>
+                    <strong><%= "A hibát javítása megkezdődött." %></strong>
+                   </div>
+
+
+
+                 <% else @message.status == "3" %>
+                   <div class="message_statusbar">
+                    <%= image_tag("status_3.jpg") %>
+                    <strong><%= "A hiba javítva!" %></strong>
+                  </div>
+
+
+                 <% end %>
+                 <br/>
+
+          <%= semantic_form_for @supmessage, :url => update_datasheet_path(@supmessage) do |f| %>
+
+              <% if @supmessage.errors.any? %>
                 <div id="error_explanation">
-                  <h3>Összesen <%= @contact.errors.count %> hiba :</h3>
+                  <h3>Összesen <%= @supmessage.errors.count %> hiba :</h3>
 
                   <ul>
-                    <% @contact.errors.full_messages.each do |msg| %>
+                    <% @supmessage.errors.full_messages.each do |msg| %>
                       <li><%= msg %></li>
                     <% end %>
                   </ul>
                 </div>
               <% end %>
 
-              <%= f.inputs :name => "Rendszer adatai :" do %>
-                <%= f.input :name, :label => t(:name), :hint => "Nem szerkeszthető mező!", :input_html => {:disabled => true} %>
-                <%= f.input :email, :label => "A rendszer felhasználói :", :as => :select, :collection => Contact.find(:all), :hint => "Nem szerkeszthető mező!", :input_html => {:disabled => true} %>
+              <%= f.inputs :name => "Hibabejelentés státusza :" do %>
+                <%= f.input :status, :as => :select, :collection => [["A hibát bejelentette a felhasználó, de még nem vette át az illetékes", "0"], ["A hibát átvette az illetékes", "1"], ["A hiba javítása megkezdődött", "2"], ["A hiba javítva!", "3"]], :label => "Státusz", :hint => "Hibabejelentés státuszának megváltoztatása" %>
               <% end %>
+              <%= f.commit_button t(:ok) %>
 
-            <% end %>
+          <% end %>
 
 
                </div>

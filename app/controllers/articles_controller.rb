@@ -1,3 +1,4 @@
+# encoding: utf-8
 class ArticlesController < ApplicationController
 
   before_filter :authenticate_admin!
@@ -44,7 +45,7 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(params[:article])
       if @article.save
-         redirect_to articles_path, :notice => 'Article was successfully created.'
+         redirect_to articles_path, :notice => 'A cikk sikeresen létrejött!'
       else
         render :action => "new"
       end
@@ -56,7 +57,7 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
 
     if @article.update_attributes(params[:article])
-        redirect_to articles_path, :notice => 'article was successfully updated.'
+        redirect_to articles_path, :notice => 'A cikk sikeresen módosítva lett!'
       else
         render :action => "edit"
       end

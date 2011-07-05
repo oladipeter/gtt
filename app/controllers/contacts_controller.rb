@@ -1,3 +1,4 @@
+# encoding: utf-8
 class ContactsController < ApplicationController
 
   before_filter :authenticate_admin!
@@ -47,7 +48,7 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to contacts_path, :notice => 'Contact was successfully created.' }
+        format.html { redirect_to contacts_path, :notice => 'Az új kapcsolattartó sikeresen létrejött!' }
         format.xml  { render :xml => @contact, :status => :created, :location => @contact }
       else
         format.html { render :action => "new" }
@@ -63,7 +64,7 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.update_attributes(params[:contact])
-        format.html { redirect_to contacts_path, :notice => 'Contact was successfully updated.' }
+        format.html { redirect_to contacts_path, :notice => 'A kapcsolattartó sikeresen módosítva lett!' }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
