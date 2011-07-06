@@ -897,40 +897,92 @@ ul li {
   color: #add8e6;
 }
 
-/* MYSLIDE */
+/* EASYSLIDER */
 
-/** CSS is optional, but can be used for button styling. The above preview uses this CSS **/
+/* Easy Slider */
 
-#content_slider {
-  margin-bottom: 20px;
+	#slider2 ul, #slider2 li{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider2 li{
+		/*
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/
+		width:950px;
+		height:200px;
+		overflow:hidden;
+		}
+
+	#slider2 li{
+		background:#f1f1f1;
+		}
+	#slider2 li h2{
+		margin:0 20px;
+		padding-top: 7px;
+    color: #fff;
+		}
+
+	#slider2 li p{
+		margin:20px;
+    font-size: 12px;
+		}
+
+	p#controls, p#controls2{
+		margin:0;
+		position:relative;
+		}
+
+	#prevBtn, #nextBtn, #prevBtn2, #nextBtn2{
+		display:block;
+		margin:0;
+		overflow:hidden;
+		text-indent:-8000px;
+		width:30px;
+		height:77px;
+		position:absolute;
+		left:-30px;
+		top:-130px;
+		}
+	#nextBtn, #nextBtn2{
+		left: 960px;
+		}
+	#prevBtn a, #nextBtn a, #prevBtn2 a, #nextBtn2 a{
+		display:block;
+		width:30px;
+		height:77px;
+		background:url(../images/btn_prev.gif) no-repeat 0 0;
+		}
+	#nextBtn a, #nextBtn2 a{
+		background:url(../images/btn_next.gif) no-repeat 0 0;
+		}
+.news_content {
+  height: 176px;
+  background-image: url('../images/hir_hatter.jpg');
+  background-repeat: no-repeat;
 }
 
-.slider_content_text {
-  padding: 20px;
-  border: 2px dotted #fff;
+.news_content .read_more {
+  position: relative;
+  top: -10px;
 }
 
-.sliderContent {
-  background-color: #00688F;
-  font-size: 11px;
-}
-
-.sliderContent h2{
+.news_content .read_more a {
+  display: block;
+  width: 88px;
+  height: 29px;
+  margin-left: 20px;
+  padding: 6px 0px 0px 15px;
+  font-size: 12px;
   color: #fff;
+  background-image: url('../images/read_more.jpg');
+  background-repeat: no-repeat;
+
 }
 
-.buttons, .control{
-	background: #000000;
-	padding: 3px 10px;
-	margin: 5px;
-	line-height: 0px;
-	color: #FFFFFF;
-	text-decoration: none;
-}
-.active{
-	background: #00CC66;
-	color: #00FF00;
-}
-.buttons:hover, .control:hover{
-	background: #0099FF;
-}
+/* // Easy Slider */
+
+
+

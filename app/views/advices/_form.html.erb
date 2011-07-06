@@ -14,8 +14,10 @@
 
     <%= f.inputs :name => "Hír adatai :" do %>
           <%= f.input :title, :label => t(:title) %>
-          <%= f.input :short_description, :label => t(:short_description) %>
-          <%= f.input :content, :label => t(:content) %>
+          <b><%= "Rövid leírás" %></b><br/><br/>
+          <%= f.input :short_description, :label => false, :as => :ckeditor, :input_html => { :width => "98%" } %>
+          <b><%= "Tartalom" %></b><br/><br/>
+          <%= f.input :content, :label => false, :as => :ckeditor, :input_html => { :width => "98%" } %>
           <%= f.input :system_id, :as => :select, :collection => System.find(:all), :label => t(:system), :hint => "Ha üresen hagyod nem lesz hozzárendelve egyetlen rendszerhez sem." %>
     <% end %>
 

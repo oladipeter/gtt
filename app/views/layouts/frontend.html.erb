@@ -3,6 +3,7 @@
 <head>
   <title>Gtt</title>
   <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag "easySlider1.5" %>
   <%= stylesheet_link_tag 'blueprint/src/reset', 'blueprint/src/forms', 'blueprint/screen', 'blueprint/src/ie', 'blueprint/src/typography', 'main', 'formtastic', 'formtastic_changes' %>
   <%= csrf_meta_tag %>
 </head>
@@ -111,20 +112,26 @@
 
             <!-- CONTENT SLIDER -->
 
-            <div class="span-24" id="content_slider">
-               <div class="sliderWrap">
-                  <% @advices.each do |advice| %>
-                    <div class="sliderContent">
-                      <div class="slider_content_text">
-                        <h2><%= advice.title %></h2>
-                        <%= advice.content %>
-                        <div class="advice_information">
-                          Létrehozva : <%= advice.created_at %>
-                        </div>
+            <div id="slider2">
+              <ul>
+                <% @advices.each do |advice| %>
+                  <li>
+                    <div class="news_content">
+                      <h2><%= advice.title %> | <%= advice.created_at.strftime("%a") %></h2>
+
+                      <p><%= raw truncate("#{advice.short_description}", :length => 620, :omission => '...') %></p>
+
+                      <div class="read_more">
+                        <%= link_to "Bővebben", "#" %>
                       </div>
                     </div>
-                  <% end %>
-               </div>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+
+            <div class="span-24" id="content_slider">
+
             </div>
 
             <!-- Mikrovoks -->

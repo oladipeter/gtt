@@ -27,11 +27,8 @@ module Gtt
     # config.time_zone = 'Central Time (US & Canada)'
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    # config.i18n.load_path += Dir[Rails.root.join('lib', 'locale', '*.{rb,yml}').to_s]
+    config.i18n.load_path += Dir[Rails.root.join('lib', 'locale', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :hu
-
-    # JavaScript files you want as :defaults (application.js is always included).
-    # config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
@@ -40,6 +37,9 @@ module Gtt
     config.filter_parameters += [:password]
 
     # UJS
-    config.action_view.javascript_expansions[:defaults] = %w(jquery rails jquery.tools.min jquery.lite-content-slider.min)
+    config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
+
+    #CKEditor
+    config.autoload_paths += %W( #{config.root}/app/models/ckeditor )
   end
 end
