@@ -23,9 +23,40 @@ $(document).ready(function(){
         vertical: false,
         speed: 800,
         auto: true,
-        pause: 5000,
+        pause: 7000,
         continuous: true
 
 	});
+
+  $("#mikrovoks_tip").tipTip({
+    defaultPosition: 'bottom',
+    delay: 200
+  });
+
+  $("#mikrokam_tip").tipTip({
+    defaultPosition: 'bottom',
+    delay: 200
+  });
+
+  $("#sequence_tip").tipTip({
+    defaultPosition: 'bottom',
+    delay: 200
+  });
+
+  $("#edtr_tip").tipTip({
+    defaultPosition: 'bottom',
+    delay: 200
+  });
+
+  $("#mvmonitor_tip").tipTip({
+    defaultPosition: 'bottom',
+    delay: 200
+  });
+
+  $("#digirat_tip").tipTip({
+    defaultPosition: 'bottom',
+    delay: 200
+  });
+
 
 });

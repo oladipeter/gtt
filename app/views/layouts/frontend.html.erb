@@ -3,11 +3,16 @@
 <head>
   <title>Gtt</title>
   <%= javascript_include_tag :defaults %>
-  <%= javascript_include_tag "easySlider1.5" %>
+  <%= javascript_include_tag "easySlider1.5", "page-peel", "tiptip" %>
   <%= stylesheet_link_tag 'blueprint/src/reset', 'blueprint/src/forms', 'blueprint/screen', 'blueprint/src/ie', 'blueprint/src/typography', 'main', 'formtastic', 'formtastic_changes' %>
   <%= csrf_meta_tag %>
 </head>
 <body>
+
+<div id="pageflip">
+  <%= link_to image_tag("page_flip.png"), "http://onkormanyzati.tv" %>
+  <span class="msg_block">Subscribe via RSS</span>
+</div>
 
 
 <div id="message">
@@ -117,7 +122,7 @@
                 <% @advices.each do |advice| %>
                   <li>
                     <div class="news_content">
-                      <h2><%= advice.title %> | <%= advice.created_at.strftime("%a") %></h2>
+                      <h2><%= advice.title %> | <%= advice.created_at.strftime("%F") %></h2>
 
                       <p><%= raw truncate("#{advice.short_description}", :length => 620, :omission => '...') %></p>
 
@@ -130,22 +135,15 @@
               </ul>
             </div>
 
-            <div class="span-24" id="content_slider">
-
-            </div>
-
             <!-- Mikrovoks -->
 
             <div class="span-8" id="mikrovoks">
 
                 <div class="span-8" id="mikrovoks_fejlec">
-                  <div class="main_text">MikroVoks Szavazó Rendszer</div>
+                  <div class="main_text"><%= link_to "MikroVoks Szavazó Rendszer", "#", :title => "#{@mikrovoks_system.description}", :id => "mikrovoks_tip"  %></div>
                 </div>
                 <div class="demo">
                   <div class="span-8" id="mikrovoks_image">
-                  </div>
-                  <div class="tooltip">
-                     <%= @mikrovoks_system.description %>
                   </div>
                 </div>
 
@@ -153,7 +151,7 @@
                   <% if @mikrovoks_support == "1" %>
                     <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "mikrovoks") %>
                   <% else %>
-                    <%= image_tag "termek_informacio.jpg" %>
+                    <%= image_tag "termek_informacio.jpg", :title => "#{@mikrovoks_system.description}", :id => "mikrovoks_tip" %>
                   <% end %>
                 </div>
 
@@ -164,21 +162,18 @@
             <div class="span-8" id="mikrokam">
 
                 <div class="span-8" id="mikrokam_fejlec">
-                  <div class="main_text">MikroKam Robotkamerás Rendszer</div>
+                  <div class="main_text"><%= link_to "MikroKam Robotkamerás Rendszer", "#", :title => "#{@mikrokam_system.description}", :id => "mikrokam_tip"  %></div>
                 </div>
                 <div class="demo">
                   <div class="span-8" id="mikrokam_image">
-                  </div>
-                  <div class="tooltip">
-                     <%= @mikrokam_system.description %>
                   </div>
                 </div>
 
                 <div class="span-8">
                    <% if @mikrokam_support == "1" %>
-                    <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "mikrokam") %>
+                    <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "mikrokam")%>
                   <% else %>
-                    <%= image_tag "termek_informacio.jpg" %>
+                    <%= image_tag "termek_informacio.jpg", :title => "#{@mikrokam_system.description}", :id => "mikrokam_tip" %>
                   <% end %>
                 </div>
 
@@ -189,7 +184,7 @@
             <div class="span-8 last" id="sequence">
 
                 <div class="span-8" id="sequence_fejlec">
-                  <div class="main_text">seQUEnce Ügyfélhívó Rendszer</div>
+                  <div class="main_text"><%= link_to "seQUEnce Ügyfélhívó Rendszer", "#", :title => "#{@sequence_system.description}", :id => "sequence_tip"  %></div>
                 </div>
                 <div class="demo">
                   <div class="span-8" id="sequence_image">
@@ -203,7 +198,7 @@
                     <% if @sequence_support == "1" %>
                     <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "sequence") %>
                   <% else %>
-                    <%= image_tag "termek_informacio.jpg" %>
+                    <%= image_tag "termek_informacio.jpg", :title => "#{@sequence_system.description}", :id => "sequence_tip" %>
                   <% end %>
                 </div>
 
@@ -214,13 +209,10 @@
             <div class="span-8" id="edtr">
 
                 <div class="span-8" id="edtr_fejlec">
-                  <div class="main_text">EDtR Döntéstámogató Rendszer</div>
+                  <div class="main_text"><%= link_to "EDtR Döntéstámogató Rendszer", "#", :title => "#{@edtr_system.description}", :id => "edtr_tip"  %></div>
                 </div>
                 <div class="demo">
                   <div class="span-8" id="edtr_image">
-                  </div>
-                  <div class="tooltip">
-                     <%= @edtr_system.description %>
                   </div>
                 </div>
 
@@ -228,7 +220,7 @@
                     <% if @edtr_support == "1" %>
                     <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "edtr") %>
                   <% else %>
-                    <%= image_tag "termek_informacio.jpg" %>
+                    <%= image_tag "termek_informacio.jpg", :title => "#{@edtr_system.description}", :id => "edtr_tip" %>
                   <% end %>
                 </div>
 
@@ -237,13 +229,10 @@
             <div class="span-8" id="mvmonitor">
 
                 <div class="span-8" id="mvmonitor_fejlec">
-                  <div class="main_text">MvMonitor Jegyzőkönyvező Rendszer</div>
+                  <div class="main_text"><%= link_to "MvMonitor Jegyzőkönyvező Rendszer", "#", :title => "#{@mvmonitor_system.description}", :id => "mvmonitor_tip"  %></div>
                 </div>
                 <div class="demo">
                   <div class="span-8" id="mvmonitor_image">
-                  </div>
-                  <div class="tooltip">
-                     <%= @mvmonitor_system.description %>
                   </div>
                 </div>
 
@@ -251,7 +240,7 @@
                     <% if @mvmonitor_support == "1" %>
                     <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "mvmonitor") %>
                   <% else %>
-                    <%= image_tag "termek_informacio.jpg" %>
+                    <%= image_tag "termek_informacio.jpg", :title => "#{@mvmonitor_system.description}", :id => "mvmonitor_tip" %>
                   <% end %>
                 </div>
 
@@ -260,14 +249,11 @@
             <div class="span-8 last" id="digirat">
 
                 <div class="span-8" id="digirat_fejlec">
-                  <div class="main_text">Digirat Jegyzőkönyvező Rendszer</div>
+                  <div class="main_text"><%= link_to "Digirat Jegyzőkönyvező Rendszer", "#", :title => "#{@digirat_system.description}", :id => "digirat_tip"  %></div>
                 </div>
 
                 <div class="demo">
                   <div class="span-8" id="digirat_image">
-                  </div>
-                  <div class="tooltip">
-                     <%= @digirat_system.description %>
                   </div>
                 </div>
 
@@ -275,14 +261,13 @@
                     <% if @digirat_support == "1" %>
                     <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "digirat") %>
                   <% else %>
-                    <%= image_tag "termek_informacio.jpg" %>
+                    <%= image_tag "termek_informacio.jpg", :title => "#{@digirat_system.description}", :id => "digirat_tip" %>
                   <% end %>
                 </div>
 
             </div>
 
             <div class="span-24">
-              <div class="main_text"><%= yield %></div>
             </div>
 
           </div>
