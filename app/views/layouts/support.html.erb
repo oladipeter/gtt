@@ -3,6 +3,7 @@
 <head>
   <title>Gtt</title>
   <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag "tipTip" %>
   <%= stylesheet_link_tag 'blueprint/src/reset', 'blueprint/src/forms', 'blueprint/screen', 'blueprint/src/ie', 'blueprint/src/typography', 'main', 'formtastic', 'formtastic_changes' %>
   <%= csrf_meta_tag %>
 </head>
@@ -40,23 +41,66 @@
     </div>
   </div>
 
+  <div id="support">
   <div id="frontend">
       <div id="block_2">
         <div class="container">
           <div class="span-24">
-             <div class="span-6" id="support_left">
-                <%= render 'shared/support_menu' %>
-             </div>
-             <div class="span-18 last">
-               <div class="main_text">
-                <%= yield %>
+            <div id="system_name">
+              <h2><%= session[:current_system].full_name %></h2>
+            </div>
+             <div class="span-6" id="support_content_left">
+                <div class="main_text">
+                  <div class="menu">
+                    <%= render("shared/support_menu") %>
+                  </div>
+                  <div class="articles">
+                    <%= yield :articles %>
+                  </div>
                </div>
+             </div>
+             <div class="span-18 last" id="support_content_right">
+
+                 <div class="span-6" id="hibabejelentes">
+                   <h2>Hibabejelentés</h2>
+                 </div>
+
+                 <div class="span-6" id="ajanlatkeres" >
+                   <h2>Ajánlatkérés</h2>
+                 </div>
+
+                 <div class="span-6 last" id="letoltes">
+                   <h2>Letöltések</h2>
+                 </div>
+
+                 <div class="span-6" id="gyik">
+                   <h2>Gy.I.K</h2>
+                 </div>
+
+                 <div class="span-6" id="eszkozok">
+                   <h2>Eszközök</h2>
+                 </div>
+
+                 <div class="span-6 last" id="prospektusok">
+                   <h2>Prospektusok</h2>
+                 </div>
+
+                 <br/><br/>
+
+                 <div class="span-9 append-9">
+                   <div class="supmessages">
+                     <%= yield :supmessages %>
+                     <%= yield %>
+                   </div>
+                 </div>
+
              </div>
 
           </div>
         </div>
       </div>
   </div>
+  </div> <!-- SUPPORT END -->
 
   <div id="footer">
      <div class="container">
@@ -73,34 +117,6 @@
 <script>
   $('#notice_notice').delay(1900).slideUp(900);
   $('#notice_alert').delay(1900).slideUp(900);
-
-  /* TOOLTIP */
-
-  // create custom animation algorithm for jQuery called "bouncy"
-  $.easing.bouncy = function (x, t, b, c, d) {
-    var s = 1.70158;
-    if ((t /= d / 2) < 1) return c / 2 * (t * t * (((s *= (1.525)) + 1) * t - s)) + b;
-    return c / 2 * ((t -= 2) * t * (((s *= (1.525)) + 1) * t + s) + 2) + b;
-  }
-
-  // create custom tooltip effect for jQuery Tooltip
-  $.tools.tooltip.addEffect("bouncy",
-
-    // opening animation
-    function(done) {
-      this.getTip().animate({top: '+=45'}, 10, 'bouncy', done).show();
-    },
-
-    // closing animation
-    function(done) {
-      this.getTip().animate({top: '-=15'}, 10, 'bouncy', function() {
-        $(this).hide();
-        done.call();
-      });
-    }
-    );
-  $('#mikrovoks_image, #mikrokam_image, #sequence_image, #edtr_image, #mvmonitor_image, #digirat_image ').tooltip({ effect: 'bouncy', position: "bottom left"});
-
 </script>
 
 

@@ -58,5 +58,4 @@ $(document).ready(function(){
     delay: 200
   });
 
-
 });

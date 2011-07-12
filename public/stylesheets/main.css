@@ -115,9 +115,9 @@ div #error_explanation {
 }
 
 .demo img {
-	border:0;
-	cursor:pointer;
-	margin:0 0px;
+	border: 0;
+	cursor: pointer;
+	margin: 0 0px;
 }
 
 /* FORM */
@@ -383,7 +383,7 @@ ul li {
     border: 1px solid #ddd;
 }
 
-#frontend .main_text a {
+#frontend #systems .main_text a {
   color: #333;
   cursor: help;
 }
@@ -1133,4 +1133,164 @@ ul li {
 }
 
 
+/* SUPPORT */
+
+/* REd COLOR 841211 */
+
+.support_content {
+  background-color: #fff;
+}
+
+#support .main_text {
+  padding: 0px;
+  background-color: transparent;
+  border: none;
+}
+
+#support_content_left h2 {
+  background-image: url('../images/menu_fejlec.jpg');
+  background-repeat: no-repeat;
+  height: 29px;
+  color: #fff;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-top: 5px;
+  margin-bottom: 0px;
+}
+
+#support_content_left .main_text {
+}
+
+#support_content_left .menu, .articles  {
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+#support_content_left .menu ul {
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid #ccc;
+}
+
+#support_content_left .menu a {
+  color: #333;
+  padding-left: 10px;
+}
+
+#support_content_left .menu ul li {
+  font-size: 14px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background-image: url('../images/menu_li_hatter.jpg');
+  background-repeat: no-repeat;
+}
+
+#support_content_left .article_text {
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+#support_content_left .article_text strong {
+  font-size: 16px;
+  color: #841211;
+}
+
+#support #hibabejelentes, #ajanlatkeres, #letoltes, #eszkozok, #gyik, #prospektusok {
+  background-color: #fff;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+#hibabejelentes {
+  background-image: url('../images/hibabejelentes.jpg');
+  background-repeat: no-repeat;
+}
+
+#support_content_right h2 {
+  color: #fff;
+  font-size: 16px;
+  padding-left: 15px;
+  padding-top: 5px;
+  margin-bottom: 0px;
+}
+
+#ajanlatkeres {
+  background-image: url('../images/ajanlatkeres.jpg');
+  background-repeat: no-repeat;
+}
+
+#letoltes {
+  background-image: url('../images/letoltes.jpg');
+  background-repeat: no-repeat;
+}
+
+#gyik {
+  background-image: url('../images/gyik.jpg');
+  background-repeat: no-repeat;
+}
+
+#eszkozok {
+  background-image: url('../images/eszkozok.jpg');
+  background-repeat: no-repeat;
+}
+
+#prospektusok {
+  background-image: url('../images/prospektusok.jpg');
+  background-repeat: no-repeat;
+}
+
+.read_more_article {
+  display: block;
+  width: 85px;
+  height: 25px;
+  background-image: url('../images/read_more_article.jpg');
+  background-repeat: no-repeat;
+  margin-bottom: 0px;
+}
+
+.article_text {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.article_text a {
+  color: #fff;
+  padding-left: 18px;
+  padding-top: 4px;
+}
+
+.article_text strong {
+  font-size: 12px;
+}
+
+#support #block_2 {
+  padding-top: 0px;
+}
+
+#system_name {
+  background-image: url('../images/system_name_hatter.jpg');
+  background-repeat: no-repeat;
+  margin-bottom: 0px;
+  text-align: left;
+  height: 70px;
+}
+
+#system_name h2 {
+  width: 428px;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  padding-top: 12px;
+  text-align: center;
+}
+
+.supmessage_description {
+  color: #105986;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
 
