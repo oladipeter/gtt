@@ -1,17 +1,14 @@
 Gtt::Application.routes.draw do
 
+  resources :faqs
+
+  get "faqs/index"
   get "comments/index"
-
   get "comments/list"
-
   get "comments/create"
-
   get "comments/modify"
-
   get "comments/delete"
-
   get "admin_support_messages/index"
-
   get "support_messages/Index"
 
   resources :supmessages
@@ -60,6 +57,10 @@ Gtt::Application.routes.draw do
 
   match 'frontend/support', :to => 'support#index'
   match '/support', :to => 'support#index'
+  match '/support/all_articles' => 'support#all_articles', :as => "all_articles"
+  match '/support/all_supmessages' => 'support#all_supmessages', :as => "all_supmessages"
+  match '/support/all_faqs' => 'support#all_faqs', :as => "all_faqs"
+
 
   # ERROR MESSAGE
 

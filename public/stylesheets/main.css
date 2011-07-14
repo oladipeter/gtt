@@ -361,7 +361,7 @@ ul li {
     margin-bottom: 25px;
 }
 
-#administrator h2, #contact h2, #client h2, #advice h2, #article h2, #system h2    {
+#administrator h2, #contact h2, #client h2, #advice h2, #article h2, #system h2, #faqs h2 {
     padding: 0px;
 }
 
@@ -1132,7 +1132,6 @@ ul li {
 	}
 }
 
-
 /* SUPPORT */
 
 /* REd COLOR 841211 */
@@ -1202,17 +1201,17 @@ ul li {
   margin-bottom: 10px;
 }
 
+#support_content_right h2 {
+  color: #333;
+  font-size: 16px;
+  padding-left: 0px;
+  padding-top: 5px;
+  margin-bottom: 20px;
+}
+
 #hibabejelentes {
   background-image: url('../images/hibabejelentes.jpg');
   background-repeat: no-repeat;
-}
-
-#support_content_right h2 {
-  color: #fff;
-  font-size: 16px;
-  padding-left: 15px;
-  padding-top: 5px;
-  margin-bottom: 0px;
 }
 
 #ajanlatkeres {
@@ -1240,6 +1239,11 @@ ul li {
   background-repeat: no-repeat;
 }
 
+#hibabejelentes h2, #ajanlatkeres h2, #letoltes h2, #gyik h2, #eszkozok h2, #prospektusok h2 {
+  color: #fff;
+  padding-left: 15px;
+}
+
 .read_more_article {
   display: block;
   width: 85px;
@@ -1251,8 +1255,10 @@ ul li {
 
 .article_text {
   padding: 15px;
+  padding-bottom: 0px;
   background-color: #fff;
   border: 1px solid #ddd;
+  margin-bottom: 15px;
 }
 
 .article_text a {
@@ -1262,7 +1268,27 @@ ul li {
 }
 
 .article_text strong {
-  font-size: 12px;
+  font-size: 13px!important;
+}
+
+.article_text u {  
+  font-weight: bold;
+  font-size: 10px;
+  color: #841211;
+}
+
+.article_text .all_items{
+  text-align: center;
+}
+
+.article_text .all {
+  color: #841211;
+  padding: 0px;
+}
+
+.article_text .created {
+  font-size: 10px;
+  font-weight: bold;
 }
 
 #support #block_2 {
@@ -1287,10 +1313,25 @@ ul li {
   text-align: center;
 }
 
-.supmessage_description {
+.supmessage_description, .faq_description, .article_description {
   color: #105986;
+  font-size: 11px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 20px;
   margin-bottom: 20px;
+}
+
+.new_supmessage {
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.system_long_description {
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  font-size: 12px;
+  border: 1px solid #ddd;
 }
 

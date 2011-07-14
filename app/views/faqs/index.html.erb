@@ -1,0 +1,29 @@
+<div id="faqs">
+<h2>FAQ lista</h2>
+
+<table>
+  <tr>
+    <th>Cím</th>
+    <th>System</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @faqs.each do |faq| %>
+  <tr>
+    <td><%= faq.title %></td>
+    <% if faq.system_id.blank? %>
+      <td>Nincs hozzárendelve rendszer</td>
+    <% else %>
+      <td><%= faq.system.name %></td>
+    <% end  %>
+    <td><%= link_to 'Szerkeszt', edit_faq_path(faq) %></td>
+    <td><%= link_to 'Töröl', faq, :confirm => 'Biztosan törlöd?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Új kérdés létrehozása!', new_faq_path %>
+</div>

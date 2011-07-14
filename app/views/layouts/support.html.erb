@@ -47,15 +47,21 @@
         <div class="container">
           <div class="span-24">
             <div id="system_name">
-              <h2><%= session[:current_system].full_name %></h2>
+              <h2><%= @system.full_name %></h2>
             </div>
              <div class="span-6" id="support_content_left">
                 <div class="main_text">
                   <div class="menu">
                     <%= render("shared/support_menu") %>
                   </div>
+                  <div class="faqs">
+                     <%= yield :faqs %>
+                  </div>
+                  <div class="supmessages">
+                     <%= yield :supmessages %>
+                   </div>
                   <div class="articles">
-                    <%= yield :articles %>
+                     <%= yield :articles %>
                   </div>
                </div>
              </div>
@@ -85,14 +91,12 @@
                    <h2>Prospektusok</h2>
                  </div>
 
-                 <br/><br/>
-
-                 <div class="span-9 append-9">
-                   <div class="supmessages">
-                     <%= yield :supmessages %>
+                 <div class="span-18">
+                   <div class="system_long_description">
                      <%= yield %>
                    </div>
                  </div>
+
 
              </div>
 

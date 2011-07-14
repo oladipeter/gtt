@@ -1,0 +1,36 @@
+<!-- MAIN YIELD -->
+<!-- --------------------------------------------------------------------------------------------------------------- -->
+<h2>Hibabejelentések listája</h2>
+
+    <% @all_supmessages.each do |supmessage| %>
+      <strong><%= supmessage.title %></strong><br/><span class="created">Létrehozva : </span><%= supmessage.created_at %>
+      | <u><%= supmessage.comments.size %> komment!</u><br/><br/>
+
+      <div class="supmessage_description"><%= raw truncate ("#{supmessage.description}"), :length => 250, :omission => '...' %></div>
+    <% end %>
+
+  <div class="new_supmessage"> Amennyiben új hibabejelentést szeretne tenni kérem kattintson ide! </div>
+
+<!-- CONTENT FORS -->
+
+ <% content_for :faqs do %>
+   <%= render ("shared/faqs") %>
+ <% end %>
+
+ <% content_for :supmessages do %>
+   <%= render ("shared/supmessages") %>
+ <% end %>
+
+ <% content_for :articles do %>
+   <%= render ("shared/articles") %>
+ <% end %>
+
+<!-- --------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+

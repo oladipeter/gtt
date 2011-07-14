@@ -1,47 +1,25 @@
-<h2><%= session[:current_system].name %> terméktámogatása</h2>
-<p>Find me in app/views/support/index.html.erb</p>
+<!-- MAIN YIELD -->
+<!-- --------------------------------------------------------------------------------------------------------------- -->
 
-<!-- ARTICLES -->
-
-<% content_for :articles do %>
-  <h2><%= session[:current_system].name %> cikkek</h2>
-  <div class="article_text">
-
-    <% if @articles.empty? %>
-
-      <%= "Nincs cikk hozzárendelve ehhez a rendszerhez!" %>
-
-    <% else %>
-
-      <% @articles.each do |article| %>
-        <strong><%= article.title %></strong><br/><br/>
-        <%= raw truncate("#{article.short_description}", :length => 200, :omission => '...') %><br/><br/>
-        <%= link_to "Bővebben", "#", :class => "read_more_article" %><br/>
-      <% end %>
-
-    <% end %>
-  </div>
-
+<% unless @system_info.long_description.blank? %>
+  <%= raw @system_info.long_description %>
+<% else %>
+  Az adminisztrátor még nem töltött fel leírást!!
 <% end %>
 
-<!-- SupmessageS -->
+<!-- CONTENT FORS -->
 
-<% content_for :supmessages do %>
-  <div class="article_text">
+ <% content_for :faqs do %>
+   <%= render ("shared/faqs") %>
+ <% end %>
 
-    <% if @supmessages.empty? %>
+ <% content_for :supmessages do %>
+   <%= render ("shared/supmessages") %>
+ <% end %>
 
-      <%= "Jelenleg nincs sem hibabejelentése, ehhez a rendszerhez" %>
+ <% content_for :articles do %>
+   <%= render ("shared/articles") %>
+ <% end %>
 
-    <% else %>
-
-      <% @supmessages.each do |supmessage| %>
-        <strong><%= supmessage.title %></strong><br/><%= supmessage.created_at %> | <u><%= supmessage.comments.size %> komment!</u><br/><br/>
-        <div class="supmessage_description"><%= raw truncate ("#{supmessage.description}"), :length => 100, :omission => '...' %></div>
-      <% end %>
-
-    <% end %>
-  </div>
-
-<% end %>
+<!-- --------------------------------------------------------------------------------------------------------------- -->
 

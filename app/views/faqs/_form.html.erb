@@ -1,0 +1,27 @@
+<div id="faqs">
+
+<%= semantic_form_for @faq, :html => { :multipart => true } do |f| %>
+
+    <% if @faq.errors.any? %>
+        <div id="error_explanation">
+          <h3>Összesen <%= @faq.errors.count %> hiba :</h3>
+
+          <ul>
+            <% @faq.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <%= f.inputs :name => "Gyakran ismételt kérdések :" do %>
+          <%= f.input :title, :label => t(:name) %>
+          <%= f.input :description, :label => t(:short_description) %>
+          <%= f.input :system_id, :label => "Melyik rendszer? :", :as => :select, :collection => System.find(:all) %>
+    <% end %>
+
+    <%= f.commit_button t(:ok) %>
+
+<% end %>
+
+</div>

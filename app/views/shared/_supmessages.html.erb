@@ -1,0 +1,21 @@
+<% content_for :supmessages do %>
+  <h2>Bejelentések (<%= "#{@quantity_supmessages}" %> db)</h2>
+  <div class="article_text">
+
+    <% if @supmessages.empty? %>
+
+      <%= "Jelenleg nincs sem hibabejelentése, ehhez a rendszerhez" %>
+
+    <% else %>
+
+      <% @supmessages.each do |supmessage| %>
+        <strong><%= supmessage.title %></strong><br/><span class="created">Létrehozva : </span><%= supmessage.created_at %> | <u><%= supmessage.comments.size %> komment!</u><br/><br/>
+        <div class="supmessage_description"><%= raw truncate ("#{supmessage.description}"), :length => 100, :omission => '...' %></div>
+      <% end %>
+
+      <%= link_to "Megnézem az összes hibabejelentést!", all_supmessages_path( :system => "#{@system.title}"), :class => "all" %>
+
+    <% end %>
+  </div>
+
+<% end %>
