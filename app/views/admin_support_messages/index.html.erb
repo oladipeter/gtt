@@ -34,4 +34,6 @@
   </div>
 <% end %>
 
-<%= will_paginate @all_user_messages %>
+<div class="apple_pagination">
+  <%= will_paginate_with_i18n @all_user_messages, :container => false %>
+</div>

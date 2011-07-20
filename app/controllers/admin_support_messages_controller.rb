@@ -22,7 +22,6 @@ class AdminSupportMessagesController < ApplicationController
       if @supmessage.update_attributes(params[:supmessage])
         redirect_to support_messages_datasheet_path(@supmessage), :notice => 'A hibabejelentés státuszát sikeresen módosítottad!'
       end
-
   end
 
 end
