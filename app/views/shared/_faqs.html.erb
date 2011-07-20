@@ -1,10 +1,10 @@
 <% content_for :faqs do %>
-  <h2>FAQ (<%= "#{@quantity_faqs}" %> db)</h2>
+  <h2>GY.I.K (<%= "#{@quantity_faqs}" %>)</h2>
   <div class="article_text">
 
     <% if @faqs.empty? %>
 
-      <%= "Jelenleg nincs FAQ, ehhez a rendszerhez!" %>
+      <%= "Jelenleg nincs GY.I.K, ehhez a rendszerhez!" %>
 
     <% else %>
 
@@ -13,7 +13,7 @@
         <div class="faq_description"><%= raw truncate ("#{faq.description}"), :length => 100, :omission => '...' %></div>
       <% end %>
 
-      <%= link_to "Megnézem az összes kérdést!", "#", :class => "all" %>
+      <%= link_to "Megnézem az összes kérdést!", all_faqs_path( :system => @system.title ), :class => "all" %>
 
     <% end %>
   </div>

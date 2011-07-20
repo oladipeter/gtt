@@ -1,3 +1,4 @@
+# encoding: utf-8
 class SupportController < ApplicationController
 
   # Eloszor betoltom azt a metodust, amelyik letrehozza a session valtozot
@@ -14,6 +15,15 @@ class SupportController < ApplicationController
 
   def which_system
     @system = System.find_by_title(params[:system])
+
+    # Megkeresem azt az elso felhasznalot ahol a kozos tablaban levo system_id a parameterkent atkuldott rendszer id-ja es a felhasznalo az eppen bejelentkezett felhasznalo
+    # H aaz igy megkapott tomb ures akkor visszadobom az elozo oldalra (Ha esetleg valaki hatulrol akar bejonni...)
+
+    user_system = User.find(:first, :include => :systems, :conditions => [ "systems_users.system_id = ? AND systems_users.user_id = ?", @system.id, current_user.id ])
+    if user_system.nil?
+      redirect_to frontend_index_path, :notice => "Önnek nincs jogosultásga a rendszer terméktámogatására!"
+    end
+
   end
 
   def index
@@ -32,7 +42,7 @@ class SupportController < ApplicationController
   def supmessages
     # every support request
     @supmessages = Supmessage.find(:all, :conditions => ['user_id = ? AND system_title = ?',current_user.id, @system.title], :limit => 2)
-    @quantity_supmessages = Supmessage.find(:all, :conditions => ['user_id = ?', current_user.id]).size
+    @quantity_supmessages = Supmessage.find(:all, :conditions => ['user_id = ? AND system_title = ?', current_user.id, @system.title]).size
   end
 
   def faqs
@@ -48,6 +58,13 @@ class SupportController < ApplicationController
   def all_supmessages
     # render :text => "#{session[:current_system].title}"
     @all_supmessages = Supmessage.find(:all, :conditions => ['user_id = ? AND system_title = ?',current_user.id, @system.title])
+  end
+
+  def show_supmessage
+    @comment = Comment.new
+    @supmessage = Supmessage.find(params[:id])
+    @comments = @supmessage.comments
+    @message_comment_quantity = @comments.size
   end
 
   def all_faqs

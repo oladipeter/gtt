@@ -1,0 +1,90 @@
+<!-- MAIN YIELD -->
+
+<% if @supmessage.status == "0" %>
+  <% @hiba_statusza = "A hibát továbbítottuk az illetékesnek" %>
+<% elsif @supmessage.status == "1" || @supmessage.status == "2" %>
+
+  <% @hiba_statusza = "A hibát átvette az illetékes, és megkezdődött a hiba javítása!" %>
+<% elsif @supmessage.status == "3" %>
+
+  <% @hiba_statusza = "A hiba sikeresen kijavításra került!" %>
+<% end %>
+
+<h3><%= @supmessage.title %></h3>
+Létrehozva : <%= @supmessage.created_at %> | <b><%= @hiba_statusza %></b>
+
+<br/><br/>
+
+<%= @supmessage.description %>
+
+<div class="comment_quantity">Összesen <span class="quantity"><%= @message_comment_quantity %></span> komment ehhez a bejelentéshez!</div>
+
+<div id="show_supmessage_comment">
+  <div class="comments">
+    <% @comments.each do |comment| %>
+      <div class="comment">
+        <div class="comment_header">
+          <div class="span-17 prepend-1">
+            <div class="comment_user"><%= comment.user %> | <%= comment.created_at %></div>
+          </div>
+        </div>
+        <div class="comment_content">
+          <div class="text">
+            <div class="the_content"><%= comment.content %></div>
+          </div>
+        </div>
+        <div class="comment_footer">
+        </div>
+        <br/>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<!-- Comment form -->
+
+<%= semantic_form_for @comment, :url => create_user_comment_path do |f| %>
+
+  <% if @comment.errors.any? %>
+    <div id="error_explanation">
+      <h3>Összesen <%= @comment.errors.count %> hiba :</h3>
+
+      <ul>
+        <% @comment.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.inputs :name => "Új komment hozzáadása :" do %>
+    <%= f.input :user, :as => :hidden, :value => current_user.full_name %>
+    <%= f.input :email, :as => :hidden, :value => current_user.email %>
+    <%= f.input :content, :label => "Komment" %>
+    <%= f.input :supmessage_id, :as => :hidden, :value => @supmessage.id %>
+    <%= f.commit_button t(:create) %>
+  <% end %>
+
+<% end %>
+
+<!-- CONTENT FORS -->
+
+ <% content_for :faqs do %>
+   <%= render ("shared/faqs") %>
+ <% end %>
+
+ <% content_for :supmessages do %>
+   <%= render ("shared/supmessages") %>
+ <% end %>
+
+ <% content_for :articles do %>
+   <%= render ("shared/articles") %>
+ <% end %>
+
+
+
+
+
+
+
+

@@ -11,6 +11,10 @@ gem 'formtastic', '~> 1.2.3'
 gem 'jquery-rails', '>= 1.0.3'
 gem "paperclip", "~> 2.3"
 gem 'ckeditor', '3.4.2.pre'
+gem 'mongrel', '>= 1.2.0.pre2'
+gem "will_paginate", "~> 3.0.pre2"
+# postgre
+gem "pg"
 
 # Use unicorn as the web server
 # gem 'unicorn'

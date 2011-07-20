@@ -1,15 +1,33 @@
 <!-- MAIN YIELD -->
-<!-- --------------------------------------------------------------------------------------------------------------- -->
+
 <h2>Hibabejelentések listája</h2>
 
+<div class="new_supmessage"> Amennyiben új hibabejelentést szeretne tenni kérem <%= link_to "kattintson ide!", new_supmessage_path( :system => @system.title ) %></div>
+
     <% @all_supmessages.each do |supmessage| %>
-      <strong><%= supmessage.title %></strong><br/><span class="created">Létrehozva : </span><%= supmessage.created_at %>
-      | <u><%= supmessage.comments.size %> komment!</u><br/><br/>
+
+      <!-- Hibabejelentés állapota -->
+      <% if supmessage.status == "0" %>
+        <% @color = "red" %>
+            <% @hiba_statusza = "A hibát továbbítottuk az illetékesnek" %>
+      <% elsif supmessage.status == "1" || supmessage.status == "2"  %>
+        <% @color = "orange" %>
+        <% @hiba_statusza = "A hibát átvette az illetékes, és megkezdődött a hiba javítása!" %>
+      <% elsif supmessage.status == "3" %>
+         <% @color = "green" %>
+         <% @hiba_statusza = "A hiba sikeresen kijavításra került!" %>
+      <% end %>
+
+      <div class="<%= @color %>">
+      <div class="supmessage_list">
+      <strong><%= link_to "#{supmessage.title}", show_supmessage_path(supmessage, :system => @system.title)  %></strong><br/><span class="created">Létrehozva : </span><%= supmessage.created_at %>
+      | <u><%= supmessage.comments.size %> komment!</u> | <b><%= @hiba_statusza %></b>
+      </div>
+      </div>
+      <br/>
 
       <div class="supmessage_description"><%= raw truncate ("#{supmessage.description}"), :length => 250, :omission => '...' %></div>
     <% end %>
-
-  <div class="new_supmessage"> Amennyiben új hibabejelentést szeretne tenni kérem kattintson ide! </div>
 
 <!-- CONTENT FORS -->
 
@@ -24,8 +42,6 @@
  <% content_for :articles do %>
    <%= render ("shared/articles") %>
  <% end %>
-
-<!-- --------------------------------------------------------------------------------------------------------------- -->
 
 
 

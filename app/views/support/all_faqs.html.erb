@@ -1,0 +1,30 @@
+<!-- MAIN YIELD -->
+
+<h2>Gyakran Ismételt Kérdések</h2>
+
+    <% @all_faqs.each do |faq| %>
+    <strong><%= faq.title %></strong><br/><br/>
+    <%= faq.description %><br/><br/>
+    <% end %>
+
+<!-- CONTENT FORS -->
+
+ <% content_for :faqs do %>
+   <%= render ("shared/faqs") %>
+ <% end %>
+
+ <% content_for :supmessages do %>
+   <%= render ("shared/supmessages") %>
+ <% end %>
+
+ <% content_for :articles do %>
+   <%= render ("shared/articles") %>
+ <% end %>
+
+
+
+
+
+
+
+

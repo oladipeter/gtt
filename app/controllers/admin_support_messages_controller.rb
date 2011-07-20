@@ -4,7 +4,7 @@ class AdminSupportMessagesController < ApplicationController
   layout 'error_messages'
 
   def index
-    @all_user_messages = Supmessage.find(:all)
+    @all_user_messages = Supmessage.paginate(:all, :page => params[:page], :order => 'created_at DESC')
   end
 
   def datasheet

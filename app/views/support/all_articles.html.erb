@@ -1,0 +1,30 @@
+<!-- MAIN YIELD -->
+
+    <% @all_articles.each do |article| %>
+    <h2><%= article.title %></h2>
+    <div class="article_long_description">
+      <%= raw article.content %>
+    </div>
+    <% end %>
+
+<!-- CONTENT FORS -->
+
+ <% content_for :faqs do %>
+   <%= render ("shared/faqs") %>
+ <% end %>
+
+ <% content_for :supmessages do %>
+   <%= render ("shared/supmessages") %>
+ <% end %>
+
+ <% content_for :articles do %>
+   <%= render ("shared/articles") %>
+ <% end %>
+
+
+
+
+
+
+
+

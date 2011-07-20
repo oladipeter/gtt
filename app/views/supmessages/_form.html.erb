@@ -25,7 +25,7 @@
           <% else %>
           <%= f.input :admins, :as => :select, :collection => @admins, :hint => "Kérem jelölje meg azt az adminisztrátort akivel kapcsolatban áll. Többet is megjelölhet!"  %> <!-- Az admin tombot rakom be es kilistaztatom a formon, igy megvan hogy melyik rendszerhez melyik adminisztratorok tartoznak!!  -->
           <% end %>
-          <%= f.input :system_title, :as => :hidden, :value => session[:current_system].title %>
+          <%= f.input :system_title, :as => :hidden, :value => @system.title %>
           <% if @edit %>
               <%= f.input :status, :as => :hidden, :value => "#{@supmessage.status}" %>
           <% else %>

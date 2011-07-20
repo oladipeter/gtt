@@ -60,7 +60,9 @@ Gtt::Application.routes.draw do
   match '/support/all_articles' => 'support#all_articles', :as => "all_articles"
   match '/support/all_supmessages' => 'support#all_supmessages', :as => "all_supmessages"
   match '/support/all_faqs' => 'support#all_faqs', :as => "all_faqs"
-
+  match '/support/supmessage/:id' => 'support#show_supmessage', :as => "show_supmessage"
+  match '/support/all_faqs/' => 'support#all_faqs', :as => "all_faqs"
+  match '/support/all_articles/' => 'support#all_articles', :as => "all_articles"
 
   # ERROR MESSAGE
 
@@ -81,12 +83,7 @@ Gtt::Application.routes.draw do
   match 'comment/create' => 'comments#create', :as => "comment_create"
   match 'comment/modify/:id' => 'comments#modify', :as => "comment_modify"
   match 'comment/delete/:id' => 'comments#delete', :as => "comment_delete"
-
-
-
-
-
-
+  match 'comment/create_user_comment/' => 'comments#create_user_comment', :as => "create_user_comment"
 
   # namespace :admin do
   #   root :to => "backend#index"

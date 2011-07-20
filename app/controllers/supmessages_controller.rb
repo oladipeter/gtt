@@ -1,8 +1,12 @@
 # encoding: utf-8
 class SupmessagesController < ApplicationController
 
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!, :which_system
   layout "support"
+
+  def which_system
+    @system = System.find_by_title(params[:system])
+  end
 
   def index
     @supmessages = Supmessage.all( :conditions => ["user_id = ? AND system_title = ?", current_user.id, session[:current_system].title])
@@ -32,15 +36,15 @@ class SupmessagesController < ApplicationController
   # GET /supmessages/new
   # GET /supmessages/new.xml
   def new
-
     # Megnezem hogy eppen melyik rendszerrol van szo.. egy adott rendszert kell elkapni CSAK egyet, majd az ehhez tartozo adminokat nezzuk meg,
     # melyeket mar tombben fogunk megkapni
-    @system = System.find(:first, :conditions => ["id = ?",session[:current_system].id])
+
+    @system = System.find(:first, :conditions => ["id = ?", @system.id])
+
     # Majd megnezem hogy melyik adminisztratorok tartoznak hozza a viewban..
     # itt csak osszekotom a tablakat, az adott rendszerhez mely adminok tartoznak (tomb)
+
     @admins = @system.admins
-
-
     @supmessage = Supmessage.new
 
     respond_to do |format|
@@ -72,16 +76,12 @@ class SupmessagesController < ApplicationController
   # POST /supmessages.xml
   def create
     @supmessage = Supmessage.new(params[:supmessage])
-
-    respond_to do |format|
       if @supmessage.save
-        format.html { redirect_to(@supmessage, :notice => 'A hibabejelentés sikeresen létrejött!') }
-        format.xml  { render :xml => @supmessage, :status => :created, :location => @supmessage }
+        redirect_to all_supmessages_path( :system => @supmessage.system_title ), :notice => 'A hibabejelentés sikeresen létrejött!'
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @supmessage.errors, :status => :unprocessable_entity }
+        render :action => "new"
       end
-    end
+
   end
 
   # PUT /supmessages/1

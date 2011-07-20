@@ -1,5 +1,5 @@
 <% content_for :articles do %>
-  <h2>Cikkek (<%= "#{@quantity_articles}" %> db)</h2>
+  <h2>Cikkek (<%= "#{@quantity_articles}" %>)</h2>
   <div class="article_text">
 
     <% if @articles.empty? %>
@@ -13,7 +13,7 @@
         <div class="article_description"><%= raw truncate ("#{article.short_description}"), :length => 100, :omission => '...' %></div>
       <% end %>
 
-      <%= link_to "Megnézem az összes cikket!", "#", :class => "all" %>
+      <%= link_to "Megnézem az összes cikket!", all_articles_path( :system => @system.title ), :class => "all" %>
 
     <% end %>
   </div>
