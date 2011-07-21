@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20110714101012) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.integer  "system_id"
   end
 
   create_table "admins_supmessages", :id => false, :force => true do |t|
@@ -68,7 +69,7 @@ ActiveRecord::Schema.define(:version => 20110714101012) do
     t.string   "assetable_type",    :limit => 30
     t.string   "type",              :limit => 25
     t.string   "guid",              :limit => 10
-    t.integer  "locale",            :limit => 1,  :default => 0
+    t.integer  "locale",            :limit => 2,  :default => 0
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"

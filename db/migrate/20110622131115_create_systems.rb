@@ -7,13 +7,6 @@ class CreateSystems < ActiveRecord::Migration
       t.timestamps
     end
 
-    System.create( :name => "MikroVoks", :title => "mikrovoks" )
-    System.create( :name => "MikroKam", :title => "mikrokam" )
-    System.create( :name => "seQUEnce", :title => "sequence" )
-    System.create( :name => "EDtR", :title => "edtr" )
-    System.create( :name => "MvMonitor", :title => "mvmonitor" )
-    System.create( :name => "Digirat", :title => "digirat" )
-
   end
 
   def self.down

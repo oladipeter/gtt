@@ -1,0 +1,9 @@
+
+<% content_for :advice do %>
+  <div id="show_advice">
+  <h2><%= raw @advice.title %> | <%= @advice.created_at %></h2>
+  <div class="advice_short_description"><%= raw @advice.short_description %></div>
+  <div class="advice_content"><%= raw @advice.content %></div>
+  <div class="close"><%= link_to "Bezár", "#" %></div>
+  </div>
+<% end %>

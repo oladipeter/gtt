@@ -969,6 +969,10 @@ ul li {
   background-repeat: no-repeat;
 }
 
+.news_content p {
+  font-size: 16px!important;
+}
+
 .news_content .read_more {
   position: relative;
   top: -10px;
@@ -1295,22 +1299,17 @@ ul li {
   padding-top: 0px;
 }
 
-#system_name {
-  background-image: url('../images/system_name_hatter.jpg');
-  background-repeat: no-repeat;
-  margin-bottom: 0px;
+#frontend_system_name {
+  margin: 15px 0px 15px 0px;
   text-align: left;
-  height: 70px;
 }
 
-#system_name h2 {
-  width: 428px;
-  color: #333;
-  font-size: 20px;
-  font-weight: bold;
+#frontend_system_name h2 {
   letter-spacing: -1px;
-  padding-top: 12px;
-  text-align: center;
+  color: #333;
+  background-image: url('../images/tools.png');
+  background-repeat: no-repeat;
+  padding-left: 40px;
 }
 
 .supmessage_description, .faq_description, .article_description {
@@ -1397,11 +1396,46 @@ ul li {
   color: #444;
 }
 
+/* FRONTEND MAIN ADVICE */
+
+#show_advice {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+#show_advice .advice_short_description {
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: -1px;
+  color: #00688f;
+}
+
+#show_advice .advice_content {
+  font-size: 12px;
+}
+
+.close a {
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  left: 10px;
+  top: 3px;
+}
+
+.close {
+  background-image: url('../images/close.png');
+  background-repeat: no-repeat;
+  width: 53px;
+  height: 22px;
+}
+
 /* PAGINATION */
 
 .apple_pagination {
   background: #F1F1F1;
-  border: 1px solid #E5E5E5;
   text-align: center;
   padding: 1em;
 }
@@ -1416,7 +1450,6 @@ ul li {
 
 .apple_pagination span.current {
   font-weight: bold;
-  background: transparent url(apple-circle.gif) no-repeat 50% 50%;
 }
 
 .apple_pagination a {

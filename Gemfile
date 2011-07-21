@@ -15,6 +15,8 @@ gem 'mongrel', '>= 1.2.0.pre2'
 gem "will_paginate", "~> 3.0.pre2"
 # postgre
 gem "pg"
+#seed datas
+gem 'seed-fu'
 
 # Use unicorn as the web server
 # gem 'unicorn'

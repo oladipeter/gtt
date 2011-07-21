@@ -1,6 +1,6 @@
 class FrontendController < ApplicationController
 
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!, :index
   layout "frontend"
 
   def index
@@ -10,12 +10,12 @@ class FrontendController < ApplicationController
 
     # Systems
 
-    @mikrovoks_system = System.find_by_name("MikroVoks")
-    @mikrokam_system = System.find_by_name("MikroKam")
-    @sequence_system = System.find_by_name("seQUEnce")
-    @edtr_system = System.find_by_name("EDtR")
-    @digirat_system = System.find_by_name("Digirat")
-    @mvmonitor_system = System.find_by_name("MvMonitor")
+    @mikrovoks_system = System.find_by_title("mikrovoks")
+    @mikrokam_system = System.find_by_title("mikrokam")
+    @sequence_system = System.find_by_title("sequence")
+    @edtr_system = System.find_by_title("edtr")
+    @digirat_system = System.find_by_title("digirat")
+    @mvmonitor_system = System.find_by_title("mvmonitor")
 
     # Advices
 
@@ -55,6 +55,10 @@ class FrontendController < ApplicationController
       end
     end
 
+  end
+
+  def show_advice
+    @advice = Advice.find(params[:id])
   end
 
 end

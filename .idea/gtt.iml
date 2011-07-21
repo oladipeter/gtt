@@ -60,6 +60,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="seed-fu" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="sqlite3" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
@@ -102,6 +108,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] gem_plugin (v0.2.3, C:/Ruby192/lib/ruby/gems/1.9.1/gems/gem_plugin-0.2.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] pg (v0.11.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/pg-0.11.0-x86-mingw32)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] will_paginate (v3.0.pre2, C:/Ruby192/lib/ruby/gems/1.9.1/gems/will_paginate-3.0.pre2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] seed-fu (v2.0.1, C:/Ruby192/lib/ruby/gems/1.9.1/gems/seed-fu-2.0.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v2.1.2, C:/Ruby192/lib/ruby/gems/1.9.1/gems/builder-2.1.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mail (v2.2.17, C:/Ruby192/lib/ruby/gems/1.9.1/gems/mail-2.2.17)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] activemodel (v3.0.6, C:/Ruby192/lib/ruby/gems/1.9.1/gems/activemodel-3.0.6)" level="application" />

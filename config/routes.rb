@@ -53,6 +53,10 @@ Gtt::Application.routes.draw do
   match 'client/edit/:id' => 'client#edit', :as => "client_edit"
   match 'client/update/:id' => 'client#update', :as => "client_update"
 
+  # FRONTEND
+
+  match 'frontend/show_advice/:id' => 'frontend#show_advice', :as => "show_advice"
+
   # SUPPORT
 
   match 'frontend/support', :to => 'support#index'

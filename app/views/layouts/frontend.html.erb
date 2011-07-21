@@ -124,16 +124,18 @@
                     <div class="news_content">
                       <h2><%= advice.title %> | <%= advice.created_at.strftime("%F") %></h2>
 
-                      <p><%= raw truncate("#{advice.short_description}", :length => 620, :omission => '...') %></p>
+                      <p><%= raw truncate("#{advice.short_description}", :length => 700, :omission => '...') %></p>
 
                       <div class="read_more">
-                        <%= link_to "Bővebben", "#" %>
+                        <%= link_to "Bővebben", show_advice_path(advice) %>
                       </div>
                     </div>
                   </li>
                 <% end %>
               </ul>
             </div>
+
+            <%= yield :advice %>
 
             <div id="systems">
 
@@ -145,7 +147,8 @@
                   <div class="main_text"><%= link_to "MikroVoks Szavazó Rendszer", "#", :title => "#{@mikrovoks_system.description}", :id => "mikrovoks_tip"  %></div>
                 </div>
                 <div class="demo">
-                  <div class="span-8" id="mikrovoks_image">
+                  <div class="span-8">
+                    <%= link_to image_tag("termek_mikrovoks.jpg"), support_path( :system => "mikrovoks") %>
                   </div>
                 </div>
 
@@ -167,7 +170,8 @@
                   <div class="main_text"><%= link_to "MikroKam Robotkamerás Rendszer", "#", :title => "#{@mikrokam_system.description}", :id => "mikrokam_tip"  %></div>
                 </div>
                 <div class="demo">
-                  <div class="span-8" id="mikrokam_image">
+                  <div class="span-8">
+                    <%= link_to image_tag("termek_mikrokam.jpg"), support_path( :system => "mikrokam") %>
                   </div>
                 </div>
 
@@ -189,7 +193,8 @@
                   <div class="main_text"><%= link_to "seQUEnce Ügyfélhívó Rendszer", "#", :title => "#{@sequence_system.description}", :id => "sequence_tip"  %></div>
                 </div>
                 <div class="demo">
-                  <div class="span-8" id="sequence_image">
+                  <div class="span-8">
+                    <%= link_to image_tag("termek_sequence.jpg"), support_path( :system => "sequence") %>
                   </div>
                   <div class="tooltip">
                      <%= @sequence_system.description %>
@@ -214,7 +219,8 @@
                   <div class="main_text"><%= link_to "EDtR Döntéstámogató Rendszer", "#", :title => "#{@edtr_system.description}", :id => "edtr_tip"  %></div>
                 </div>
                 <div class="demo">
-                  <div class="span-8" id="edtr_image">
+                  <div class="span-8">
+                    <%= link_to image_tag("termek_edtr.jpg"), support_path( :system => "edtr") %>
                   </div>
                 </div>
 
@@ -234,7 +240,8 @@
                   <div class="main_text"><%= link_to "MvMonitor Jegyzőkönyvező Rendszer", "#", :title => "#{@mvmonitor_system.description}", :id => "mvmonitor_tip"  %></div>
                 </div>
                 <div class="demo">
-                  <div class="span-8" id="mvmonitor_image">
+                  <div class="span-8">
+                    <%= link_to image_tag("termek_mvmonitor.jpg"), support_path( :system => "mvmonitor") %>
                   </div>
                 </div>
 
@@ -255,7 +262,8 @@
                 </div>
 
                 <div class="demo">
-                  <div class="span-8" id="digirat_image">
+                  <div class="span-8">
+                    <%= link_to image_tag("termek_digirat.jpg"), support_path( :system => "digirat") %>
                   </div>
                 </div>
 
@@ -297,6 +305,10 @@
 <script>
   $('#notice_notice').delay(1900).slideUp(900);
   $('#notice_alert').delay(1900).slideUp(900);
+
+  $(".close").click(function () {
+      $("#show_advice").slideUp();
+  });
 </script>
 
 
