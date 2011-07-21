@@ -71,4 +71,10 @@ class SupportController < ApplicationController
     @all_faqs = Faq.find(:all, :conditions => ['system_id = ?', @system.id])
   end
 
+  def search
+    # @results = Supmessage.search(params[:search])
+    search_value = params[:search]
+    @results = Supmessage.find(:all, :conditions => ['title || description ILIKE ?', "%#{search_value}%"])
+  end
+
 end

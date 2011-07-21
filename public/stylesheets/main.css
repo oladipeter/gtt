@@ -1432,6 +1432,13 @@ ul li {
   height: 22px;
 }
 
+/* frontend_search_field */
+
+#frontend_search_field {
+  padding-top: 12px;
+  taxt-align: right;
+}
+
 /* PAGINATION */
 
 .apple_pagination {

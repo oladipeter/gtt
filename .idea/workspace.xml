@@ -5,49 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc3cdf55-bf61-4c34-9e03-3e251288b6ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/frontend/show_advice.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/fixtures/admins.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/fixtures/systems.rb" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\globomax-logo.png" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\javascripts\jquery.lite-content-slider.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\javascripts\jquery.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\javascripts\jquery.tools.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\javascripts\jquery_ujs.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\1\medium\csl1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\1\medium\hb1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\1\medium\op1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\1\original\csl1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\1\original\hb1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\1\original\op1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\1\thumb\csl1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\1\thumb\hb1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\1\thumb\op1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\medium\banics.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\medium\bp1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\medium\tj1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\original\banics.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\original\bp1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\original\tj1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\thumb\banics.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\thumb\bp1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\thumb\tj1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\3\medium\hb1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\3\original\hb1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\3\thumb\hb1.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gtt.iml" afterPath="$PROJECT_DIR$/.idea/gtt.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/frontend_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/frontend_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/frontend.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/frontend.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/support_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/support_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/support.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/support.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20110609113108_add_name_to_admin.rb" afterPath="$PROJECT_DIR$/db/migrate/20110609113108_add_name_to_admin.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20110622131115_create_systems.rb" afterPath="$PROJECT_DIR$/db/migrate/20110622131115_create_systems.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/main.css" afterPath="$PROJECT_DIR$/public/stylesheets/main.css" />
     </list>
     <ignored path="gtt.iws" />
@@ -72,19 +37,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="frontend.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="frontend.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/frontend.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="81" selection-start="3900" selection-end="3900" vertical-scroll-proportion="0.57026714">
+            <state line="124" column="81" selection-start="3900" selection-end="3900" vertical-scroll-proportion="-64.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1394" column="27" selection-start="25302" selection-end="25302" vertical-scroll-proportion="-39.08">
+            <state line="1437" column="18" selection-start="25951" selection-end="25951" vertical-scroll-proportion="0.7862857">
               <folding />
             </state>
           </provider>
@@ -93,7 +58,25 @@
       <file leaf-file-name="support.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/support.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="21" selection-start="1475" selection-end="1475" vertical-scroll-proportion="-6.72549">
+            <state line="51" column="85" selection-start="1374" selection-end="1374" vertical-scroll-proportion="-5.0588236">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69" column="76" selection-start="2275" selection-end="2275" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="support_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/support_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="30" selection-start="3011" selection-end="3011" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,7 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/config/locales/hu.yml" />
         <option value="$PROJECT_DIR$/app/views/admin_support_messages/index.html.erb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
@@ -132,11 +114,12 @@
         <option value="$PROJECT_DIR$/db/fixtures/systems.rb" />
         <option value="$PROJECT_DIR$/db/fixtures/admins.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/frontend_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/frontend/show_advice.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/support.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/frontend.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/support_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/support.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
       </list>
     </option>
@@ -570,13 +553,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/fixtures/systems.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="22" selection-start="1080" selection-end="1080" vertical-scroll-proportion="1.3428571">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="25" selection-start="379" selection-end="379" vertical-scroll-proportion="0.22857143">
@@ -640,23 +616,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="68" selection-start="1525" selection-end="1525" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/frontend_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="40" selection-start="113" selection-end="113" vertical-scroll-proportion="0.05666667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/support.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="21" selection-start="1475" selection-end="1475" vertical-scroll-proportion="-6.72549">
           <folding />
         </state>
       </provider>
@@ -668,16 +630,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
+    <entry file="file://$PROJECT_DIR$/app/controllers/support_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1394" column="27" selection-start="25302" selection-end="25302" vertical-scroll-proportion="-39.08">
+        <state line="73" column="30" selection-start="3011" selection-end="3011" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/frontend.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="81" selection-start="3900" selection-end="3900" vertical-scroll-proportion="0.57026714">
+        <state line="124" column="81" selection-start="3900" selection-end="3900" vertical-scroll-proportion="-64.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="76" selection-start="2275" selection-end="2275" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/support.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="85" selection-start="1374" selection-end="1374" vertical-scroll-proportion="-5.0588236">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1437" column="18" selection-start="25951" selection-end="25951" vertical-scroll-proportion="0.7862857">
           <folding />
         </state>
       </provider>

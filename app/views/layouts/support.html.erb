@@ -55,7 +55,12 @@
 
             <div class="span-8 last">
               <div id="frontend_search_field">
-                Keresés
+                <!-- SEARCH FORM  -->
+                <%= form_tag(frontend_support_search_path, :method => "get") do %>
+                  <%= label_tag(:search, "Keresés : ", :class => "search_label") %>
+                  <%= text_field_tag(:search) %>
+                  <%= submit_tag("Ok!") %>
+                <% end %>
               </div>
             </div>
           </div>

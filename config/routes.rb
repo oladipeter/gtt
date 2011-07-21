@@ -67,6 +67,7 @@ Gtt::Application.routes.draw do
   match '/support/supmessage/:id' => 'support#show_supmessage', :as => "show_supmessage"
   match '/support/all_faqs/' => 'support#all_faqs', :as => "all_faqs"
   match '/support/all_articles/' => 'support#all_articles', :as => "all_articles"
+  match '/support/search/' => 'support#search', :as => "frontend_support_search", :path => '/support/search'
 
   # ERROR MESSAGE
 
