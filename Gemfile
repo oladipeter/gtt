@@ -17,6 +17,8 @@ gem "will_paginate", "~> 3.0.pre2"
 gem "pg"
 #seed datas
 gem 'seed-fu'
+# search
+gem 'thinking-sphinx', '2.0.3'
 
 # Use unicorn as the web server
 # gem 'unicorn'

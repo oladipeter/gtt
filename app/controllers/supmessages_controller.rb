@@ -9,6 +9,7 @@ class SupmessagesController < ApplicationController
   end
 
   def index
+    @results = Supmessage.search(params[:search])
     @supmessages = Supmessage.all( :conditions => ["user_id = ? AND system_title = ?", current_user.id, session[:current_system].title])
 
     respond_to do |format|
