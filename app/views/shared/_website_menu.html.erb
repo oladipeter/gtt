@@ -1,12 +1,12 @@
 <h2>Weboldal karbantartása</h2>
 <ul>
-  <li><%= link_to "Rólunk", "#" %></li>
-  <li><%= link_to "Dolgozók", "#" %></li>
-  <li><%= link_to "Elérhetőségünk", "#" %></li><br/>
+  <li><%= link_to "Rólunk", edit_about_us_path(1)%></li>
+  <li><%= link_to "Elérhetőségünk", edit_contact_us_path(1) %></li><br/>
+  <li><%= link_to "Kapcsolattartók, dolgozók", contacts_path %></li><br/>
 
   <li><%= link_to "Referenciák","#" %></li>
-  <li><%= link_to "Hírek","#" %></li>
-  <li><%= link_to "Termékek", "#" %></li>
-  <li><%= link_to "Terméktámogatás", "#" %></li><br/>
+  <li><%= link_to "Hírek",advices_path %></li>
+  <li><%= link_to "Termékek", systems_path %></li>
+  <li><%= link_to "Terméktámogatás", support_messages_list_path %></li><br/>
 
 </ul>

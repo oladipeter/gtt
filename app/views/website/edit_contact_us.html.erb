@@ -1,0 +1,22 @@
+<%= semantic_form_for @contactus, :url => update_contact_us_path(@contactus)  do |f| %>
+  
+  <% if @contactus.errors.any? %>
+        <div id="error_explanation">
+          <h3>Összesen <%= @contactus.errors.count %> hiba :</h3>
+
+          <ul>
+            <% @contactus.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <%= f.inputs :name => "Cég elérhetőségei :" do %>
+          <%= f.input :title, :label => false %>
+          <%= f.input :content, :label => false, :as => :ckeditor, :input_html => { :width => "98%", :height => "500px" }  %>
+    <% end %>
+
+    <%= f.commit_button t(:ok) %>
+
+<% end %>

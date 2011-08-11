@@ -3,6 +3,7 @@
 <head>
   <title>Website Backend | Globomax</title>
   <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag :ckeditor %>
   <%= stylesheet_link_tag 'blueprint/src/reset', 'blueprint/src/forms', 'blueprint/screen', 'blueprint/src/ie', 'blueprint/src/typography', 'main', 'formtastic', 'formtastic_changes' %>
   <%= csrf_meta_tag %>
 </head>
@@ -47,7 +48,7 @@
       <div class="span-5" id="backend_left">
         <div class="main_text">
 
-          <%= render 'shared/website_menu' %>
+          <%= render 'shared/menu' %>
 
         </div>
       </div>

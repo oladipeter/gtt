@@ -103,21 +103,23 @@ Gtt::Application.routes.draw do
   # -- ABOUT US --
 
   match 'website/about_us' => 'website#about_us', :as => "about_as" # index
-  match 'website/about_us/:id' => 'website#edit_about_us', :as => "edit_about_as" # edit
+  match 'website/about_us/:id' => 'website#edit_about_us', :as => "edit_about_us" # edit
+  match 'website/update_about_us/:id' => 'website#update_about_us', :as => "update_about_us" # update
   
   # -- CONTACT US --
 
-  match 'website/contact_us' => 'website#contact_us', :as => "contact_as" # index
-  match 'website/contact_us/:id' => 'website#edit_contact_us', :as => "edit_contact_as" # edit
+  match 'website/contact_us' => 'website#contact_us', :as => "contact_us" # index
+  match 'website/contact_us/:id' => 'website#edit_contact_us', :as => "edit_contact_us" # edit
+  match 'website/update_contact_us/:id' => 'website#update_contact_us', :as => "update_contact_us" # update
 
   # -- EMPLOYEES --
 
-  match 'website/employees' => 'website#employees', :as => "employees" # index
-  match 'website/new_employee/:id' => 'website#new_employee', :as => "new_employee" # new
-  match 'website/create_employee/:id' => 'website#create_employee', :as => "create_employee" # create
-  match 'website/edit_employee/:id' => 'website#edit_employee', :as => "edit_employee" # edit
-  match 'website/update_employee/:id' => 'website#update_employee', :as => "update_employee" # update
-  match 'website/destroy_employee/:id' => 'website#destroy_employee', :as => "destroy_employee" # destroy
+  # match 'website/employees' => 'website#employees', :as => "employees" # index
+  # match 'website/new_employee/:id' => 'website#new_employee', :as => "new_employee" # new
+  # match 'website/create_employee/:id' => 'website#create_employee', :as => "create_employee" # create
+  # match 'website/edit_employee/:id' => 'website#edit_employee', :as => "edit_employee" # edit
+  # match 'website/update_employee/:id' => 'website#update_employee', :as => "update_employee" # update
+  # match 'website/destroy_employee/:id' => 'website#destroy_employee', :as => "destroy_employee" # destroy
 
   # -- REFERENCES --
 

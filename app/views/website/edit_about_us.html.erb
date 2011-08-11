@@ -1,0 +1,22 @@
+<%= semantic_form_for @aboutus, :url => update_about_us_path(@aboutus)  do |f| %>
+  
+  <% if @aboutus.errors.any? %>
+        <div id="error_explanation">
+          <h3>Összesen <%= @aboutus.errors.count %> hiba :</h3>
+
+          <ul>
+            <% @aboutus.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <%= f.inputs :name => "Cég bemutatkozása :" do %>
+          <%= f.input :title, :label => false %>
+          <%= f.input :content, :label => false, :as => :ckeditor, :input_html => { :width => "98%", :height => "500px" }  %>
+    <% end %>
+
+    <%= f.commit_button t(:ok) %>
+
+<% end %>
