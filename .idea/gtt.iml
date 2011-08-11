@@ -121,6 +121,8 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] treetop (v1.4.9, C:/Ruby192/lib/ruby/gems/1.9.1/gems/treetop-1.4.9)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] tzinfo (v0.3.27, C:/Ruby192/lib/ruby/gems/1.9.1/gems/tzinfo-0.3.27)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] abstract (v1.0.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/abstract-1.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] jquery-rails (v1.0.12, C:/Ruby192/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.12)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rake (v0.9.1, C:/Ruby192/lib/ruby/gems/1.9.1/gems/rake-0.9.1)" level="application" />
   </component>
 </module>
 

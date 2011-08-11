@@ -1,5 +1,7 @@
 Gtt::Application.routes.draw do
 
+  get "website/admin"
+
   resources :faqs
 
   get "faqs/index"
@@ -33,7 +35,6 @@ Gtt::Application.routes.draw do
   get "frontend/index"
   devise_for :users
 
-
   # ADMINISTRATOR
 
   match "/admin" => redirect("/admins/sign_in")
@@ -43,7 +44,6 @@ Gtt::Application.routes.draw do
   match 'administrator/destroy/:id' => 'administrator#destroy', :as => "administrator_delete"
   match 'administrator/edit/:id' => 'administrator#edit', :as => "administrator_edit"
   match 'administrator/update/:id' => 'administrator#update', :as => "administrator_update"
-
 
   # CLIENT
 
@@ -89,6 +89,56 @@ Gtt::Application.routes.draw do
   match 'comment/modify/:id' => 'comments#modify', :as => "comment_modify"
   match 'comment/delete/:id' => 'comments#delete', :as => "comment_delete"
   match 'comment/create_user_comment/' => 'comments#create_user_comment', :as => "create_user_comment"
+
+  # ------------------------------------------------------------------------------------------------------------------
+  # ------------------------------------------------------------------------------------------------------------------
+  #                                          GLOBOMAX WEBSITE ROUTING
+  # ------------------------------------------------------------------------------------------------------------------
+  # ------------------------------------------------------------------------------------------------------------------
+
+  # -- WEBSITE ADMIN INDEX --
+
+  match 'website/admin' => 'website#admin', :as => "website_admin" # website admin index
+
+  # -- ABOUT US --
+
+  match 'website/about_us' => 'website#about_us', :as => "about_as" # index
+  match 'website/about_us/:id' => 'website#edit_about_us', :as => "edit_about_as" # edit
+  
+  # -- CONTACT US --
+
+  match 'website/contact_us' => 'website#contact_us', :as => "contact_as" # index
+  match 'website/contact_us/:id' => 'website#edit_contact_us', :as => "edit_contact_as" # edit
+
+  # -- EMPLOYEES --
+
+  match 'website/employees' => 'website#employees', :as => "employees" # index
+  match 'website/new_employee/:id' => 'website#new_employee', :as => "new_employee" # new
+  match 'website/create_employee/:id' => 'website#create_employee', :as => "create_employee" # create
+  match 'website/edit_employee/:id' => 'website#edit_employee', :as => "edit_employee" # edit
+  match 'website/update_employee/:id' => 'website#update_employee', :as => "update_employee" # update
+  match 'website/destroy_employee/:id' => 'website#destroy_employee', :as => "destroy_employee" # destroy
+
+  # -- REFERENCES --
+
+  match 'website/references' => 'website#references', :as => "references" # index
+  match 'website/new_reference/:id' => 'website#new_reference', :as => "new_reference" # new
+  match 'website/create_reference/:id' => 'website#create_reference', :as => "create_reference" # create
+  match 'website/edit_reference/:id' => 'website#edit_reference', :as => "edit_reference" # edit
+  match 'website/update_reference/:id' => 'website#update_reference', :as => "update_reference" # update
+  match 'website/destroy_reference/:id' => 'website#destroy_reference', :as => "destroy_reference" # destroy
+
+  # -- PRODUCTS --
+  # Csak egy link lesz ami egy kulon layout-ot jelenit meg amin az egyes termekoldalakra fog linkelni
+
+  # -- PRODUCT SUPPORT --
+  # Csak egy link lesz ami egy a termektamogatas oldal user loginjara mutat
+
+  # ------------------------------------------------------------------------------------------------------------------
+  # ------------------------------------------------------------------------------------------------------------------
+  #                                                  HELP ROUTING
+  # ------------------------------------------------------------------------------------------------------------------
+  # ------------------------------------------------------------------------------------------------------------------
 
   # namespace :admin do
   #   root :to => "backend#index"

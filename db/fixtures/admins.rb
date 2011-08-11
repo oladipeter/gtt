@@ -1,4 +1,4 @@
-Admin.seed do |s|
+Aboutus.seed do |s|
   s.id = 1
   s.email = "oladi.peter@globomax.hu"
   s.password = "va1Rooke"
