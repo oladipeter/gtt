@@ -132,11 +132,20 @@ Gtt::Application.routes.draw do
   match 'website/update_reference/:id' => 'website#update_reference', :as => "update_reference" # update
   match 'website/destroy_reference/:id' => 'website#destroy_reference', :as => "destroy_reference" # destroy
 
+  # -- GLOBOMAX --
+
+  match 'globomax/index' => 'globomax#index', :as => "globomax" # globomax index
+
+
+
   # -- PRODUCTS --
   # Csak egy link lesz ami egy kulon layout-ot jelenit meg amin az egyes termekoldalakra fog linkelni
 
   # -- PRODUCT SUPPORT --
   # Csak egy link lesz ami egy a termektamogatas oldal user loginjara mutat
+
+
+
 
   # ------------------------------------------------------------------------------------------------------------------
   # ------------------------------------------------------------------------------------------------------------------
