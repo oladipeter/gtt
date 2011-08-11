@@ -1,5 +1,7 @@
 Gtt::Application.routes.draw do
 
+  get "globomax/index"
+
   get "website/admin"
 
   resources :faqs
