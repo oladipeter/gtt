@@ -1,0 +1,24 @@
+# sphinx config
+# http://freelancing-god.github.com/ts/en/advanced_config.html
+
+development:
+  port: 9312
+  bin_path: "c:\sphinx\bin"
+  searchd_binary_name: "c:\sphinx\bin\searchd"
+  indexer_binary_name: "c:\sphinx\bin\indexer"
+  config_file: "c:\rails_projects\gtt\config\development.sphinx.conf"
+  searchd_log_file: "c:\rails_projects\gtt\log\searchd.log"
+  query_log_file: "c:\rails_projects\gtt\log\searchd.query.log"
+  pid_file: "c:\rails_projects\gtt\log\searchd.development.pid"
+  # ... repeat for other environments
+  mem_limit: 128M
+  max_matches: 10000
+
+test:
+  port: 9313
+
+production:
+  port: 9312
+  # searchd_file_path: "/var/www/latest_web20_craze/shared/sphinx"
+
+
