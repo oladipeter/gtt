@@ -112,9 +112,9 @@ a, a:hover, a:link, a:visited {
 #block_4 {
     width: 100%;
     height: 320px;
-    background-color: #00688f;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    /*background-color: #00688f;*/
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #ccc;
 }
 
 #block_5 {
@@ -214,7 +214,7 @@ a, a:hover, a:link, a:visited {
     padding-top: 0px;
     text-align: left;
     text-align: justify; /*padding-right: 50px;*/
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 #block_4 .text {
@@ -223,7 +223,7 @@ a, a:hover, a:link, a:visited {
     font-weight: normal;
     letter-spacing: normal;
     line-height: 1.45em;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 /* BLOCK 5 ------------------------------------------------------------------ */
@@ -580,10 +580,8 @@ span.delete {
 /*border:1px solid #ccc;*/
     position: relative;
     height: 150px;
-
     width: 970px;
     float: left;
-    margin: 15px;
     cursor: pointer;
 
     /* CSS3 tweaks for modern browsers
@@ -612,19 +610,18 @@ span.delete {
     position: absolute;
     top: 0;
     left: 0;
-    margin: 7px;
     padding: 0px 50px 15px 0px;
     height: 120px;
     font-size: 14px;
 }
 
 .images div img {
-    width: 300px;
-    height: 225px;
     display: block;
     float: left;
     position: relative;
-    top: 10px;
-    left: 15px;
+    top: 0px;
+}
 
+.images p {
+  padding: 0px;
 }

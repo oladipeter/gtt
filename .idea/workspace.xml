@@ -8,16 +8,10 @@
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\globomax-logo.png" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\javascripts\jquery.lite-content-slider.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\javascripts\jquery_ujs.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gtt.iml" afterPath="$PROJECT_DIR$/.idea/gtt.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/globomax/kep_1.png" afterPath="$PROJECT_DIR$/public/images/globomax/kep_1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/globomax/kep_2.png" afterPath="$PROJECT_DIR$/public/images/globomax/kep_2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/globomax/kep_3.png" afterPath="$PROJECT_DIR$/public/images/globomax/kep_3.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/globomax.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/globomax.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/application.js" afterPath="$PROJECT_DIR$/public/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/jquery.js" afterPath="$PROJECT_DIR$/public/javascripts/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/jquery.min.js" afterPath="$PROJECT_DIR$/public/javascripts/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/rails.js" afterPath="$PROJECT_DIR$/public/javascripts/rails.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/website.css" afterPath="$PROJECT_DIR$/public/stylesheets/website.css" />
     </list>
     <ignored path="gtt.iws" />
@@ -45,16 +39,16 @@
       <file leaf-file-name="globomax_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/globomax_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="12" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+            <state line="10" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="globomax.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="globomax.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/globomax.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="266" column="45" selection-start="10192" selection-end="10192" vertical-scroll-proportion="-15.725491">
+            <state line="65" column="54" selection-start="1911" selection-end="1911" vertical-scroll-proportion="0.6136364">
               <folding />
             </state>
           </provider>
@@ -69,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="website.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="website.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/website.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="626" column="1" selection-start="10594" selection-end="10594" vertical-scroll-proportion="0.9028571">
+            <state line="114" column="27" selection-start="2024" selection-end="2024" vertical-scroll-proportion="-13.68">
               <folding />
             </state>
           </provider>
@@ -124,8 +118,8 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/public/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/views/layouts/globomax.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/website.css" />
+        <option value="$PROJECT_DIR$/app/views/layouts/globomax.html.erb" />
       </list>
     </option>
   </component>
@@ -209,12 +203,28 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="278" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="296" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="292" />
     <property name="options.lastSelected" value="preferences.sourceCode.General" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../mikrokamnew/db/migrate" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="297" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="967" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="972" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="293" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="291" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -506,13 +516,6 @@
         <state line="136" column="56" selection-start="5949" selection-end="5949" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="1" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="84" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.77444446">
@@ -520,16 +523,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/globomax_controller.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="12" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/globomax.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="266" column="45" selection-start="10192" selection-end="10192" vertical-scroll-proportion="-15.725491">
+        <state line="16" column="1" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -541,9 +537,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/globomax_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/website.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="626" column="1" selection-start="10594" selection-end="10594" vertical-scroll-proportion="0.9028571">
+        <state line="114" column="27" selection-start="2024" selection-end="2024" vertical-scroll-proportion="-13.68">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/globomax.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="54" selection-start="1911" selection-end="1911" vertical-scroll-proportion="0.6136364">
           <folding />
         </state>
       </provider>
