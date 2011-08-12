@@ -2,9 +2,8 @@
 <html>
 <head>
   <title>Globomax Elektronikai Kft.</title>
+  <%= stylesheet_link_tag "blueprint/ie", "blueprint/screen", "blueprint/src/reset" %>
   <%= stylesheet_link_tag "website" %>
-  <%= stylesheet_link_tag :all %>
-  <%= stylesheet_link_tag "blueprint/ie" %>
   <%# render :partial => "shared/stylesheet" %> <!-- In application.helper -->
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
@@ -15,17 +14,24 @@
 
     <div id="block_1">
       <div class="container">
-        <div class="span-8 prepend-16"> <!-- 24 oszlopos ami ele berak 16 ures oszlopot! -->
-           Block_1
+        <div class="span-24"> <!-- 24 oszlopos ami ele berak 16 ures oszlopot! -->
+          <div class="main_text">
+             Globomax Elektronikai Kft. - 1155 Budapest Dembinszky utca 1. - Telefon : +36 1 271 0451, +36 306 5371 - Email : info@globomax.hu - Web : www.globomax.hu
+          </div>
         </div>
       </div>
     </div>
 
     <div id="block_2">
       <div class="container">
-        <div class="span-8"><%# image_tag("logo.jpg") %>logo</div>
-        <div class="span-16 last">
-          logo
+        <div class="span-24">
+          <ul class="menu">
+            <li class="button"><%= link_to "Főoldal", "#" %></li>
+            <li class="button"><%= link_to "Elérhetőségünk", "#" %></li>
+            <li class="button"><%= link_to "Kollégáink", "#" %></li>
+            <li class="button"><%= link_to "Termékek", "#" %></li>
+            <li class="button"><%= link_to "Referenciáink", "#" %></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -103,11 +109,11 @@
         </div>
         <div class="span-8 last" id="block5_image_right">
            <div class="title">
-            <h1>Dokumentációk</h1>
+            <h1>Önkormányzati TV</h1>
             <ul class="services">
-              <li><%= link_to"Kezelői leírás", "http://globomax.hu" %></li>
-              <li><%= link_to"Termék ismertető", "http://globomax.hu" %></li>
-              <li><%= link_to"Referenciáink", "http://globomax.hu/globomax/c_referencialista.jsp" %></li>
+              <li><%= link_to"Regisztráció", "http://onkormanyzati.tv/index.php?id=44" %></li>
+              <li><%= link_to"Önkormányzatoknak", "http://onkormanyzati.tv/index.php?id=7" %></li>
+              <li><%= link_to"Szavazás", "http://onkormanyzati.tv/index.php?id=6" %></li>
             </ul>
           </div>
         </div>
@@ -118,7 +124,7 @@
       <div class="container">
         <div class="span-24">
           <div class="tovabbi_termekek">
-            <h1>Cégünk további termékei</h1>
+            <h1>Cégünk kiemelt termékei</h1>
             Az önálló fejlesztő, gyártó, tevékenység eredményeként saját termékeink köre évről évre bővül. A meglevő termékek hardverét folyamatosan fejlesztjük, a programok szolgáltatásait bővítjük. Hiszünk abban, hogy ügyfeleink céljainak elérésén keresztül a magunk módján hozzájárulhatunk az önkormányzati munka transzparenciájához. Hisszük, hogy munkánkkal csökkenthetjük a lakosság, a választópolgárok, és politika távolságát.
           </div>
         </div>
@@ -132,7 +138,7 @@
               <div class="text">
                    <h3><%= link_to "MikroVoks szavazatszámláló rendszer", "http://mikrovoks.globomax.hu" %></h3>
                    <%= image_tag("globomax/product_mikrovoks.jpg") %>
-                   A jelenleg kapható legkorszerűbb, integrált testületi rendszer, amely nem csak önkormányzati testületek, de más demokratikus és tőkearányos döntéshozatali testületek munkáját szolgálja ki az előkészítéstől a döntések végrehajtásáig és publikálásáig...
+                   A jelenleg kapható legkorszerűbb, integrált testületi rendszer, amely nem csak önkormányzati testületek, de más demokratikus és tőkearányos döntéshozatali testületek munkáját szolgálja ki az előkészítéstől...
               </div>
             </div>
             <div class="span-8">

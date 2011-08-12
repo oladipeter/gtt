@@ -78,6 +78,14 @@ a, a:hover, a:link, a:visited {
     color: red;
 }
 
+#block_1 .main_text {
+  font-weight: bold;
+  font-size: 10px;
+  color: #333;
+  padding-top: 3px;
+  text-align: center;
+}
+
 /* BLOCK (BACKGROUNDS) ------------------------------------------------------ */
 
 #block_1 {
@@ -163,8 +171,7 @@ a, a:hover, a:link, a:visited {
 
 #block_2 ul {
     position: relative;
-    left: 15px;
-    float: right;
+    left: 0px;
     padding-top: 30px;
 }
 
@@ -260,7 +267,7 @@ a, a:hover, a:link, a:visited {
 }
 
 #block_5 .button a {
-  padding-left: 18px;
+  padding-left: 0px;
 }
 
 #block_5 li {
@@ -403,6 +410,7 @@ ul.services a {
 
 #block_7 h1 {
     color: #fff;
+    margin-bottom: 20px;
 }
 
 #block_7 .text {
