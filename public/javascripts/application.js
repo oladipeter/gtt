@@ -3,31 +3,6 @@
 
 $(document).ready(function(){
 
-  $("#slider2").easySlider({
-				controlsBefore:	'<p id="controls2">',
-				controlsAfter:	'</p>',
-				prevId: 'prevBtn2',
-				nextId: 'nextBtn2',
-
-        prevText: 'Previous',
-        nextId: 'nextBtn',
-        nextText: 'Next',
-        controlsShow: true,
-        controlsFade: true,
-        firstId: 'firstBtn',
-        firstText: 'First',
-        firstShow: false,
-        lastId: 'lastBtn',
-        lastText: 'Last',
-        lastShow: false,
-        vertical: false,
-        speed: 800,
-        auto: true,
-        pause: 7000,
-        continuous: true
-
-	});
-
   $("#mikrovoks_tip").tipTip({
     defaultPosition: 'bottom',
     delay: 200
@@ -57,5 +32,22 @@ $(document).ready(function(){
     defaultPosition: 'bottom',
     delay: 200
   });
+
+  /* SLIDER */
+
+  $(".slidetabs").tabs(".images > div", {
+
+        // enable "cross-fading" effect
+        effect: 'fade',
+        fadeOutSpeed: "slow",
+
+        // start from the beginning after the last tab
+        rotate: true
+
+        // use the slideshow plugin. It accepts its own configuration
+    }).slideshow();
+
+    $(".slidetabs").data("slideshow").play();
+
 
 });
