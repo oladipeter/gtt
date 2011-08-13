@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc3cdf55-bf61-4c34-9e03-3e251288b6ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/globomax/contact_us.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/globomax_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/globomax_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/website_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/website_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/globomax.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/globomax.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/globomax/contact_us.html.erb" afterPath="$PROJECT_DIR$/app/views/globomax/contact_us.html.erb" />
     </list>
     <ignored path="gtt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,7 +50,7 @@
       <file leaf-file-name="contact_us.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/globomax/contact_us.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="30" selection-start="63" selection-end="63" vertical-scroll-proportion="0.04992658">
+            <state line="4" column="1077" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.09985316">
               <folding />
             </state>
           </provider>
@@ -641,7 +636,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/globomax/contact_us.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="30" selection-start="63" selection-end="63" vertical-scroll-proportion="0.04992658">
+        <state line="4" column="1077" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.09985316">
           <folding />
         </state>
       </provider>
