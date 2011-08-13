@@ -7,4 +7,8 @@ class GlobomaxController < ApplicationController
   def index
   end
 
+  def contact_us
+    @contactus = Contactus.find(1)
+  end
+
 end

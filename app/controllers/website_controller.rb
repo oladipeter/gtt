@@ -31,10 +31,6 @@ class WebsiteController < ApplicationController
   #                                                 CONTACT
   # -------------------------------------------------------------------------------------------------------------------
 
-  def contact_us
-    @contactus = Contactus.find(1)
-  end
-
   def edit_contact_us
    @contactus = Contactus.find(params[:id])
   end
