@@ -1,0 +1,22 @@
+<h1>Munkatársaink</h1>
+
+<% @contacts.each do |contact| %>
+
+    <div class="span-2" id="employee_image">
+      <% if contact.image_file_name.blank? %>
+          <%= image_tag("default_profile_thumb.png") %>
+      <% else %>
+          <%= image_tag contact.image.url(:thumb) %>
+      <% end %>
+    </div>
+    <div class="span-14 last">
+      <div class="classification">
+      <span class="employee_name"><%= contact.name %></span><br/>
+      <%= contact.classification %><br/>
+      <%= contact.email %> | <%= contact.mobil %>
+      </div>
+    </div>
+
+    <div class="span-15" id="employee_description"><%= contact.description %></div>
+
+<% end %>

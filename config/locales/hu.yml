@@ -152,6 +152,7 @@ hu:
         local_government: "Önkormányzat neve"
 
   name: "Név"
+  classification: "Beosztás"
   email: "Email cím"
   mobil: "Mobil telefon"
   phone: "Vezetékes telefon"

@@ -625,3 +625,37 @@ span.delete {
 .images p {
   padding: 0px;
 }
+
+.classification {
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 2px;
+    padding-left: 20px;
+}
+
+#employee_image img {
+    border: 1px solid #ccc;
+}
+
+.employee_name {
+    font-family: Georgia;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#employee_description {
+    padding: 0px;
+    font-size: 11px;
+    font-style: italic;
+    /* background-color: #f1f1f1;
+    border: 1px solid #ddd;*/
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#employee_image {
+    margin-bottom: 10px;
+}
+

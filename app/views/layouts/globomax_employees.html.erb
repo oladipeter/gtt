@@ -89,32 +89,7 @@
     <div id="block_6">
       <div class="container prepend-top">
         <div class="span-16">
-          <div id="user_nav">
-          </div>
-          <div id="message">
-            <% flash.each do |name, msg| %>
-              <%= content_tag :div, msg, :id => "flash_#{name}" %>
-            <% end %>
-          </div>
-          <div class="text">
-            <%= yield %>
-          </div>
-
-          <!-- Jquery Tools ** TABS **   -->
-
-            <div id="tabs_div">
-                <%# yield :tab %>
-              <script>
-                 $("ul.tabs").tabs("div.panes > div", {effect: 'fade', fadeInSpeed: 400});
-              </script>
-            </div>
-
-          <!-- Jquery Tools ** TABS **   -->
-
-          <div id="hatterem">
-            &nbsp;
-          </div>
-
+          <%= yield %>
         </div>
         <div class="span-8 last">
           <div class="right_text">

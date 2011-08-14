@@ -16,6 +16,8 @@
 
     <%= f.inputs :name => "Kapcsolattartó adatai :" do %>
           <%= f.input :name, :label => t(:name) %>
+          <%= f.input :classification, :label => t(:classification) %>
+          <%= f.input :description, :label => t(:short_description) %>
           <%= f.input :email %>
           <%= f.input :mobil, :label => t(:mobil)  %>
           <%= f.input :phone, :label => t(:phone) %>

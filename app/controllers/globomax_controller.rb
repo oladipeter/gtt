@@ -11,4 +11,9 @@ class GlobomaxController < ApplicationController
     @contactus = Contactus.find(1)
   end
 
+  def contacts
+    @contacts = Contact.find(:all)
+    render :layout => "globomax_employees"
+  end
+
 end

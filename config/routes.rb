@@ -134,8 +134,9 @@ Gtt::Application.routes.draw do
 
   # -- GLOBOMAX --
 
-  match 'globomax/index' => 'globomax#index', :as => "globomax" # globomax index
+  match 'globomax/index' => 'globomax#index', :as => "index" # globomax index
   match 'globomax/contact_us' => 'globomax#contact_us', :as => "contact_us" # globomax index
+  match 'globomax/employees' => 'globomax#contacts', :as => "employees" # globomax employees or contacts
 
 
 
