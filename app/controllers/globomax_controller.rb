@@ -16,4 +16,9 @@ class GlobomaxController < ApplicationController
     render :layout => "globomax_employees"
   end
 
+  def products
+    @products = System.find(:all, :order => "position ASC" )
+    render :layout => "globomax_employees"
+  end
+
 end

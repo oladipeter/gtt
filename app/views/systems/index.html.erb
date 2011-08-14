@@ -4,12 +4,14 @@
 <table>
   <tr>
     <th>Név</th>
+    <th>Sorrend</th>
     <th></th>
   </tr>
 
 <% @systems.each do |system| %>
   <tr>
     <td><%= system.name %></td>
+    <td><%= system.position %></td>
     <td><div class="align_right"><%= link_to 'Szerkeszt', edit_system_path(system) %></div></td>
   </tr>
 <% end %>

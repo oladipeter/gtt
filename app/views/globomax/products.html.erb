@@ -1,0 +1,16 @@
+<% @products.each do |product| %>
+
+  <div class="span-16">
+    <h1><%= product.name %></h1>
+  </div>
+  <div class="span-15">
+    <div class="product_description">
+      <%= product.description %><br/><br/>
+      <div class="product_read_more">
+        <%= link_to "Bővebben", product.url %>
+      </div>
+    </div>
+  </div>
+
+
+<% end %>

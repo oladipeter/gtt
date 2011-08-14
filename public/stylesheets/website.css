@@ -659,3 +659,28 @@ span.delete {
     margin-bottom: 10px;
 }
 
+.product_description {
+    font-size: 12px;
+    font-style: italic;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.product_read_more {
+    width: 60px;
+    height: 20px;
+    padding: 5px;
+    background-color: #00688F;
+    color: #fff;
+}
+
+.product_read_more a {
+    text-align: center;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: bold;
+    color: #fff;
+}
+

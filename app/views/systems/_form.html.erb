@@ -20,7 +20,8 @@
           <%= f.input :description, :label => t(:short_description) %>
           <b><%= "Teljes leírás" %></b><br/><br/>
           <%= f.input :long_description, :label => false, :as => :ckeditor, :input_html => { :width => "98%" }, :hint => "Ez jelenik meg a terméktámogatás főoldalán!" %>
-          <%= f.input :users, :label => "A rendszer felhasználói :", :as => :select, :collection => User.find(:all), :hint => "Nem szerkeszthető mező!", :input_html => { :disabled => true }%>
+          <%= f.input :url, :label => "Külső URL", :hint => "Ide fog mutatni a bővebben gomb!" %>
+          <%= f.input :position, :label => "Pozició", :hint => "A Globomax weboldalon megjelenő sorrend!" %>
     <% end %>
 
     <%= f.commit_button t(:ok) %>
