@@ -7,7 +7,6 @@ class GlobomaxController < ApplicationController
   def index
     @advices = Advice.find(:all) # Hírek
     @articles = Article.find(:all) # Cikkek
-    @faqs = Faq.find(:all) # GYIK
     render :layout => "globomax_index"
   end
 

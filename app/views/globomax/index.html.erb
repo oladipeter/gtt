@@ -7,8 +7,9 @@
   <% @articles.each do |article| %>
     <% if article.position == "1" %>
       <h2><%= article.title %></h2>
-      <%= raw article.short_description %><br/>
-      <%= raw article.content %><br/>
+      <div class="important">
+        <%= raw article.short_description %>
+      </div>
     <% end %>
   <% end %>
 
@@ -23,8 +24,9 @@
   <% @articles.each do |article| %>
     <% if article.position == "2" %>
       <h2><%= article.title %></h2>
-      <%= raw article.short_description %><br/>
-      <%= raw article.content %><br/>
+      <div class="short_description">
+        <%= raw article.short_description %>
+      </div>
     <% end %>
   <% end %>
 
@@ -37,8 +39,7 @@
   <% @articles.each do |article| %>
     <% if article.position == "3" %>
       <h2><%= article.title %></h2>
-      <%= raw article.short_description %><br/>
-      <%= raw article.content %><br/>
+      <%= raw article.short_description %><br/><br/>
     <% end %>
   <% end %>
 
@@ -51,8 +52,7 @@
   <% @articles.each do |article| %>
     <% if article.position == "4" %>
       <h2><%= article.title %></h2>
-      <%= raw article.short_description %><br/>
-      <%= raw article.content %><br/>
+      <%= raw article.short_description %><br/><br/>
     <% end %>
   <% end %>
 
