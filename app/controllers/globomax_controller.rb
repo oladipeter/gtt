@@ -21,4 +21,8 @@ class GlobomaxController < ApplicationController
     render :layout => "globomax_employees"
   end
 
+  def references
+    @reference = Reference.find(1)
+  end
+
 end

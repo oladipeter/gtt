@@ -1,4 +1,4 @@
-System.seed do |s|
+System.seed do |s| # Mindig egyes szamban legyen
   s.id = 1
   s.name = "MikroVoks szavazatszámláló és konferencia rendszer"
   s.description = "Rövid Leírás"

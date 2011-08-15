@@ -44,5 +44,22 @@ class WebsiteController < ApplicationController
       end
   end
 
+  # -------------------------------------------------------------------------------------------------------------------
+  #                                                 REFERENCES
+  # -------------------------------------------------------------------------------------------------------------------
+
+  def edit_reference
+   @reference = Reference.find(params[:id])
+  end
+
+  def update_reference
+    @reference = Reference.find(params[:id])
+      if @reference.update_attributes(params[:reference])
+        redirect_to website_admin_path, :notice => "Sikeresen módosítottad az elérhetőségeket!"
+      else
+        render :action => "edit_references"
+      end
+  end
+
 
 end

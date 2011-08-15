@@ -125,19 +125,16 @@ Gtt::Application.routes.draw do
 
   # -- REFERENCES --
 
-  match 'website/references' => 'website#references', :as => "references" # index
-  match 'website/new_reference/:id' => 'website#new_reference', :as => "new_reference" # new
-  match 'website/create_reference/:id' => 'website#create_reference', :as => "create_reference" # create
   match 'website/edit_reference/:id' => 'website#edit_reference', :as => "edit_reference" # edit
   match 'website/update_reference/:id' => 'website#update_reference', :as => "update_reference" # update
-  match 'website/destroy_reference/:id' => 'website#destroy_reference', :as => "destroy_reference" # destroy
 
   # -- GLOBOMAX --
 
   match 'globomax/index' => 'globomax#index', :as => "index" # globomax index
-  match 'globomax/contact_us' => 'globomax#contact_us', :as => "contact_us" # globomax index
-  match 'globomax/employees' => 'globomax#contacts', :as => "employees" # globomax employees or contacts
-  match 'globomax/products' => 'globomax#products', :as => "products" # globomax employees or contacts
+  match 'globomax/employees' => 'globomax#contacts', :as => "employees" # employees
+  match 'globomax/products' => 'globomax#products', :as => "products" # products
+  match 'globomax/contact_us' => 'globomax#contact_us', :as => "contact_us" # contacts
+  match 'globomax/references' => 'globomax#references', :as => "references" # contacts
 
 
 

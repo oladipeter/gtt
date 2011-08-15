@@ -1,4 +1,4 @@
-Contactus.seed do |s|
+Contactus.seed do |s| # Mindig egyes szamban legyen
   s.id = 1
   s.title = "Elérhetőségünk"
   s.content = "Globomax Elektronikai Kft.
