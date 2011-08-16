@@ -30,7 +30,7 @@ CKEDITOR.editorConfig = function( config )
     [
         ['PasteText','Format'],
         ['Bold','Italic','Underline','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
-        ['Link','Unlink','Anchor']
+        ['Link','Unlink','Anchor','Image','Flash']
     ];
 
   config.toolbar_all =

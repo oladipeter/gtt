@@ -115,6 +115,8 @@
 
 <% content_for :advices do %>
 
+  <%= raw @commercial.content %><br/>
+
   <% @advices.each do |advice| %>
     <div class="advices">
       <h2><%= advice.title %></h2>

@@ -61,5 +61,22 @@ class WebsiteController < ApplicationController
       end
   end
 
+  # -------------------------------------------------------------------------------------------------------------------
+  #                                                 COMMERCIALS
+  # -------------------------------------------------------------------------------------------------------------------
+
+  def edit_commercial
+   @commercial = Commercial.find(params[:id])
+  end
+
+  def update_commercial
+    @commercial = Commercial.find(params[:id])
+      if @commercial.update_attributes(params[:commercial])
+        redirect_to website_admin_path, :notice => "Sikeresen módosítottad az reklámokat!"
+      else
+        render :action => "edit_commercial"
+      end
+  end
+
 
 end

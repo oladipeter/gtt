@@ -127,6 +127,11 @@ Gtt::Application.routes.draw do
 
   match 'website/edit_reference/:id' => 'website#edit_reference', :as => "edit_reference" # edit
   match 'website/update_reference/:id' => 'website#update_reference', :as => "update_reference" # update
+  
+  # -- COMMERCIALS --
+
+  match 'website/edit_commercial/:id' => 'website#edit_commercial', :as => "edit_commercial" # edit
+  match 'website/update_commercial/:id' => 'website#update_commercial', :as => "update_commercial" # update
 
   # -- GLOBOMAX --
 

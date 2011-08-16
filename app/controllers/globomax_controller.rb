@@ -8,6 +8,7 @@ class GlobomaxController < ApplicationController
     @about_us = Aboutus.find(1)
     @advices = Advice.find(:all) # Hírek
     @articles = Article.find(:all) # Cikkek
+    @commercial = Commercial.find(1) # Reklámok
     render :layout => "globomax_index"
   end
 
@@ -36,5 +37,7 @@ class GlobomaxController < ApplicationController
   def references
     @reference = Reference.find(1)
   end
+
+
 
 end
