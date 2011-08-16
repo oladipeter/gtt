@@ -90,19 +90,19 @@
       <div class="container prepend-top">
         <div class="span-16">
           <div class="articles">
-            <h1>Globomax Elektronikai Kft.</h1>
             <div class="position_1">
               <%= yield :position_1 %>
             </div>
+            <%#= yield %> <!-- Main CONTENT -->
             <div class="position_2">
               <%= yield :position_2 %>
             </div>
-            <div class="span-8">
+            <div class="span-10">
               <div class="position_3">
               <%= yield :position_3 %>
               </div>
             </div>
-            <div class="span-8 last">
+            <div class="span-6 last">
               <div class="position_4">
               <%= yield :position_4 %>
               </div>
@@ -112,7 +112,7 @@
         <div class="span-8 last">
           <div class="right_text">
             <div id="advice">
-              <%= yield :right %>
+              <%= yield :advices %>
             </div>
             <div id="facebook"><!-- FACEBOOK -->
                 <div id="fb-root"></div><script src="http://connect.facebook.net/hu_HU/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/pages/%C3%96nkorm%C3%A1nyzati-TV/164894550219087" width="280" height="625" show_faces="true" stream="true" header="false"></fb:like-box>

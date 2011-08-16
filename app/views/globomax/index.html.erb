@@ -1,14 +1,36 @@
 <!-- POSITION 1 -->
 
+<h1><%= @about_us.title %></h1>
+<div class="main_yield_text">
+  <%= raw @about_us.content %>
+</div>
+
 <% content_for :position_1 do %>
 
   <!-- ARTICLE POS 1 -->
 
   <% @articles.each do |article| %>
     <% if article.position == "1" %>
-      <h2><%= article.title %></h2>
       <div class="important">
-        <%= raw article.short_description %>
+        <h2><%= article.title %></h2>
+        <div class="span-2 append-1">
+          <div class="month">
+            <%= article.created_at.strftime("%b") %>
+          </div>
+          <div class="day">
+            <%= article.created_at.strftime("%d") %>
+          </div>
+        </div>
+        <div class="span-13 last">
+          <div class="text">
+            <%= raw truncate("#{article.short_description}", :length => 200, :omission => "...") %>
+          </div>
+        </div>
+        <div class="span-3 prepend-13">
+          <div class="read_more">
+            <%= link_to "Bővebben", website_article_path(article) %>
+          </div>
+        </div>
       </div>
     <% end %>
   <% end %>
@@ -23,9 +45,26 @@
 
   <% @articles.each do |article| %>
     <% if article.position == "2" %>
-      <h2><%= article.title %></h2>
-      <div class="short_description">
-        <%= raw article.short_description %>
+      <div class="simple">
+        <h2><%= article.title %></h2>
+        <div class="span-2 append-1">
+          <div class="month">
+            <%= article.created_at.strftime("%b") %>
+          </div>
+          <div class="day">
+            <%= article.created_at.strftime("%d") %>
+          </div>
+        </div>
+        <div class="span-13 last">
+          <div class="text">
+            <%= raw truncate("#{article.short_description}", :length => 200, :omission => "...") %>
+          </div>
+        </div>
+        <div class="span-3 prepend-13">
+          <div class="read_more">
+            <%= link_to "Bővebben", website_article_path(article) %>
+          </div>
+        </div>
       </div>
     <% end %>
   <% end %>
@@ -38,8 +77,15 @@
 
   <% @articles.each do |article| %>
     <% if article.position == "3" %>
+      <div class="position_3">
       <h2><%= article.title %></h2>
-      <%= raw article.short_description %><br/><br/>
+      <div class="pos3_short_description">
+        <%= raw truncate("#{article.short_description}", :length => 200, :omission => "...") %>
+      </div>
+      <div class="read_more">
+        <%= link_to "Bővebben", website_article_path(article) %>
+      </div>
+      </div>
     <% end %>
   <% end %>
 
@@ -51,9 +97,32 @@
 
   <% @articles.each do |article| %>
     <% if article.position == "4" %>
+      <div class="position_4">
       <h2><%= article.title %></h2>
-      <%= raw article.short_description %><br/><br/>
+      <div class="pos4_short_description">
+        <%= raw truncate("#{article.short_description}", :length => 200, :omission => "...") %>
+      </div>
+      <div class="read_more">
+        <%= link_to "Bővebben", website_article_path(article) %>
+      </div>
+      </div>
     <% end %>
+  <% end %>
+
+<% end %>
+
+<!-- POSITION 5 -->
+
+<% content_for :advices do %>
+
+  <% @advices.each do |advice| %>
+    <div class="advices">
+      <h2><%= advice.title %></h2>
+      <%= raw truncate("#{advice.content}", :length => 200, :omission => "...") %>
+      <div class="read_more">
+        <%= link_to "Bővebben", website_advice_path(advice) %>
+      </div>
+    </div>
   <% end %>
 
 <% end %>

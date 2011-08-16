@@ -134,8 +134,9 @@ Gtt::Application.routes.draw do
   match 'globomax/employees' => 'globomax#contacts', :as => "employees" # employees
   match 'globomax/products' => 'globomax#products', :as => "products" # products
   match 'globomax/contact_us' => 'globomax#contact_us', :as => "contact_us" # contacts
-  match 'globomax/references' => 'globomax#references', :as => "references" # contacts
-
+  match 'globomax/references' => 'globomax#references', :as => "references" # references
+  match 'globomax/webarticle/:id' => 'globomax#website_article', :as => "website_article" # show article
+  match 'globomax/webadvice/:id' => 'globomax#website_advice', :as => "website_advice" # show advice
 
 
   # -- PRODUCTS --

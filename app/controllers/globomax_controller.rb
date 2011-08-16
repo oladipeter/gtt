@@ -5,9 +5,18 @@ class GlobomaxController < ApplicationController
   layout "globomax"
 
   def index
+    @about_us = Aboutus.find(1)
     @advices = Advice.find(:all) # Hírek
     @articles = Article.find(:all) # Cikkek
     render :layout => "globomax_index"
+  end
+
+  def website_article
+    @article = Article.find(params[:id])
+  end
+
+  def website_advice
+    @advice = Advice.find(params[:id])
   end
 
   def contact_us
