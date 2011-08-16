@@ -20,6 +20,10 @@ class GlobomaxController < ApplicationController
     @advice = Advice.find(params[:id])
   end
 
+  def show_commercial
+   @commercial = Commercial.find_by_position(params[:position])
+  end
+
   def contact_us
     @contactus = Contactus.find(1)
   end

@@ -130,6 +130,7 @@ Gtt::Application.routes.draw do
   
   # -- COMMERCIALS --
 
+  match 'globomax/reklamok/friss/:position' => 'globomax#show_commercial', :as => "show_commercial" # show
   match 'website/edit_commercial/:id' => 'website#edit_commercial', :as => "edit_commercial" # edit
   match 'website/update_commercial/:id' => 'website#update_commercial', :as => "update_commercial" # update
 
