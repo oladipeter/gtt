@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc3cdf55-bf61-4c34-9e03-3e251288b6ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/globomax/show_commercial.html.erb" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\1\medium\feherboxi.png" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\1\original\feherboxi.png" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\1\thumb\feherboxi.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/globomax_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/globomax_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/website/edit_commercial.html.erb" afterPath="$PROJECT_DIR$/app/views/website/edit_commercial.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="gtt.iws" />
     <ignored path=".idea/workspace.xml" />
