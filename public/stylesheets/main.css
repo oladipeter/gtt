@@ -970,7 +970,7 @@ ul li {
 }
 
 .news_content p {
-  font-size: 16px!important;
+  font-size: 14px!important;
 }
 
 .news_content .read_more {
@@ -1406,7 +1406,7 @@ ul li {
 }
 
 #show_advice .advice_short_description {
-  font-size: 18px;
+  font-size: 14px;
   font-style: italic;
   letter-spacing: -1px;
   color: #00688f;

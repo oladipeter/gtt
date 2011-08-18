@@ -124,7 +124,7 @@
                     <div class="news_content">
                       <h2><%= advice.title %> | <%= advice.created_at.strftime("%F") %></h2>
 
-                      <p><%= raw truncate("#{advice.short_description}", :length => 700, :omission => '...') %></p>
+                      <p><%= raw truncate("#{advice.short_description}", :length => 600, :omission => '...') %></p>
 
                       <div class="read_more">
                         <%= link_to "Bővebben", show_advice_path(advice) %>
@@ -331,6 +331,8 @@
 				height: '50px'
 			}, 200);
 	});
+
+  /* NEWS SLIDER */
 
 </script>
 
