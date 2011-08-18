@@ -1,5 +1,7 @@
 Gtt::Application.routes.draw do
 
+  get "offers/index"
+
   get "globomax/index"
 
   get "website/admin"
@@ -91,6 +93,15 @@ Gtt::Application.routes.draw do
   match 'comment/modify/:id' => 'comments#modify', :as => "comment_modify"
   match 'comment/delete/:id' => 'comments#delete', :as => "comment_delete"
   match 'comment/create_user_comment/' => 'comments#create_user_comment', :as => "create_user_comment"
+
+  # WANT AN OFFER
+
+  match 'offers' => 'offers#new'
+  match 'offers/list' => 'offers#list', :as => "list_offers"
+  match 'offers/new' => 'offers#new', :as => "new_offer"
+  match 'offers/create' => 'offers#create', :as => "create_offer"
+  match 'offers/successfully' => 'offers#message', :as => "successfully_offer"
+
 
   # ------------------------------------------------------------------------------------------------------------------
   # ------------------------------------------------------------------------------------------------------------------

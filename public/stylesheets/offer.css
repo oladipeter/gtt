@@ -1,0 +1,62 @@
+/* OFFER CSS */
+/* RESET WITH BLUEPRINT */
+
+/* FORM */
+
+.offer {
+    margin-top: 30px;
+}
+
+fieldset {
+  background-color: transparent;
+}
+
+label {
+    font-weight: normal;
+    font-size: 18px!important;
+}
+
+input {
+    margin-right: 13px;
+    padding: 5px;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+select {
+    width: 330px;
+    padding: 5px;
+    border: 1px solid #bbb;
+}
+
+.title {
+  width: 320px!important;
+}
+
+#left .main_text {
+    border-right: 1px solid #ccc;
+}
+
+#offer_submit {
+    margin-left: 245px;
+    position: relative;
+    top: -30px;
+}
+
+.message {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+a {
+    font-size: 12px;
+}
+
+
+

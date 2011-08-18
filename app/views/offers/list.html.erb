@@ -1,0 +1,23 @@
+<div id="faqs">
+<h2>Árajánlatok</h2>
+
+<table>
+  <tr>
+    <th>Önkormányzat</th>
+    <th>Érdeklődő</th>
+    <th>Telefon</th>
+  </tr>
+
+<% @offers.each do |offer| %>
+  <tr>
+    <td>
+      <span class="tooltip-target" id="<%= "example-target-" + "#{offer.id}" %>"><%= offer.government %></span>
+      <div class="tooltip-content" id="example-content-<%= "#{offer.id}" %>"><%= offer.content %></div>
+
+    </td>
+    <td><%= offer.user %></td>
+    <td><%= offer.phone %></td>
+  </tr>
+<% end %>
+</table>
+</div>

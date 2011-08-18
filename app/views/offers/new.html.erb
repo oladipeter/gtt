@@ -1,0 +1,18 @@
+<div class="offer">
+
+<%= semantic_form_for @offer, :url => create_offer_path(@offer) do |f| %>
+
+    <%= f.inputs :name => "Online ajánlatkérés :" do %>
+          <%= f.input :title, :as => :hidden, :input_html => { :default => 'Online ajánlatkérés' } %>
+          <%= f.input :user, :label => t(:name), :hint => "Kérem adja meg a nevét!"  %>
+          <%= f.input :government, :label => t(:government), :hint => "Kérem adja meg a hivatala vagy cége nevét!"  %>
+          <%= f.input :email, :label => t(:email), :hint => "Kérem adja meg az email címét!"  %>
+          <%= f.input :phone, :label => t(:simple_phone), :hint => "Kérem adja meg a telefonszámát!"  %>
+          <%= f.input :content, :label => t(:subject), :hint => "Rövid leírást adhat, hogy melyik rendszerről vagy komponenséről érdeklődik" %>
+    <% end %>
+
+    <%= f.commit_button t(:ok), :class => "offer_button" %>
+    <br/>
+<% end %>
+
+</div>

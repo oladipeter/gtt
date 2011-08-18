@@ -49,10 +49,10 @@
       <% end %>
 
       <%= f.inputs :name => "A felhasználó RENDSZEREI :" do %>
-        <%= f.input :systems, :as => :select, :collection => System.find(:all)%>
+        <%= f.input :systems, :as => :select, :collection => System.find(:all), :include_blank => true, :hint => "Ha az üres sort jelölöd ki, akkor egyetlen rendszer sem lesz elérhető a felhasználónak!" %>
       <% end %>
 
-      <%= f.input :contact_id, :as => :radio, :collection => Contact.find(:all), :label => "Kapcsolattartó" %>
+      <%= f.input :contact_id, :as => :radio, :collection => Contact.find(:all), :label => "Kapcsolattartó"  %>
 
       <%= f.commit_button t(:modify) %>
 

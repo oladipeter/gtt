@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gtt</title>
+  <%= stylesheet_link_tag 'blueprint/src/reset', 'blueprint/screen', 'blueprint/src/ie', 'blueprint/src/typography', 'main', 'offer', 'formtastic', 'formtastic_changes' %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+
+<div id="message">
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, :id => "notice_#{name}" %>
+    <% end %>
+</div>
+
+
+<div id="main">
+
+  <div id="block_1">
+    <div class="container">
+      <div class="span-9" id="fejlec_hatter">
+        &nbsp;
+      </div>
+
+      <div class="span-3 last">
+        <div id="admin_login">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="support">
+  <div id="frontend">
+      <div id="block_2">
+        <div class="container">
+          <div class="span-24">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div> <!-- SUPPORT END -->
+
+  <div id="footer">
+     <div class="container">
+       <div class="span-24">
+         <div class="footer_main_text">
+           Globomax Kft. | Minden jog fenntartva 2011
+         </div>
+       </div>
+     </div>
+  </div>
+
+</div>
+
+<script>
+  $('#notice_notice').delay(1900).slideUp(900);
+  $('#notice_alert').delay(1900).slideUp(900);
+</script>
+
+
+</body>
+</html>

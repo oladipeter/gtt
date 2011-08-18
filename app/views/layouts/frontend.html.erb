@@ -137,6 +137,15 @@
 
             <%= yield :advice %>
 
+            <div class="span-24">
+                <% if @support_systems == [] %>
+                  <div class="no_system">
+                    Köszönjük regisztrációját, az adminisztrátor átvizsgálja az adatokat és csak ezt követően fér hozzá a terméktámogatáshoz.
+                  </div>
+                <% end %>
+            </div>
+
+
             <div id="systems">
 
             <!-- Mikrovoks -->
@@ -156,7 +165,7 @@
                   <% if @mikrovoks_support == "1" %>
                     <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "mikrovoks") %>
                   <% else %>
-                    <%= image_tag "termek_informacio.jpg", :title => "#{@mikrovoks_system.description}", :id => "mikrovoks_tip" %>
+                    <%= link_to image_tag("termek_informacio.jpg"), "#{@mikrovoks_system.url}", :title => "#{@mikrovoks_system.description}", :id => "mikrovoks_tip" %>
                   <% end %>
                 </div>
 
@@ -179,7 +188,7 @@
                    <% if @mikrokam_support == "1" %>
                     <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "mikrokam")%>
                   <% else %>
-                    <%= image_tag "termek_informacio.jpg", :title => "#{@mikrokam_system.description}", :id => "mikrokam_tip" %>
+                    <%= link_to image_tag("termek_informacio.jpg"), "#{@mikrokam_system.url}", :title => "#{@mikrokam_system.description}", :id => "mikrokam_tip" %>
                   <% end %>
                 </div>
 
@@ -205,7 +214,7 @@
                     <% if @sequence_support == "1" %>
                     <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "sequence") %>
                   <% else %>
-                    <%= image_tag "termek_informacio.jpg", :title => "#{@sequence_system.description}", :id => "sequence_tip" %>
+                    <%= link_to image_tag("termek_informacio.jpg"), "#{@sequence_system.url}", :title => "#{@sequence_system.description}", :id => "sequence_tip" %>
                   <% end %>
                 </div>
 
@@ -228,7 +237,7 @@
                     <% if @edtr_support == "1" %>
                     <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "edtr") %>
                   <% else %>
-                    <%= image_tag "termek_informacio.jpg", :title => "#{@edtr_system.description}", :id => "edtr_tip" %>
+                    <%= link_to image_tag("termek_informacio.jpg"), "#{@edtr_system.url}", :title => "#{@edtr_system.description}", :id => "edtr_tip" %>
                   <% end %>
                 </div>
 
@@ -249,7 +258,7 @@
                     <% if @mvmonitor_support == "1" %>
                     <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "mvmonitor") %>
                   <% else %>
-                    <%= image_tag "termek_informacio.jpg", :title => "#{@mvmonitor_system.description}", :id => "mvmonitor_tip" %>
+                    <%= link_to image_tag("termek_informacio.jpg"), "#{@mvmonitor_system.url}", :title => "#{@mvmonitor_system.description}", :id => "mvmonitor_tip" %>
                   <% end %>
                 </div>
 
@@ -271,7 +280,7 @@
                     <% if @digirat_support == "1" %>
                     <%= link_to image_tag("termek_tamogatas.jpg"), support_path( :system => "digirat") %>
                   <% else %>
-                    <%= image_tag "termek_informacio.jpg", :title => "#{@digirat_system.description}", :id => "digirat_tip" %>
+                    <%= link_to image_tag("termek_informacio.jpg"), "#{@digirat_system.url}", :title => "#{@digirat_system.description}", :id => "digirat_tip" %>
                   <% end %>
                 </div>
 
