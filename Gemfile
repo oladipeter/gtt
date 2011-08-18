@@ -5,7 +5,7 @@ gem 'rails', '3.0.6'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+# gem 'sqlite3'
 gem 'devise'
 gem 'formtastic', '~> 1.2.3'
 gem 'jquery-rails', '>= 1.0.3'
@@ -13,10 +13,13 @@ gem "paperclip", "~> 2.3"
 gem 'ckeditor', '3.4.2.pre'
 gem 'mongrel', '>= 1.2.0.pre2'
 gem "will_paginate", "~> 3.0.pre2"
+
 # postgre
 gem "pg"
+
 #seed datas
 gem 'seed-fu'
+
 # search
 gem 'thinking-sphinx', '2.0.3'
 

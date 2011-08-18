@@ -66,12 +66,6 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="sqlite3" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
-      </requirement>
-      <source from="Gemfile" />
-    </requirement>
-    <requirement>
-      <requirement>
         <dependency name="thinking-sphinx" version="2.0.3" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
@@ -133,6 +127,12 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] rake (v0.9.1, C:/Ruby192/lib/ruby/gems/1.9.1/gems/rake-0.9.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rake (v0.8.7, C:/Ruby192/lib/ruby/gems/1.9.1/gems/rake-0.8.7)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v1.0.12, C:/Ruby192/lib/ruby/gems/1.9.1/gems/bundler-1.0.12)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v1.0.18, C:/Ruby192/lib/ruby/gems/1.9.1/gems/bundler-1.0.18)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] treetop (v1.4.10, C:/Ruby192/lib/ruby/gems/1.9.1/gems/treetop-1.4.10)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] polyglot (v0.3.2, C:/Ruby192/lib/ruby/gems/1.9.1/gems/polyglot-0.3.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.2.3, C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v2.0.10, C:/Ruby192/lib/ruby/gems/1.9.1/gems/arel-2.0.10)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] tzinfo (v0.3.29, C:/Ruby192/lib/ruby/gems/1.9.1/gems/tzinfo-0.3.29)" level="application" />
   </component>
 </module>
 

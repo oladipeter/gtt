@@ -38,5 +38,8 @@ Gtt::Application.configure do
     :enable_starttls_auto => true
   }
 
+  # load imageMagick
+  Paperclip.options[:command_path] = 'C:/ImageMagick-6.6.9-Q16'
+
 end
 

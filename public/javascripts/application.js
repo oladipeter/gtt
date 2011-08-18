@@ -49,5 +49,4 @@ $(document).ready(function(){
 
     $(".slidetabs").data("slideshow").play();
 
-
 });

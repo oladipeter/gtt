@@ -3,7 +3,7 @@
 <head>
   <title>Gtt</title>
   <%= javascript_include_tag :defaults %>
-  <%= javascript_include_tag "easySlider1.5", "page-peel", "tiptip" %>
+  <%= javascript_include_tag "easySlider1.5", "tiptip" %>
   <%= stylesheet_link_tag 'blueprint/src/reset', 'blueprint/src/forms', 'blueprint/screen', 'blueprint/src/ie', 'blueprint/src/typography', 'main', 'formtastic', 'formtastic_changes' %>
   <%= csrf_meta_tag %>
 </head>
@@ -309,6 +309,29 @@
   $(".close").click(function () {
       $("#show_advice").slideUp();
   });
+
+
+  /* PEEL */
+
+  $("#pageflip").hover(function() {
+		$("#pageflip img , .msg_block").stop()
+			.animate({
+				width: '307px',
+				height: '319px'
+			}, 200);
+		} , function() {
+		$("#pageflip img").stop()
+			.animate({
+				width: '50px',
+				height: '52px'
+			}, 220);
+		$(".msg_block").stop()
+			.animate({
+				width: '50px',
+				height: '50px'
+			}, 200);
+	});
+
 </script>
 
 
