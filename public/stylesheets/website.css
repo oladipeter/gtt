@@ -909,3 +909,8 @@ span.delete {
   position: relative;
   left: 10px;
 }
+
+.position_3 img {
+    float: left;
+    margin-right: 10px;
+}

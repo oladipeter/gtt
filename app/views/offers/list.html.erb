@@ -12,7 +12,7 @@
   <tr>
     <td>
       <span class="tooltip-target" id="<%= "example-target-" + "#{offer.id}" %>"><%= offer.government %></span>
-      <div class="tooltip-content" id="example-content-<%= "#{offer.id}" %>"><%= offer.content %></div>
+      <div class="tooltip-content" id="example-content-<%= "#{offer.id}" %>"><%= raw offer.content %></div>
 
     </td>
     <td><%= offer.user %></td>

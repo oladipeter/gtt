@@ -1,4 +1,4 @@
-<%= semantic_form_for(@article) do |f| %>
+<%= semantic_form_for @article, :html => { :multipart => true } do |f| %>
   
   <% if @article.errors.any? %>
         <div id="error_explanation">
@@ -19,6 +19,7 @@
           <b><%= "Teljes leírás" %></b><br/><br/>
           <%= f.input :content, :label => false, :as => :ckeditor, :input_html => { :width => "98%" } %>
           <%= f.input :system_id, :as => :select, :collection => System.find(:all), :label => t(:system), :hint => "Ha üresen hagyod nem lesz hozzárendelve egyetlen rendszerhez sem." %>
+          <%= f.input :image, :label => "Fénykép felröltése", :as => :file %>
     <% end %>
 
     <%= f.commit_button t(:ok) %>

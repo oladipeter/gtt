@@ -80,7 +80,8 @@
       <div class="position_3">
       <h2><%= article.title %></h2>
       <div class="pos3_short_description">
-        <%= raw truncate("#{article.short_description}", :length => 200, :omission => "...") %>
+        <%= image_tag article.image.url(:thumb) %>
+        <%= raw truncate("#{article.short_description}", :length => 250, :omission => "...") %>
       </div>
       <div class="read_more">
         <%= link_to "Bővebben", website_article_path(article) %>
