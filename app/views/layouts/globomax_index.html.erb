@@ -43,42 +43,6 @@
         <div id="big_pic">
           <div class="span-24" id="text_container">
 
-
-<!-- Slideshow here! -->
-
-            <!-- container for the slides -->
-
-            <div class="images">
-
-                <div>
-                    <p>
-                     <%= image_tag "globomax/kep_1.png" %>
-                    </p>
-                </div>
-
-                <div>
-                  <p>
-                   <%= image_tag "globomax/kep_2.png" %>
-                  </p>
-                </div>
-
-                <div>
-                  <p>
-                   <%= image_tag "globomax/kep_3.png" %>
-                  </p>
-                </div>
-
-            </div>
-
-            <!-- the tabs -->
-            <div class="slidetabs">
-                <%= link_to "", "#" %>
-                <%= link_to "", "#" %>
-                <%= link_to "", "#" %>
-            </div>
-
-            <!-- Slideshow here! -->
-
           </div>
         </div>
       </div>
@@ -228,19 +192,6 @@
   </div>
 
 <script>
-  $(".slidetabs").tabs(".images > div", {
-
-        // enable "cross-fading" effect
-        effect: 'fade',
-        fadeOutSpeed: "slow",
-
-        // start from the beginning after the last tab
-        rotate: true
-
-        // use the slideshow plugin. It accepts its own configuration
-    }).slideshow();
-
-    $(".slidetabs").data("slideshow").play();
 
 </script>
 
