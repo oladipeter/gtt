@@ -7,6 +7,7 @@
   <%# render :partial => "shared/stylesheet" %> <!-- In application.helper -->
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
+  <script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
 </head>
 <body>
 
@@ -42,6 +43,84 @@
       <div class="container">
         <div id="big_pic">
           <div class="span-24" id="text_container">
+
+            <div class="span-16">
+              <!-- SLIDER HERE -->
+
+              <!-- HTML structures -->
+              <div id="actions">
+                  <div class="span-8">
+                    <a class="prev">Frissebb híreink</a>
+                  </div>
+                  <div class="span-7 append-1 last">
+                    <a class="next">Korábbi híreink &raquo;</a>
+                  </div>
+              </div>
+
+              <br/><br/>
+
+              <!-- root element for scrollable -->
+              <div class="scrollable vertical">
+
+                <!-- root element for the items -->
+                <div class="items">
+
+                  <div> <!-- START NEW ITEM --------------------------------------------------------------------------->
+
+                    <div class="item">
+                      <img src="http://farm1.static.flickr.com/3650/3323058611_d35c894fab_m.jpg"/>
+                      <h3>A hiedelemmel ellentétben a Lorem Ipsum nem véletlenszerű szöveg</h3>
+                      <div class="article_date">Létrehozva : 2011.05.14</div>
+                      <p>
+                        A hiedelemmel ellentétben a Lorem Ipsum nem véletlenszerû szöveg. Gyökerei egy Kr. E. 45-ös latin irodalmi klasszikushoz nyúlnak. Richarrd McClintock a virginiai Hampden-Sydney egyetem professzora kikereste az ismeretlenebb latin szavak közül az egyiket (consectetur) egy Lorem Ipsum részletbõl, és a klasszikus irodalmat átkutatva vitathatatlan forrást talált. A Lorem Ipsum az 1.10.32 és 1.10.33-as de Finibus Bonoruem et Malorum részleteibõl származik.
+                      </p>
+                      <div class="read_more"><%= link_to "Bővebben", "#" %></div>
+                    </div>
+
+                  </div> <!-- END NEW ITEM ---------------------------------------------------------------------------->
+
+
+                  <div> <!-- START NEW ITEM --------------------------------------------------------------------------->
+
+                    <div class="item">
+                      <img src="http://farm1.static.flickr.com/3650/3323058611_d35c894fab_m.jpg"/>
+                      <h3>Vullage Pavilion</h3>
+                    </div>
+
+                  </div> <!-- END NEW ITEM ---------------------------------------------------------------------------->
+
+
+                  <div> <!-- START NEW ITEM --------------------------------------------------------------------------->
+
+                    <div class="item">
+                      <img src="http://farm1.static.flickr.com/3650/3323058611_d35c894fab_m.jpg"/>
+                      <h3>Something Pavilion</h3>
+                    </div>
+
+                  </div> <!-- END NEW ITEM ---------------------------------------------------------------------------->
+
+
+                  <div> <!-- START NEW ITEM --------------------------------------------------------------------------->
+
+                    <div class="item">
+                      <img src="http://farm1.static.flickr.com/3650/3323058611_d35c894fab_m.jpg"/>
+                      <h3>1. fsdfsdfgsdfsdfBarcelona Pavilion</h3>
+                    </div>
+
+                  </div> <!-- END NEW ITEM ---------------------------------------------------------------------------->
+
+
+                </div> <!-- END ITEMS -->
+              </div> <!-- END SCROLL -->
+
+              <!-- SLIDER HERE -->
+            </div>
+            <div class="span-8 last">
+              <%= link_to (image_tag "./globomax/globomax_logo.jpg"), index_path %>
+              <%= link_to (image_tag "./globomax/ajanlat.jpg"), offers_path %>
+              <%= link_to (image_tag "./globomax/tamogatas.jpg"), frontend_index_path %>
+              <%= link_to (image_tag "./globomax/onkormanyzati_tv.jpg"), "http://onkormanyzati.tv" %>
+            </div>
 
           </div>
         </div>
@@ -191,9 +270,19 @@
 
   </div>
 
-<script>
+<!-- javascript coding -->
 
+
+<script>
+// execute your scripts when DOM is ready. this is a good habit
+$(function() {
+
+	// initialize scrollable with mousewheel support
+	$(".scrollable").scrollable({ vertical: true, mousewheel: true });
+
+});
 </script>
+
 
 </body>
 </html>
