@@ -12,7 +12,7 @@ class StartController < ApplicationController
     @user = User.new
     if current_user.sign_in_count == 1
       # Ha ez az elso bejelentkezese akkor => Mail to Admin
-      admin_mail = "oladipeter@gmail.com"
+      admin_mail = "oladi.peter@globomax.hu"
       StartMailer.welcome_email(admin_mail).deliver
     else
       # No mail to admin

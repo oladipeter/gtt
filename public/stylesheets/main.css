@@ -393,6 +393,7 @@ ul li {
   float: left;
 }
 
+
 #frontend .no_contact {
   text-align: center;
   font-size: 12px;
@@ -409,7 +410,7 @@ ul li {
 }
 
 #frontend .kapcs_vezetekes, #frontend .kapcs_mobil, #frontend .kapcs_email, .telephely_usz, .telephely_cim, .telephely_fax  {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 /* MIKROVOKS */
@@ -1211,6 +1212,12 @@ ul li {
   color: #841211;
 }
 
+#support_content_left .article_text strong a {
+  display: block;
+  padding: 0px;
+  color: #841211;
+}
+
 #support #hibabejelentes, #ajanlatkeres, #letoltes, #eszkozok, #gyik, #prospektusok {
   background-color: #fff;
   height: 200px;
@@ -1491,3 +1498,6 @@ ul li {
 	background-color: white;
 }
 
+.no_contact_in_list {
+    color: red;
+}

@@ -62,8 +62,8 @@ Létrehozva : <%= @supmessage.created_at %> | <b><%= @hiba_statusza %></b>
     <%= f.input :email, :as => :hidden, :value => current_user.email %>
     <%= f.input :content, :label => "Komment" %>
     <%= f.input :supmessage_id, :as => :hidden, :value => @supmessage.id %>
-    <%= f.commit_button t(:create) %>
   <% end %>
+  <%= f.commit_button t(:create) %>
 
 <% end %>
 

@@ -16,6 +16,8 @@ class OffersController < ApplicationController
   def create
     @offer = Offer.new(params[:offer])
     if @offer.save
+         OfferMailer.thankyou(@offer).deliver
+         OfferMailer.send_to_marketing(@offer).deliver
          redirect_to successfully_offer_path
     else
         render :action => "new"

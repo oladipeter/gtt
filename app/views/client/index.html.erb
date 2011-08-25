@@ -22,9 +22,15 @@
     <tbody>
     <% @clients.each do |client| %>
         <tr>
-          <td><%= client.full_name %></td>
-          <td><%= client.email %></td>
-          <td><%= client.local_government %></td>
+          <% unless client.contact %>
+             <td><div class="no_contact_in_list"><%= client.full_name %></div></td>
+              <td><div class="no_contact_in_list"><%= client.email %></div></td>
+              <td><div class="no_contact_in_list"><%= client.local_government %></div></td>
+          <% else %>
+            <td><%= client.full_name %></td>
+            <td><%= client.email %></td>
+            <td><%= client.local_government %></td>
+          <% end %>
           <td><%= link_to "Adatok", client_edit_path(client)  %></td>
         </tr>
     <% end %>

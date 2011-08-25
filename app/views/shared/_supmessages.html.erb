@@ -9,7 +9,7 @@
     <% else %>
 
       <% @supmessages.each do |supmessage| %>
-        <strong><%= supmessage.title %></strong><br/><span class="created">Létrehozva : </span><%= supmessage.created_at %> | <u><%= supmessage.comments.size %> komment!</u><br/><br/>
+        <strong><%= link_to "#{supmessage.title}", show_supmessage_path(supmessage, :system => @system.title) %></strong><br/><span class="created">Létrehozva : </span><%= supmessage.created_at %> | <u><%= supmessage.comments.size %> komment!</u><br/><br/>
         <div class="supmessage_description"><%= raw truncate ("#{supmessage.description}"), :length => 100, :omission => '...' %></div>
       <% end %>
 
