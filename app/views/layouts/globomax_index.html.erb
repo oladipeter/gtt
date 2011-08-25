@@ -46,7 +46,6 @@
 
             <div class="span-16">
               <!-- SLIDER HERE -->
-
               <!-- HTML structures -->
               <div id="actions">
                   <div class="span-8">
@@ -65,50 +64,7 @@
                 <!-- root element for the items -->
                 <div class="items">
 
-                  <div> <!-- START NEW ITEM --------------------------------------------------------------------------->
-
-                    <div class="item">
-                      <img src="http://farm1.static.flickr.com/3650/3323058611_d35c894fab_m.jpg"/>
-                      <h3>A hiedelemmel ellentétben a Lorem Ipsum nem véletlenszerű szöveg</h3>
-                      <div class="article_date">Létrehozva : 2011.05.14</div>
-                      <p>
-                        A hiedelemmel ellentétben a Lorem Ipsum nem véletlenszerû szöveg. Gyökerei egy Kr. E. 45-ös latin irodalmi klasszikushoz nyúlnak. Richarrd McClintock a virginiai Hampden-Sydney egyetem professzora kikereste az ismeretlenebb latin szavak közül az egyiket (consectetur) egy Lorem Ipsum részletbõl, és a klasszikus irodalmat átkutatva vitathatatlan forrást talált. A Lorem Ipsum az 1.10.32 és 1.10.33-as de Finibus Bonoruem et Malorum részleteibõl származik.
-                      </p>
-                      <div class="read_more"><%= link_to "Bővebben", "#" %></div>
-                    </div>
-
-                  </div> <!-- END NEW ITEM ---------------------------------------------------------------------------->
-
-
-                  <div> <!-- START NEW ITEM --------------------------------------------------------------------------->
-
-                    <div class="item">
-                      <img src="http://farm1.static.flickr.com/3650/3323058611_d35c894fab_m.jpg"/>
-                      <h3>Vullage Pavilion</h3>
-                    </div>
-
-                  </div> <!-- END NEW ITEM ---------------------------------------------------------------------------->
-
-
-                  <div> <!-- START NEW ITEM --------------------------------------------------------------------------->
-
-                    <div class="item">
-                      <img src="http://farm1.static.flickr.com/3650/3323058611_d35c894fab_m.jpg"/>
-                      <h3>Something Pavilion</h3>
-                    </div>
-
-                  </div> <!-- END NEW ITEM ---------------------------------------------------------------------------->
-
-
-                  <div> <!-- START NEW ITEM --------------------------------------------------------------------------->
-
-                    <div class="item">
-                      <img src="http://farm1.static.flickr.com/3650/3323058611_d35c894fab_m.jpg"/>
-                      <h3>1. fsdfsdfgsdfsdfBarcelona Pavilion</h3>
-                    </div>
-
-                  </div> <!-- END NEW ITEM ---------------------------------------------------------------------------->
-
+                <%= yield :position_1 %>
 
                 </div> <!-- END ITEMS -->
               </div> <!-- END SCROLL -->
@@ -133,9 +89,6 @@
       <div class="container prepend-top">
         <div class="span-16">
           <div class="articles">
-            <div class="position_1">
-              <%= yield :position_1 %>
-            </div>
             <%#= yield %> <!-- Main CONTENT -->
             <div class="position_2">
               <%= yield :position_2 %>
@@ -278,7 +231,7 @@
 $(function() {
 
 	// initialize scrollable with mousewheel support
-	$(".scrollable").scrollable({ vertical: true, mousewheel: true });
+	$(".scrollable").scrollable({ vertical: true, mousewheel: true, autoplay: true });
 
 });
 </script>

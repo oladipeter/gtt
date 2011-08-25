@@ -2,13 +2,18 @@ class GlobomaxController < ApplicationController
 
   # public Globomax website controller
 
+  before_filter :content_init
+
   layout "globomax"
 
-  def index
+  def content_init
     @about_us = Aboutus.find(1)
     @advices = Advice.find(:all) # Hírek
-    @articles = Article.find(:all) # Cikkek
+    @articles = Article.find(:all, :order => "created_at DESC") # Cikkek
     @commercial = Commercial.find(1) # Reklámok
+  end
+
+  def index
     render :layout => "globomax_index"
   end
 

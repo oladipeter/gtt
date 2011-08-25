@@ -1,3 +1,33 @@
+<% content_for :position_1 do %>
+
+  <!-- ARTICLE POS 1 -->
+
+  <% @articles.each do |article| %>
+    <% if article.position == "1" %>
+
+            <div> <!-- START NEW ITEM --------------------------------------------------------------------------->
+
+              <div class="item">
+                <%= image_tag article.image.url(:medium) %>
+                <h3><%= article.title %></h3>
+
+                <div class="article_date">Létrehozva : <%= article.created_at.strftime("%F") %></div>
+                <p>
+                  <%= raw truncate("#{article.short_description}", :length => 220, :omission => "...") %>
+                </p>
+
+                <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
+              </div>
+
+            </div> <!-- END NEW ITEM ---------------------------------------------------------------------------->
+
+    <% end %>
+  <% end %>
+
+  <!-- ARTICLE POS 1 END -->
+
+<% end %>
+
 <h1>Munkatársaink</h1>
 
 <% @contacts.each do |contact| %>
