@@ -13,15 +13,11 @@ gem "paperclip", "~> 2.3"
 gem 'ckeditor', '3.4.2.pre'
 gem 'mongrel', '>= 1.2.0.pre2'
 gem "will_paginate", "~> 3.0.pre2"
+gem "mysql2"
 
-# postgre
-
-group :development, :test do
+# postgre just development
+group :development do
   gem "pg"
-end
-
-group :production do
-  gem "mysql2"
 end
 
 #seed datas
