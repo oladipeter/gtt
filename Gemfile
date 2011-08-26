@@ -15,7 +15,14 @@ gem 'mongrel', '>= 1.2.0.pre2'
 gem "will_paginate", "~> 3.0.pre2"
 
 # postgre
-gem "pg"
+
+group :development, :test do
+  gem "pg"
+end
+
+group :production do
+  gem "mysql2"
+end
 
 #seed datas
 gem 'seed-fu'
