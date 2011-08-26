@@ -78,6 +78,7 @@ class SupmessagesController < ApplicationController
   def create
     @supmessage = Supmessage.new(params[:supmessage])
       if @supmessage.save
+        SupmessageMailer.user_create_a_supmessage(@supmessage).deliver
         redirect_to all_supmessages_path( :system => @supmessage.system_title ), :notice => 'A hibabejelentés sikeresen létrejött!'
       else
         render :action => "new"
