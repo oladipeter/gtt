@@ -23,7 +23,7 @@ test:
   password: oladipeter
 
 production:
-  adapter: postgresql
+  adapter: mysql2
   database: gtt_prod
-  username: postgres
-  password: oladipeter
+  username: globomax
+  password: Globomax1155
