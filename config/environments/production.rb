@@ -47,16 +47,21 @@ Gtt::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
-  # Send emails via Gmail
+  # mail host
+  config.action_mailer.default_url_options = { :host => 'localhost' }
+
+  # Send emails via Postfix
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :address              => "localhost",
-    :port                 => 587,
+    :port                 => 25,
     :domain               => "localhost",
-    :user_name            => "",
-    :password             => "",
-    :authentication       => 'plain',
+    # :user_name            => "oladipeter",
+    # :password             => "va1Rooke",
+    # :authentication       => "plain",
     :enable_starttls_auto => true
   }
+
+
 
 end
