@@ -1,30 +1,43 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.6'
-# gem 'rake', '0.9.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 # gem 'sqlite3'
+
+# -------------------------------------------------- DEFAULT GEMS ----------------------------------------------------#
+# --------------------------------------------------------------------------------------------------------------------#
+
 gem 'devise'
 gem 'formtastic', '~> 1.2.3'
 gem 'jquery-rails', '>= 1.0.3'
 gem "paperclip", "~> 2.3"
 gem 'ckeditor', '3.4.2.pre'
 gem 'mongrel', '>= 1.2.0.pre2'
+gem 'seed-fu'
 gem "will_paginate", "~> 3.0.pre2"
-gem "mysql2"
 
-# postgre just development
+# -------------------------------------------------- DEVELOPMENT GEMS ------------------------------------------------#
+# --------------------------------------------------------------------------------------------------------------------#
+# bundle install --without development
+
 group :development do
   gem "pg"
 end
 
-#seed datas
-gem 'seed-fu'
+# -------------------------------------------------- DEVELOPMENT GEMS ------------------------------------------------#
+# --------------------------------------------------------------------------------------------------------------------#
+# bundle install --without production
+
+
+# mysql just production Sima bundle installnal nem fogja belerakni a production groupos elemeket
+group :production do
+ gem "mysql2"
+ gem 'rake', '0.9.1'
+end
 
 # search
-gem 'thinking-sphinx', '2.0.3'
+# gem 'thinking-sphinx', '2.0.3'
 
 # Use unicorn as the web server
 # gem 'unicorn'
