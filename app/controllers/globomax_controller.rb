@@ -34,7 +34,7 @@ class GlobomaxController < ApplicationController
   end
 
   def contacts
-    @contacts = Contact.find(:all)
+    @contacts = Contact.find(:all, :order => "position ASC")
     render :layout => "globomax_employees"
   end
 

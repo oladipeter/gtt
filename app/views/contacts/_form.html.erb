@@ -15,6 +15,7 @@
     <% end %>
 
     <%= f.inputs :name => "Kapcsolattartó adatai :" do %>
+          <%= f.input :position, :label => t(:position) %>
           <%= f.input :name, :label => t(:name) %>
           <%= f.input :classification, :label => t(:classification) %>
           <%= f.input :description, :label => t(:short_description) %>

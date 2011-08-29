@@ -7,6 +7,7 @@
       <th scope="col">Kép</th>
       <th scope="col">Név</th>
       <th scope="col">E-mail cím</th>
+      <th scope="col">Sorrend</th>
       <th scope="col">Módosít</th>
       <th scope="col">Töröl</th>
     </tr>
@@ -27,6 +28,7 @@
           <% end %>
           <td><%= contact.name %></td>
           <td><%= contact.email %></td>
+          <td><%= contact.position %></td>
           <td><%= link_to "Módosít", edit_contact_path(contact) %></td>
           <td><%= link_to "Töröl", contact, :confirm => 'Biztosan törlöd a kapcsolattartót?', :method => :delete %></td>
         </tr>

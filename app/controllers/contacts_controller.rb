@@ -5,7 +5,7 @@ class ContactsController < ApplicationController
   layout "contact"
 
   def index
-    @contacts = Contact.all
+    @contacts = Contact.find(:all, :order => "position ASC")
     @number_of_contacts = @contacts.size
 
     respond_to do |format|

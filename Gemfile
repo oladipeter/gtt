@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.6'
+# gem 'rake', '0.9.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 # gem 'sqlite3'
@@ -33,7 +34,6 @@ end
 # mysql just production Sima bundle installnal nem fogja belerakni a production groupos elemeket
 group :production do
  gem "mysql2"
- gem 'rake', '0.9.1'
 end
 
 # search
