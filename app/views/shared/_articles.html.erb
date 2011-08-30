@@ -10,7 +10,7 @@
 
       <% @articles.each do |article| %>
         <strong><%= article.title %></strong><br/><span class="created">Létrehozva : </span><%= article.created_at %><br/><br/>
-        <div class="article_description"><%= raw truncate ("#{article.short_description}"), :length => 100, :omission => '...' %></div>
+        <div class="article_description"><%= raw truncate("#{article.short_description}"), :length => 100, :omission => '...' %></div>
       <% end %>
 
       <%= link_to "Megnézem az összes cikket!", all_articles_path( :system => @system.title ), :class => "all" %>
