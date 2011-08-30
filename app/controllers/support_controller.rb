@@ -57,7 +57,7 @@ class SupportController < ApplicationController
 
   def all_supmessages
     # render :text => "#{session[:current_system].title}"
-    @all_supmessages = Supmessage.find(:all, :conditions => ['user_id = ? AND system_title = ?',current_user.id, @system.title])
+    @all_supmessages = Supmessage.find(:all, :conditions => ['user_id = ? AND system_title = ?',current_user.id, @system.title], :order => "created_at DESC")
   end
 
   def show_supmessage

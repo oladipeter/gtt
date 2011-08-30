@@ -80,6 +80,8 @@
                    <%= f.inputs :name => "Új komment hozzáadása :" do %>
                      <%= f.input :user, :as => :hidden, :value => current_admin.name %>
                      <%= f.input :email, :as => :hidden, :value => current_admin.email %>
+                     <%= f.input :comment_owner, :as => :hidden, :value => @message.user.email %>
+                     <%= f.input :system_title, :as => :hidden, :value => @message.system_title %>
                      <%= f.input :content, :label => "Komment" %>
                      <%= f.input :supmessage_id, :as => :hidden, :value => @message.id %>
                      <%= f.commit_button t(:create) %>

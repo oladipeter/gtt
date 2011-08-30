@@ -16,6 +16,7 @@ class CommentsController < ApplicationController
     @comment = Comment.new(params[:comment])
     supmessage_id = @comment.supmessage_id
       if @comment.save
+        CommentMailer.admin_create_a_comment(@comment).deliver
          redirect_to support_messages_datasheet_path(supmessage_id), :notice => 'A komment sikeresen létrejött'
       else
         render :action => "new"
