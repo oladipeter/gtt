@@ -24,7 +24,7 @@ class SupmessagesController < ApplicationController
     @supmessage = Supmessage.find(params[:id])
 
      if @supmessage.user_id != current_user.id
-      redirect_to supmessages_path, :notice => "You cannot see another users messages!!!"
+      redirect_to supmessages_path, :notice => "Nem láthatod más felhasználó hibabejelentéseit!"
     else
       @supmessage = Supmessage.find(params[:id])
       respond_to do |format|
@@ -76,7 +76,9 @@ class SupmessagesController < ApplicationController
   # POST /supmessages
   # POST /supmessages.xml
   def create
+
     @supmessage = Supmessage.new(params[:supmessage])
+
       if @supmessage.save
         SupmessageMailer.user_create_a_supmessage(@supmessage).deliver
         redirect_to all_supmessages_path( :system => @supmessage.system_title ), :notice => 'A hibabejelentés sikeresen létrejött!'

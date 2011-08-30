@@ -1,6 +1,7 @@
 # encoding: utf-8
 class AdminSupportMessagesController < ApplicationController
 
+  before_filter :authenticate_admin!
   layout 'error_messages'
 
   def index

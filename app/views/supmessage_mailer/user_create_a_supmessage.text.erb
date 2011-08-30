@@ -6,6 +6,17 @@ Az alábbi hibabejelentés történt a terméktámogatás oldalon.
 
 <%= @supmessage.description %>
 
+A hibabejelentés az alábbi linken érhető el :
+<%= @url %>
+
+A hibabejelentésről az alábbi adminisztrátor(ok) értesült(ek) :
+
+<% @supmessage_admins.each do |admin| %>
+    <%= admin.name %>
+<% end %>
+
+
+
 ===============================================
 
 Üdvözlettel : Globomax Kft. | Terméktámogatás | Admin

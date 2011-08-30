@@ -32,10 +32,4 @@ class CommentsController < ApplicationController
       end
   end
 
-  def modify
-  end
-
-  def delete
-  end
-
 end
