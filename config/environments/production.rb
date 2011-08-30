@@ -48,7 +48,7 @@ Gtt::Application.configure do
   config.active_support.deprecation = :notify
 
   # mail host
-  config.action_mailer.default_url_options = { :host => 'localhost' }
+  config.action_mailer.default_url_options = { :host => 'globomax' }
 
   # Send emails via Postfix
   config.action_mailer.delivery_method = :smtp
