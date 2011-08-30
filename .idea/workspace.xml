@@ -6,9 +6,6 @@
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\original\1309862697_comment.png" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\thumb\1309862697_comment.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_articles.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_articles.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_faqs.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_faqs.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_supmessages.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_supmessages.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/support/all_supmessages.html.erb" afterPath="$PROJECT_DIR$/app/views/support/all_supmessages.html.erb" />
     </list>
     <ignored path="gtt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,55 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_faqs.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_faqs.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="49" selection-start="238" selection-end="238" vertical-scroll-proportion="-6.5384617">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="all_supmessages.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/support/all_supmessages.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="56" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.52577317">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_articles.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_articles.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_articles.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="55" selection-start="325" selection-end="325" vertical-scroll-proportion="-7.1923075">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_supmessages.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_supmessages.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="58" selection-start="346" selection-end="346" vertical-scroll-proportion="-7.1923075">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_support_messages.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_support_messages.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_website_menu.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_website_menu.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="12" column="45" selection-start="443" selection-end="443" vertical-scroll-proportion="0.22566372">
               <folding />
             </state>
           </provider>
@@ -149,9 +101,9 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_faqs.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_articles.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_supmessages.html.erb" />
         <option value="$PROJECT_DIR$/app/views/support/all_supmessages.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_articles.html.erb" />
       </list>
     </option>
   </component>
@@ -238,7 +190,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="support" />
+              <option name="myItemId" value="shared" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -587,30 +539,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/support/all_supmessages.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="41" selection-start="570" selection-end="570" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_articles.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="55" selection-start="325" selection-end="325" vertical-scroll-proportion="-7.1923075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_supmessages.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="58" selection-start="346" selection-end="346" vertical-scroll-proportion="-7.1923075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_support_messages.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="27" column="0" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.52577317">
           <folding />
         </state>
       </provider>
@@ -622,16 +553,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_faqs.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_support_messages.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="49" selection-start="238" selection-end="238" vertical-scroll-proportion="-6.5384617">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/support/all_supmessages.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_supmessages.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="56" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.52577317">
+        <state line="11" column="58" selection-start="346" selection-end="346" vertical-scroll-proportion="0.20987654">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_faqs.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="49" selection-start="238" selection-end="238" vertical-scroll-proportion="0.1880531">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="41" selection-start="570" selection-end="570" vertical-scroll-proportion="-9.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_articles.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="45" selection-start="443" selection-end="443" vertical-scroll-proportion="0.22566372">
           <folding />
         </state>
       </provider>
