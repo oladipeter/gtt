@@ -27,7 +27,10 @@ class CommentsController < ApplicationController
     @comment = Comment.new(params[:comment])
     supmessage_id = @comment.supmessage_id
       if @comment.save
+
+         CommentMailer.user_create_a_comment(@comment).deliver
          redirect_to show_supmessage_path( @comment.supmessage.id ,:system => @comment.supmessage.system_title ), :notice => 'A komment sikeresen létrejött'
+
       else
         redirect_to show_supmessage_path( :system => @comment.supmessage.system_title ), :notice => 'Hiba történt a comment felvitelekor, próbáld újra!'
       end

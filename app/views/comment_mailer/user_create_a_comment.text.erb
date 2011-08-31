@@ -1,0 +1,16 @@
+Hello Adminisztrátor!
+
+Az alábbi komment érkezett a <%= @comment.system_title %> hibabejelentéséhez :
+
+" <%= @comment.content %> "
+
+A hibabejelentés az alábbi linken érhető el :
+<%= @url %>
+
+További <%= @admins.size %> adminisztrátor értesült erről a bejegyzésről :
+
+<% @admins.each do |admin| %>
+    <%= admin.name %>
+<% end %>
+=====================================================
+Üdvözlettel : Globomax Kft. | Terméktámogatás | Admin
