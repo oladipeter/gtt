@@ -18,19 +18,9 @@
     <%= f.inputs :name => "Hibabejelentés adatai :" do %>
           <%= f.input :title, :label => "Cím" %>
           <%= f.input :description, :label => "Leírás" %>
-          <% if @edit %>
-            <div class="hidden_field">
-              <%= f.input :admins, :as => :select, :collection => @admins, :hint => "Kérem jelölje meg azt az adminisztrátort akivel kapcsolatban áll. Többet is megjelölhet!"  %> <!-- Az admin tombot rakom be es kilistaztatom a formon, igy megvan hogy melyik rendszerhez melyik adminisztratorok tartoznak!!  -->
-            </div>
-          <% else %>
-          <%= f.input :admins, :as => :select, :collection => @admins, :hint => "Kérem jelölje meg azt az adminisztrátort akivel kapcsolatban áll. Többet is megjelölhet!"  %> <!-- Az admin tombot rakom be es kilistaztatom a formon, igy megvan hogy melyik rendszerhez melyik adminisztratorok tartoznak!!  -->
-          <% end %>
           <%= f.input :system_title, :as => :hidden, :value => @system.title %>
-          <% if @edit %>
-              <%= f.input :status, :as => :hidden, :value => "#{@supmessage.status}" %>
-          <% else %>
-            <%= f.input :status, :as => :hidden, :value => "0" %>
-          <% end %>
+          <%= f.input :status, :as => :hidden, :value => "#{@supmessage.status}" %>
+          <%= f.input :status, :as => :hidden, :value => "0" %>
           <%= f.input :user_id, :as => :hidden, :value => current_user.id %>
     <% end %>
 
