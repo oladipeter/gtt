@@ -5,7 +5,7 @@ class CommentMailer < ActionMailer::Base
   def admin_create_a_comment(comment)
 
     @comment = comment
-    @url  = "http://localhost:3000/support/supmessage/#{@comment.supmessage_id}?system=#{@comment.system_title}"
+    @url  = "http://#{default_url_options[:host]}/support/supmessage/#{@comment.supmessage_id}?system=#{@comment.system_title}"
 
       mail(:to => "#{@comment.comment_owner}",
            :subject => "Globomax Kft. | Terméktámogatás oldal | Komment érkezett a hibabejelentéséhez!")
@@ -20,7 +20,7 @@ class CommentMailer < ActionMailer::Base
     @working_system = System.find(:first, :conditions => ['title = ?',@system_title])
     @admins = @working_system.admins
 
-    @url  = "http://localhost:3000/support_messages/datasheet/#{@comment.supmessage_id}"
+    @url  = "http://#{default_url_options[:host]}/support_messages/datasheet/#{@comment.supmessage_id}"
 
       mail(:to => @admins.all.map(&:email),
            :subject => "Globomax Kft. | Terméktámogatás oldal | Komment érkezett a hibabejelentéséhez!")

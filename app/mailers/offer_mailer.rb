@@ -4,7 +4,7 @@ class OfferMailer < ActionMailer::Base
 
   def thankyou(offer)
     @offer = offer
-    @url  = "http://localhost:3000/"
+    @url  = "http://#{default_url_options[:host]}"
     mail(:to => offer.email, :subject => "Köszönjük árajánlat kérését!")
   end
 

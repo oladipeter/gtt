@@ -5,7 +5,7 @@ class SupmessageMailer < ActionMailer::Base
   def user_create_a_supmessage(supmessage)
 
     @supmessage = supmessage
-    @url  = "http://localhost:3000/support_messages/datasheet/#{@supmessage.id}"
+    @url  = "http://#{default_url_options[:host]}/support_messages/datasheet/#{@supmessage.id}"
 
     @supmessage_admins = @supmessage.admins
       mail(:to => @supmessage_admins.all.map(&:email),
