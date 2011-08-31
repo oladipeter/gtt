@@ -16,6 +16,13 @@ class AdministratorController < ApplicationController
 
   def edit
     @admin = Admin.find(params[:id])
+    # Ha az adminisztrátor id-ja nem egyenlő 1-el vagyis nem foadminisztrator, illetve a bejelentkezett felhasznalo id-ja nem
+    # egyezik meg a parameterben atadottal akkor nincs joga modositani az adott fiokot.
+
+    unless ( @admin.id == current_admin.id ) || ( current_admin.id == 1)
+     redirect_to administrator_path, :notice => 'Próbálkozz a saját fiókoddal!'
+    end
+
   end
 
   def create
@@ -40,9 +47,11 @@ class AdministratorController < ApplicationController
     @admin = Admin.find(params[:id])
     if @admin.id == 1
       redirect_to administrator_path, :notice => 'A fő adminisztrátort nem tudod törölni!'
+    elsif current_admin.id != @admin.id
+      redirect_to administrator_path, :notice => 'Csak a saját fiókod tudod inaktívvá tenni!'
     else
-      @admin.destroy
-      redirect_to administrator_path, :notice => 'Az adminisztrátor sikeresen törölve lett a rendszerből!'
+      # @admin.destroy
+      redirect_to administrator_path, :notice => 'Az adminisztrátor fiókja sikeresen inaktivvá vált!'
     end
   end
 
