@@ -724,6 +724,10 @@ ul li {
   padding: 12px 0px 0px 35px;
 }
 
+.message_short_description a {
+    color: #333;
+}
+
 .message_user_icon {
   height: 115px;
   background-image: url('../images/message_user_icon.jpg');

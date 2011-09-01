@@ -37,4 +37,8 @@ class ClientController < ApplicationController
       end
   end
 
+  def search
+    @results = User.search(params[:search])
+  end
+
 end

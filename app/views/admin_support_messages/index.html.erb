@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="span-13">
-      <div class="message_short_description"><%= truncate("#{message.description}", :length => 240, :omission => "..." )  %></div>
+      <div class="message_short_description"><%= link_to truncate("#{message.description}", :length => 240, :omission => "..." ), support_messages_datasheet_path(message.id)   %></div>
     </div>
     <div class="span-6 last">
       <div class="span-6">

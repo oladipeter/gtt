@@ -28,4 +28,12 @@ class User < ActiveRecord::Base
   has_many :supmessages
   has_and_belongs_to_many :systems
 
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['full_name ILIKE ? OR local_government ILIKE ? OR email ILIKE ?', "%#{search}%", "%#{search}%", "%#{search}%"] )
+    else
+      find(:all)
+    end
+  end
+
 end

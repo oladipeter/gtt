@@ -1,6 +1,11 @@
 <div id="client">
 
-<!-- Client search -->
+<%= form_tag search_path, :method => "get" do %>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Keresés", :name => nil %>
+<% end %>
+<br/>
+<hr/>
 
 <h2>Regisztrált ügyfelek</h2>
 

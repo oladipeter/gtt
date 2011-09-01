@@ -17,6 +17,8 @@ Gtt::Application.routes.draw do
   get "admin_support_messages/index"
   get "support_messages/Index"
 
+
+  match 'supmessages/search' => 'supmessages#search', :as => "search"
   resources :supmessages
 
   get "support/index"
@@ -83,6 +85,8 @@ Gtt::Application.routes.draw do
   match 'support_messages/list' => 'admin_support_messages#index', :as => "support_messages_list"
   match 'support_messages/datasheet/:id' => 'admin_support_messages#datasheet', :as => "support_messages_datasheet"
   match 'admin_support_messages/datasheet_update/:id' => 'admin_support_messages#datasheet_update', :as => "update_datasheet"
+
+  match 'client/search' => 'client#search', :as => "search"
 
   # SUPMESSAGE COMMENTS
 
