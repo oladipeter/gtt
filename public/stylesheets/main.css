@@ -31,6 +31,15 @@ h2 {
     font-weight: bold;
 }
 
+.search_button {
+    margin-left: 10px;
+    width: 142px;
+    height: 28px;
+    background: transparent url("../images/search_button.jpg");
+    color: #333;
+    border: none;
+}
+
 .hidden_field {
   display: none;
 }
