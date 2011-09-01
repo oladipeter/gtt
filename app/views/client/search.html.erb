@@ -1,5 +1,28 @@
-<% @results.each do |result| %>
-   <%= result.full_name %><br/>
-   <%= result.email %>
-   <hr>
+<div id="client">
+
+<h2>Keresési eredmények</h2>
+
+<% if @results == [] %>
+  A keresés nem hozott eredményt!
 <% end %>
+
+<% @results.each do |result| %>
+
+     <div class="founded_full_name">
+   Teljes Név :  <%= result.full_name %>
+     </div>
+   ID : <%= result.id %><br/>
+   Email : <%= result.email %><br/>
+   Nick : <%= result.nick_name %><br/>
+   Önkormányzat : <%= result.local_government %><br/>
+   Összesen : <%= result.supmessages.size %> hibabejelentés!<br/>
+
+   <% if result.supmessages != [] %>
+     <% (result.supmessages).each do |message| %>
+        <%= message.title %><br/>
+     <% end %>
+   <% end %>
+
+<% end %>
+
+</div>

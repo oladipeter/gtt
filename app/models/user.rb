@@ -30,7 +30,7 @@ class User < ActiveRecord::Base
 
   def self.search(search)
     if search
-      find(:all, :conditions => ['full_name ILIKE ? OR local_government ILIKE ? OR email ILIKE ?', "%#{search}%", "%#{search}%", "%#{search}%"] )
+      find(:all, :include => :supmessages, :conditions => ['full_name ILIKE ? OR local_government ILIKE ? OR email ILIKE ?', "%#{search}%", "%#{search}%", "%#{search}%"] )
     else
       find(:all)
     end

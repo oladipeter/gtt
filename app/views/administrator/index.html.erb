@@ -16,9 +16,6 @@
       <td colspan="4"><%= link_to "Új adminisztrátor felvitele", administrator_new_path %> | A rendszerben összesen <%= @number_of_administrators %> adminisztrátor szerepel</td>
     </tr>
     </tfoot>
-
-    <%= current_admin.id %>
-
     <tbody>
     <% @administrators.each do |administrator| %>
         <tr>
