@@ -1,9 +1,7 @@
 Gtt::Application.routes.draw do
 
   get "offers/index"
-
   get "globomax/index"
-
   get "website/admin"
 
   resources :faqs
@@ -16,17 +14,12 @@ Gtt::Application.routes.draw do
   get "comments/delete"
   get "admin_support_messages/index"
   get "support_messages/Index"
-
+  get "support/index"
 
   match 'supmessages/search' => 'supmessages#search', :as => "search"
   resources :supmessages
-
-  get "support/index"
-
   resources :advices
-
   resources :systems
-
   resources :articles
 
   # BASIC ROUTING
@@ -61,6 +54,7 @@ Gtt::Application.routes.draw do
 
   # FRONTEND
 
+  match 'frontend/index' => 'frontend#index', :as => "frontend_index"
   match 'frontend/show_advice/:id' => 'frontend#show_advice', :as => "show_advice"
 
   # SUPPORT
@@ -159,15 +153,11 @@ Gtt::Application.routes.draw do
   match 'globomax/webarticle/:id' => 'globomax#website_article', :as => "website_article" # show article
   match 'globomax/webadvice/:id' => 'globomax#website_advice', :as => "website_advice" # show advice
 
+  # -- UPLOADER -- Banics Peti feltoltoje
 
-  # -- PRODUCTS --
-  # Csak egy link lesz ami egy kulon layout-ot jelenit meg amin az egyes termekoldalakra fog linkelni
-
-  # -- PRODUCT SUPPORT --
-  # Csak egy link lesz ami egy a termektamogatas oldal user loginjara mutat
-
-
-
+  match 'uploader/get_request' => 'uploader/start#get_request', :as => "uploader_get_request" # user in uploader
+  match 'uploader/start_upload' => 'uploader/start#start_upload', :as => "upload_started" # user in uploader
+  match 'uploader/finished_upload' => 'uploader/start#finished_upload', :as => "upload_finished" # user in uploader
 
   # ------------------------------------------------------------------------------------------------------------------
   # ------------------------------------------------------------------------------------------------------------------

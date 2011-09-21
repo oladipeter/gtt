@@ -1,0 +1,2 @@
+module Uploader::StartHelper
+end

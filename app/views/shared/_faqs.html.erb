@@ -10,7 +10,7 @@
 
       <% @faqs.each do |faq| %>
         <strong><%= faq.title %></strong><br/><span class="created">Létrehozva : </span><%= faq.created_at %><br/><br/>
-        <div class="faq_description"><%= raw truncate("#{faq.description}"), :length => 100, :omission => '...' %></div>
+        <div class="faq_description"><%= raw truncate("#{faq.description}", :length => 100, :omission => '...') %></div>
       <% end %>
 
       <%= link_to "Megnézem az összes kérdést!", all_faqs_path( :system => @system.title ), :class => "all" %>
