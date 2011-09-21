@@ -39,6 +39,9 @@ class ClientController < ApplicationController
 
   def search
     @results = User.search(params[:search])
+    respond_to do |format|
+      format.js
+    end
   end
 
 end

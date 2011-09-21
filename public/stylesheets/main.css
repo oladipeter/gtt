@@ -1514,3 +1514,22 @@ ul li {
 .no_contact_in_list {
     color: red;
 }
+
+.founded_box {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.founded_box .government {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.founded_full_name {
+    font-size: 14px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+

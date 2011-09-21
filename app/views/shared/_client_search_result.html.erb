@@ -1,0 +1,24 @@
+<div id="client">
+
+<% if @results == [] %>
+  A keresés nem hozott eredményt!
+<% end %>
+
+<% @results.each do |result| %>
+
+    <div class="founded_box">
+      <div class="founded_full_name">
+        <%= result.full_name %> | <%= result.email %>
+      </div>
+      <div class="government">
+      Önkormányzat : <%= result.local_government %>
+      </div>
+      <br/>
+      Összesen : <%= result.supmessages.size %> hibabejelentés!<br/>
+
+
+    </div>
+
+<% end %>
+
+</div>
