@@ -6,9 +6,14 @@
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\original\1309862697_comment.png" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\thumb\1309862697_comment.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/faqs/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/faqs/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/faqs/index.html.erb" afterPath="$PROJECT_DIR$/app/views/faqs/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_menu.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_menu.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/website_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/website_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/advices/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/advices/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/articles/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/articles/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/faqs/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/faqs/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/globomax/contacts.html.erb" afterPath="$PROJECT_DIR$/app/views/globomax/contacts.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/globomax.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/globomax.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/globomax_employees.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/globomax_employees.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/globomax_index.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/globomax_index.html.erb" />
     </list>
     <ignored path="gtt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,64 +37,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/articles/_form.html.erb">
+      <file leaf-file-name="globomax_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/globomax_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="76" selection-start="516" selection-end="516" vertical-scroll-proportion="-9.807693">
+            <state line="14" column="55" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="backend.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/backend.html.erb">
+      <file leaf-file-name="contacts.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/globomax/contacts.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="12.653846">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_faqs.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_faqs.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="10" selection-start="37" selection-end="37" vertical-scroll-proportion="-0.65384614">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_menu.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_menu.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="23" selection-start="572" selection-end="572" vertical-scroll-proportion="-7.8461537">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/faqs/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="4" selection-start="20" selection-end="45" vertical-scroll-proportion="-0.65384614">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/faqs/edit.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="4" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0778032">
+            <state line="31" column="3" selection-start="983" selection-end="983" vertical-scroll-proportion="-16.615385">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/contacts/edit.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/articles/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/articles/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="70" selection-start="950" selection-end="950" vertical-scroll-proportion="-12.423077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/advices/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="52" selection-start="664" selection-end="664" vertical-scroll-proportion="-11.769231">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/faqs/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="106" selection-start="506" selection-end="506" vertical-scroll-proportion="0.33761683">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="website_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/website_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="30" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="articles_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="45" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,22 +132,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/administrator/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/client/index.html.erb" />
-        <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
-        <option value="$PROJECT_DIR$/app/views/client/search.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/frontend.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/uploader/start/uploader_status.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/uploader/start/get_request.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/uploader/start/finished_upload.html.erb" />
         <option value="$PROJECT_DIR$/app/views/uploader/start/start_upload.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/uploader/start_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/_faqs.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/articles/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_menu.html.erb" />
         <option value="$PROJECT_DIR$/app/views/faqs/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/faqs/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/globomax_index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/globomax_employees.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/globomax.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/globomax/contact_us.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/website_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/globomax/contacts.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/articles/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/advices/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/faqs/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -185,11 +208,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -208,32 +227,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gtt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gtt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -277,7 +270,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="contacts" />
+              <option name="myItemId" value="advices" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -292,6 +285,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gtt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gtt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -563,104 +574,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/frontend_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="10" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/support.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/uploader/start/get_request.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.07522124" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/uploader/start/finished_upload.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="39" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="28" selection-start="7189" selection-end="7189" vertical-scroll-proportion="0.018888889">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/uploader/start/start_upload.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.058352403">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/uploader/start_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="3" selection-start="359" selection-end="359" vertical-scroll-proportion="0.28333333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/frontend.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="261" column="31" selection-start="9842" selection-end="9842" vertical-scroll-proportion="0.019744484">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="76" selection-start="516" selection-end="516" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/backend.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="12.653846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_faqs.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="10" selection-start="37" selection-end="37" vertical-scroll-proportion="-0.65384614">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_menu.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="572" selection-end="572" vertical-scroll-proportion="-7.8461537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/faqs/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="20" selection-end="45" vertical-scroll-proportion="-0.65384614">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/contacts/edit.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/globomax/references.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/faqs/edit.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/globomax/show_commercial.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0778032">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/globomax/website_advice.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/globomax/website_article.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/search.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/globomax.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="83" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.65156794">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/globomax/contact_us.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="10" selection-start="967" selection-end="967" vertical-scroll-proportion="0.58352405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="45" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/website_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="30" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/globomax_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="55" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/globomax/contacts.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="3" selection-start="983" selection-end="983" vertical-scroll-proportion="-16.615385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="70" selection-start="950" selection-end="950" vertical-scroll-proportion="-12.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/advices/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="52" selection-start="664" selection-end="664" vertical-scroll-proportion="-11.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/faqs/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="106" selection-start="506" selection-end="506" vertical-scroll-proportion="0.33761683">
           <folding />
         </state>
       </provider>

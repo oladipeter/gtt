@@ -17,7 +17,7 @@
     <%= f.inputs :name => "Gyakran ismételt kérdések :" do %>
           <%= f.input :title, :label => t(:name) %>
           <%= f.input :description, :label => t(:short_description) %>
-          <%= f.input :system_id, :label => "Melyik rendszer? :", :as => :select, :collection => System.find(:all) %>
+          <%= f.input :system_id, :label => "Melyik rendszer? :", :as => :select, :include_blank => false, :collection => System.find(:all) %>
     <% end %>
 
     <%= f.commit_button t(:ok) %>

@@ -28,6 +28,12 @@
 
 <% end %>
 
+<h1><%= @about_us.title %></h1>
+<div class="text">
+  <%= raw @about_us.content %>
+</div>
+<br/><br/>
+
 <h1>Munkatársaink</h1>
 
 <% @contacts.each do |contact| %>

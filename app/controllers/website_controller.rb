@@ -21,7 +21,7 @@ class WebsiteController < ApplicationController
   def update_about_us
     @aboutus = Aboutus.find(params[:id])
       if @aboutus.update_attributes(params[:aboutus])
-        redirect_to website_admin_path, :notice => "Sikeresen módosítottad a bemutatkozást!"
+        redirect_to backend_index_path, :notice => "Sikeresen módosítottad a bemutatkozást!"
       else
         render :action => "edit_about_us"
       end

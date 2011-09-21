@@ -13,12 +13,12 @@
     <% end %>
 
     <%= f.inputs :name => "Cikk adatai :" do %>
-          <%= f.input :position, :as => :select, :collection => [["Inaktív cikk", 0], ["Friss cikk", 1], ["Cikk kép nélkül", 2], ["Cikk kis képpel a bal oldalon", 3], ["Cikk kép nélkül a jobb oldalon", 4]] %>
+          <%= f.input :position, :as => :select, :include_blank => false, :collection => [["Rejtett cikk, nem látszik a főoldalon!", 0], ["Friss cikk", 1], ["Cikk kép nélkül", 2], ["Cikk kis képpel a bal oldalon", 3], ["Cikk kép nélkül a jobb oldalon", 4]] %>
           <%= f.input :title, :label => t(:title) %>
           <%= f.input :short_description, :label => t(:short_description) %>
           <b><%= "Teljes leírás" %></b><br/><br/>
           <%= f.input :content, :label => false, :as => :ckeditor, :input_html => { :width => "98%" } %>
-          <%= f.input :system_id, :as => :select, :collection => System.find(:all), :label => t(:system), :hint => "Ha üresen hagyod nem lesz hozzárendelve egyetlen rendszerhez sem." %>
+          <%= f.input :system_id, :as => :select, :include_blank => false, :collection => System.find(:all), :label => t(:system), :hint => "Ha üresen hagyod nem lesz hozzárendelve egyetlen rendszerhez sem." %>
           <%= f.input :image, :label => "Fénykép felröltése", :as => :file %>
     <% end %>
 
