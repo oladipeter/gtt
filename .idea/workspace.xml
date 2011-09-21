@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc3cdf55-bf61-4c34-9e03-3e251288b6ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/uploader/start_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/uploader/start_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/uploader/start/finished_upload.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/uploader/start/get_request.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/uploader/start/start_upload.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/uploader/start_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/helpers/uploader/start_helper_test.rb" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\medium\1309862697_comment.png" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\original\1309862697_comment.png" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\thumb\1309862697_comment.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gtt.iml" afterPath="$PROJECT_DIR$/.idea/gtt.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/frontend.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/frontend.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_faqs.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_faqs.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/articles/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/articles/_form.html.erb" />
     </list>
     <ignored path="gtt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,55 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="frontend.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/frontend.html.erb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/articles/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="261" column="31" selection-start="9842" selection-end="9842" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="start_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/uploader/start_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="3" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="start_upload.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/uploader/start/start_upload.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="28" selection-start="7189" selection-end="7189" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/application.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_faqs.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_faqs.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="106" selection-start="465" selection-end="465" vertical-scroll-proportion="0.23340961">
+            <state line="16" column="45" selection-start="694" selection-end="694" vertical-scroll-proportion="0.31591174">
               <folding />
             </state>
           </provider>
@@ -108,7 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/supmessage.rb" />
         <option value="$PROJECT_DIR$/app/views/admin_support_messages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/supmessages/search.html.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
@@ -124,6 +67,7 @@
         <option value="$PROJECT_DIR$/app/controllers/uploader/start_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/_faqs.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/articles/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -210,7 +154,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
+              <option name="myItemId" value="articles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -496,11 +440,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/client/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="104" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="17" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0" />
@@ -546,24 +485,11 @@
         <state line="0" column="39" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/frontend.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_faqs.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="261" column="31" selection-start="9842" selection-end="9842" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/uploader/start_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="3" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/uploader/start/start_upload.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="28" selection-start="7189" selection-end="7189" vertical-scroll-proportion="0.0" />
+        <state line="12" column="106" selection-start="465" selection-end="465" vertical-scroll-proportion="0.23340961">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
@@ -571,9 +497,37 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_faqs.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="106" selection-start="465" selection-end="465" vertical-scroll-proportion="0.23340961">
+        <state line="158" column="28" selection-start="7189" selection-end="7189" vertical-scroll-proportion="0.018888889">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/uploader/start/start_upload.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.058352403">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/uploader/start_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="3" selection-start="359" selection-end="359" vertical-scroll-proportion="0.28333333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/frontend.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="261" column="31" selection-start="9842" selection-end="9842" vertical-scroll-proportion="0.019744484">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="45" selection-start="694" selection-end="694" vertical-scroll-proportion="0.31591174">
           <folding />
         </state>
       </provider>

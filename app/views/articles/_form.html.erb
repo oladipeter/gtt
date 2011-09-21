@@ -13,7 +13,7 @@
     <% end %>
 
     <%= f.inputs :name => "Cikk adatai :" do %>
-          <%= f.input :position, :label => "Pozíciója :" %>
+          <%= f.input :position, :as => :select, :collection => [["Inaktív cikk", 0], ["Friss cikk", 1], ["Cikk kép nélkül", 2], ["Cikk kis képpel a bal oldalon", 3], ["Cikk kép nélkül a jobb oldalon", 4]] %>
           <%= f.input :title, :label => t(:title) %>
           <%= f.input :short_description, :label => t(:short_description) %>
           <b><%= "Teljes leírás" %></b><br/><br/>
