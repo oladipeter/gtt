@@ -15,7 +15,6 @@
     <%= f.inputs :name => "Cég reklámai :" do %>
           <%= f.input :title, :label => false %>
           <%= f.input :content, :label => false, :as => :ckeditor, :input_html => { :width => "98%", :height => "500px" }  %>
-          <%= f.input :position, :label => false %>
     <% end %>
 
     <%= f.commit_button t(:ok) %>

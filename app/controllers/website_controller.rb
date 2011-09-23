@@ -21,7 +21,7 @@ class WebsiteController < ApplicationController
   def update_about_us
     @aboutus = Aboutus.find(params[:id])
       if @aboutus.update_attributes(params[:aboutus])
-        redirect_to backend_index_path, :notice => "Sikeresen módosítottad a bemutatkozást!"
+        redirect_to edit_about_us_path, :notice => "Sikeresen módosítottad a bemutatkozást!"
       else
         render :action => "edit_about_us"
       end
@@ -38,7 +38,7 @@ class WebsiteController < ApplicationController
   def update_contact_us
     @contactus = Contactus.find(params[:id])
       if @contactus.update_attributes(params[:contactus])
-        redirect_to website_admin_path, :notice => "Sikeresen módosítottad az elérhetőségeket!"
+        redirect_to edit_contact_us_path, :notice => "Sikeresen módosítottad az elérhetőségeket!"
       else
         render :action => "edit_contact_us"
       end
@@ -55,7 +55,7 @@ class WebsiteController < ApplicationController
   def update_reference
     @reference = Reference.find(params[:id])
       if @reference.update_attributes(params[:reference])
-        redirect_to website_admin_path, :notice => "Sikeresen módosítottad az elérhetőségeket!"
+        redirect_to edit_reference_path, :notice => "Sikeresen módosítottad az elérhetőségeket!"
       else
         render :action => "edit_references"
       end
@@ -72,7 +72,7 @@ class WebsiteController < ApplicationController
   def update_commercial
     @commercial = Commercial.find(params[:id])
       if @commercial.update_attributes(params[:commercial])
-        redirect_to website_admin_path, :notice => "Sikeresen módosítottad az reklámokat!"
+        redirect_to edit_commercial_path, :notice => "Sikeresen módosítottad az reklámokat!"
       else
         render :action => "edit_commercial"
       end
