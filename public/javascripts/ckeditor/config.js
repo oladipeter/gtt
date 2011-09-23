@@ -28,7 +28,7 @@ CKEDITOR.editorConfig = function( config )
   
   config.toolbar_Easy =
     [
-        ['PasteText','Format'],
+        ['PasteText','Format','Undo','Redo'],
         ['Bold','Italic','Underline','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
         ['Link','Unlink','Anchor','Image','Flash']
     ];
