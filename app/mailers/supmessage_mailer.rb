@@ -12,7 +12,7 @@ class SupmessageMailer < ActionMailer::Base
     @admins = @working_system.admins
 
       mail(:to => @admins.all.map(&:email),
-           :subject => "Globomax Kft. | Terméktámogatás oldal | #{@supmessage.system_title} hibabejelentés érkezett!")
+           :subject => "Globomax Zrt. | Terméktámogatás oldal | #{@supmessage.system_title} hibabejelentés érkezett!")
 
   end
 

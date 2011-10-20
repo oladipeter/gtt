@@ -8,7 +8,7 @@ class CommentMailer < ActionMailer::Base
     @url  = "http://#{default_url_options[:host]}/support/supmessage/#{@comment.supmessage_id}?system=#{@comment.system_title}"
 
       mail(:to => "#{@comment.comment_owner}",
-           :subject => "Globomax Kft. | Terméktámogatás oldal | Komment érkezett a hibabejelentéséhez!")
+           :subject => "Globomax Zrt. | Terméktámogatás oldal | Komment érkezett a hibabejelentéséhez!")
 
   end
 
@@ -23,7 +23,7 @@ class CommentMailer < ActionMailer::Base
     @url  = "http://#{default_url_options[:host]}/support_messages/datasheet/#{@comment.supmessage_id}"
 
       mail(:to => @admins.all.map(&:email),
-           :subject => "Globomax Kft. | Terméktámogatás oldal | Komment érkezett a hibabejelentéséhez!")
+           :subject => "Globomax Zrt. | Terméktámogatás oldal | Komment érkezett a hibabejelentéséhez!")
   end
 
 end
