@@ -216,6 +216,25 @@ $(function() {
 	// initialize scrollable with mousewheel support
 	$(".scrollable").scrollable({ vertical: true, mousewheel: true, autoplay: true });
 
+    // Employee list default hide
+    $('#employee_list').hide();
+    $('#up').hide();
+
+    // if click down then slide down employees
+    $('#down').click(function() {
+        $('#employee_list').slideDown('slow');
+        $('#up').show();
+        $('#employee_list_toggle b').hide();
+    });
+
+    $('#up').click(function() {
+        $('#employee_list').slideUp('slow');
+        $('#up').hide();
+        $('#employee_list_toggle b').show();
+    });
+
+    $('#employee_list').hide();
+
 });
 </script>
 

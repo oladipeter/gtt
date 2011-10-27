@@ -1533,3 +1533,8 @@ ul li {
     font-weight: bold;
 }
 
+.outter_link strong {
+    font-size: 14px;
+    color: red;
+}
+

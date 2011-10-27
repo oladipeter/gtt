@@ -15,8 +15,11 @@
                 <p>
                   <%= raw truncate("#{article.short_description}", :length => 220, :omission => "...") %>
                 </p>
-
-                <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
+                <% if article.outter_link.blank? %>
+                    <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
+                <% else %>
+                    <div class="read_more"><%= link_to "Bővebben", "#{article.outter_link}" %></div>
+                <% end %>
               </div>
 
             </div> <!-- END NEW ITEM ---------------------------------------------------------------------------->

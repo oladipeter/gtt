@@ -961,3 +961,16 @@ span.delete {
     left: 8px;
     top: 1px;
 }
+
+#employee_list_toggle #up, #employee_list_toggle #down {
+  float: left;
+}
+
+#employee_list {
+    height: 800px;
+}
+
+#employee_list b {
+    position: relative;
+    top: -5px;
+}

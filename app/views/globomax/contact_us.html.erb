@@ -17,8 +17,11 @@
                 <p>
                   <%= raw truncate("#{article.short_description}", :length => 220, :omission => "...") %>
                 </p>
-
-                <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
+                <% if article.outter_link.blank? %>
+                    <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
+                <% else %>
+                    <div class="read_more"><%= link_to "Bővebben", "#{article.outter_link}" %></div>
+                <% end %>
               </div>
 
             </div> <!-- END NEW ITEM ---------------------------------------------------------------------------->
@@ -34,5 +37,43 @@
 
 <%= raw @contactus.content %>
 <br/><br/>
+
+<!-- EMPLOYEES -->
+
+<h1>Munkatársaink</h1>
+<div id="employee_list_toggle">
+    <b>&nbsp;<u>Kattintson a nyílra munkatársaink megtekintéséhez</u></b>
+  <div id="down">
+     <%= image_tag("globomax/slide_down.png") %>
+  </div>
+  <div id="up">
+    <%= image_tag("globomax/slide_up.png") %>
+  </div>
+  <br/><br/>
+</div>
+<div id="employee_list">
+
+  <% @contacts.each do |contact| %>
+
+      <div class="span-2" id="employee_image">
+        <% if contact.image_file_name.blank? %>
+            <%= image_tag("default_profile_thumb.png") %>
+        <% else %>
+            <%= image_tag contact.image.url(:thumb) %>
+        <% end %>
+      </div>
+      <div class="span-14 last">
+        <div class="classification">
+          <span class="employee_name"><%= contact.name %></span><br/>
+          <%= contact.classification %>
+          <br/>
+          <%= contact.email %> | <%= contact.mobil %>
+        </div>
+      </div>
+
+      <div class="span-15" id="employee_description"><%= contact.description %></div>
+  <% end %>
+
+</div>
 
 <iframe width="620" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=hu&amp;geocode=&amp;q=Globomax+Zrt.,+1155+Budapest,+Dembinszky+utca+1,+Magyarorsz%C3%A1g&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=44.388698,93.076172&amp;ie=UTF8&amp;hq=Globomax+Zrt.,&amp;hnear=1155+Budapest,+XV.+ker%C3%BClet,+Dembinszky+utca+1,+Magyarorsz%C3%A1g&amp;cid=16026687534988365556&amp;ll=47.556893,19.113207&amp;spn=0.028962,0.053129&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=hu&amp;geocode=&amp;q=Globomax+Zrt.,+1155+Budapest,+Dembinszky+utca+1,+Magyarorsz%C3%A1g&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=44.388698,93.076172&amp;ie=UTF8&amp;hq=Globomax+Zrt.,&amp;hnear=1155+Budapest,+XV.+ker%C3%BClet,+Dembinszky+utca+1,+Magyarorsz%C3%A1g&amp;cid=16026687534988365556&amp;ll=47.556893,19.113207&amp;spn=0.028962,0.053129&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">Nagyobb térképre váltás</a></small>

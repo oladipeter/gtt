@@ -23,7 +23,12 @@
                   <%= raw truncate("#{article.short_description}", :length => 220, :omission => "...") %>
                 </p>
 
-                <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
+                <% if article.outter_link.blank? %>
+                   <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
+                <% else %>
+                   <div class="read_more"><%= link_to "Bővebben", "#{article.outter_link}" %></div>
+                <% end %>
+
               </div>
 
             </div> <!-- END NEW ITEM ---------------------------------------------------------------------------->
@@ -57,9 +62,12 @@
           </div>
         </div>
         <div class="span-3 prepend-13">
-          <div class="read_more">
-            <%= link_to "Bővebben", website_article_path(article) %>
-          </div>
+          <% if article.outter_link.blank? %>
+              <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
+          <% else %>
+              <div class="read_more"><%= link_to "Bővebben", "#{article.outter_link}" %></div>
+          <% end %>
+        </div>
         </div>
       </div>
     <% end %>
@@ -79,9 +87,11 @@
         <%= image_tag article.image.url(:thumb) %>
         <%= raw truncate("#{article.short_description}", :length => 250, :omission => "...") %>
       </div>
-      <div class="read_more">
-        <%= link_to "Bővebben", website_article_path(article) %>
-      </div>
+        <% if article.outter_link.blank? %>
+            <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
+        <% else %>
+            <div class="read_more"><%= link_to "Bővebben", "#{article.outter_link}" %></div>
+        <% end %>
       </div>
     <% end %>
   <% end %>
@@ -99,9 +109,11 @@
       <div class="pos4_short_description">
         <%= raw truncate("#{article.short_description}", :length => 200, :omission => "...") %>
       </div>
-      <div class="read_more">
-        <%= link_to "Bővebben", website_article_path(article) %>
-      </div>
+        <% if article.outter_link.blank? %>
+            <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
+        <% else %>
+            <div class="read_more"><%= link_to "Bővebben", "#{article.outter_link}" %></div>
+        <% end %>
       </div>
     <% end %>
   <% end %>
