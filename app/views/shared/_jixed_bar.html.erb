@@ -1,0 +1,64 @@
+<!-- JIXED BAR -->
+
+<div id="sample-bar">
+
+   <ul>
+     <li title="Önkormányzati Tv"><%= link_to image_tag("globomax/fixed_bar/home.png", :alt => "Főoldal"), index_path %></li>
+     <li title="Mikrovoks"><%= link_to "MikroVoks", "http://mikrovoks.globomax.hu", :target => "_BLANK" %></li>
+     <li title="MikroKam"><%= link_to "MikroKam", "http://mikrokam.globomax.hu", :target => "_BLANK" %></li>
+     <li title="seQUEnce"><%= link_to "seQUEnce", "http://sequence.globomax.hu", :target => "_BLANK" %></li>
+     <li title="EDtR"><%= link_to "EDtR", "http://www.edtr.hu", :target => "_BLANK" %></li>
+     <li title="MvMonitor"><%= link_to "MvMonitor", "http://mvmonitor.globomax.hu", :target => "_BLANK" %></li>
+     <li title="Digirat"><%= link_to "Digirat", "http://digirat.globomax.hu", :target => "_BLANK" %></li>
+   </ul>
+
+   <span class="jx-separator-left"></span>
+
+  <ul>
+     <li title="Önkormányzati Tv">
+       <%= link_to image_tag("globomax/fixed_bar/otvlogo.png", :alt => "Önkormányzati Tv"), "#" %>
+       <ul>
+            <li><%= link_to image_tag("globomax/fixed_bar/jegyzokonyv.png", :alt => "Jegyzőkönyvek"), "http://onkormanyzati.tv/index.php?id=1&viewCode=latest&filter=1&onkorm=", :target => "_BLANK" %></li>
+            <li><%= link_to image_tag("globomax/fixed_bar/meghivo.png", :alt => "Meghívók"), "http://onkormanyzati.tv/index.php?id=1&viewCode=latest&filter=3&onkorm=", :target => "_BLANK" %></li>
+            <li><%= link_to image_tag("globomax/fixed_bar/sajtotajekoztato.png", :alt => "Sajtótájékoztatók"), "http://onkormanyzati.tv/index.php?id=1&viewCode=latest&filter=101&onkorm=", :target => "_BLANK" %></li>
+            <li><%= link_to image_tag("globomax/fixed_bar/video_anyag.png", :alt => "Videó anyagok"), "http://onkormanyzati.tv/index.php?id=1&viewCode=latest&filter=102&onkorm=", :target => "_BLANK" %></li>
+            <li><%= link_to image_tag("globomax/fixed_bar/hang_anyag.png", :alt => "Hang anyagok"), "http://onkormanyzati.tv/index.php?id=1&viewCode=latest&filter=103&onkorm=", :target => "_BLANK" %></li>
+         </ul>
+     </li>
+
+  </ul>
+
+   <span class="jx-separator-left"></span>
+
+  <ul>
+     <li title="Terméktámogatás"><%= link_to image_tag("globomax/fixed_bar/termektamogatas.png", :alt => "Terméktámogatás"), index_path %></li>
+   </ul>
+
+</div>
+
+<!-- javascript coding -->
+
+<script>
+// execute your scripts when DOM is ready. this is a good habit
+$(function() {
+
+    // Article scroller
+	$(".scrollable").scrollable({ vertical: true, mousewheel: true, autoplay: true });
+
+    // Bottom fixed bar
+    // $("#sample-bar").jixedbar();
+    $("#sample-bar").jixedbar({
+        showOnTop: true,
+        transparent: true,
+        opacity: 1.0,
+        slideSpeed: "fast",
+        roundedCorners: true,
+        roundedButtons: true,
+        menuFadeSpeed: "slow",
+        tooltipFadeSpeed: "fast",
+        tooltipFadeOpacity: 0.5
+    });
+
+});
+
+</script>

@@ -16,7 +16,7 @@
 
     <%= f.inputs :name => "Rendszer adatai :" do %>
           <%= f.input :name, :label => t(:name), :hint => "Nem szerkeszthető mező!", :input_html => { :disabled => true } %>
-          <%= f.input :full_name, :label => "Teljes név" %>
+          <%= f.input :full_name, :label => "Teljes név", :hint => "Ez jelenik meg a weboldalon a termékek alatt!" %>
           <%= f.input :description, :label => t(:short_description) %>
           <b><%= "Teljes leírás" %></b><br/><br/>
           <%= f.input :long_description, :label => false, :as => :ckeditor, :input_html => { :width => "98%" }, :hint => "Ez jelenik meg a terméktámogatás főoldalán!" %>

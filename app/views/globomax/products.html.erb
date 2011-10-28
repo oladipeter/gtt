@@ -18,7 +18,7 @@
                 <% if article.outter_link.blank? %>
                     <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
                 <% else %>
-                    <div class="read_more"><%= link_to "Bővebben", "#{article.outter_link}" %></div>
+                    <div class="read_more"><%= link_to "Bővebben", "#{article.outter_link}", :target => "_BLANK" %></div>
                 <% end %>
               </div>
 
@@ -35,14 +35,14 @@
 
   <div class="span-16">
     <div class="product">
-      <h2><%= product.name %></h2>
+      <h2><%= product.full_name %></h2>
     </div>
   </div>
   <div class="span-15">
     <div class="product_description">
       <%= product.description %><br/><br/>
       <div class="product_read_more">
-        <%= link_to "Bővebben", product.url %>
+        <%= link_to "Bővebben", product.url, :target => "_BLANK" %>
       </div>
     </div>
   </div>

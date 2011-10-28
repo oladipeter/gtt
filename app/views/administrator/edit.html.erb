@@ -21,7 +21,7 @@
           <%= f.input :name, :label => "Adminisztrátor neve : " %>
           <%= f.input :email %>
           <%= f.input :password, :default => "#{@admin.encrypted_password}" %>
-          <%= f.input :systems, :as => :select, :collection => System.find(:all), :label => "Rendszerek" %>
+          <%= f.input :systems, :as => :select, :collection => System.find(:all), :label => "Termékek" %>
           <%= f.input :image, :as => :file, :label => t(:photo) %>
       <% end %>
 

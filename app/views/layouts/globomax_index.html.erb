@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Globomax Elektronikai Zrt.</title>
+  <title>Globomax Elektronikai Zrt. - MikroVoks szavazó rendszer, szavazatszámláló rendszer, ügyfélhívó rendszer, robotkamera rendszer</title>
 
-  <%= stylesheet_link_tag "blueprint/ie", "blueprint/screen", "blueprint/src/reset", "website", "jixedbar/vista/jx.bar", "jixedbar/vista/jx.stylesheet" %>
+  <%= stylesheet_link_tag "blueprint/ie", "blueprint/screen", "blueprint/src/reset", "website", "jixedbar/default/jx.bar", "jixedbar/default/jx.stylesheet" %>
   <%= javascript_include_tag "rails" %>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
   <script src="http://cdn.jquerytools.org/1.2.6/jquery.tools.min.js"></script>
@@ -75,7 +75,7 @@
             <div class="span-8 last">
               <%= link_to (image_tag "./globomax/globomax_logo.jpg"), index_path %>
               <%= link_to (image_tag "./globomax/ajanlat.jpg"), offers_path %>
-              <%= link_to (image_tag "./globomax/tamogatas.jpg"), frontend_index_path %>
+              <%= link_to (image_tag "./globomax/tamogatas_2.png"), "#" %> <!-- frontend_index_path -->
               <%= link_to (image_tag "./globomax/onkormanyzati_tv.jpg"), "http://onkormanyzati.tv" %>
             </div>
 
@@ -224,71 +224,7 @@
 
   </div>
 
-
-<!-- JIXED BAR -->
-
-<div id="sample-bar">
-
-   <ul>
-     <li title="Önkormányzati Tv"><%= link_to image_tag("globomax/fixed_bar/home.png", :alt => "Főoldal"), index_path %></li>
-     <li title="Mikrovoks"><%= link_to "MikroVoks", index_path %></li>
-     <li title="MikroKam"><%= link_to "MikroKam", index_path %></li>
-     <li title="seQUEnce"><%= link_to "seQUEnce", index_path %></li>
-     <li title="EDtR"><%= link_to "EDtR", index_path %></li>
-     <li title="MvMonitor"><%= link_to "MvMonitor", index_path %></li>
-     <li title="Digirat"><%= link_to "Digirat", index_path %></li>
-   </ul>
-
-   <span class="jx-separator-left"></span>
-
-  <ul>
-     <li title="Önkormányzati Tv">
-       <%= link_to image_tag("globomax/fixed_bar/otvlogo.png", :alt => "Önkormányzati Tv"), "#" %>
-       <ul>
-            <li><%= link_to image_tag("globomax/fixed_bar/jegyzokonyv.png", :alt => "Jegyzőkönyvek"), "http://onkormanyzati.tv/index.php?id=1&viewCode=latest&filter=1&onkorm=" %></li>
-            <li><%= link_to image_tag("globomax/fixed_bar/meghivo.png", :alt => "Meghívók"), "http://onkormanyzati.tv/index.php?id=1&viewCode=latest&filter=3&onkorm=" %></li>
-            <li><%= link_to image_tag("globomax/fixed_bar/sajtotajekoztato.png", :alt => "Sajtótájékoztatók"), "http://onkormanyzati.tv/index.php?id=1&viewCode=latest&filter=101&onkorm=" %></li>
-            <li><%= link_to image_tag("globomax/fixed_bar/video_anyag.png", :alt => "Videó anyagok"), "http://onkormanyzati.tv/index.php?id=1&viewCode=latest&filter=102&onkorm=" %></li>
-            <li><%= link_to image_tag("globomax/fixed_bar/hang_anyag.png", :alt => "Hang anyagok"), "http://onkormanyzati.tv/index.php?id=1&viewCode=latest&filter=103&onkorm=" %></li>
-         </ul>
-     </li>
-
-  </ul>
-
-   <span class="jx-separator-left"></span>
-
-   <div>Globomax Zrt. 2011 - Minden jog fenntartva!</div>
-
-   <ul class="jx-bar-button-right">
-      <li title="Feeds">
-         <ul>
-            <li>Content Feed</li>
-            <li>Comment Feed</li>
-         </ul>
-      </li>
-   </ul>
-
-   <span class="jx-separator-right"></span>
-
-</div>
-
-
-<!-- javascript coding -->
-
-
-<script>
-// execute your scripts when DOM is ready. this is a good habit
-$(function() {
-
-    // Article scroller
-	$(".scrollable").scrollable({ vertical: true, mousewheel: true, autoplay: true });
-
-    // Bottom fixed bar
-    $("#sample-bar").jixedbar();
-
-});
-
-</script>
+  <%= render :partial => "shared/jixed_bar" %>
 
 </body>
 </html>

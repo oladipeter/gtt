@@ -57,7 +57,7 @@
         <div class="main_text">
 
            <div class="admin_img">
-             <h2>Adminisztrátorok</h2>
+             <h2><%= link_to "Adminisztrátorok", administrator_path %></h2>
            </div>
 
            <div class="main_text_content">
@@ -65,7 +65,7 @@
            </div>
 
            <div class="client_img">
-           <h2>Ügyfelek</h2>
+           <h2><%= link_to "Ügyfelek", client_path %></h2>
            </div>
 
            <div class="main_text_content">
@@ -74,35 +74,19 @@
 
 
            <div class="contact_img">
-           <h2>Kapcsolattartók</h2>
+           <h2><%= link_to "Kapcsolattartók", contacts_path %></h2>
            </div>
 
            <div class="main_text_content">
              A kapcsolattartók menüpont alatt, a Globomax Kft. Marketinges kollégáit tudjuk felvenni a rendszerbe, majd az ügyfelek fülön hozzárendelhetők az adott felhasználóhoz.
            </div>
 
-           <div class="email_img">
-           <h2>Üzenetküldés</h2>
-           </div>
-           <div class="main_text_content">
-             A regisztrált felhasználóknak lehetőségük van email-ben értesítést küldeni a kiválasztott adminisztrátornak, erről az email-ről az adminisztrátor a "mail support" menüpont alatt tud tájékozódni!
-           </div>
-
            <div class="error_support_img">
-           <h2>Hibabejelentések</h2>
+           <h2><%= link_to "Hibabejelentések", support_messages_list_path %></h2>
            </div>
            <div class="main_text_content">
              A hibabejelentések segítéségével a hiba, kérés, probléma, javaslat egyszerűen bejelenthető, nyomon követhető és visszakereshető mindkét fél számára.
            </div>
-
-
-           <div class="software_img">
-           <h2>Szoftverek</h2>
-           </div>
-           <div class="main_text_content">
-             Szoftverkövetés, frissítések, letöltések, promóciós anyagok, dokumentumok, kezelői leírások
-           </div>
-
 
         </div>
 
