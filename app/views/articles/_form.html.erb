@@ -18,7 +18,7 @@
           <%= f.input :short_description, :label => t(:short_description) %>
           <b><%= "Teljes leírás" %></b><br/><br/>
           <%= f.input :content, :label => false, :as => :ckeditor, :input_html => { :width => "98%" } %>
-          <%= f.input :system_id, :as => :select, :include_blank => false, :collection => System.find(:all), :label => t(:system), :hint => "Ha üresen hagyod nem lesz hozzárendelve egyetlen rendszerhez sem." %>
+          <%= f.input :system_id, :as => :select, :include_blank => true, :collection => System.find(:all), :label => t(:system), :hint => "Ha üresen hagyod nem lesz hozzárendelve egyetlen rendszerhez sem." %>
 
           <% if @article.outter_link.blank? %>
             <div class="outter_link">

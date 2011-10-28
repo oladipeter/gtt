@@ -5,7 +5,8 @@
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\medium\1309862697_comment.png" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\original\1309862697_comment.png" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\thumb\1309862697_comment.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_jixed_bar.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_jixed_bar.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/articles/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/articles/_form.html.erb" />
     </list>
     <ignored path="gtt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,28 +30,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="contacts.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/globomax/contacts.html.erb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/systems/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.1923075">
+            <state line="16" column="27" selection-start="434" selection-end="434" vertical-scroll-proportion="-10.461538">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact_us.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/globomax/contact_us.html.erb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/articles/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="23" selection-start="2251" selection-end="2251" vertical-scroll-proportion="-12.115385">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_jixed_bar.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_jixed_bar.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="31" selection-start="2845" selection-end="2845" vertical-scroll-proportion="0.6337522">
+            <state line="19" column="70" selection-start="950" selection-end="950" vertical-scroll-proportion="0.50089765">
               <folding />
             </state>
           </provider>
@@ -70,7 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/globomax/website_article.html.erb" />
         <option value="$PROJECT_DIR$/app/views/globomax/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/globomax.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/globomax_employees.html.erb" />
@@ -86,6 +77,7 @@
         <option value="$PROJECT_DIR$/public/stylesheets/jixedbar/default/jx.bar.css" />
         <option value="$PROJECT_DIR$/app/views/globomax/contact_us.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_jixed_bar.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/articles/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -144,46 +136,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gtt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gtt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gtt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gtt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -472,13 +424,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/offers/message.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/offers/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="111" selection-start="1708" selection-end="1708" vertical-scroll-proportion="-24.192308">
@@ -542,13 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/systems/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="112" selection-start="696" selection-end="696" vertical-scroll-proportion="0.54937166">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/backend.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="84" column="76" selection-start="2415" selection-end="2415" vertical-scroll-proportion="0.7253142">
@@ -563,23 +501,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/globomax/contacts.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_jixed_bar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.1923075">
+        <state line="45" column="13" selection-start="2453" selection-end="2453" vertical-scroll-proportion="0.26750448">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/globomax/contact_us.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="23" selection-start="2251" selection-end="2251" vertical-scroll-proportion="-12.115385">
+        <state line="74" column="23" selection-start="2251" selection-end="2251" vertical-scroll-proportion="0.55263156">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_jixed_bar.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/globomax/contacts.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="31" selection-start="2845" selection-end="2845" vertical-scroll-proportion="0.6337522">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.28245613">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/systems/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="27" selection-start="434" selection-end="434" vertical-scroll-proportion="-10.461538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="70" selection-start="950" selection-end="950" vertical-scroll-proportion="0.50089765">
           <folding />
         </state>
       </provider>
