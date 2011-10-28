@@ -67,10 +67,14 @@
           <span class="employee_name"><%= contact.name %></span><br/>
           <%= contact.classification %>
           <br/>
-          <%= contact.email %> | <%= contact.mobil %>
+          <%= contact.email %>
 
-          <% if contact.phone %>
-            vagy <%= contact.phone %>
+          <% if !contact.mobil.blank? %>
+            <%= "|" + " " + "#{contact.mobil}" %>
+          <% end %>
+
+          <% if !contact.phone.blank? %>
+            <%= "|" + " " + "#{contact.phone}" %>
           <% end %>
 
         </div>

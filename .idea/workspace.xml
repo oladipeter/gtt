@@ -5,7 +5,7 @@
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\medium\1309862697_comment.png" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\original\1309862697_comment.png" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\thumb\1309862697_comment.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/jixedbar/default/jx.bar.css" afterPath="$PROJECT_DIR$/public/stylesheets/jixedbar/default/jx.bar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/globomax/contact_us.html.erb" afterPath="$PROJECT_DIR$/app/views/globomax/contact_us.html.erb" />
     </list>
     <ignored path="gtt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +29,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="jx.bar.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/jixedbar/default/jx.bar.css">
+      <file leaf-file-name="contacts.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/globomax/contacts.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="0.60474306">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.1923075">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact_us.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/globomax/contact_us.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="23" selection-start="2251" selection-end="2251" vertical-scroll-proportion="0.55263156">
               <folding />
             </state>
           </provider>
@@ -58,7 +67,6 @@
         <option value="$PROJECT_DIR$/app/views/layouts/globomax.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/globomax_employees.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/globomax_index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/globomax/contact_us.html.erb" />
         <option value="$PROJECT_DIR$/app/views/offers/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/administrator/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_menu.html.erb" />
@@ -68,6 +76,7 @@
         <option value="$PROJECT_DIR$/app/views/globomax/products.html.erb" />
         <option value="$PROJECT_DIR$/app/views/systems/_form.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/jixedbar/default/jx.bar.css" />
+        <option value="$PROJECT_DIR$/app/views/globomax/contact_us.html.erb" />
       </list>
     </option>
   </component>
@@ -139,59 +148,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gtt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gtt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jixedbar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gtt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gtt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jixedbar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -210,6 +171,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="globomax" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -442,16 +407,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="1" width="1024" height="726" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31870428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.50921273" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3279396" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6847034" sideWeight="0.49078727" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35130805" sideWeight="0.67206043" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810867" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -498,20 +463,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/globomax/contact_us.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="31" selection-start="2227" selection-end="2227" vertical-scroll-proportion="-25.76923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/offers/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/offers/list.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -605,7 +556,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/jixedbar/default/jx.bar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="0.60474306">
+        <state line="9" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="0.25671142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/globomax/contacts.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.1923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/globomax/contact_us.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="23" selection-start="2251" selection-end="2251" vertical-scroll-proportion="0.55263156">
           <folding />
         </state>
       </provider>
