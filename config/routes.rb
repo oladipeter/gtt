@@ -1,5 +1,7 @@
 Gtt::Application.routes.draw do
 
+  match 'ugyfelhivo' => 'ugyfelhivo#index'
+
   get "offers/index"
   get "globomax/index"
   get "website/admin"
