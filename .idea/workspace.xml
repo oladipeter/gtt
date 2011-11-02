@@ -6,7 +6,15 @@
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\original\1309862697_comment.png" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\2\thumb\1309862697_comment.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/404.html" afterPath="$PROJECT_DIR$/public/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/advices_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/advices_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/frontend_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/frontend_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/globomax_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/globomax_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/advices/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/advices/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/articles/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/articles/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/globomax.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/globomax.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/globomax_employees.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/globomax_employees.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/globomax_index.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/globomax_index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_jixed_bar.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_jixed_bar.html.erb" />
     </list>
     <ignored path="gtt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,46 +38,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/systems/_form.html.erb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/globomax/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="27" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
+            <state line="124" column="19" selection-start="3837" selection-end="3837" vertical-scroll-proportion="-41.333332">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/articles/_form.html.erb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/advices/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="70" selection-start="950" selection-end="950" vertical-scroll-proportion="-12.192307">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ugyfelhivo_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/ugyfelhivo_controller.rb">
+      <file leaf-file-name="frontend_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/frontend_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
+            <state line="21" column="26" selection-start="601" selection-end="649" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <file leaf-file-name="advices_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/advices_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="14" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+            <state line="8" column="45" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="404.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/404.html">
+      <file leaf-file-name="globomax_index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/globomax_index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="24" selection-start="737" selection-end="737" vertical-scroll-proportion="0.4473684">
+            <state line="226" column="28" selection-start="9534" selection-end="9534" vertical-scroll-proportion="-44.96154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="globomax_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/globomax_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="26" selection-start="375" selection-end="375" vertical-scroll-proportion="0.34228188">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="globomax.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/globomax.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="122" column="34" selection-start="4009" selection-end="4009" vertical-scroll-proportion="-13.076923">
               <folding />
             </state>
           </provider>
@@ -89,22 +115,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/globomax_index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/offers/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/administrator/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_menu.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/start_mailer/welcome_email.text.erb" />
-        <option value="$PROJECT_DIR$/app/views/systems/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/backend.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/globomax/products.html.erb" />
         <option value="$PROJECT_DIR$/app/views/systems/_form.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/jixedbar/default/jx.bar.css" />
         <option value="$PROJECT_DIR$/app/views/globomax/contact_us.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_jixed_bar.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/articles/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/ugyfelhivo_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/public/404.html" />
+        <option value="$PROJECT_DIR$/app/views/layouts/globomax.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/globomax_employees.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/globomax_index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_jixed_bar.html.erb" />
+        <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
+        <option value="$PROJECT_DIR$/app/views/advices/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/articles/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/advices_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/frontend_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/globomax_controller.rb" />
       </list>
     </option>
   </component>
@@ -163,7 +189,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -387,6 +413,7 @@
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31870428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3279396" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36412174" sideWeight="0.67206043" order="0" side_tool="false" content_ui="tabs" />
@@ -396,7 +423,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3279396" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3285968" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -437,90 +463,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/start_mailer/welcome_email.text.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="37" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/systems/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="12" selection-start="30" selection-end="30" vertical-scroll-proportion="-0.65384614" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_support_menu.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_menu.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="658" selection-end="719" vertical-scroll-proportion="0.4473684" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/globomax/products.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="28" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.49298245" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/systems/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/backend.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="76" selection-start="2415" selection-end="2415" vertical-scroll-proportion="0.7253142" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/jixedbar/default/jx.bar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="0.25671142" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_jixed_bar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="13" selection-start="2453" selection-end="2453" vertical-scroll-proportion="0.26750448" />
+        <state line="11" column="100" selection-start="811" selection-end="811" vertical-scroll-proportion="0.27827647">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/globomax/contact_us.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/advices/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="23" selection-start="2251" selection-end="2251" vertical-scroll-proportion="0.55263156" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/globomax/contacts.html.erb">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.28245613" />
+        <state line="1538" column="1" selection-start="27538" selection-end="27538" vertical-scroll-proportion="0.7718121">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/systems/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/advices/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="27" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0" />
+        <state line="21" column="65" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.6409336">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/articles/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="70" selection-start="950" selection-end="950" vertical-scroll-proportion="-12.192307">
+        <state line="24" column="27" selection-start="1308" selection-end="1308" vertical-scroll-proportion="-4.769231">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ugyfelhivo_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/globomax/website_advice.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
+        <state line="36" column="19" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.67192984">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/frontend/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="14" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/404.html">
+    <entry file="file://$PROJECT_DIR$/app/views/frontend/show_advice.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="24" selection-start="737" selection-end="737" vertical-scroll-proportion="0.4473684">
+        <state line="8" column="6" selection-start="335" selection-end="335" vertical-scroll-proportion="0.23859648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/advices_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="45" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/globomax/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="19" selection-start="3837" selection-end="3837" vertical-scroll-proportion="-41.333332">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/advices/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="41" selection-start="82" selection-end="82" vertical-scroll-proportion="0.17894737">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/advices/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/globomax_index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="226" column="28" selection-start="9534" selection-end="9534" vertical-scroll-proportion="-44.96154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/globomax.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="34" selection-start="4009" selection-end="4009" vertical-scroll-proportion="-13.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/frontend_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="26" selection-start="601" selection-end="649" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/globomax_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="26" selection-start="375" selection-end="375" vertical-scroll-proportion="0.34228188">
           <folding />
         </state>
       </provider>

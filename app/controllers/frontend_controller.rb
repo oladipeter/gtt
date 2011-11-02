@@ -19,7 +19,7 @@ class FrontendController < ApplicationController
 
     # Advices
 
-    @advices = Advice.find(:all, :limit => 3)
+    @advices = Advice.find(:all, :limit => 3, :order => "created_at DESC")
 
     # System lists
 

@@ -5,7 +5,7 @@ class AdvicesController < ApplicationController
   layout "contact" # Nem csinaltam uj layoutot, baki
 
   def index
-    @advices = Advice.all
+    @advices = Advice.all(:order => "created_at DESC")
 
     respond_to do |format|
       format.html # index.html.erb

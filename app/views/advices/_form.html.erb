@@ -19,6 +19,7 @@
           <b><%= "Tartalom" %></b><br/><br/>
           <%= f.input :content, :label => false, :as => :ckeditor, :input_html => { :width => "98%" } %>
           <%= f.input :system_id, :as => :select, :include_blank => false, :collection => System.find(:all), :label => t(:system), :hint => "Ha üresen hagyod nem lesz hozzárendelve egyetlen rendszerhez sem." %>
+          <%= f.input :created_at, :as => :string, :label => "Hír dátuma :" %>
     <% end %>
 
     <%= f.commit_button t(:ok) %>
