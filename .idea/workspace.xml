@@ -44,7 +44,7 @@
       <file leaf-file-name="website.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/website.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="15" selection-start="754" selection-end="754" vertical-scroll-proportion="0.17714286">
+            <state line="48" column="16" selection-start="755" selection-end="755" vertical-scroll-proportion="0.17714286">
               <folding />
             </state>
           </provider>
@@ -580,7 +580,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/website.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="15" selection-start="754" selection-end="754" vertical-scroll-proportion="0.17714286">
+        <state line="48" column="16" selection-start="755" selection-end="755" vertical-scroll-proportion="0.17714286">
           <folding />
         </state>
       </provider>
