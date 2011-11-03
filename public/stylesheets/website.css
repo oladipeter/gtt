@@ -46,7 +46,7 @@ select {
 }
 
 .read_more {
-    margin-top: 15px;
+    margin-top: 11px;
 }
 
 /* LI FORMAT */
@@ -90,6 +90,11 @@ a, a:hover, a:link, a:visited {
   color: #333;
   padding-top: 3px;
   text-align: center;
+}
+
+.simple .read_more {
+    position: relative;
+    top: -5px;
 }
 
 /* BLOCK (BACKGROUNDS) ------------------------------------------------------ */
@@ -318,7 +323,8 @@ ul.services a {
 
 #block_6 .text a {
     display: inline;
-    margin-right: 20px;
+    font-weight: bold;
+    border-bottom: 1px dotted #333;
 }
 
 #block_6 .right_text {
