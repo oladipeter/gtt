@@ -24,6 +24,8 @@ hu:
     pm: "du."
 
   datetime:
+    formats:
+      default: "%Y.%m.%d. | %H:%M"
     distance_in_words:
       half_a_minute: 'fél perc'
       less_than_x_seconds:
