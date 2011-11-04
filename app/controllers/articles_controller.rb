@@ -5,12 +5,7 @@ class ArticlesController < ApplicationController
   layout "contact"
 
   def index
-    @articles = Article.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @articles }
-    end
+    @articles = Article.all(:order => "created_at DESC")
   end
 
   # GET /articles/1
@@ -45,7 +40,7 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(params[:article])
       if @article.save
-         redirect_to articles_path, :notice => 'A cikk sikeresen létrejött!'
+         redirect_to articles_list_path, :notice => 'A cikk sikeresen létrejött!'
       else
         render :action => "new"
       end
@@ -57,7 +52,7 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
 
     if @article.update_attributes(params[:article])
-        redirect_to articles_path, :notice => 'A cikk sikeresen módosítva lett!'
+        redirect_to articles_list_path, :notice => 'A cikk sikeresen módosítva lett!'
       else
         render :action => "edit"
       end
@@ -69,10 +64,20 @@ class ArticlesController < ApplicationController
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(articles_url) }
-      format.xml  { head :ok }
-    end
+    redirect_to articles_list_path, :notice => 'A cikk sikeresen törölve lett!'
   end
+
+  def ordered_list
+   if params[:sorted_position]
+     position = params[:sorted_position]
+     if position == "all"
+       @articles = Article.all(:order => "created_at DESC")
+     else
+       @articles = Article.find(:all, :conditions => [ "position = ?", position], :order => "created_at DESC")
+     end
+   else
+     @articles = Article.all(:order => "created_at DESC")
+   end
+  end
+
 end

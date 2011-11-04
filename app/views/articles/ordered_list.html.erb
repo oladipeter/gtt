@@ -1,8 +1,8 @@
 <div id="article">
 <h2>Cikkek listája</h2>
 
-  <%= form_tag articles_path, :remote => true do %>
-      <%= select("post", "position", [["Összes cikk", "all"], ["Rejtett cikk", "0"], ["Friss cikk", "1"], ["Cikk kép nélkül", "2"], ["Cikk kis képpel a bal oldalon", "3"], ["Cikk kép nélkül a jobb oldalon", "4"]], {:prompt => "Cikkek rendezése..."}) %>
+  <%= form_tag articles_list_path do %>
+      <%= select_tag(:sorted_position, options_for_select([["Összes cikk", "all"], ["Rejtett cikk", "0"], ["Friss cikk", "1"], ["Cikk kép nélkül", "2"], ["Cikk kis képpel a bal oldalon", "3"], ["Cikk kép nélkül a jobb oldalon", "4"]])) %>
       <%= submit_tag "Rendezz!" %>
   <% end %>
 

@@ -19,6 +19,7 @@ Gtt::Application.routes.draw do
   get "support/index"
 
   match 'supmessages/search' => 'supmessages#search', :as => "search"
+  match 'articles/ordered_list' => 'articles#ordered_list', :as => "articles_list"
   resources :supmessages
   resources :advices
   resources :systems
