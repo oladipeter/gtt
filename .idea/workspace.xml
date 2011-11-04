@@ -24,6 +24,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/articles/index.html.erb" afterPath="$PROJECT_DIR$/app/views/articles/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/contact.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/contact.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/frontend.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/frontend.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/globomax_index.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/globomax_index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_menu.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_menu.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
@@ -58,10 +59,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ordered_list.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ordered_list.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/articles/ordered_list.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="11" selection-start="30" selection-end="30" vertical-scroll-proportion="0.019165726">
+            <state line="1" column="11" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_jixed_bar.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_jixed_bar.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="74" selection-start="1303" selection-end="1303" vertical-scroll-proportion="-13.730769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="globomax_index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/globomax_index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="77" column="67" selection-start="2858" selection-end="2858" vertical-scroll-proportion="0.6318235">
               <folding />
             </state>
           </provider>
@@ -139,7 +158,6 @@
         <option value="$PROJECT_DIR$/app/controllers/advices_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/frontend_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/globomax_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/globomax_index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/globomax/index.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/website.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
@@ -151,6 +169,7 @@
         <option value="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/articles/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/articles/ordered_list.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/globomax_index.html.erb" />
       </list>
     </option>
   </component>
@@ -249,7 +268,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="articles" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -537,20 +556,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/backend.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/frontend/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -644,7 +649,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/articles/ordered_list.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="11" selection-start="30" selection-end="30" vertical-scroll-proportion="0.019165726">
+        <state line="1" column="11" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_jixed_bar.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="74" selection-start="1303" selection-end="1303" vertical-scroll-proportion="-13.730769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/globomax_index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="67" selection-start="2858" selection-end="2858" vertical-scroll-proportion="0.6318235">
           <folding />
         </state>
       </provider>
