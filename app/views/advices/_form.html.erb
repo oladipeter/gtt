@@ -14,12 +14,13 @@
 
     <%= f.inputs :name => "Hír adatai :" do %>
           <%= f.input :title, :label => t(:title) %>
-          <b><%= "Rövid leírás" %></b><br/><br/>
-          <%= f.input :short_description, :label => false, :as => :ckeditor, :input_html => { :width => "98%" } %>
-          <b><%= "Tartalom" %></b><br/><br/>
-          <%= f.input :content, :label => false, :as => :ckeditor, :input_html => { :width => "98%" } %>
           <%= f.input :system_id, :as => :select, :include_blank => false, :collection => System.find(:all), :label => t(:system), :hint => "Ha üresen hagyod nem lesz hozzárendelve egyetlen rendszerhez sem." %>
-          <%= f.input :created_at, :as => :string, :label => "Hír dátuma :" %>
+          <b><%= "Rövid leírás" %></b><br/><br/>
+          <%= f.input :short_description, :label => false, :as => :ckeditor, :input_html => { :width => "98%", :height => "400px" } %>
+          <b><%= "Tartalom" %></b><br/><br/>
+          <%= f.input :content, :label => false, :as => :ckeditor, :input_html => { :width => "98%", :height => "400px" } %>
+          <%= f.input :created_at, :as => :datetime, :label => "Hír dátuma :" %>
+
     <% end %>
 
     <%= f.commit_button t(:ok) %>

@@ -13,34 +13,18 @@
     <% end %>
 
     <%= f.inputs :name => "Cikk adatai :" do %>
-          <%= f.input :position, :as => :select, :include_blank => false, :collection => [["Rejtett cikk, nem látszik a főoldalon!", 0], ["Friss cikk", 1], ["Cikk kép nélkül", 2], ["Cikk kis képpel a bal oldalon", 3], ["Cikk kép nélkül a jobb oldalon", 4]] %>
+          <%= f.input :position, :label => "Pozíció", :as => :select, :include_blank => false, :collection => [["Rejtett cikk, nem látszik a főoldalon!", 0], ["Friss cikk", 1], ["Cikk kép nélkül", 2], ["Cikk kis képpel a bal oldalon", 3], ["Cikk kép nélkül a jobb oldalon", 4]] %>
           <%= f.input :title, :label => t(:title) %>
           <%= f.input :short_description, :label => t(:short_description) %>
-          <b><%= "Teljes leírás" %></b><br/><br/>
-          <%= f.input :content, :label => false, :as => :ckeditor, :input_html => { :width => "98%" } %>
           <%= f.input :system_id, :as => :select, :include_blank => true, :collection => System.find(:all), :label => t(:system), :hint => "Ha üresen hagyod nem lesz hozzárendelve egyetlen rendszerhez sem." %>
-
-          <% if @article.outter_link.blank? %>
-            <div class="outter_link">
-              <strong>Jelenleg nincs a cikk külső URL-hez rendelve! Kattints ide és megathatsz egyet!</strong><br/>
-              Ebben az esetben a globomax.hu oldalon a <b><u>"<%= @article.title %>"</u></b> cikk esetében a bővebben gombra kattintva át fog irányítani a megadott URL-re.
-              <br/><br/>
-              <%= f.input :outter_link, :label => "Külső URL : " %>
-            </div>
-          <% else %>
-            <div class="outter_link">
-              A következő link van megadva!
-              <br/><br/>
-              <%= f.input :outter_link, :label => "Külső URL : " %>
-            </div>
-          <% end %>
-
-          <br/>
-          <%= f.input :created_at, :as => :datetime, :label => "Cikk dátuma :" %>
-
+          <%= f.input :outter_link, :label => "Külső URL : ", :hint => "Ha megadsz URL-t akkor a weboldalon a bővebben gombra kattintva át fog irányítani a megadott URL-re. Ha nem, akkor új oldalon megjelenik a cikk tartalma!" %>
           <%= f.input :image, :label => "Fénykép felröltése", :as => :file %>
+          <br/>
+          <b><%= "Teljes leírás" %></b><br/><br/>
+          <%= f.input :content, :label => false, :as => :ckeditor, :input_html => { :width => "98%", :height => '400px' } %>
+          <%= f.input :created_at, :as => :datetime, :label => "Létrehozás dátuma :" %>
+          <%= f.commit_button t(:ok) %>
     <% end %>
 
-    <%= f.commit_button t(:ok) %>
     <br/>
 <% end %>
