@@ -2,7 +2,7 @@
 <h2>Cikkek listája</h2>
 
   <%= form_tag articles_list_path do %>
-      <%= select_tag(:sorted_position, options_for_select([["Összes cikk", "all"], ["Rejtett cikk", "0"], ["Friss cikk", "1"], ["Cikk kép nélkül", "2"], ["Cikk kis képpel a bal oldalon", "3"], ["Cikk kép nélkül a jobb oldalon", "4"]])) %>
+      <%= select_tag(:sorted_position, options_for_select([["Összes cikk", "all"], ["Rejtett cikk", "0"], ["Friss cikk", "1"], ["Cikk kép nélkül", "2"], ["Cikk kis képpel a bal oldalon", "3"], ["Cikk kép nélkül a jobb oldalon", "4"], ["Archív cikk", "5"]])) %>
       <%= submit_tag "Rendezz!" %>
   <% end %>
 
@@ -30,7 +30,7 @@
               <% elsif article.position == "4"  %>
                   <div class="align_center"><%= link_to "#{article.position}", "#", :class => "someClass", :title => "Cikk kép nélkül a jobb oldalon" %></div>
               <% elsif article.position == "5"  %>
-                  <div class="align_center"><%= link_to "#{article.position}", "#", :class => "someClass", :title => "Archív cikk" %></div>
+                  <div class="align_center"><%= link_to "Archív!", "#", :class => "someClass", :title => "Archív cikk" %></div>
               <% else %>
                   <div class="align_center"><%= link_to "RC!", "#", :class => "someClass", :title => "Rejtett cikk" %></div>
               <% end %>
@@ -47,7 +47,7 @@
               <% elsif article.position == "4"  %>
                   <div class="align_center"><%= link_to "#{article.position}", "#", :class => "someClass", :title => "Cikk kép nélkül a jobb oldalon" %></div>
               <% elsif article.position == "5"  %>
-                  <div class="align_center"><%= link_to "#{article.position}", "#", :class => "someClass", :title => "Archív cikk" %></div>
+                  <div class="align_center"><%= link_to "Archív!", "#", :class => "someClass", :title => "Archív cikk" %></div>
               <% else %>
                   <div class="align_center"><%= link_to "RC!", "#", :class => "someClass", :title => "Rejtett cikk" %></div>
               <% end %>

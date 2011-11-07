@@ -8,7 +8,7 @@ class GlobomaxController < ApplicationController
 
   def content_init
     @about_us = Aboutus.find(1)
-    @advices = Advice.find(:all, :limit => 3, :order => "created_at DESC") # Hírek
+    @advices = Advice.find(:all, :limit => 3, :order => "created_at DESC") # Közlemények
     @articles = Article.find(:all, :order => "created_at DESC") # Cikkek
     @commercial = Commercial.find(1) # Reklámok
   end
