@@ -122,6 +122,22 @@
 
 <!-- POSITION 5 -->
 
+<% content_for :position_5 do %>
+
+    <% @articles.each do |article| %>
+        <% if article.position == "5" %>
+            <% if article.outter_link.blank? %>
+                <%= link_to "#{article.title}", website_article_path(article) %>
+            <% else %>
+                <%= link_to "#{article.title}", "#{article.outter_link}", :target => "_BLANK" %>
+            <% end %>
+        <% end %>
+    <% end %>
+
+<% end %>
+
+<!-- ADVICES - HÍREK -->
+
 <% content_for :advices do %>
 
   <%= raw @commercial.content %><br/>

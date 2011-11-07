@@ -4,14 +4,16 @@
   <li><%= link_to "Kapcsolattartók", contacts_path %></li>
   <li><%= link_to "Ügyfelek", client_path %></li><br/>
 
-  <li><%= link_to "Rólunk", edit_about_us_path(1)%></li>
+  <li><%= link_to "Cégünkről", edit_about_us_path(1)%></li>
   <li><%= link_to "Elérhetőségünk", edit_contact_us_path(1) %></li>
-  <li><%= link_to "Referenciák",edit_reference_path(1) %></li>
-  <li><%= link_to "Hírek", advices_path %></li>
-  <li><%= link_to "Cikkek", articles_list_path %></li>
+  <li><%= link_to "Termékek", systems_path %></li>
+  <li><%= link_to "Referenciák",edit_reference_path(1) %></li><br/>
+
+  <li><b><%= link_to "Cikkek", articles_list_path %></b></li>
+  <li><b><%= link_to "Hírek", advices_path %></b></li>
   <li><%= link_to "Reklámok", edit_commercial_path(1) %></li>
-  <li><%= link_to "GY.I.K", faqs_path %></li>
-  <li><%= link_to "Termékek", systems_path %></li><br/>
+  <li><%= link_to "GY.I.K", faqs_path %></li><br/>
+
 
   <li><%= link_to "Hibabejelentések", support_messages_list_path %></li>
   <li><%= link_to "Árajánlatok", list_offers_path %></li>

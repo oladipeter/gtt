@@ -254,7 +254,7 @@ a, a:hover, a:link, a:visited {
 }
 
 #block5_image_right {
-    width: 220px;
+    width: 240px;
     height: 200px;
     background-image: url('../images/globomax/block_5_background_image_right.jpg');
     background-repeat: no-repeat;
@@ -324,7 +324,7 @@ ul.services a {
 #block_6 .text a {
     display: inline;
     font-weight: bold;
-    border-bottom: 1px dotted #333;
+    border-bottom: 1px dotted #00688F;
 }
 
 #block_6 .right_text {
@@ -979,4 +979,31 @@ span.delete {
 #employee_list b {
     position: relative;
     top: -5px;
+}
+
+/* ARCHIV */
+#archiv ul {
+    padding: 10px 0px 10px 0px;
+}
+
+#archiv ul li {
+  list-style-type: none;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+#archiv .text {
+    color: #00688F;
+    font-size: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 10px;
+}
+
+#archiv h2 {
+    color: #666;
+}
+
+#archiv .text a:hover {
+    color: #EB8B1D;
 }

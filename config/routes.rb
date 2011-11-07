@@ -20,6 +20,8 @@ Gtt::Application.routes.draw do
 
   match 'supmessages/search' => 'supmessages#search', :as => "search"
   match 'articles/ordered_list' => 'articles#ordered_list', :as => "articles_list"
+  match 'hirarchivum' => 'archiv#index', :as => "archiv_article"
+
   resources :supmessages
   resources :advices
   resources :systems

@@ -50,6 +50,4 @@ class GlobomaxController < ApplicationController
     @reference = Reference.find(1)
   end
 
-
-
 end

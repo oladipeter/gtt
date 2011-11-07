@@ -29,6 +29,8 @@
                   <div class="align_center"><%= link_to "#{article.position}", "#", :class => "someClass", :title => "Cikk kis képpel a bal oldalon" %></div>
               <% elsif article.position == "4"  %>
                   <div class="align_center"><%= link_to "#{article.position}", "#", :class => "someClass", :title => "Cikk kép nélkül a jobb oldalon" %></div>
+              <% elsif article.position == "5"  %>
+                  <div class="align_center"><%= link_to "#{article.position}", "#", :class => "someClass", :title => "Archív cikk" %></div>
               <% else %>
                   <div class="align_center"><%= link_to "RC!", "#", :class => "someClass", :title => "Rejtett cikk" %></div>
               <% end %>
@@ -44,6 +46,8 @@
                   <div class="align_center"><%= link_to "#{article.position}", "#", :class => "someClass", :title => "Cikk kis képpel a bal oldalon" %></div>
               <% elsif article.position == "4"  %>
                   <div class="align_center"><%= link_to "#{article.position}", "#", :class => "someClass", :title => "Cikk kép nélkül a jobb oldalon" %></div>
+              <% elsif article.position == "5"  %>
+                  <div class="align_center"><%= link_to "#{article.position}", "#", :class => "someClass", :title => "Archív cikk" %></div>
               <% else %>
                   <div class="align_center"><%= link_to "RC!", "#", :class => "someClass", :title => "Rejtett cikk" %></div>
               <% end %>
