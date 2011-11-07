@@ -17,6 +17,7 @@
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\6\medium\sony_brc_300.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\6\original\sony_brc_300.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\gtt\public\system\images\6\thumb\sony_brc_300.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/archiv_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/archiv_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/archiv/index.html.erb" afterPath="$PROJECT_DIR$/app/views/archiv/index.html.erb" />
     </list>
     <ignored path="gtt.iws" />
@@ -44,7 +45,16 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/archiv/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="20" selection-start="150" selection-end="150" vertical-scroll-proportion="0.20877193">
+            <state line="4" column="14" selection-start="74" selection-end="74" vertical-scroll-proportion="0.08947369">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/globomax/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="28" selection-start="122" selection-end="1287" vertical-scroll-proportion="-19.307692">
               <folding />
             </state>
           </provider>
@@ -53,25 +63,7 @@
       <file leaf-file-name="globomax_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/globomax_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="86" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/advices/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="25" selection-start="758" selection-end="758" vertical-scroll-proportion="-11.115385">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/advices/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="16" selection-start="51" selection-end="51" vertical-scroll-proportion="-1.3076923">
+            <state line="11" column="71" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,10 +78,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/advices/index.html.erb">
+      <file leaf-file-name="archiv_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/archiv_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="76" selection-end="76" vertical-scroll-proportion="-3.2692308">
+            <state line="5" column="4" selection-start="85" selection-end="99" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,7 +105,6 @@
         <option value="$PROJECT_DIR$/app/views/shared/_website_menu.html.erb" />
         <option value="$PROJECT_DIR$/app/views/articles/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/globomax_index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/archiv_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/articles/ordered_list.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/website.css" />
@@ -124,6 +115,7 @@
         <option value="$PROJECT_DIR$/app/controllers/globomax_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/advices/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/advices/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/archiv_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/archiv/index.html.erb" />
       </list>
     </option>
@@ -202,6 +194,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gtt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gtt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="globomax" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -564,13 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/archiv_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="42" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_menu.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="46" selection-start="557" selection-end="557" vertical-scroll-proportion="-7.8461537">
@@ -581,20 +588,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/website_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/globomax_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="86" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/globomax/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="25" selection-start="4413" selection-end="4413" vertical-scroll-proportion="0.3736842">
           <folding />
         </state>
       </provider>
@@ -620,6 +613,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/globomax/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="28" selection-start="122" selection-end="1287" vertical-scroll-proportion="-19.307692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/globomax_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="71" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/advices/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="76" selection-end="76" vertical-scroll-proportion="0.1491228">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/website.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="997" column="32" selection-start="16626" selection-end="16626" vertical-scroll-proportion="-22.76">
@@ -627,16 +641,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/advices/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/archiv_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="76" selection-end="76" vertical-scroll-proportion="-3.2692308">
+        <state line="5" column="4" selection-start="85" selection-end="99" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/archiv/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="20" selection-start="150" selection-end="150" vertical-scroll-proportion="0.20877193">
+        <state line="4" column="14" selection-start="74" selection-end="74" vertical-scroll-proportion="0.08947369">
           <folding />
         </state>
       </provider>
