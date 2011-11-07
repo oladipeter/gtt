@@ -2,11 +2,16 @@
 
 <div id="archiv">
 
-  <% @articles.each do |article| %>
-      <h2><%= article.title %></h2><br/>
-      <div class="text">
-          <%= link_to "#{article.short_description}", website_article_path(article) %>
-      </div>
+  <% if @articles != [] %>
+      <% @articles.each do |article| %>
+          <h2><%= article.title %></h2><br/>
+
+          <div class="text">
+            <%= link_to "#{article.short_description}", website_article_path(article) %>
+          </div>
+      <% end %>
+  <% else %>
+    Jelenleg nincs egyetlen cikk sem az archívumban!
   <% end %>
 
 </div>
