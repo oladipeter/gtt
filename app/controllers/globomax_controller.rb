@@ -11,6 +11,12 @@ class GlobomaxController < ApplicationController
     @advices = Advice.find(:all, :limit => 3, :order => "created_at DESC") # Közlemények
     @articles = Article.find(:all, :order => "created_at DESC") # Cikkek
     @commercial = Commercial.find(1) # Reklámok
+
+    # Current
+    @current_datetime = Time.now.utc + 1.hours
+    # Five years
+    @current_plus_five_years = Time.now.utc + 5.years
+
   end
 
   def index

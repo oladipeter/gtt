@@ -7,33 +7,59 @@
 
 <% content_for :position_1 do %>
 
-  <!-- ARTICLE POS 1 -->
+    <!-- ARTICLE POS 1 -->
 
-  <% @articles.each do |article| %>
-    <% if article.position == "1" %>
+    <% @articles.each do |article| %>
 
-            <div> <!-- START NEW ITEM --------------------------------------------------------------------------->
+        <% if article.position == "1" %>
 
-              <div class="item">
-                <%= image_tag article.image.url(:medium) %>
-                <h3><%= article.title %></h3>
+            <% if article.start_date.blank? %>
+                <!-- If blank then set the current date -->
+                <% @start_date = @current_datetime %>
+            <% else %>
+                <!-- Set by the user -->
+               <% @start_date = article.start_date %>
+            <% end %>
 
-                <div class="article_date">Létrehozva : <%= article.created_at.strftime("%F") %></div>
-                <p>
-                  <%= raw truncate("#{article.short_description}", :length => 220, :omission => "...") %>
-                </p>
+            <% if article.end_date.blank? %>
+                <!-- If blank then set the current date + 1 year -->
+                <% @end_date = @current_datetime + 1.years %>
+            <% else %>
+                <% @end_date = article.end_date %>
+            <% end %>
 
-                <% if article.outter_link.blank? %>
-                   <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
-                <% else %>
-                   <div class="read_more"><%= link_to "Bővebben", "#{article.outter_link}", :target => "_BLANK" %></div>
+            <!-------------------------- if start_date and end_date !All not blank! then show-------------------------->
+            <!--------------------------------------------------------------------------------------------------------->
+
+            <% if @start_date && @end_date %>
+
+                <% if (@start_date <= @current_datetime) && (@end_date >= @current_datetime)  %>
+                  <div>
+
+                      <div class="item">
+                        <%= image_tag article.image.url(:medium) %>
+                        <h3><%= article.title %></h3>
+
+                        <div class="article_date">
+                          Létrehozva : <%= article.created_at.strftime("%F") %>
+                        </div>
+                        <p>
+                          <%= raw truncate("#{article.short_description}", :length => 220, :omission => "...") %>
+                        </p>
+                        <% if article.outter_link.blank? %>
+                            <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
+                        <% else %>
+                            <div class="read_more"><%= link_to "Bővebben", "#{article.outter_link}", :target => "_BLANK" %></div>
+                        <% end %>
+
+                      </div>
+
+                    </div>
                 <% end %>
+            <% end %>
 
-              </div>
+        <% end %>
 
-            </div> <!-- END NEW ITEM ---------------------------------------------------------------------------->
-
-    <% end %>
   <% end %>
 
   <!-- ARTICLE POS 1 END -->
@@ -46,30 +72,54 @@
 
     <% @articles.each do |article| %>
         <% if article.position == "2" %>
-            <div class="simple">
-              <h2><%= article.title %></h2>
 
-              <div class="span-2 append-1">
-                <div class="month">
-                  <%= article.created_at.strftime("%b") %>
-                </div>
-                <div class="day">
-                  <%= article.created_at.strftime("%d") %>
-                </div>
-              </div>
-              <div class="span-13 last">
-                <div class="text">
-                  <%= raw truncate("#{article.short_description}", :length => 200, :omission => "...") %>
-                </div>
-              </div>
-              <div class="span-3 prepend-13">
-                <% if article.outter_link.blank? %>
-                    <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
-                <% else %>
-                    <div class="read_more"><%= link_to "Bővebben", "#{article.outter_link}", :target => "_BLANK" %></div>
+        <% if article.start_date.blank? %>
+                <!-- If blank then set the current date -->
+                <% @start_date = @current_datetime %>
+            <% else %>
+                <!-- Set by the user -->
+               <% @start_date = article.start_date %>
+            <% end %>
+
+            <% if article.end_date.blank? %>
+                <!-- If blank then set the current date + 1 year -->
+                <% @end_date = @current_datetime + 1.years %>
+            <% else %>
+                <% @end_date = article.end_date %>
+            <% end %>
+
+            <!-------------------------- if start_date and end_date !All not blank! then show-------------------------->
+            <!--------------------------------------------------------------------------------------------------------->
+
+            <% if @start_date && @end_date %>
+
+                <% if (@start_date <= @current_datetime) && (@end_date >= @current_datetime) %>
+                    <div class="simple">
+                      <h2><%= article.title %></h2>
+
+                      <div class="span-2 append-1">
+                        <div class="month">
+                          <%= article.created_at.strftime("%b") %>
+                        </div>
+                        <div class="day">
+                          <%= article.created_at.strftime("%d") %>
+                        </div>
+                      </div>
+                      <div class="span-13 last">
+                        <div class="text">
+                          <%= raw truncate("#{article.short_description}", :length => 200, :omission => "...") %>
+                        </div>
+                      </div>
+                      <div class="span-3 prepend-13">
+                        <% if article.outter_link.blank? %>
+                            <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
+                        <% else %>
+                            <div class="read_more"><%= link_to "Bővebben", "#{article.outter_link}", :target => "_BLANK" %></div>
+                        <% end %>
+                      </div>
+                    </div>
                 <% end %>
-              </div>
-            </div>
+            <% end %>
         <% end %>
     <% end %>
 
@@ -79,22 +129,47 @@
 
 <% content_for :position_3 do %>
 
-  <% @articles.each do |article| %>
-    <% if article.position == "3" %>
-      <div class="position_3">
-      <h2><%= article.title %></h2>
-      <div class="pos3_short_description">
-        <%= image_tag article.image.url(:thumb) %>
-        <%= raw truncate("#{article.short_description}", :length => 250, :omission => "...") %>
-      </div>
-        <% if article.outter_link.blank? %>
-            <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
-        <% else %>
-            <div class="read_more"><%= link_to "Bővebben", "#{article.outter_link}", :target => "_BLANK" %></div>
+    <% @articles.each do |article| %>
+        <% if article.position == "3" %>
+
+            <% if article.start_date.blank? %>
+                <!-- If blank then set the current date -->
+                <% @start_date = @current_datetime %>
+            <% else %>
+                <!-- Set by the user -->
+                <% @start_date = article.start_date %>
+            <% end %>
+
+            <% if article.end_date.blank? %>
+                <!-- If blank then set the current date + 1 year -->
+                <% @end_date = @current_datetime + 1.years %>
+            <% else %>
+                <% @end_date = article.end_date %>
+            <% end %>
+
+            <!-------------------------- if start_date and end_date !All not blank! then show-------------------------->
+            <!--------------------------------------------------------------------------------------------------------->
+
+            <% if @start_date && @end_date %>
+
+                <% if (@start_date <= @current_datetime) && (@end_date >= @current_datetime) %>
+                    <div class="position_3">
+                      <h2><%= article.title %></h2>
+
+                      <div class="pos3_short_description">
+                        <%= image_tag article.image.url(:thumb) %>
+                        <%= raw truncate("#{article.short_description}", :length => 250, :omission => "...") %>
+                      </div>
+                      <% if article.outter_link.blank? %>
+                          <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
+                      <% else %>
+                          <div class="read_more"><%= link_to "Bővebben", "#{article.outter_link}", :target => "_BLANK" %></div>
+                      <% end %>
+                    </div>
+                <% end %>
+            <% end %>
         <% end %>
-      </div>
     <% end %>
-  <% end %>
 
 <% end %>
 
@@ -102,21 +177,46 @@
 
 <% content_for :position_4 do %>
 
-  <% @articles.each do |article| %>
-    <% if article.position == "4" %>
-      <div class="position_4">
-      <h2><%= article.title %></h2>
-      <div class="pos4_short_description">
-        <%= raw truncate("#{article.short_description}", :length => 200, :omission => "...") %>
-      </div>
-        <% if article.outter_link.blank? %>
-            <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
-        <% else %>
-            <div class="read_more"><%= link_to "Bővebben", "#{article.outter_link}", :target => "_BLANK" %></div>
+    <% @articles.each do |article| %>
+        <% if article.position == "4" %>
+
+            <% if article.start_date.blank? %>
+                <!-- If blank then set the current date -->
+                <% @start_date = @current_datetime %>
+            <% else %>
+                <!-- Set by the user -->
+                <% @start_date = article.start_date %>
+            <% end %>
+
+            <% if article.end_date.blank? %>
+                <!-- If blank then set the current date + 1 year -->
+                <% @end_date = @current_datetime + 1.years %>
+            <% else %>
+                <% @end_date = article.end_date %>
+            <% end %>
+
+            <!-------------------------- if start_date and end_date !All not blank! then show-------------------------->
+            <!--------------------------------------------------------------------------------------------------------->
+
+            <% if @start_date && @end_date %>
+
+                <% if (@start_date <= @current_datetime) && (@end_date >= @current_datetime) %>
+                    <div class="position_4">
+                      <h2><%= article.title %></h2>
+
+                      <div class="pos4_short_description">
+                        <%= raw truncate("#{article.short_description}", :length => 200, :omission => "...") %>
+                      </div>
+                      <% if article.outter_link.blank? %>
+                          <div class="read_more"><%= link_to "Bővebben", website_article_path(article) %></div>
+                      <% else %>
+                          <div class="read_more"><%= link_to "Bővebben", "#{article.outter_link}", :target => "_BLANK" %></div>
+                      <% end %>
+                    </div>
+                <% end %>
+            <% end %>
         <% end %>
-      </div>
     <% end %>
-  <% end %>
 
 <% end %>
 

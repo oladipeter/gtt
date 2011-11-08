@@ -18,11 +18,15 @@
           <%= f.input :short_description, :label => t(:short_description) %>
           <%= f.input :system_id, :as => :select, :include_blank => true, :collection => System.find(:all), :label => t(:system), :hint => "Ha üresen hagyod nem lesz hozzárendelve egyetlen rendszerhez sem." %>
           <%= f.input :outter_link, :label => "Külső URL : ", :hint => "Ha megadsz URL-t akkor a weboldalon a bővebben gombra kattintva át fog irányítani a megadott URL-re. Ha nem, akkor új oldalon megjelenik a cikk tartalma!" %>
-          <%= f.input :image, :label => "Fénykép felröltése", :as => :file %>
+          <%= f.input :image, :label => "Fénykép feltöltése", :as => :file %>
           <br/>
           <b><%= "Teljes leírás" %></b><br/><br/>
           <%= f.input :content, :label => false, :as => :ckeditor, :input_html => { :width => "98%", :height => '400px' } %>
+          <b>Aktuális dátum : <%= Time.now.utc + 1.hours %></b>
           <%= f.input :created_at, :as => :datetime, :label => "Létrehozás dátuma :" %>
+          <%= f.input :start_date, :as => :datetime, :label => "Publikus ettől :" %>
+          <%= f.input :end_date, :as => :datetime, :label => "Publikus eddig :" %>
+
           <%= f.commit_button t(:ok) %>
     <% end %>
 
