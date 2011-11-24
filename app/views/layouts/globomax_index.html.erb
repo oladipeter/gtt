@@ -8,6 +8,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
   <script src="http://cdn.jquerytools.org/1.2.6/jquery.tools.min.js"></script>
   <%= javascript_include_tag "jixedbar/jquery.jixedbar.min" %>
+  <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Kelly+Slab|Open+Sans+Condensed:300', :rel => 'stylesheet', :type => "text/css" %>
   <%= csrf_meta_tag %>
 </head>
 <body>
@@ -140,7 +141,7 @@
             <ul class="services">
               <li><%= link_to"Regisztráció", "http://onkormanyzati.tv/index.php?id=44" %></li>
               <li><%= link_to"Önkormányzatoknak", "http://onkormanyzati.tv/index.php?id=7" %></li>
-              <li><%= link_to"Szavazás", "http://onkormanyzati.tv/index.php?id=6" %></li>
+              <li><%= link_to"6 indok hogy...", "http://onkormanyzati.tv/index.php?id=44" %></li>
             </ul>
           </div>
         </div>
@@ -187,7 +188,7 @@
 
             <div class="span-8">
               <div class="text">
-                   <h3><%= link_to "Elektronikus Döntéstámogató Rendszer", "http://edtr.globomax.hu" %></h3>
+                   <h3><%= link_to "Elektronikus Döntéstámogató Rendszer", "http://edtr.hu" %></h3>
                    <%= image_tag("globomax/product_edtr.jpg") %>
                    Ha mindezt hagyományos papír alapon szeretnénk adminisztrálni, az évek múlásával egyre nagyobb problémát fog okozni a "papírrengeteg". Nehézkes lesz előkeresni egy korábbi döntést...
               </div>

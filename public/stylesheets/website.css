@@ -781,14 +781,13 @@ span.delete {
 }
 
 .position_3 h2 {
+  font-size: 20px;
   text-transform: uppercase;
 }
 
 .position_3 .pos3_short_description {
-  font-size: 12px;
+  font-size: 10px;
   text-align: justify;
-  font-family: georgia;
-  font-style: italic;
   color: #666;
   margin-bottom: 10px;
 }
