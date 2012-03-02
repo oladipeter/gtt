@@ -105,6 +105,14 @@ Gtt::Application.routes.draw do
   match 'offers/create' => 'offers#create', :as => "create_offer"
   match 'offers/successfully' => 'offers#message', :as => "successfully_offer"
 
+  # QUESTIONS
+
+  match 'question/index' => 'question#index', :as => "question"
+  match 'questions' => 'question#index', :as => "question"
+  match 'questions/save' => 'question#save', :as => "save_questions"
+  match 'questions/show' => 'question#show', :as => "show_questions"
+  match 'questions/show_details' => 'question#show_details', :as => "show_details"
+
 
   # ------------------------------------------------------------------------------------------------------------------
   # ------------------------------------------------------------------------------------------------------------------

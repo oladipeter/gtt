@@ -1,0 +1,27 @@
+<div id="faqs">
+<h2>ÖTV - Kérdőív</h2>
+
+
+  <div style="display: none;" class="question_response">
+    Here is the response
+  </div>
+
+
+<table>
+  <tr>
+    <td>Név</td>
+    <td>Cím</td>
+    <td>Email</td>
+
+  </tr>
+
+<% @questions.each do |question| %>
+  <tr>
+    <td><%= link_to "#{question.name}", show_details_path(:id => question.id ), :remote => true %></td>
+    <td><%= question.address %></td>
+    <td><%= question.email %></td>
+  </tr>
+<% end %>
+</table>
+
+</div>

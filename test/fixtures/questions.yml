@@ -1,0 +1,33 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  internet_gui: false
+  settlement_marketing: false
+  press_conference: false
+  culture_and_sport: false
+  settlement_conference: false
+  corporate_session: false
+  electioneering: false
+  local_tv: false
+  smart_tv: false
+  good_solution: false
+  how_much: 1
+  name: MyString
+  email: MyString
+  address: MyString
+
+two:
+  internet_gui: false
+  settlement_marketing: false
+  press_conference: false
+  culture_and_sport: false
+  settlement_conference: false
+  corporate_session: false
+  electioneering: false
+  local_tv: false
+  smart_tv: false
+  good_solution: false
+  how_much: 1
+  name: MyString
+  email: MyString
+  address: MyString

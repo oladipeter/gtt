@@ -1,0 +1,158 @@
+<div class="offer">
+
+  <script type="text/javascript">
+
+      Ext.QuickTips.init();
+
+      var myCheckboxGroupItems = [
+          {boxLabel: 'Településmarketing anyagok',                              name: 'question[settlement_marketing]', inputValue: 'true'},
+          {boxLabel: 'Sajtótájékoztatók',                                       name: 'question[press_conference]' ,inputValue: 'true'},
+          {boxLabel: 'Kulturális, sport rendezvények, összefoglalók',           name: 'question[culture_and_sport]' ,inputValue: 'true'},
+          {boxLabel: 'A település, önkormányzat által szervezett konferenciák', name: 'question[settlement_conference]' ,inputValue: 'true'},
+          {boxLabel: 'Testületi ülések',                                        name: 'question[corporate_session]' ,inputValue: 'true'},
+          {boxLabel: 'Választási felkészülés anyagai',                          name: 'question[electioneering]' ,inputValue: 'true'},
+          {boxLabel: 'Helyi TV műsorának internetes közvetítése',               name: 'question[local_tv]' ,inputValue: 'true'},
+          {boxLabel: 'A fenti események SMART TV-ken történő megjelenítése',    name: 'question[smart_tv]' ,inputValue: 'true'}
+      ];
+
+      var edit_describe_form = new Ext.form.FormPanel({
+
+          id: 'edit_describe_form',
+          url: '<%= save_questions_path %>',
+          labelWidth: 130,
+          padding: 20,
+          renderTo: Ext.Element.get('form'),
+          frame: true,
+          /*autoWidth: true,*/
+
+          items:[
+              {
+                  xtype: 'textfield',
+                  hidden: true,
+                  name: 'id'
+              },
+              {
+                  xtype: 'label',
+                  fieldLabel: 'Szeretne egy olyan internetes felületet, ahol a település életéről a lakosság számára nem csak írott szöveges dokumentumok formájában, hanem videó, vagy hang állományok segítségével is be tudna számolni? ',
+                  labelStyle: 'font-weight:bold; width: 100%; text-align: justify; margin-bottom: 20px;'
+              },
+
+              {
+                  xtype: 'radiogroup',
+                  vertical: false,
+                  items: [
+                      {boxLabel: 'Igen', name: 'question[internet_gui]', inputValue: true, checked:true},
+                      {boxLabel: 'Nem',  name: 'question[internet_gui]', inputValue: false}
+                  ]
+              },
+
+              {
+                  xtype: 'label',
+                  fieldLabel: 'Az alábbi kategóriákból melyeket szeretné publikálni? ',
+                  labelStyle: 'font-weight:bold; width: 100%; text-align: justify; margin-top: 20px; margin-bottom: 20px;'
+              },
+
+              {
+                  xtype: 'checkboxgroup',
+                  id: 'myCheckboxes',
+                  fieldLabel: 'Többet is választhat ',
+                  itemCls: 'x-check-group-alt',
+                  // Put all controls in a single column with width 100%
+                  columns: 1,
+                  items: [
+                    myCheckboxGroupItems
+                  ]
+              },
+
+              {
+                  xtype: 'label',
+                  fieldLabel: 'Hiánypótlónak? Hasznosnak?  tartja az Önkormányzati TV (www.onkormanyzati.tv ) szolgáltatást? ',
+                  labelStyle: 'font-weight:bold; width: 100%; text-align: justify; margin-top: 20px; margin-bottom: 20px;'
+              },
+
+              {
+                  xtype: 'radiogroup',
+                  vertical: false,
+                  items: [
+                      {boxLabel: 'Igen', name: 'question[good_solution]', inputValue: true, checked:true},
+                      {boxLabel: 'Nem',  name: 'question[good_solution]', inputValue: false}
+                  ]
+              },
+
+              {
+                  xtype: 'label',
+                  fieldLabel: 'Az Ön által meghatározott fontos feladatokra mekkora havi összeget szánna? ',
+                  labelStyle: 'font-weight:bold; width: 100%; text-align: justify; margin-top: 20px; margin-bottom: 20px;'
+              },
+
+              {
+                  xtype: 'textfield',
+                  fieldLabel: 'Összeg (Ft) ',
+                  allowBlank: false,
+                  width: '200px',
+                  name: 'question[how_much]'
+              },
+
+              {
+                  xtype: 'textfield',
+                  fieldLabel: 'Név ',
+                  allowBlank: false,
+                  width: '200px',
+                  name: 'question[name]',
+              },
+
+              {
+                  xtype: 'textfield',
+                  fieldLabel: 'Email cím ',
+                  allowBlank: false,
+                  width: '200px',
+                  name: 'question[email]',
+                  vtype: 'email'
+              },
+
+              {
+                  xtype: 'textfield',
+                  fieldLabel: 'Cím ',
+                  allowBlank: false,
+                  width: '200px',
+                  name: 'question[address]'
+              }
+
+          ],
+
+          buttons:[
+              {
+
+                  text: 'Elküld',
+                  handler: function() {
+                      edit_describe_form.getForm().submit({
+                          success: function(form, action) {
+                              Ext.Msg.alert('Köszönjük!', 'Ön részt vesz a 100.000.- értékű Önkormányzati TV szolgáltatás sorsolásán!', function(btn){
+                                 if (btn == 'ok'){
+                                   location.href=('http://globomax.hu');
+                                 }
+                              });
+                          },
+                          failure: function(form, action) {
+                              obj = Ext.util.JSON.decode(action.response.responseText);
+                              Ext.Msg.show({
+                                  title: 'Info!',
+                                  msg: obj.message,
+                                  icon: Ext.MessageBox.INFO,
+                                  buttons: Ext.MessageBox.OK
+                              });
+                          }
+                      });
+
+                  }
+
+              }
+
+          ]
+
+      });
+
+
+  </script>
+
+</div>

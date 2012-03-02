@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111107115104) do
+ActiveRecord::Schema.define(:version => 20120228120924) do
 
   create_table "aboutus", :force => true do |t|
     t.string   "title"
@@ -151,6 +151,25 @@ ActiveRecord::Schema.define(:version => 20111107115104) do
     t.string   "government"
     t.string   "email"
     t.string   "phone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "questions", :force => true do |t|
+    t.boolean  "internet_gui",          :default => false
+    t.boolean  "settlement_marketing",  :default => false
+    t.boolean  "press_conference",      :default => false
+    t.boolean  "culture_and_sport",     :default => false
+    t.boolean  "settlement_conference", :default => false
+    t.boolean  "corporate_session",     :default => false
+    t.boolean  "electioneering",        :default => false
+    t.boolean  "local_tv",              :default => false
+    t.boolean  "smart_tv",              :default => false
+    t.boolean  "good_solution",         :default => false
+    t.integer  "how_much"
+    t.string   "name"
+    t.string   "email"
+    t.string   "address"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

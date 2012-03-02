@@ -1,0 +1,43 @@
+/* QUESTION CSS */
+/* RESET WITH BLUEPRINT */
+
+#question_background {
+    text-align: center;
+    margin: 0 auto;
+    width: 900px;
+    background-image: url("../images/globomax/globomax_logo_big_90.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+#questions {
+    text-align: center;
+    margin: 0 auto;
+    width: 700px;
+}
+
+#questions #title {
+    color: orange;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#questions #title_text {
+    text-align: justify;
+    margin-bottom: 20px;
+    font-family: Verdana;
+}
+
+#questions #form {
+    text-align: left !important;
+}
+
+
+
+
+

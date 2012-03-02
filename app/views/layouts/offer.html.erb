@@ -2,6 +2,24 @@
 <html>
 <head>
   <title>Gtt</title>
+
+  <!-- ExtCSS -->
+
+  <%= stylesheet_link_tag "../extjs/resources/css/ext-all" %>
+  <%= stylesheet_link_tag "../extjs/resources/css/xtheme-gray" %>
+
+  <!-- ExtJS -->
+
+  <%= javascript_include_tag "../extjs/adapter/ext/ext-base" %>
+  <%= javascript_include_tag "../extjs/ext-all-debug" %>
+  <%= javascript_include_tag "../extjs/src/locale/ext-lang-hu" %>
+
+  <script type="text/javascript">
+    Ext.BLANK_IMAGE_URL = "<%= Rails.root %>/public/images/ext_default_image/s.gif"
+  </script>
+
+  <!-- ExtJS end -->
+
   <%= stylesheet_link_tag 'blueprint/src/reset', 'blueprint/screen', 'blueprint/src/ie', 'blueprint/src/typography', 'main', 'offer', 'formtastic', 'formtastic_changes' %>
   <%= csrf_meta_tag %>
 </head>

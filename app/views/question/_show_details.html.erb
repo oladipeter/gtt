@@ -1,0 +1,77 @@
+<div id="questions">
+
+<h2><%= @question_detail.name %> | <%= @question_detail.address  %> | <%= @question_detail.email  %></h2>
+
+<p><h3>Szeretne egy olyan internetes felületet, ahol a település életéről a lakosság számára nem csak írott szöveges
+dokumentumok formájában, hanem videó, vagy hang állományok segítségével is be tudna számolni? : </h3></p>
+
+<table>
+
+    <tr>
+      <td>Internetes felület : </td>
+      <td><b><%= @question_detail.internet_gui == true ? "IGEN" : "NEM" %></b></td>
+    </tr>
+
+   <tr>
+    <td>Hasznosnak tartja? :</td>
+    <td><b><%= @question_detail.good_solution == true ? "IGEN" : "NEM" %></b></td>
+  </tr>
+
+  <tr>
+    <td>Rászánt összeg :</td>
+    <td><b><%= @question_detail.how_much %></b></td>
+  </tr>
+
+</table>
+
+<p><h3> Az alábbi kategóriákból melyeket szeretné publikálni?</h3></p>
+
+  <table>
+
+    <tr>
+      <td>Településmarketing anyagok : </td>
+      <td><b><%= @question_detail.settlement_marketing == true ? "IGEN" : "NEM" %></b></td>
+    </tr>
+
+    <tr>
+      <td>Sajtótájékoztatók :</td>
+      <td><b> <%= @question_detail.press_conference == true ? "IGEN" : "NEM" %></b></td>
+    </tr>
+
+    <tr>
+      <td>Kulturális, sport rendezvények, összefoglalók :</td>
+      <td><b> <%= @question_detail.culture_and_sport == true ? "IGEN" : "NEM" %></b></td>
+    </tr>
+
+    <tr>
+      <td>A település, önkormányzat által szervezett konferenciák :</td>
+      <td><b> <%= @question_detail.settlement_conference == true ? "IGEN" : "NEM" %></b></td>
+    </tr>
+
+    <tr>
+      <td>Testületi ülések :</td>
+      <td><b> <%= @question_detail.corporate_session == true ? "IGEN" : "NEM" %></b></td>
+    </tr>
+
+    <tr>
+      <td>Választási felkészülés anyagai :</td>
+      <td><b> <%= @question_detail.electioneering == true ? "IGEN" : "NEM" %></b></td>
+    </tr>
+
+    <tr>
+      <td>Helyi TV műsorának internetes közvetítése :</td>
+      <td><b> <%= @question_detail.local_tv == true ? "IGEN" : "NEM" %></b></td>
+    </tr>
+
+    <tr>
+      <td>A fenti események SMART TV-ken történő megjelenítése :</td>
+      <td><b> <%= @question_detail.smart_tv == true ? "IGEN" : "NEM" %></b></td>
+    </tr>
+
+  </table>
+
+</div>
+
+
+
+

@@ -1538,3 +1538,23 @@ ul li {
     color: red;
 }
 
+#questions {
+    text-align: left;
+    border-bottom: 2px solid #ff4500;
+    margin-bottom: 20px;
+}
+
+#questions h2 {
+    font-size: 16px;
+    color: #ff4500;
+}
+
+#questions h3 {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.orangered {
+  color: #ff4500;
+}
+
